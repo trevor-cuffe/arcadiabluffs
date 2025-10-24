@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: f166e127-51d5-4ea5-9f69-0e3973d61913 # Rates
+handle: ratesHeadline
+instructions: ''
+name: 'Rates Headline'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

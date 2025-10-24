@@ -1,0 +1,9 @@
+handle: general
+hasUrls: true
+name: General
+settings:
+  path: '@basePath/uploads/general'
+  url: '@siteUrl/uploads/general'
+sortOrder: 1
+type: craft\volumes\Local
+url: null

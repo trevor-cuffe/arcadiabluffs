@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
+handle: generalContacts
+instructions: ''
+name: 'General Contacts'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_generalcontacts}}'
+  maxBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

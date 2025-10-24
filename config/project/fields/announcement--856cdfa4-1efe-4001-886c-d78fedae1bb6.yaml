@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
+handle: announcement
+instructions: ''
+name: Announcement
+searchable: 1
+settings:
+  columns:
+    47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
+      width: ''
+    d674a38b-5677-430e-90af-0524d99826b5: # Text
+      width: ''
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationMethod: all
+  selectionLabel: 'Add a row'
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

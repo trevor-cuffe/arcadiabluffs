@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
+handle: accommodationExtras
+instructions: ''
+name: 'Accommodation Extras'
+searchable: true
+settings:
+  maxBlocks: '2'
+translationKeyFormat: null
+translationMethod: none
+type: Neo

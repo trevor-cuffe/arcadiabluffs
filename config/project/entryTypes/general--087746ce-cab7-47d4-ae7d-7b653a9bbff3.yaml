@@ -1,0 +1,37 @@
+fieldLayouts:
+  97dba007-c1d1-4c72-beab-c2fbd0578be5:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e1b08e83-a1f1-4c82-9f19-ffa70434df89 # Dining Options
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fa034695-f302-45c4-818c-842e1842a583 # Gallery
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: general
+hasTitleField: true
+name: General
+section: f02a0d8f-d625-405c-a782-87b045350b7f # Dining
+sortOrder: 2
+titleFormat: null

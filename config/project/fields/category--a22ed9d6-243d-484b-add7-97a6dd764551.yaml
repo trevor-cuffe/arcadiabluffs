@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: fbbd0fba-c1f3-4450-a63f-4ff62a510f01 # News
+handle: category
+instructions: ''
+name: Category
+searchable: true
+settings:
+  branchLimit: ''
+  localizeRelations: false
+  selectionLabel: 'Add a category'
+  source: 'group:90f3e049-f49e-406f-b164-964f0224bde0' # News
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

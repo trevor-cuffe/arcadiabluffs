@@ -1,0 +1,82 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'course-rates' %}
+
+{% set title = entry.title %}
+{% set home = 'false' %}
+{% set id = entry.slug %}
+{% set data_page = entry.slug %}
+
+{% block body %}
+
+	{% include '_partials/banner' %}
+
+	{% include '_partials/subpage-menu' %}
+
+	<main class="main main__{{ template }}" role="main">
+
+		<section class="rates-overview">
+      <div class="rates__pricing-wrap">
+        <div class="rates__pricing">
+          <h1 class="rates__pricing-headline">{{ entry.ratesHeadline|length ? entry.ratesHeadline : 'Rates' }} <span class="rates__pricing-label">Select Your Visiting Date Below</span></h1>
+          <div class="pricing__tabs-wrap">
+            <ul class="pricing__tabs tabs">
+              {% for block in entry.rates %}
+                <li class="pricing__tab tab">
+                  <a href="#" data-tab="{{ loop.index }}" class="pricing__link tabs__link {% if loop.first %}active{% endif %}">{{ block.tabText }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+            {% for block in entry.rates %}
+              <div data-content="{{ loop.index }}" class="tabs__content {% if loop.first %}active{% endif %}">
+                <dl class="pricing__list">
+                  {% for row in block.pricingTable %}
+                    <dt class="pricing__list-label">{{ row.label }}</dt>
+                    <dd class="pricing__list-price">{{ row.price }}</dd>
+                  {% endfor %}
+                </dl>
+                {% if block.pricingFooter | length %}
+                  <ul class="pricing__list-footer">
+                    {% for row in block.pricingFooter %}
+                      <li>{{ row.comment }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        {# {% if entry.itemsToKnow|length %}
+  			  <div class="rates__notes">
+    				<h2 class="rates__notes-headline">{{ entry.itemsToKnow.headline|length ? entry.itemsToKnow.headline : 'Items to Note' }}</h2>
+    				<div class="rates__notes-content">
+              <ul>
+                {% for item in entry.itemsToKnow.items %}
+                  <li>{{ item.item }}</li>
+                {% endfor %}
+              </ul>
+    				</div>
+    			</div>
+        {% endif %} #}
+      </div>
+		</section>
+
+		<section class="rates-list">
+			{% for block in entry.ratesList %}
+				<div class="rates-list__item">
+					<h2 class="rates-list__headline">{{ block.headline }}</h2>
+					<div class="rates-list__content">
+						{{ block.body }}
+					</div>
+					{% if block.price | length %}
+						<p class="rates-list__price">{{ block.price }}</p>
+					{% endif %}
+					{% if block.linkText or block.linkUrl | length %}
+						<a class="cta-link" href="{{ block.linkUrl }}">{{ block.linkText }}</a>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</section>
+
+	</main>
+
+{% endblock %}

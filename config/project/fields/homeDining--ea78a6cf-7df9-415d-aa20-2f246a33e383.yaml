@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
+handle: homeDining
+instructions: ''
+name: 'Home Dining'
+searchable: 1
+settings:
+  columns:
+    8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
+      width: ''
+    49b14ddc-b863-47cf-9f09-87654c5b6f65: # Headline
+      width: ''
+    95930b1a-46ab-472b-bbc8-08004eee0333: # Link
+      width: ''
+    bbfb2374-a525-4465-984d-d47c476db769: # Dining Options
+      width: ''
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationMethod: all
+  selectionLabel: 'Add a row'
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

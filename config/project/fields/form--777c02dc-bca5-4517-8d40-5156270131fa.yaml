@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
+handle: form
+instructions: 'Add a form to the bottom of the page'
+name: Form
+searchable: true
+settings:
+  limit: '1'
+  selectionLabel: 'Add a form'
+  sources: '*'
+translationKeyFormat: null
+translationMethod: none
+type: SproutForms_Forms

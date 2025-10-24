@@ -1,0 +1,9 @@
+handle: metadata
+hasUrls: true
+name: Metadata
+settings:
+  path: '@basePath/uploads/metadata'
+  url: '@siteUrl/uploads/metadata'
+sortOrder: 2
+type: craft\volumes\Local
+url: null

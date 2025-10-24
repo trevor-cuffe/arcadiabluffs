@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
+handle: handicap
+instructions: ''
+name: Handicap
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

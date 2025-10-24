@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
+handle: subscribeTagline
+instructions: ''
+name: 'Subscribe Tagline'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
+handle: homeCourses
+instructions: ''
+name: 'Home Courses'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_homecourses}}'
+  maxBlocks: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

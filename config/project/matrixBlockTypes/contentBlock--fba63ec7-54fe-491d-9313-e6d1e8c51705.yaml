@@ -1,0 +1,115 @@
+field: 2f5576f9-a21b-4d75-95f4-cb5ca418dd3d # Home South Course
+fieldLayouts:
+  db279141-d85a-4c6b-902d-2c7978dac3cf:
+    tabs:
+      -
+        fields:
+          66adacfc-e086-4bc6-ba8d-275e0c57a057: # Link URL
+            required: true
+            sortOrder: 5
+          2695a13b-b6ac-4a11-8504-9e0de953e470: # Link Text
+            required: true
+            sortOrder: 4
+          bd1d2269-2e91-44bf-ba51-c56d396d5af9: # Headline
+            required: true
+            sortOrder: 2
+          cd572c92-ecc6-4ce7-bea3-e18ec2578bb0: # Label
+            required: true
+            sortOrder: 3
+          fb312029-7237-4952-9c49-b1746ce1bdac: # Background Image
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  66adacfc-e086-4bc6-ba8d-275e0c57a057: # Link URL
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkUrl
+    instructions: ''
+    name: 'Link URL'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2695a13b-b6ac-4a11-8504-9e0de953e470: # Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: ''
+    name: 'Link Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bd1d2269-2e91-44bf-ba51-c56d396d5af9: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cd572c92-ecc6-4ce7-bea3-e18ec2578bb0: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fb312029-7237-4952-9c49-b1746ce1bdac: # Background Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an Image'
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+handle: contentBlock
+name: 'Content Block'
+sortOrder: 1

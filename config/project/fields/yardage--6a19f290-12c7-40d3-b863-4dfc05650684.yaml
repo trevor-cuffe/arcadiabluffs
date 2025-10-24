@@ -1,0 +1,75 @@
+contentColumnType: text
+fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
+handle: yardage
+instructions: "color options:\r\nblack. blue, white, gold, red, gray (leave blank for default)"
+name: Yardage
+searchable: true
+settings:
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - handle
+              - label
+            -
+              - heading
+              - Label
+            -
+              - type
+              - singleline
+            -
+              - width
+              - ''
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - handle
+              - distance
+            -
+              - heading
+              - Distance
+            -
+              - type
+              - singleline
+            -
+              - width
+              - ''
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - handle
+              - color
+            -
+              - heading
+              - Color
+            -
+              - type
+              - singleline
+            -
+              - width
+              - ''
+  defaults:
+    __assoc__:
+      -
+        - row1
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

@@ -1,0 +1,66 @@
+field: a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf # CTA
+fieldLayouts:
+  22f8d8ce-0995-4bec-921b-cc8dff841dab:
+    tabs:
+      -
+        fields:
+          b495a4ae-8020-4403-8762-709236a9a0de: # Button URL
+            required: 0
+            sortOrder: 2
+          be7f6147-5479-418b-890d-9bb9d155088d: # Footer
+            required: 0
+            sortOrder: 3
+          dffa5382-9565-4238-b6e2-c72b56a76ddf: # Button Text
+            required: 0
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  b495a4ae-8020-4403-8762-709236a9a0de: # Button URL
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: 'Button URL'
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  be7f6147-5479-418b-890d-9bb9d155088d: # Footer
+    contentColumnType: text
+    fieldGroup: null
+    handle: footer
+    instructions: 'Extra text underneath button'
+    name: Footer
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dffa5382-9565-4238-b6e2-c72b56a76ddf: # Button Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

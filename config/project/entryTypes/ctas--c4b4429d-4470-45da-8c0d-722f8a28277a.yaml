@@ -1,0 +1,33 @@
+fieldLayouts:
+  289ec723-62a2-4b4c-b6d9-d14702ce7039:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: dcb31393-3ea4-4a2a-a287-c79dfba31b0a # CTA Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9d60212d-d586-49a1-9525-1f94da3d85f0 # CTA Body
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9432c02d-3660-469e-af4c-461baccc92ce # CTA Footer
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+handle: ctas
+hasTitleField: true
+name: 'Call To Actions'
+section: 8d55db04-8897-450d-a5f2-625d80a8eab2 # Call To Actions
+sortOrder: 1
+titleFormat: null

@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
+handle: gallery
+instructions: ''
+name: Gallery
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+  defaultUploadLocationSubpath: ''
+  limit: '15'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add an Image'
+  singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+  singleUploadLocationSubpath: ''
+  sources: '*'
+  useSingleFolder: '1'
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

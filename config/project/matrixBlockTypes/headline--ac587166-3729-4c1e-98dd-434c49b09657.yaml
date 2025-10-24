@@ -1,0 +1,31 @@
+field: 0e38621c-2421-4292-ae5b-aa86828ee673 # Linked List
+fieldLayouts:
+  8fe67d73-71a0-4966-b57b-3a66f50ce7dd:
+    tabs:
+      -
+        fields:
+          4c621108-9140-4ef7-b9f1-d1cc39429915: # Headline
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  4c621108-9140-4ef7-b9f1-d1cc39429915: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: headline
+name: Headline
+sortOrder: 1

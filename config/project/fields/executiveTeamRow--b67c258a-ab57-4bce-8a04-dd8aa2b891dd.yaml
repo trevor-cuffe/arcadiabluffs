@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
+handle: executiveTeamRow
+instructions: ''
+name: 'Executive Team Row'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_executiveteamrow}}'
+  maxBlocks: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

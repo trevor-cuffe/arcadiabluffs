@@ -1,0 +1,102 @@
+field: 716abbda-6a26-45cc-b52c-901463010380 # Page Links
+fieldLayouts:
+  58a115df-db81-4c6e-8b70-bf3164aca06c:
+    tabs:
+      -
+        fields:
+          1e939607-791e-4d0d-9e90-da7db5cb3e58: # Buttons
+            required: false
+            sortOrder: 4
+          2e89d38a-eaec-4b2b-943f-d94ba49050d0: # Headline
+            required: false
+            sortOrder: 2
+          acea35fc-de86-48eb-b5dc-f5f07375d2cb: # Text
+            required: false
+            sortOrder: 3
+          f0dca59d-239c-4146-813f-2b147b0ce790: # Image
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  1e939607-791e-4d0d-9e90-da7db5cb3e58: # Buttons
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttons
+    instructions: ''
+    name: Buttons
+    searchable: 1
+    settings:
+      columns:
+        new1:
+          width: ''
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationMethod: all
+      selectionLabel: 'Add a row'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  2e89d38a-eaec-4b2b-943f-d94ba49050d0: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  acea35fc-de86-48eb-b5dc-f5f07375d2cb: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  f0dca59d-239c-4146-813f-2b147b0ce790: # Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+handle: pageLink
+name: 'Page Link'
+sortOrder: 1

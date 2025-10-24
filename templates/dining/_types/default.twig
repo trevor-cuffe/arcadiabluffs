@@ -1,0 +1,36 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'dining-entry' %}
+
+{% set title = entry.title %}
+{% set home = 'false' %}
+{% set id = 'dining' %}
+{% set data_page = 'dining' %}
+
+
+{% block body %}
+
+  {% include '_partials/banner' %}
+
+  <main class="main main__{{ template }}" role="main">
+    
+    {% if entry.diningOptionsNew|length %}
+    <section class="o-section o-section--lg">
+      <div class="o-wrapper">
+        {% for option in entry.diningOptionsNew.all() %}
+          {% include '_partials/dining-option' %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if entry.gallery|length %}
+    <section class="o-section">
+      <div class="o-wrapper">
+        {{ macros.gallery(entry.gallery, template) }}
+      </div>
+    </section>
+    {% endif %}
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: a6c2ddd7-0756-4257-a628-2d1917856bb6 # Dining
+handle: diningOptions
+instructions: ''
+name: 'Dining Options'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_diningoptions}}'
+  maxBlocks: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

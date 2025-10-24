@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
+handle: doNotShowVideoBanner
+instructions: 'By default, this template shows the video banner instead of the banner image set above'
+name: 'Do Not Show Video Banner'
+searchable: true
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,47 @@
+# CRAFT ENVIRONMENT
+/.env
+
+# COMPOSER
+/vendor
+
+# CRAFT STORAGE
+/storage/*
+!/storage/.gitkeep
+
+# CRAFT Uploads
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# Optimized Uploads
+/web/imager/*
+!/web/imager/.gitkeep
+
+# ASSETS
+/web/assets/*
+!/web/assets/.gitkeep
+
+
+# BUILD FILES
+/bower_components/*
+/node_modules/*
+/build/*
+/yarn-error.log
+/npm-debug.log
+
+# MISC FILES
+.cache
+.idea
+.project
+.settings
+*.esproj
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+config.codekit3
+prepros-6.config

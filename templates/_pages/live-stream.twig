@@ -1,0 +1,22 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'subpage' %}
+
+{% set title = entry.title %}
+{% set home = 'false' %}
+{% set id = 'subpage' %}
+{% set data_page = 'subpage' %}
+
+{% block body %}
+
+	{% include '_partials/subpage-menu' %}
+
+  <main class="main main__subpage" role="main">
+
+    <section class="subpage__content-col entry__content" style="margin: 0 auto">
+      <h1 style="margin-bottom: 15px;">{{ entry.headline | length ? entry.headline : entry.title }}</h1>
+      {{ entry.liveStream|raw }}
+    </section>
+
+  </main>
+
+{% endblock %}

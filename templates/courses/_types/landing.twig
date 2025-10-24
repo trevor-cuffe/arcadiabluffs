@@ -1,0 +1,304 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'course-landing' %}
+{% set home = 'false' %}
+{% set id = entry.slug %}
+{% set data_page = entry.slug %}
+{% set button = entry.bannerLink %}
+
+{# For links to scorecard holes #}
+{% set segments = craft.request.getSegments() %}
+{% if 'the-dozen' in segments %}
+    {% set holeLinks = 'dozen'%}
+{% else %}
+    {% set holeLinks = 'default'%}
+{% endif %}
+
+{% if entry.headline is defined and entry.headline|length %}
+  {% set title = entry.headline %}
+{% else %}
+  {% set title = entry.title %}
+{% endif %}
+
+{% block body %}
+    {% if entry.doNotShowVideoBanner %}
+        {% include '_partials/banner' %}
+    {% else %}
+        {% include '_partials/video-hero' with { headline: title, link: button } %}
+    {% endif %}
+
+    {% include '_partials/subpage-menu' %}
+
+    <main class="main main__{{ template }}" role="main">
+
+        <section class="course-intro">
+
+            {% if entry.courseIntroBlock | length %}
+                {% for block in entry.courseIntroBlock %}
+                    <h1 class="course-intro__headline">{{ block.headline }}</h1>
+                    <div class="course-intro__content {% if block.detailsList is empty %}course-intro__content--full-width{% endif %}">
+                        {{ block.description }}
+                    </div>
+
+                    {% if block.detailsList | length %}
+                        <div class="course-intro__list-wrap">
+                            <dl class="course-intro__list">
+                                {% for row in block.detailsList %}
+                                    <dt class="course-intro__list-label">{{ row.label }}</dt>
+                                    <dd class="course-intro__list-name">{{ row.name }}</dd>
+                                {% endfor %}
+                            </dl>
+                            {% if block.linkText | length %}
+                                <a href="{{ block.linkUrl }}" class="course-intro__list-link btn">{{ block.linkText }}</a>
+                            {% endif %}
+                            {% if block.secondLinkText | length %}
+                                <a href="{{ block.secondLinkUrl }}" class="course-intro__list-link btn">{{ block.secondLinkText }}</a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% if entry.scorecard | length %}
+            
+                <div class="scorecard">
+                    <h1 class="scorecard__headline">Score Card</h1>
+                    <table class="scorecard__table">
+                        {% for row in entry.scorecard %}
+
+                            {% if loop.first %}
+                                {% set class = "scorecard__thead--primary" %}
+                            {% elseif loop.index == 2 %}
+                                {% set class = "scorecard__thead--secondary" %}
+                            {% elseif loop.index == 3 %}
+                                {% set class = "scorecard__tr--champion" %}
+                            {% elseif loop.index == 4 %}
+                                {% set class = "scorecard__tr--blue" %}
+                            {% elseif loop.index == 5 %}
+                                {% set class = "scorecard__tr--white" %}
+                            {% elseif loop.index == 6 %}
+                                {% set class = "scorecard__tr--gold" %}
+                            {% elseif loop.index == 7 %}
+                                {% set class = "scorecard__tr--red" %}
+                            {% elseif loop.index == 8 %}
+                                {% set class = "scorecard__tr--handicap" %}
+                            {% endif %}
+
+                            {% if row.color %}
+                                {% if row.color == 'black' or row.color == 'Black' %}
+                                    {% set class = "hole-entry__yardage-item--champion" %}
+                                {% elseif row.color == 'blue' or row.color == 'Blue' %}
+                                    {% set class = "hole-entry__yardage-item--blue" %}
+                                {% elseif row.color == 'white' or row.color == 'White' %}
+                                    {% set class = "hole-entry__yardage-item--white" %}
+                                {% elseif row.color == 'gold' or row.color == 'Gold' %}
+                                    {% set class = "hole-entry__yardage-item--gold" %}
+                                {% elseif row.color == 'red' or row.color == 'Red' %}
+                                    {% set class = "hole-entry__yardage-item--red" %}
+                                {% elseif row.color == 'gray' or row.color == 'Gray' %}
+                                    {% set class = "scorecard__tr--handicap" %}
+                                {% endif %}
+                            {% endif %}
+
+                            {% set holes = [
+                                { number: 1, key: 'one', dozenLink: 'south-1' },
+                                { number: 2, key: 'two', dozenLink: 'south-2' },
+                                { number: 3, key: 'three', dozenLink: 'south-3' },
+                                { number: 4, key: 'four', dozenLink: 'south-4' },
+                                { number: 5, key: 'five', dozenLink: 'south-5' },
+                                { number: 6, key: 'six', dozenLink: 'south-6' },
+                                { number: 7, key: 'seven', dozenLink: '' },
+                                { number: 8, key: 'eight', dozenLink: '' },
+                                { number: 9, key: 'nine', dozenLink: '' },
+                                { number: 10, key: 'ten', dozenLink: 'north-1' },
+                                { number: 11, key: 'eleven', dozenLink: 'north-2' },
+                                { number: 12, key: 'twelve', dozenLink: 'north-3' },
+                                { number: 13, key: 'thirteen', dozenLink: 'north-4' },
+                                { number: 14, key: 'fourteen', dozenLink: 'north-5' },
+                                { number: 15, key: 'fifteen', dozenLink: 'north-6' },
+                                { number: 16, key: 'sixteen', dozenLink: '' },
+                                { number: 17, key: 'seventeen', dozenLink: '' },
+                                { number: 18, key: 'eighteen', dozenLink: '' },
+                            ] %}
+                            
+                            {% if loop.first %}
+                                <thead>
+                                    <tr class="{{ class }}">
+                                        <th>{{ row.label }}</th>
+
+                                        {% for hole in holes %}
+                                            {% set value = attribute(row, hole.key) %}
+                                            {% if value != '-' %}
+                                                {% if holeLinks == 'dozen' %}
+                                                    {% set holeLink = hole.dozenLink %}
+                                                {% else %}
+                                                    {% set holeLink = "hole-" ~ hole.number %}
+                                                {% endif %}
+                                                <th><a class="scorecard__link" href="{{ entry.url }}/{{ holeLink }}">{{ value }}</a></th>
+                                            {% endif %}
+                                            {% if loop.index == '9' %}<th>{{ row.out }}</th>{% endif %}
+                                            {% if loop.index == '18' %}
+                                                <th>{{ row.in }}</th>
+                                                <th>{{ row.total }}</th>
+                                            {% endif %}
+                                        {% endfor %}
+                                        
+                                        {# <th><a class="scorecard__link" href="{{ entry.url }}/hole-1">{{ row.one }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-2">{{ row.two }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-3">{{ row.three }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-4">{{ row.four }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-5">{{ row.five }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-6">{{ row.six }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-7">{{ row.seven }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-8">{{ row.eight }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-9">{{ row.nine }}</a></th> #}
+                                        {# <th>{{ row.out }}</th> #}
+                                        {# <th><a class="scorecard__link" href="{{ entry.url }}/hole-10">{{ row.ten }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-11">{{ row.eleven }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-12">{{ row.twelve }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-13">{{ row.thirteen }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-14">{{ row.fourteen }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-15">{{ row.fifteen }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-16">{{ row.sixteen }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-17">{{ row.seventeen }}</a></th>
+                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-18">{{ row.eighteen }}</a></th> #}
+                                        {# <th>{{ row.in }}</th>
+                                        <th>{{ row.total }}</th> #}
+                                    </tr>
+                                </thead>
+                            {% endif %}
+                            
+
+                            {% if loop.index == 3 %}
+                                <tbody>
+                            {% endif %}
+
+                            {% if loop.index >= 2 %}
+                                <tr class="{{ class }}">
+                                    <td>{{ row.label }}</td>
+                                    {% for hole in holes %}
+                                        {% set value = attribute(row, hole.key) %}
+                                        {% if value != '-' %}
+                                            <td>{{ value }}</td>
+                                        {% endif %}
+                                        {% if loop.index == '9' %}<td>{{ row.out }}</td>{% endif %}
+                                        {% if loop.index == '18' %}
+                                            <td>{{ row.in }}</td>
+                                            <td>{{ row.total }}</td>
+                                        {% endif %}
+                                    {% endfor %}
+                                    {# <td>{{ row.one }}</td>
+                                    <td>{{ row.two }}</td>
+                                    <td>{{ row.three }}</td>
+                                    <td>{{ row.four }}</td>
+                                    <td>{{ row.five }}</td>
+                                    <td>{{ row.six }}</td>
+                                    <td>{{ row.seven }}</td>
+                                    <td>{{ row.eight }}</td>
+                                    <td>{{ row.nine }}</td>
+                                    <td>{{ row.out }}</td>
+                                    <td>{{ row.ten }}</td>
+                                    <td>{{ row.eleven }}</td>
+                                    <td>{{ row.twelve }}</td>
+                                    <td>{{ row.thirteen }}</td>
+                                    <td>{{ row.fourteen }}</td>
+                                    <td>{{ row.fifteen }}</td>
+                                    <td>{{ row.sixteen }}</td>
+                                    <td>{{ row.seventeen }}</td>
+                                    <td>{{ row.eighteen }}</td>
+                                    <td>{{ row.in }}</td>
+                                    <td>{{ row.total }}</td> #}
+                                </tr>
+                            {% endif %}
+
+                            {% if loop.last %}
+                                </tbody>
+                            {% endif %}
+
+                        {% endfor %}
+                    </table>
+                </div>
+            {% endif %}
+
+            {% if entry.slopeTables | length %}
+                <div class="slope">
+                    <h1 class="slope__headline">Slope</h1>
+                    {% for block in entry.slopeTables %}
+                        <table class="slope__table">
+                            {% for row in block.table %}
+
+                                {% if loop.first %}
+                                    <thead>
+                                        <tr>
+                                            <th>{{ row.label }}</th>
+                                            <th>{{ row.rating }}</th>
+                                            <th>{{ row.slope }}</th>
+                                        </tr>
+                                    </thead>
+                                {% endif %}
+
+                                {% if loop.index == 2 %}
+                                    <tbody>
+                                {% endif %}
+
+                                {% if loop.index >= 2 %}
+                                    <tr>
+                                        <td>{{ row.label }}</td>
+                                        <td>{{ row.rating }}</td>
+                                        <td>{{ row.slope }}</td>
+                                    </tr>
+                                {% endif %}
+
+                                {% if loop.last %}
+                                    </tbody>
+                                {% endif %}
+
+                            {% endfor %}
+                        </table>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if entry.gallery | length %}
+                {{ macros.gallery(entry.gallery, template) }}
+            {% endif %}
+
+            {% if entry.holeByHoleButton | length %}
+                {% for block in entry.holeByHoleButton %}
+                    <div class="hole-by-hole__cta-wrap">
+                        <a class="hole-by-hole__cta btn" href="{{ block.buttonUrl }}">{{ block.buttonText }}</a>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+        </section>
+
+
+        {% if entry.courseHistory | length %}
+            {% for block in entry.courseHistory %}
+                {% set image = block.backgroundImage.first() %}
+                {% set backgroundImage = craft.imager.transformImage(image, {
+                    width: 1600,
+                    height: 700,
+                    mode: 'crop',
+                }) %}
+                <section class="course-history" style="background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 40%, rgba(255, 255, 255, 0.45)), url({{ backgroundImage ? backgroundImage.url }}) no-repeat bottom center / 100% auto;">
+                    <header class="section-header">
+                        <h2 class="section-header__label">{{ block.label }}</h2>
+                        <h1 class="section-header__headline">{{ block.headline }}</h1>
+                    </header>
+                    <div class="course-history__content">
+                        {{ block.body }}
+                    </div>
+                    {{ macros.cta(block.cta, 'course-history') }}
+                </section>
+            {% endfor %}
+        {% endif %}
+
+        {% if entry.video | length %}
+            <section class="course-flyover">
+                {{ macros.video(entry.video, template) }}
+            </section>
+        {% endif %}
+
+    </main>
+
+{% endblock %}

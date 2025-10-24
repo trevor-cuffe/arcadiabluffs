@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
+handle: executiveTeamHeadline
+instructions: ''
+name: 'Executive Team Headline'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,116 @@
+field: d5cd7453-de1f-4641-9290-c5d728857cb9 # Course History
+fieldLayouts:
+  fa5c8404-5f6c-4870-9e27-559fc0fdcf79:
+    tabs:
+      -
+        fields:
+          4b4c2ec7-bb72-4d4e-91e8-1347888be1da: # Headline
+            required: false
+            sortOrder: 2
+          53576eb0-38c9-4375-acd7-fb7d17c8f361: # Label
+            required: false
+            sortOrder: 3
+          e99bb281-fc38-4e61-8d38-d19934bf170a: # Background Image
+            required: false
+            sortOrder: 1
+          ed71610d-27b5-4aa6-a099-2437d809df35: # CTA
+            required: false
+            sortOrder: 5
+          ef70e1b7-cf97-43cd-a65e-52ccff3a11b2: # Body
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  4b4c2ec7-bb72-4d4e-91e8-1347888be1da: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  53576eb0-38c9-4375-acd7-fb7d17c8f361: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: 'The text that is in the watermark effect'
+    name: Label
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e99bb281-fc38-4e61-8d38-d19934bf170a: # Background Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: '2'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      restrictFiles: '1'
+      selectionLabel: 'Add an Image'
+      singleUploadLocationSource: '2'
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: FocusPoint_FocusPoint
+  ed71610d-27b5-4aa6-a099-2437d809df35: # CTA
+    contentColumnType: text
+    fieldGroup: null
+    handle: cta
+    instructions: 'NOTE: Phone number is brought in dynamically via the phone number in the Globals->Contact Information'
+    name: CTA
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ef70e1b7-cf97-43cd-a65e-52ccff3a11b2: # Body
+    contentColumnType: string
+    fieldGroup: null
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: ''
+      columnType: text
+      configFile: Standard.json
+      purifierConfig: ''
+      purifyHtml: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: courseHistoryBlock
+name: 'Course History Block'
+sortOrder: 1

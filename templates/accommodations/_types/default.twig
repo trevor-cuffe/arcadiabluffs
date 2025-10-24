@@ -1,0 +1,154 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'accommodations-entry' %}
+
+{% set title = 'Accommodations' %}
+{% set home = 'false' %}
+{% set id = 'accommodations' %}
+{% set data_page = 'accommodations' %}
+
+
+{% block body %}
+
+  {% include '_partials/banner' %}
+
+  <main class="main main__{{ template }}" role="main">
+
+    <div class="accommodations-entry__upper">
+
+      <article class="accommodations-entry__content-col">
+        {% if entry.headline is defined and entry.headline | length %}
+          {% set title = entry.headline %}
+        {% else %}
+          {% set title = entry.title %}
+        {% endif %}
+        <h1 class="accommodations-entry__headline">{{ title }}</h1>
+        <div class="accommodations-entry__overview">
+          {{ entry.overview }}
+        </div>
+
+        {% if entry.accommodationLayouts | length %}
+          <div class="accommodations-entry__layouts">
+            <h2 class="accommodations-entry__layouts-headline">Room Options</h2>
+            {% for block in entry.accommodationLayouts %}
+              {% include '_partials/accommodation-layout' %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if entry.accommodationLink | length %}
+          <a class="btn accommodation-entry__link" href="{{entry.accommodationLink.url}}" target="{{entry.accommodationLink.target}}">{{ entry.accommodationLink.text }}</a>
+        {% endif %}
+
+      </article>
+
+      <aside class="accommodations-entry__sidebar-col">
+        {% include '_partials/sidebar-menu' %}
+        {{ macros.sidebarContent(entry.sidebarCtas) }}
+      </aside>
+
+       {% if entry.accommodationsHeadline | length %}
+          <div class="accommodations-entry__extraContent">
+            <h1 class="accommodations-entry__headline">{{ entry.accommodationsHeadline }}</h1>
+            <div class="accommodations-entry__overview">
+              {{ entry.accommodationsOverview }}
+            </div>
+            
+            {% if entry.accommodationLayouts2 | length %}
+              <div class="accommodations-entry__layouts">
+                <h2 class="accommodations-entry__layouts-headline">Room Options</h2>
+                {% for block in entry.accommodationLayouts2 %}
+                  {% include '_partials/accommodation-layout' %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if entry.accommodationLink2 | length %}
+              <a class="btn accommodation-entry__link" href="{{entry.accommodationLink2.url}}" target="{{entry.accommodationLink2.target}}">{{ entry.accommodationLink2.text }}</a>
+            {% endif %}
+          
+          </div>
+
+        {% endif %}
+
+
+      {% if entry.accommodationPricing | length %}
+
+        <div class="accommodations-entry__pricing-wrap">
+          <div class="accommodations-entry__a-pricing">
+            <h2 class="accommodations-entry__pricing-headline">{{ entry.accommodationPricingHeadline }} <span class="accommodations-entry__pricing-label">Select Your Visiting Date Below</span></h2>
+            <div class="pricing__tabs-wrap">
+              <ul class="pricing__tabs tabs">
+                {% for block in entry.accommodationPricing %}
+                  <li class="pricing__tab tab">
+                    <a href="#" data-tab="{{ loop.index }}" class="pricing__link tabs__link {% if loop.first %}active{% endif %}">{{ block.tabText }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+              {% for block in entry.accommodationPricing %}
+                <div data-content="{{ loop.index }}" class="tabs__content {% if loop.first %}active{% endif %}">
+                  <dl class="pricing__list">
+                    {% for row in block.pricingTable %}
+                      <dt class="pricing__list-label">{{ row.label }}</dt>
+                      <dd class="pricing__list-price">{{ row.price }}</dd>
+                    {% endfor %}
+                  </dl>
+                  {% if block.pricingFooter | length %}
+                    <ul class="pricing__list-footer">
+                      {% for row in block.pricingFooter %}
+                        <li>{{ row.comment }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="accommodations-entry__g-pricing">
+            <h2 class="accommodations-entry__pricing-headline">Golf Add-On Pricing</h2>
+            {% for block in entry.accommodationPricing %}
+              <div data-content="{{ loop.index }}" class="tabs__content tabs__content--g-pricing {% if loop.first %}active{% endif %}">
+                <h3 class="accommodations-entry__pricing-subheadline">The Bluffs</h3>
+                <dl class="pricing__list pricing__list--g-pricing">
+                  {% for row in block.golfAddOnPricing %}
+                    <dt class="pricing__list-label">{{ row.label }}</dt>
+                    <dd class="pricing__list-price">{{ row.bluffsPrice }}</dd>
+                  {% endfor %}
+                </dl>
+                <h3 class="accommodations-entry__pricing-subheadline">The South Course</h3>
+                <dl class="pricing__list pricing__list--g-pricing">
+                  {% for row in block.golfAddOnPricing %}
+                    <dt class="pricing__list-label">{{ row.label }}</dt>
+                    <dd class="pricing__list-price">{{ row.southCoursePrice }}</dd>
+                  {% endfor %}
+                </dl>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+      {% endif %}
+
+    </div>
+
+    {% if entry.contentBlock|length %}
+      <div class="book-cta">
+        {{ macros.contentBlock(entry.contentBlock) }}
+      </div>
+    {% endif %}
+
+    {# {% if entry.ctaNew is defined and entry.ctaNew|length %}
+      <div class="book-cta">
+        <a href="{{ entry.ctaNew.buttonUrl }}" target="_blank" class="book-cta__btn">{{ entry.ctaNew.buttonText }}</a>
+        {% if entry.ctaNew.footer|length %}
+          <p class="book-cta__footer">{{ entry.ctaNew.footer }}</p>
+        {% endif %}
+      </div>
+    {% endif %} #}
+
+    {% if entry.gallery | length %}
+      <div class="accommodations-entry__lower">
+        {{ macros.gallery(entry.gallery, template) }}
+      </div>
+    {% endif %}
+
+  </main>
+
+{% endblock %}

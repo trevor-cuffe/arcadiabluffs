@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 904b1ef7-78d0-4c7c-8c3d-2bc9e07a74f6 # Google Tag Manager
+handle: developmentSnippet
+instructions: 'Paste the development environment snippet'
+name: 'Development Snippet'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,15 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'error' %}
+
+{% set title     = '404'   %}
+{% set id        = 'error' %}
+{% set data_page = 'error' %}
+
+{% block body %}
+
+    <main class="main main__{{ template }}" role="main">
+        <h1>404. Page not found</h1>
+        <p>Unfortunately, the page you've requested doesn't exist.</p>
+    </main>
+
+{% endblock %}

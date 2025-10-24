@@ -1,0 +1,123 @@
+field: f9d54a63-f4b4-46a3-9822-b08270fddf91 # Home Courses
+fieldLayouts:
+  ab4014ad-b5a0-4aa2-af71-a786704e6584:
+    tabs:
+      -
+        fields:
+          2e0e521e-50dc-4fc4-b923-0360760a0c28: # Text
+            required: 0
+            sortOrder: 2
+          4df910d9-30d4-4eac-8b59-435d3143c244: # Video Headline
+            required: 0
+            sortOrder: 3
+          6cbfc500-609a-481a-b793-29875ee605b0: # Headline
+            required: 0
+            sortOrder: 1
+          330eac69-3318-422a-861b-d841fff06fef: # Video Subheadline
+            required: 0
+            sortOrder: 4
+          96026f6b-4401-4546-b7e2-9549a9ecbf38: # Video
+            required: 0
+            sortOrder: 5
+          df2fb927-6c87-4678-9950-d3a004411ca8: # Courses
+            required: 0
+            sortOrder: 6
+        name: Content
+        sortOrder: 1
+fields:
+  2e0e521e-50dc-4fc4-b923-0360760a0c28: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: 1
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  4df910d9-30d4-4eac-8b59-435d3143c244: # Video Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoHeadline
+    instructions: ''
+    name: 'Video Headline'
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6cbfc500-609a-481a-b793-29875ee605b0: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  330eac69-3318-422a-861b-d841fff06fef: # Video Subheadline
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoSubheadline
+    instructions: ''
+    name: 'Video Subheadline'
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  96026f6b-4401-4546-b7e2-9549a9ecbf38: # Video
+    contentColumnType: text
+    fieldGroup: null
+    handle: video
+    instructions: ''
+    name: Video
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '2'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  df2fb927-6c87-4678-9950-d3a004411ca8: # Courses
+    contentColumnType: string
+    fieldGroup: null
+    handle: courses
+    instructions: ''
+    name: Courses
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_courses}}'
+      maxBlocks: '3'
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix

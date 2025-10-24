@@ -1,0 +1,50 @@
+field: ec8ac1e2-115c-40f8-a9b6-4908a3b442cb # Home Buckets Intro
+fieldLayouts:
+  eef4d869-d790-49f7-b364-220f092a0e6a:
+    tabs:
+      -
+        fields:
+          c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: # Headline
+            required: true
+            sortOrder: 1
+          d1b81997-5115-4665-bf16-07368b4b258c: # Label
+            required: true
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d1b81997-5115-4665-bf16-07368b4b258c: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: 'The text that is in the watermark effect'
+    name: Label
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentBlock
+name: 'Content Block'
+sortOrder: 1

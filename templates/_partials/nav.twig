@@ -1,0 +1,34 @@
+{# Get First Segment #}
+{% set current = craft.request.getFirstSegment() %}
+
+<div class="nav">
+    <div class="nav__logo">
+        <a class="nav__logo-link" href="/">
+            <span class="hide-visually">{{ siteName }}</span>
+            {% include '_assets/logo.svg' %}
+        </a>
+    </div>
+    {% set secondary = craft.entries.section('primaryMenu') %}
+    <ul class="nav__menu menu">
+        {% for entry in secondary %}
+            {% set class = entry.class %} 
+            {% set newTab = entry.openInNewTab %}
+            {% if newTab == 'true' %}
+                {% set target = '_blank' %}
+            {% else %}
+                {% set target = '' %}
+            {% endif %}
+        {% if entry.relatedEntry | length %}
+            {% set entry = entry.relatedEntry.first() %}
+            {% set url = entry.url %}
+            {% set slug = entry.slug %}
+            {% set activeClass = slug == current ? 'active' %}
+
+        {% else %}
+            {% set url = entry.customUrl %}
+        {% endif %}
+        <li><a class="{{ activeClass }} {{class}}" target="{{target}}" href="{{ url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <button class="nav__toggle js-nav-toggle">Menu</button>
+</div>

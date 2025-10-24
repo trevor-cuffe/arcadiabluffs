@@ -1,0 +1,16 @@
+{% set component = {
+  id: id ?? '1',
+  embed: embed ?? null,
+} %}
+
+<div class="c-modal" data-modal="{{ component.id }}">
+  <div class="c-modal__content">
+    <button class="c-modal__close" data-modal-toggle="{{ component.id }}">
+      <span class="hide-visually">Close</span>
+      {% include '_assets/icon-close.svg' %}
+    </button>
+    <div class="o-ratio o-ratio--16x9">
+      {{ component.embed|raw }}
+    </div>
+  </div>
+</div>

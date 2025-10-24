@@ -1,0 +1,42 @@
+<div class="c-dining-option">
+  <div class="c-dining-option__content">
+    {% if option.headline|length %}
+      <h2 class="c-headline c-symbol-headline c-symbol-headline--maroon c-symbol-headline--left">{{ option.headline }}</h2>
+    {% endif %}
+    {% if option.text|length %}
+      <div class="c-dining-option__text">
+        <div class="c-rte">{{ option.text }}</div>
+      </div>
+    {% endif %}
+    {% if option.buttons|length %}
+      <div class="c-dining-option__btns">
+        <div class="o-btn-group">
+          {% for row in option.buttons.all() %}
+            <a href="{{ row.button.getUrl() }}" class="btn btn--sm">{{ row.button.getText() }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    {% if option.details|length %}
+      <div class="c-dining-options__details">
+        {% for item in option.details %}
+        <div class="c-dining-options__detail">
+          <div class="c-dining-options__detail-label">{{ item.label }}</div>
+          <div class="c-dining-options__detail-value">{{ item.value }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <div class="c-dining-option__image">
+    {% if option.image|length %}
+      {% set image = option.image.first() %}
+      {% set diningOptionImage = craft.imager.transformImage(image, {
+          width: 1000,
+          height: 1200,
+          mode: 'crop',
+      }) %}
+      <img src="{{ image.getUrl(diningOptionImage) }}" alt="{{ option.headline }}"/>
+    {% endif %}
+  </div>
+</div>

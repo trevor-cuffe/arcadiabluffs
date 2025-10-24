@@ -1,0 +1,73 @@
+{# Get Last Segment #}
+{% set firstSegment = craft.request.getFirstSegment() %}
+{% set current = craft.request.getLastSegment() %}
+{% set bluffs = craft.entries.section('theBluffsHoleByHole') %}
+{% set south = craft.entries.section('theSouthCourseHoleByHole') %}
+{% set dozen = craft.entries.section('theDozenHoleByHole') %}
+{% set sunsetCamera = craft.entries.section('sunsetCamera').first() %}
+
+{# If we are in the holy-by-hole section or courses section #}
+{% if entry.section.handle == "theBluffsHoleByHole" %}
+    {# Get tree of The Bluffs #}
+    {% set parent = craft.entries.id(16).first() %}
+    {% set children = parent.children().level(2) %}
+
+{% elseif entry.section.handle == "theSouthCourseHoleByHole" %}
+    {# Get tree of South Course #}
+    {% set parent = craft.entries.id(96).first() %}
+    {% set children = parent.children().level(2) %}
+
+{% elseif entry.section.handle == "theDozenHoleByHole" %}
+    {# Get tree of South Course #}
+    {% set parent = craft.entries.id(3317).first() %}
+    {% set children = parent.children().level(2) %}
+
+{% else %}
+
+    {% if craft.request.getSegments() | length == 1 %}
+        {# Get current tree if on parent #}
+        {% set parent = craft.entries.id(entry.id).first() %}
+        {% set children = entry.children().level(2) %}
+    {% else %}
+        {# Get Parent Section #}
+        {% set parent = craft.entries.ancestorOf(entry).first() %}
+        {% set children = entry.getParent().children().level(2) %}
+    {% endif %}
+
+{% endif %}
+
+{# Show menu if courses structure has children entries #}
+{% if children | length %}
+<nav class="subpage-menu">
+    <ul class="subpage-menu__list menu">
+
+        {% set activeClass = parent.slug == current ? 'active' %}
+        <li><a class="{{ activeClass }}" href="{{ parent.url }}">{{ parent.title }}</a></li>
+
+        {% nav child in children %}
+            {% set activeClass = child.slug == current ? 'active' %}
+            <li><a class="{{ activeClass }}" href="{{ child.url }}">{{ child.title }}</a></li>
+        {% endnav %}
+
+        {% if (entry.slug == "the-bluffs" or parent.slug == "the-bluffs") and bluffs | length %}
+            {% set activeClass = entry.section.handle == "theBluffsHoleByHole" ? 'active' %}
+            <li><a class="{{ activeClass }}" href="/the-bluffs/hole-1">View Hole By Hole</a></li>
+        {% endif %}
+
+        {% if (entry.slug == "the-south-course" or parent.slug == "the-south-course") and south | length %}
+            {% set activeClass = entry.section.handle == "theSouthCourseHoleByHole" ? 'active' %}
+            <li><a class="{{ activeClass }}" href="/the-south-course/hole-1">View Hole By Hole</a></li>
+        {% endif %}
+
+        {% if ((entry.slug == "the-south-course" or parent.slug == "the-south-course") and south | length) or ((entry.slug == "the-bluffs" or parent.slug == "the-bluffs") and bluffs | length) %}
+            <li><a href="{{ sunsetCamera.url }}">{{ sunsetCamera.title }}</a></li>
+        {% endif %}
+
+        {% if (entry.slug == "the-dozen" or parent.slug == "the-dozen") and dozen | length %}
+            {% set activeClass = entry.section.handle == "theDozenHoleByHole" ? 'active' %}
+            <li><a class="{{ activeClass }}" href="/the-dozen/south-1">View Hole By Hole</a></li>
+        {% endif %}
+
+    </ul>
+</nav>
+{% endif %}

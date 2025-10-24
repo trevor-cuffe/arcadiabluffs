@@ -1,0 +1,44 @@
+{# Get Last Segment #}
+{% set current = craft.request.getLastSegment() %}
+
+{% if template == 'accommodations-entry' %}
+
+    {% set sidebarMenuTitle = 'Accommodations' %}
+
+    {# Get Accommodation Entries #}
+    {% set entries = craft.entries.section('accommodationsStructure') %}
+
+{% elseif template == 'news' or template == 'news-entry' %}
+
+    {% set sidebarMenuTitle = 'News' %}
+    {% set activeClass = current == "news" ? 'active' %}
+
+    {# Get News Categories #}
+    {% set entryIds = craft.entries.section('news').ids() %}
+    {% set entries = craft.categories.relatedTo({ sourceElement: entryIds }).groupId(1).find() %}
+
+
+{% else %}
+
+    {% set sidebarMenuTitle = entry.title %}
+
+    {# Get Accommodation Entries #}
+    {% set entries = craft.entries.section('accommodations') %}
+
+{% endif %}
+
+<nav class="sidebar-menu">
+    <h2 class="sidebar-menu__title">{{ sidebarMenuTitle }}</h2>
+    <ul class="sidebar-menu__list">
+
+        {% if template == 'news' or template == 'news-entry' %}
+            <li><a class="{{ activeClass }}" href="/news">All</a></li>
+        {% endif %}
+
+        {% nav entry in entries %}
+        {% set activeClass = entry.slug == current ? 'active' %}
+            <li><a class="{{ activeClass }}" href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endnav %}
+
+    </ul>
+</nav>

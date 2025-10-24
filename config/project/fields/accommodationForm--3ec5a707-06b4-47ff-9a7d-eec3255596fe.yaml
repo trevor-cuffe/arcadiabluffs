@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
+handle: accommodationForm
+instructions: ''
+name: 'Accommodation Form'
+searchable: true
+settings:
+  limit: '1'
+  selectionLabel: ''
+  sources: '*'
+translationKeyFormat: null
+translationMethod: none
+type: SproutForms_Forms

@@ -1,0 +1,54 @@
+field: 1f8433c3-5249-402b-93b7-8905212628b5 # Home Slider
+fieldLayouts:
+  faf7fb62-ea9c-4865-9dab-08fd90631382:
+    tabs:
+      -
+        fields:
+          f502b915-b86e-4d5e-90b2-dca5cb3f56bf: # Hole Number
+            required: false
+            sortOrder: 2
+          fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: # Image
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  f502b915-b86e-4d5e-90b2-dca5cb3f56bf: # Hole Number
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: holeNumber
+    instructions: ''
+    name: 'Hole Number'
+    searchable: true
+    settings:
+      decimals: '0'
+      max: ''
+      min: '0'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: # Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add an Image'
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+handle: slide
+name: Slide
+sortOrder: 1

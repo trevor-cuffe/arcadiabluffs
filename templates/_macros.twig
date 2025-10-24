@@ -1,0 +1,259 @@
+{% macro introBlock(matrix, template) %}
+
+    {% for block in matrix %}
+
+        {% if block.type == "introBlock" %}
+
+            <header class="intro-block">
+                <h1 class="intro-block__headline">{{ block.headline }}</h1>
+                <div class="intro-block__content">
+                    {{ block.body }}
+                </div>
+            </header>
+
+        {% endif %}
+
+    {% endfor %}
+
+{% endmacro %}
+
+
+{% macro contentBlock(matrix, template) %}
+
+    {% for block in matrix %}
+
+        {% if block.type == "contentBlock" %}
+
+            <div class="content-block">
+
+                <h1 class="content-block__headline">{{ block.headline}}</h1>
+
+                <div class="content-block__content">
+                    {{ block.body }}
+                </div>
+
+                {% if block.linkText and block.linkUrl %}
+                    <a class="btn" href="{{ block.linkUrl }}">{{ block.linkText }}</a>
+                {% endif %}
+
+            </div>
+
+        {% endif %}
+
+    {% endfor %}
+
+{% endmacro %}
+
+
+{% macro linkedList(matrix, template) %}
+
+    {% for block in matrix %}
+
+        {% if block.type == "headline" %}
+
+            <h2 class="{{ template }}-linked-list__headline linked-list__headline">{{ block.headline }}</h2>
+
+        {% elseif block.type == "description" %}
+
+            <div class="{{ template }}-linked-list__description linked-list__description">
+                {{ block.description }}
+            </div>
+
+        {% elseif block.type == "linkedList" %}
+
+            {% if block.linkedList | length %}
+                <ul class="{{ template }}-linked-list__list linked-list__list">
+                    {% for row in block.linkedList %}
+                        <li class="linked-list__list-item">
+                            <a href="{{ row.linkUrl }}" target="_blank">{{ row.linkText }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+        {% endif %}
+
+    {% endfor %}
+
+{% endmacro %}
+
+
+{% macro gallery(handle, template) %}
+
+    {% set assets = handle %}
+
+    <div class="{{ template }}__gallery-wrap gallery-wrap">
+        <h2 class="gallery__headline"><span>Gallery</span></h2>
+        <div class="{{ template }}__gallery gallery">
+            {% for asset in assets %}
+                {% set gallery = craft.imager.transformImage(asset, {
+                    height: 800,
+                    mode: 'crop',
+                }) %}
+                {% if gallery is not null %}
+                    <div class="gallery__slide">
+                        <div class="gallery__slide-inner">
+                            <img class="gallery__slide-image" src="{{ gallery.url }}" alt="{{ asset.title }}" />
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endmacro %}
+
+
+{% macro video(matrix, template) %}
+
+    {% for block in matrix %}
+
+        {% set image = block.backgroundImage.first() %}
+        {% set backgroundImage = craft.imager.transformImage(image, {
+            width: 1200,
+            ratio: 16/9,
+            mode: 'crop',
+        }) %}
+
+        <div class="{{ template }}__video-wrap video-wrap">
+            {% if block.headline | length %}
+                <h2 class="video__headline"><span>{{ block.headline }}</span></h2>
+            {% endif %}
+            <div class="{{ template }}__video video" {% if backgroundImage is not null %}style="background: url({{ backgroundImage.url }}) no-repeat center center / cover;"{% endif %}>
+                {{ block.videoEmbed | raw }}
+                <button role="button" class="video__btn js-video-btn"><span>{{ block.buttonText }}</span></button>
+            </div>
+        </div>
+
+    {% endfor %}
+
+{% endmacro %}
+
+{% macro cta(handle, template) %}
+    <div class="{{ template}}__cta-wrap cta-wrap">
+        <p class="{{ template }}__cta cta">{{ handle }} - <a href="tel:{{ contactInformation.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ contactInformation.phone }}</a></p>
+    </div>
+{% endmacro %}
+
+{% macro sidebarContent(ctas) %}
+
+    {% if ctas is empty %}
+      {% set ctas = craft.entries.id(94) %}
+    {% endif %}
+
+    {% for cta in ctas %}
+
+      {% set image = cta.bannerImage.first() %}
+      {% set banner = craft.imager.transformImage(image, {
+        width: 500,
+        height: 169,
+        mode: 'crop',
+        jpegQuality: 85,
+        position: image.focusPctX ~ '% ' ~ image.focusPctY ~ '%'
+      }) %}
+      {% set bannerUrl = banner.url ?? null %}
+
+    	<section class="sidebar-cta">
+        {% if bannerUrl is defined and bannerUrl | length %}
+          <img class="sidebar-cta__image" src="{{ bannerUrl }}" alt="{{ cta.ctaHeadline }}" />
+        {% endif %}
+    		<div class="sidebar-cta__body">
+          {% if cta.ctaHeadline is defined and cta.ctaHeadline | length %}
+            <h2 class="sidebar-cta__headline">{{ cta.ctaHeadline }}</h2>
+          {% endif %}
+          {% if cta.ctaBody is defined and cta.ctaBody | length %}
+      			<div class="sidebar-cta__content">
+      				{{ cta.ctaBody }}
+      			</div>
+          {% endif %}
+          {% if cta.ctaFooter is defined and cta.ctaFooter | length %}
+            {% for block in cta.ctaFooter %}
+              <div class="sidebar-cta__footer">
+                {{ block.ctaLink | raw }}
+              </div>
+            {% endfor %}
+          {% endif %}
+    		</div>
+    	</section>
+    {% endfor %}
+
+{% endmacro %}
+{# https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2 #}
+{% macro setWeatherIcon(code) %}
+	{% switch code %}
+        {% case 'icon-01d' %}
+            {% set icon = 'wi-forecast-io-clear-day' %}
+        {% case 'icon-01n' %}
+            {% set icon = 'wi-forecast-io-clear-night' %}
+        {% case 'icon-02d' %}
+            {% set icon = 'wi-forecast-io-partly-cloudy-day' %}
+        {% case 'icon-02n' %}
+            {% set icon = 'wi-forecast-io-partly-cloudy-night' %}
+        {% case 'icon-03d' %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+        {% case 'icon-03n' %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+        {% case 'icon-04d' %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+        {% case 'icon-04n' %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+        {% case 'icon-09d' %}
+            {% set icon = 'wi-forecast-io-rain' %}
+        {% case 'icon-09n' %}
+            {% set icon = 'wi-forecast-io-rain' %}
+        {% case 'icon-10d' %}
+            {% set icon = 'wi-forecast-io-rain' %}
+        {% case 'icon-10n' %}
+            {% set icon = 'wi-forecast-io-rain' %}
+        {% case 'icon-11d' %}
+            {% set icon = 'wi-forecast-io-thunderstorm' %}
+        {% case 'icon-11n' %}
+            {% set icon = 'wi-forecast-io-thunderstorm' %}
+        {% case 'icon-13d' %}
+            {% set icon = 'wi-forecast-io-snow' %}
+        {% case 'icon-13n' %}
+            {% set icon = 'wi-forecast-io-snow' %}
+        {% case 'icon-50d' %}
+            {% set icon = 'wi-forecast-io-fog' %}
+        {% case 'icon-50n' %}
+            {% set icon = 'wi-forecast-io-fog' %}
+
+
+        {# {% case 'sleet' %}
+            {% set icon = 'wi-forecast-io-sleet' %}
+        {% case 'strong-wind' %}
+            {% set icon = 'wi-forecast-io-wind' %}
+        {% case 'wind' %}
+            {% set icon = 'wi-forecast-io-wind' %}
+        {% case 'fog' %}
+            {% set icon = 'wi-forecast-io-fog' %}
+        {% case 'cloudy' %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+        {% case 'day-cloudy' %}
+        {% case 'partly-cloudy-day' %}
+            {% set icon = 'wi-forecast-io-partly-cloudy-day' %}
+        {% case 'night-cloudy' %}
+        {% case 'partly-cloudy-night' %}
+            {% set icon = 'wi-forecast-io-partly-cloudy-night' %}
+        {% case 'hail' %}
+            {% set icon = 'wi-forecast-io-hail' %}
+        {% case 'thunderstorm' %}
+            {% set icon = 'wi-forecast-io-thunderstorm' %}
+        {% case 'tornado' %}
+            {% set icon = 'wi-forecast-io-tornado' %} #}
+
+        {% default %}
+            {% set icon = 'wi-forecast-io-cloudy' %}
+    {% endswitch %}
+
+    {% if icon|length %}
+        {{ 'wi ' ~ icon }}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro getCardinal(num) %}
+    {# {% set val = Math.floor((num / 22.5) + 0.5) %}
+    {% set arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"] %}
+    {{ arr[(val % 16)] }} #}
+{% endmacro %}

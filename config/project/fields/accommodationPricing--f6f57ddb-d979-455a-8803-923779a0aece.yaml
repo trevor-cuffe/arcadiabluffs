@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
+handle: accommodationPricing
+instructions: ''
+name: 'Accommodation Pricing'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_accommodationpricing}}'
+  maxBlocks: '4'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

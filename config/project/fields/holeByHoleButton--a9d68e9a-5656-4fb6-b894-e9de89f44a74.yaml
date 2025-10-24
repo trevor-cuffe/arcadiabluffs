@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
+handle: holeByHoleButton
+instructions: ''
+name: 'Hole-by-Hole Button'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_holebyholebutton}}'
+  maxBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

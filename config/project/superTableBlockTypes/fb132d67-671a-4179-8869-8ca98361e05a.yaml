@@ -1,0 +1,83 @@
+field: ab98011d-e66d-4a2d-a51b-a20e625f4fca # Home Accommodations
+fieldLayouts:
+  3d120703-3508-4019-b2ab-d1d0f1086f0c:
+    tabs:
+      -
+        fields:
+          0b7b3861-eb22-491a-8a7c-85aa93cbf287: # Accommodations
+            required: 0
+            sortOrder: 3
+          6c804630-a47b-490c-8e9f-751844e20691: # Headline
+            required: 0
+            sortOrder: 1
+          48e899c2-d911-461d-90e2-6f404a72376f: # Buttons
+            required: 0
+            sortOrder: 4
+          600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: # Text
+            required: 0
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  0b7b3861-eb22-491a-8a7c-85aa93cbf287: # Accommodations
+    contentColumnType: string
+    fieldGroup: null
+    handle: accommodations
+    instructions: ''
+    name: Accommodations
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_accommodations}}'
+      maxBlocks: '3'
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix
+  6c804630-a47b-490c-8e9f-751844e20691: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  48e899c2-d911-461d-90e2-6f404a72376f: # Buttons
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttons
+    instructions: ''
+    name: Buttons
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_buttons}}'
+      maxBlocks: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix
+  600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: 1
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

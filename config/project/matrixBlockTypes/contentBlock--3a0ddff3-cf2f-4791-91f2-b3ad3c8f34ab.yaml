@@ -1,0 +1,90 @@
+field: 5fd92c59-65ac-442f-883a-e5d8d867ed86 # Content Block
+fieldLayouts:
+  27234b37-e75c-4776-8356-86661bf1f0aa:
+    tabs:
+      -
+        fields:
+          8b26cdc7-ea7e-4875-9eb9-ed4bbac17bd0: # Body
+            required: false
+            sortOrder: 2
+          63fb01ad-6b5a-4cff-a65e-bcf1c4f4db11: # Headline
+            required: true
+            sortOrder: 1
+          85ac2980-6656-430b-a5af-ec8d3411d678: # Link URL
+            required: false
+            sortOrder: 4
+          814f1a4f-84ee-4fe3-8342-c04f4d1051da: # Link Text
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  8b26cdc7-ea7e-4875-9eb9-ed4bbac17bd0: # Body
+    contentColumnType: string
+    fieldGroup: null
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  63fb01ad-6b5a-4cff-a65e-bcf1c4f4db11: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  85ac2980-6656-430b-a5af-ec8d3411d678: # Link URL
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkUrl
+    instructions: ''
+    name: 'Link URL'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  814f1a4f-84ee-4fe3-8342-c04f4d1051da: # Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: ''
+    name: 'Link Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentBlock
+name: Content
+sortOrder: 1

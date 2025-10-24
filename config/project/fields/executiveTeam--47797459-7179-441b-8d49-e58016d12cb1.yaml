@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
+handle: executiveTeam
+instructions: ''
+name: 'Executive Team'
+searchable: true
+settings:
+  maxBlocks: null
+translationKeyFormat: null
+translationMethod: none
+type: Neo

@@ -1,0 +1,45 @@
+field: 0a2670e7-65b0-45b5-96be-318580462d30 # Featured Awards
+fieldLayouts:
+  2eaefc8d-9076-4f72-88b8-4805b07683a4:
+    tabs:
+      -
+        fields:
+          803dc76f-627a-4c8f-8082-157ada849bea: # Headline
+            required: 0
+            sortOrder: 1
+          88856313-68a9-44fd-8849-c2e1cecb3695: # Featured Awards
+            required: 0
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  803dc76f-627a-4c8f-8082-157ada849bea: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  88856313-68a9-44fd-8849-c2e1cecb3695: # Featured Awards
+    contentColumnType: string
+    fieldGroup: null
+    handle: featuredAwards
+    instructions: ''
+    name: 'Featured Awards'
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_featuredawards}}'
+      maxBlocks: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix

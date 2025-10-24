@@ -1,0 +1,31 @@
+{% set component = {
+  image: image ?? item.image.first() ?? null,
+  headline: headline ?? item.headline ?? null,
+  button: button ?? item.button ?? null
+} %}
+
+<div class="c-card">
+  <a href="{{ component.button.getUrl() }}" class="c-card__inner">
+    {% if component.image|length %}
+      {% set image = craft.imager.transformImage(component.image, {
+        width: 450,
+        height: 650,
+        mode: 'crop',
+        jpegQuality: 100
+      }) %}
+      <div class="c-card__image">
+        <img src="{{ image ? image.url }}" alt="{{ component.headline }}">
+      </div>
+    {% endif %}
+    <div class="c-card__content">
+      {% if component.headline|length %}
+        <h3 class="c-card__headline">{{ component.headline }}</h3>
+      {% endif %}
+      {% if component.button|length %}
+        <div class="c-card__btn">
+          <button type="button" class="btn btn--outlinedWhite">{{ component.button.getText() }}</button>
+        </div>
+      {% endif %}
+    </div>
+  </a>
+</div>

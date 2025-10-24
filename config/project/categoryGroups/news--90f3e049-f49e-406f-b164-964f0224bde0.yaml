@@ -1,0 +1,10 @@
+handle: news
+name: News
+siteSettings:
+  076725fd-bc7e-48fa-88ce-2d58cbee2749: # Arcadia Bluffs (en-US)
+    hasUrls: true
+    template: news/_category
+    uriFormat: '{% if object.level == 1 %}news/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+structure:
+  maxLevels: null
+  uid: ee62ce4c-5796-48b4-9d15-24e069c88bc3

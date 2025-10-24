@@ -1,0 +1,91 @@
+field: d838d1b8-1c0e-469d-bb0d-e1a9d81413fc # General Contacts
+fieldLayouts:
+  557e157e-1fa6-4523-a117-80dc3d31969c:
+    tabs:
+      -
+        fields:
+          1e5a632d-5444-4c79-9ee0-5c924f29c0d6: # General Contacts
+            required: false
+            sortOrder: 2
+          b69e2489-a432-4e27-ae4b-af86cd023ac2: # Headline
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  1e5a632d-5444-4c79-9ee0-5c924f29c0d6: # General Contacts
+    contentColumnType: text
+    fieldGroup: null
+    handle: generalContacts
+    instructions: ''
+    name: 'General Contacts'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - phone
+                -
+                  - heading
+                  - Phone
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  b69e2489-a432-4e27-ae4b-af86cd023ac2: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: generalContacts
+name: 'General Contacts'
+sortOrder: 1

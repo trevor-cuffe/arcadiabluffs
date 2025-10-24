@@ -1,0 +1,72 @@
+field: 0e38621c-2421-4292-ae5b-aa86828ee673 # Linked List
+fieldLayouts:
+  45466537-869f-4fb4-9e20-e684c498f7ef:
+    tabs:
+      -
+        fields:
+          0f863fe3-b46b-4804-a61e-1b62c737d2f7: # Linked List
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  0f863fe3-b46b-4804-a61e-1b62c737d2f7: # Linked List
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkedList
+    instructions: ''
+    name: 'Linked List'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - linkText
+                -
+                  - heading
+                  - 'Link Text'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - linkUrl
+                -
+                  - heading
+                  - 'Link URL'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: linkedList
+name: 'Linked List'
+sortOrder: 3

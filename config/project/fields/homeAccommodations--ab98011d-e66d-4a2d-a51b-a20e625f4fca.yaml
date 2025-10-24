@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
+handle: homeAccommodations
+instructions: ''
+name: 'Home Accommodations'
+searchable: 1
+settings:
+  columns:
+    0b7b3861-eb22-491a-8a7c-85aa93cbf287: # Accommodations
+      width: ''
+    6c804630-a47b-490c-8e9f-751844e20691: # Headline
+      width: ''
+    48e899c2-d911-461d-90e2-6f404a72376f: # Buttons
+      width: ''
+    600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: # Text
+      width: ''
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationMethod: all
+  selectionLabel: 'Add a row'
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

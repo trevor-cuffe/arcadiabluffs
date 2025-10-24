@@ -1,0 +1,164 @@
+field: 961562fa-ae3d-4a9d-b304-43d727329d53 # Private Event Options
+fieldLayouts:
+  036dcd0f-62aa-4d41-954f-9d8109c35872:
+    tabs:
+      -
+        fields:
+          18d710bf-237c-4a66-9707-1a63cc543871: # Headline
+            required: true
+            sortOrder: 1
+          894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: # Gallery
+            required: false
+            sortOrder: 5
+          669373c9-7338-40ff-b910-b4e164a5c4e4: # Description
+            required: false
+            sortOrder: 2
+          a0ab0cd8-2161-45c5-bf59-4e2d5eef8703: # Details List
+            required: false
+            sortOrder: 3
+          ea52dcf4-0ef2-443e-b70d-7ca566b249bb: # Menus
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  18d710bf-237c-4a66-9707-1a63cc543871: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: # Gallery
+    contentColumnType: string
+    fieldGroup: null
+    handle: gallery
+    instructions: ''
+    name: Gallery
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an Image'
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+  669373c9-7338-40ff-b910-b4e164a5c4e4: # Description
+    contentColumnType: string
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a0ab0cd8-2161-45c5-bf59-4e2d5eef8703: # Details List
+    contentColumnType: text
+    fieldGroup: null
+    handle: detailsList
+    instructions: ''
+    name: 'Details List'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - detail
+                -
+                  - heading
+                  - Detail
+                -
+                  - type
+                  - multiline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  ea52dcf4-0ef2-443e-b70d-7ca566b249bb: # Menus
+    contentColumnType: string
+    fieldGroup: null
+    handle: menus
+    instructions: ''
+    name: Menus
+    searchable: 1
+    settings:
+      columns:
+        183:
+          width: ''
+        184:
+          width: ''
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationMethod: all
+      selectionLabel: 'Add a Menu'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: option
+name: Option
+sortOrder: 1

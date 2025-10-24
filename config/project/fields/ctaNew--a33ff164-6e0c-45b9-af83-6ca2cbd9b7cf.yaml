@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
+handle: ctaNew
+instructions: ''
+name: CTA
+searchable: 1
+settings:
+  columns:
+    b495a4ae-8020-4403-8762-709236a9a0de: # Button URL
+      width: ''
+    be7f6147-5479-418b-890d-9bb9d155088d: # Footer
+      width: ''
+    dffa5382-9565-4238-b6e2-c72b56a76ddf: # Button Text
+      width: ''
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationMethod: all
+  selectionLabel: 'Add a row'
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

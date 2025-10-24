@@ -1,0 +1,153 @@
+field: 13f7924e-3e35-4361-aa55-b3df417f8631 # Home Intro
+fieldLayouts:
+  afa76260-5c76-44e3-873c-5882fd5dfaea:
+    tabs:
+      -
+        fields:
+          9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: # Button URL
+            required: true
+            sortOrder: 6
+          50b6f61a-8262-47d0-b09c-b7b2a0fcd920: # Headline
+            required: true
+            sortOrder: 2
+          474ced41-234f-42f8-8654-ea3aaf7d4018: # Background Image
+            required: true
+            sortOrder: 1
+          697114a4-18e6-4819-90f5-51be64ff46c4: # Button Text
+            required: true
+            sortOrder: 5
+          70584659-d0e8-4e6d-84c6-2f748e564a52: # Label
+            required: true
+            sortOrder: 3
+          aaa2c471-b3eb-4a61-b353-2bb1d712c4f6: # Body
+            required: true
+            sortOrder: 4
+          ebe1e8e8-af10-40ac-8a0d-b531441539e6: # CTA
+            required: true
+            sortOrder: 7
+        name: Content
+        sortOrder: 1
+fields:
+  9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: # Button URL
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: 'Button URL'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  50b6f61a-8262-47d0-b09c-b7b2a0fcd920: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  474ced41-234f-42f8-8654-ea3aaf7d4018: # Background Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: '2'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      restrictFiles: '1'
+      selectionLabel: 'Add an Image'
+      singleUploadLocationSource: '2'
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: FocusPoint_FocusPoint
+  697114a4-18e6-4819-90f5-51be64ff46c4: # Button Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  70584659-d0e8-4e6d-84c6-2f748e564a52: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: 'The text that is in the watermark effect'
+    name: Label
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aaa2c471-b3eb-4a61-b353-2bb1d712c4f6: # Body
+    contentColumnType: string
+    fieldGroup: null
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  ebe1e8e8-af10-40ac-8a0d-b531441539e6: # CTA
+    contentColumnType: text
+    fieldGroup: null
+    handle: cta
+    instructions: 'NOTE: Phone number is brought in dynamically via the phone number in the Globals->Contact Information'
+    name: CTA
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentBlock
+name: 'Content Block'
+sortOrder: 1

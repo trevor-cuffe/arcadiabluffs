@@ -1,0 +1,6 @@
+{% cache for 30 minutes %}
+<div class="nav-weather {% if weather is defined %}mobile-weather{% endif %}">
+    {# <div class="nav-weather__cta"><span class="nav-weather__cta-label">For Reservations &amp; Tee Times</span> <span class="nav-weather__cta-divider">-</span> <a href="tel:{{ contactInformation.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ contactInformation.phone }}</a></div> #}
+    {% include '_partials/weather' %}
+</div>
+{% endcache %}

@@ -1,0 +1,33 @@
+fieldLayouts:
+  af4c01c4-d74c-4647-a097-dc66153c607f:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f1c11c8d-f329-418c-bc33-04ebbd281450 # Live Stream
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: sunsetCamera
+hasTitleField: false
+name: 'Sunset Camera'
+section: c8c999e8-e655-4295-b5e0-892430740cc7 # Sunset Camera
+sortOrder: 1
+titleFormat: '{section.name|raw}'

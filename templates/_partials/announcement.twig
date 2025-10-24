@@ -1,0 +1,16 @@
+{% set component =  {
+  enabled: announcement.announcement.enabledData ?? null,
+  headline: announcement.announcement.headline ?? 'Announcement',
+  text: announcement.announcement.text ?? null,
+} %}
+
+{% if component.enabled %}
+  <div class="c-announcement">
+    <div class="c-announcement__headline">{{ component.headline }}</div>
+    {% if component.text|length %}
+      <div class="c-announcement__text">
+        {{ component.text }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

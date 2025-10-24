@@ -1,0 +1,33 @@
+fieldLayouts:
+  eb5455dc-7c31-42aa-9e73-07e4d3534e3c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7fd45083-2574-45a3-a3a6-e25418eb6925 # Gift Cards Introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 359c3304-e1b4-4382-8e8d-cd4ca6246277 # Thank You Message
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Gift Cards'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: giftCards
+hasTitleField: false
+name: 'Gift Cards'
+section: e60c4308-b5df-400e-8a88-74b253f5ae8c # Gift Cards
+sortOrder: 1
+titleFormat: '{section.name|raw}'

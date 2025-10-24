@@ -1,0 +1,57 @@
+fieldLayouts:
+  f154514f-8d55-47f4-81df-c38729d92512:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 58d379a7-f464-4baf-8555-e5b71c12d289 # Intro Block
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d838d1b8-1c0e-469d-bb0d-e1a9d81413fc # General Contacts
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 2b2449dc-8378-450b-b227-d1947e6d9d6b # Executive Team Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 47797459-7179-441b-8d49-e58016d12cb1 # Executive Team
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d72e767d-d3ea-4731-8e82-2981e56059c7 # Local Airports
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8d3a52a0-3ef6-4c6f-a812-1b9972d643d9 # Apply Callout
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: contact
+hasTitleField: false
+name: Contact
+section: 063e0238-928a-4bde-a39e-d034dabc5030 # Contact
+sortOrder: 1
+titleFormat: '{section.name|raw}'

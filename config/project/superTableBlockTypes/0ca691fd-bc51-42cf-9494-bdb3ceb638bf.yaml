@@ -1,0 +1,91 @@
+field: ea78a6cf-7df9-415d-aa20-2f246a33e383 # Home Dining
+fieldLayouts:
+  547e8b78-82de-4c1e-8f0c-02a503b827cb:
+    tabs:
+      -
+        fields:
+          8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
+            required: 0
+            sortOrder: 2
+          49b14ddc-b863-47cf-9f09-87654c5b6f65: # Headline
+            required: 0
+            sortOrder: 1
+          95930b1a-46ab-472b-bbc8-08004eee0333: # Link
+            required: 0
+            sortOrder: 3
+          bbfb2374-a525-4465-984d-d47c476db769: # Dining Options
+            required: 0
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: 1
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  49b14ddc-b863-47cf-9f09-87654c5b6f65: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  95930b1a-46ab-472b-bbc8-08004eee0333: # Link
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkData
+    instructions: ''
+    name: Link
+    searchable: 1
+    settings:
+      allowCustomText: '1'
+      allowTarget: ''
+      assetSelectionLabel: 'Select an asset'
+      assetSources: '*'
+      categorySelectionLabel: 'Select a category'
+      categorySources: '*'
+      defaultText: ''
+      entrySelectionLabel: 'Select an entry'
+      entrySources: '*'
+      types:
+        - entry
+    translationKeyFormat: null
+    translationMethod: none
+    type: FruitLinkIt
+  bbfb2374-a525-4465-984d-d47c476db769: # Dining Options
+    contentColumnType: string
+    fieldGroup: null
+    handle: diningOptions
+    instructions: ''
+    name: 'Dining Options'
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_diningoptions_1}}'
+      maxBlocks: '3'
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix

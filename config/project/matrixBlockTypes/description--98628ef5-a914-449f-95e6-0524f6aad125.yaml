@@ -1,0 +1,32 @@
+field: 0e38621c-2421-4292-ae5b-aa86828ee673 # Linked List
+fieldLayouts:
+  faf6fedb-b25d-4979-8e98-dd59fa8e910a:
+    tabs:
+      -
+        fields:
+          4abaa592-1034-44af-8c86-16ffeb72caac: # Description
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  4abaa592-1034-44af-8c86-16ffeb72caac: # Description
+    contentColumnType: string
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: description
+name: Description
+sortOrder: 2

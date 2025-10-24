@@ -1,0 +1,19 @@
+fieldLayouts:
+  63f508c4-ad27-404d-b850-2cf10eaa4cf0:
+    tabs:
+      -
+        fields:
+          4acc9aa2-b819-474a-a0ef-aefcddc96fba: # Instagram
+            required: false
+            sortOrder: 3
+          6f49cb67-aebb-4e26-b227-32443ac15a43: # Twitter
+            required: false
+            sortOrder: 2
+          146613ca-0235-4aee-b159-46c9769d9bc6: # Facebook
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+handle: socialLinks
+name: 'Social Links'
+sortOrder: 5

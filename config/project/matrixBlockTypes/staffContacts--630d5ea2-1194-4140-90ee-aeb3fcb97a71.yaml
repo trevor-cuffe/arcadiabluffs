@@ -1,0 +1,129 @@
+field: 3368f213-9481-489f-9612-93e8977b2133 # Staff Contacts
+fieldLayouts:
+  bd2d47b4-f7d7-4806-b6ec-4c2ca3dfef4a:
+    tabs:
+      -
+        fields:
+          9651039f-e19a-4221-8236-603c868cac8d: # Staff Contacts
+            required: false
+            sortOrder: 2
+          bc2a4d93-0407-4784-a6ae-8865c47d745b: # Headline
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  9651039f-e19a-4221-8236-603c868cac8d: # Staff Contacts
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffContacts
+    instructions: ''
+    name: 'Staff Contacts'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - position
+                -
+                  - heading
+                  - Position
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - name
+                -
+                  - heading
+                  - Name
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - handle
+                  - phone
+                -
+                  - heading
+                  - Phone
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col4
+            -
+              __assoc__:
+                -
+                  - handle
+                  - email
+                -
+                  - heading
+                  - Email
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+                -
+                  - col3
+                  - ''
+                -
+                  - col4
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  bc2a4d93-0407-4784-a6ae-8865c47d745b: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: staffContacts
+name: 'Staff Contacts'
+sortOrder: 1

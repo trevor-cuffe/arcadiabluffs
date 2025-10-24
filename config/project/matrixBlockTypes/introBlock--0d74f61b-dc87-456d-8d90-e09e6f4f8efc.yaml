@@ -1,0 +1,188 @@
+field: 959a38bb-a856-451b-a3db-eff0e9bf621e # Course Intro Block
+fieldLayouts:
+  3ea2db2e-a349-4665-99c6-39cbbf8f7e18:
+    tabs:
+      -
+        fields:
+          01b17a99-3521-45f0-87a8-6b2cae017f98: # Link Text
+            required: false
+            sortOrder: 4
+          4b55a38d-f046-45c9-9305-eb9af5c49179: # Headline
+            required: false
+            sortOrder: 1
+          46cca937-8546-4327-8431-bc4a28a8d551: # Second Link Text
+            required: false
+            sortOrder: 6
+          325ae27a-3891-45e9-9543-bb4b0e42c7c0: # Link Url
+            required: false
+            sortOrder: 5
+          9563f531-5d65-4f5f-8162-e18796aa1055: # Second Link Url
+            required: false
+            sortOrder: 7
+          88498e7c-15c7-4de4-9b99-3dd79ea914e1: # Details List
+            required: false
+            sortOrder: 3
+          f718af73-ef50-482d-bcdd-53e98fac6099: # Description
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  01b17a99-3521-45f0-87a8-6b2cae017f98: # Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: ''
+    name: 'Link Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4b55a38d-f046-45c9-9305-eb9af5c49179: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  46cca937-8546-4327-8431-bc4a28a8d551: # Second Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: secondLinkText
+    instructions: ''
+    name: 'Second Link Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  325ae27a-3891-45e9-9543-bb4b0e42c7c0: # Link Url
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkUrl
+    instructions: ''
+    name: 'Link Url'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9563f531-5d65-4f5f-8162-e18796aa1055: # Second Link Url
+    contentColumnType: text
+    fieldGroup: null
+    handle: secondLinkUrl
+    instructions: ''
+    name: 'Second Link Url'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  88498e7c-15c7-4de4-9b99-3dd79ea914e1: # Details List
+    contentColumnType: text
+    fieldGroup: null
+    handle: detailsList
+    instructions: ''
+    name: 'Details List'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - name
+                -
+                  - heading
+                  - Name
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  f718af73-ef50-482d-bcdd-53e98fac6099: # Description
+    contentColumnType: string
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifierConfig: ''
+      purifyHtml: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: introBlock
+name: 'Intro Block'
+sortOrder: 1

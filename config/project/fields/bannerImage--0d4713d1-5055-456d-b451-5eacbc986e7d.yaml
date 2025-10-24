@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
+handle: bannerImage
+instructions: 'Full-screen, featured image for the page. If no image is selected, a default image will be displayed. '
+name: 'Banner Image'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: '2'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  restrictFiles: '1'
+  selectionLabel: 'Add a Banner Image'
+  singleUploadLocationSource: '2'
+  singleUploadLocationSubpath: ''
+  sources: '*'
+  useSingleFolder: '1'
+  viewMode: large
+translationKeyFormat: null
+translationMethod: none
+type: FocusPoint_FocusPoint

@@ -1,0 +1,96 @@
+field: b67c258a-ab57-4bce-8a04-dd8aa2b891dd # Executive Team Row
+fieldLayouts:
+  585e3cce-ec73-4a8b-9751-fc573a385677:
+    tabs:
+      -
+        fields:
+          17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: # Name
+            required: true
+            sortOrder: 2
+          8901e690-f63a-4540-a2f6-9b4d1f0f50a2: # Headshot
+            required: true
+            sortOrder: 1
+          36543e5f-0c33-43d5-a9c4-c024fadc72e4: # Job Title
+            required: true
+            sortOrder: 3
+          d094cea2-a9d5-492a-9663-e179d0878780: # Email
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: # Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamMemberName
+    instructions: ''
+    name: Name
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8901e690-f63a-4540-a2f6-9b4d1f0f50a2: # Headshot
+    contentColumnType: string
+    fieldGroup: null
+    handle: headshot
+    instructions: ''
+    name: Headshot
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+  36543e5f-0c33-43d5-a9c4-c024fadc72e4: # Job Title
+    contentColumnType: text
+    fieldGroup: null
+    handle: jobTitle
+    instructions: ''
+    name: 'Job Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d094cea2-a9d5-492a-9663-e179d0878780: # Email
+    contentColumnType: text
+    fieldGroup: null
+    handle: email
+    instructions: ''
+    name: Email
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: teamMember
+name: 'Team Member'
+sortOrder: 1

@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 5608b240-5464-4dec-ab64-e254b72ad3e6 # Private Events
+handle: privateEventOptions
+instructions: ''
+name: 'Private Event Options'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_privateeventoptions}}'
+  maxBlocks: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Matrix

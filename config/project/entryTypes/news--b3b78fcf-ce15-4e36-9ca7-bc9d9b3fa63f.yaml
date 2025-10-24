@@ -1,0 +1,37 @@
+fieldLayouts:
+  ee7a2d78-6be6-4d76-8448-8b57a35f8207:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: a22ed9d6-243d-484b-add7-97a6dd764551 # Category
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 55488e76-80a0-494a-8adb-4f6cd00535a8 # Body
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0339d640-3170-4fbe-b05e-bc617f16c7c3 # Tags
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: cc80e5df-c1e8-40d1-9935-2b5a608b491a # Sidebar CTAs
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Sidebar
+        sortOrder: 2
+handle: news
+hasTitleField: true
+name: News
+section: 19d04551-214f-4e9b-9a5e-ff66d6fe1028 # News
+sortOrder: 1
+titleFormat: null

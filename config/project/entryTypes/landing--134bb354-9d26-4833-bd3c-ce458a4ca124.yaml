@@ -1,0 +1,41 @@
+fieldLayouts:
+  b913aff2-9061-46e4-aab9-f6f8b998c83c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 716abbda-6a26-45cc-b52c-901463010380 # Page Links
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0e2a9e40-9910-47e0-b2d7-052c425013b2 # Accommodation Extras
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: landing
+hasTitleField: true
+name: Landing
+section: f02a0d8f-d625-405c-a782-87b045350b7f # Dining
+sortOrder: 1
+titleFormat: null

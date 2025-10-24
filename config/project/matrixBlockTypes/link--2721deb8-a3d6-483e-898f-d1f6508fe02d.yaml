@@ -1,0 +1,42 @@
+field: 9432c02d-3660-469e-af4c-461baccc92ce # CTA Footer
+fieldLayouts:
+  dbf7c039-b08e-4daa-b4bb-f60906bcf9bf:
+    tabs:
+      -
+        fields:
+          a152dece-e53d-4f4f-b5ee-a5761cdefe3b: # Link
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  a152dece-e53d-4f4f-b5ee-a5761cdefe3b: # Link
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctaLink
+    instructions: ''
+    name: Link
+    searchable: true
+    settings:
+      allowCustomText: ''
+      allowTarget: ''
+      assetSelectionLabel: 'Select an asset'
+      assetSources: '*'
+      categorySelectionLabel: 'Select a category'
+      categorySources: '*'
+      defaultText: ''
+      entrySelectionLabel: 'Select an entry'
+      entrySources: '*'
+      types:
+        - email
+        - tel
+        - custom
+        - entry
+        - category
+        - asset
+    translationKeyFormat: null
+    translationMethod: none
+    type: FruitLinkIt
+handle: link
+name: Link
+sortOrder: 1

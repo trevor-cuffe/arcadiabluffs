@@ -1,0 +1,19 @@
+fieldLayouts:
+  107cfd93-9291-47f9-aa83-40721975e3a1:
+    tabs:
+      -
+        fields:
+          d6c54b4c-68b2-4867-b935-f068540aca7c: # South Course Address
+            required: false
+            sortOrder: 2
+          f6bcefc8-ac26-490c-a830-4863fd39731d: # Phone
+            required: false
+            sortOrder: 3
+          fd52f2bc-9e8e-4025-9502-fab5a89e68ae: # Arcadia Bluffs Address
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+handle: contactInformation
+name: 'Contact Information'
+sortOrder: 2

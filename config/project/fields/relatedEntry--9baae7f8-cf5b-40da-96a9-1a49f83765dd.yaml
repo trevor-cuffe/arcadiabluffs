@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: aeecde4f-2032-46b1-968b-ad04618e7172 # Menu
+handle: relatedEntry
+instructions: 'Select an existing entry in our sitemap'
+name: 'Related Entry'
+searchable: true
+settings:
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add an Entry'
+  sources: '*'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

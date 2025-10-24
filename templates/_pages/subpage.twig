@@ -1,0 +1,37 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'subpage' %}
+
+{% set title = entry.title %}
+{% set home = 'false' %}
+{% set id = 'subpage' %}
+{% set data_page = 'subpage' %}
+
+{% block body %}
+
+    {% include '_partials/banner' %}
+
+    {% if entry.id in craft.entries.section('coursesStructure').ids() %}
+        {% include '_partials/subpage-menu' %}
+    {% endif %}
+
+    <main class="main main__subpage" role="main">
+
+        <section class="subpage__content-col entry__content">
+            {{ entry.body }}
+            {% if entry.form is defined and entry.form|length %}
+              <div style="margin-top: 40px;">
+                {{ craft.sproutForms.displayForm(entry.form.handle) }}
+              </div>
+            {% endif %}
+        </section>
+
+        <aside class="subpage__sidebar-col">
+            {% if not entry.id in craft.entries.section('coursesStructure').ids() %}
+                {% include '_partials/sidebar-menu' %}
+            {% endif %}
+            {{ macros.sidebarContent(entry.sidebarCtas) }}
+        </aside>
+
+    </main>
+
+{% endblock %}

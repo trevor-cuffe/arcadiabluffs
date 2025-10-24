@@ -1,0 +1,51 @@
+{% import '_macros' as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		{% hook 'seomaticRender' %}
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v={% include '_partials/cache-smash' %}" media="screen" />
+
+		<link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script type="text/javascript" src="/assets/js/lib/modernizr.js"></script>
+
+		<script src="https://use.typekit.net/npc8mcn.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+		{% if craft.config.env == 'production' and googleTagManager['productionSnippet'] | default(false) %}
+			{{ googleTagManager.productionSnippet | raw }}
+		{% endif %}
+
+		{% if craft.config.env == 'staging' and googleTagManager['stagingSnippet'] | default(false) %}
+			{{ googleTagManager.stagingSnippet | raw  }}
+		{% endif %}
+
+		{% if craft.config.env == 'dev' and googleTagManager['developmentSnippet'] | default(false) %}
+			{{ googleTagManager.developmentSnippet | raw }}
+		{% endif %}
+
+	</head>
+
+	<body id="{{ id }}" data-page="{{ data_page }}">
+
+		<div id="page-wrap">
+
+			{% include '_partials/header.twig' %}
+
+			{% block body %}
+			{% endblock %}
+
+			{% include '_partials/footer.twig' %}
+
+		</div><!-- end page-wrap -->
+
+		{% include '_partials/scripts.twig' %}
+
+	</body>
+</html>

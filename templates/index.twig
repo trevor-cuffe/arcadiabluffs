@@ -1,0 +1,126 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'home' %}
+
+{% set title = 'Home' %}
+{% set home = 'true' %}
+{% set id = 'home' %}
+{% set data_page = 'home' %}
+
+{% block body %}
+
+  <section>
+    {% set hero = entry.homeHero %}
+    <div class="c-home-hero">
+      <div class="c-home-hero__video-wrap">
+        <video autoplay loop muted playsinline poster="/assets/img/hero.jpg" class="c-home-hero__video">
+          <source src="/assets/videos/home/hero.mp4" type="video/mp4">
+          <source src="/assets/videos/home/hero.webm" type="video/webm">
+          <source src="/assets/videos/home/hero.ogv" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="c-home-hero__content">
+        {% if hero.headline|length %}
+          <div class="c-home-hero__headline">{{ hero.headline }}</div>
+        {% endif %}
+        <a href="{{ hero.button.getUrl() }}" class="btn btn--outlinedWhite">{{ hero.button.getText() }}</a>
+      </div>
+      
+    </div>
+  </section>
+
+  {% set courses = entry.homeCoursesNew %}
+  <section>
+    <div class="o-home-section">
+      <div class="o-home-section__content">
+        {% if courses.headline|length %}
+          <h2 class="c-headline c-symbol-headline c-symbol-headline--maroon">{{ courses.headline }}</h2>
+        {% endif %}
+        {% if courses.text|length %}
+          <div class="rte">{{ courses.text }}</div>
+        {% endif %}
+        
+      </div>
+      <div class="o-home-section__cards">
+        {% for item in courses.courses.all() %}
+          <div class="o-home-section__card">
+            {% include '_partials/card.twig' %}
+          </div>
+        {% endfor %}
+      </div>
+      {# {% if courses.video|length %}
+          <div class="c-home-video" data-modal-toggle="flyover">
+            <div class="c-home-video__thumbnail">
+              <img src="/assets/img/video-thumbail.jpg" alt="Video Playover">
+              <div class="c-home-video__btn">
+                {% include '_assets/icon-play.svg' %}
+              </div>
+            </div>
+            <div class="c-home-video__content">
+              <div class="c-home-video__headline">{{ courses.videoHeadline }}</div>
+              <div class="c-home-video__subheadline">{{ courses.videoSubheadline }}</div>
+            </div>
+          </div>
+          {% include '_partials/modal' with {
+            id: 'flyover',
+            embed: courses.video
+          } %}
+        {% endif %} #}
+    </div>
+  </section>
+
+
+  {% set accommodations = entry.homeAccommodations %}
+  <section class="o-home-accommodations">
+    <div class="o-home-accommodations__wrapper">
+      <div class="o-home-accommodations__intro">
+        {% if accommodations.headline|length %}
+          <h2 class="c-headline c-symbol-headline c-symbol-headline--maroon">{{ accommodations.headline }}</h2>
+        {% endif %}
+        {% if accommodations.text|length %}
+          <div class="rte">{{ accommodations.text }}</div>
+        {% endif %}
+      </div>
+      <div class="o-home-accommodations__cards">
+        {% for item in accommodations.accommodations.all() %}
+          <div class="o-home-accommodations__card">
+            {% include '_partials/card.twig' %}
+          </div>
+        {% endfor %}
+      </div>
+      {% if accommodations.buttons|length %}
+        <div class="o-home-accommodations__btns">
+          {% for row in accommodations.buttons.all() %}
+            <a href="{{ row.button.url }}" class="btn">{{ row.button.text }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+
+  {% set dining = entry.homeDining %}
+  <section>
+    <div class="o-home-section">
+      <div class="o-home-section__content">
+        {% if dining.headline|length %}
+          <h2 class="c-headline c-symbol-headline c-symbol-headline--maroon">{{ dining.headline }}</h2>
+        {% endif %}
+        {% if dining.text|length %}
+          <div class="rte">{{ dining.text }}</div>
+        {% endif %}
+        {% if dining.linkData|length %}
+          <a href="{{ dining.linkData.url }}" class="cta-link">{{ dining.linkData.text }}</a>
+        {% endif %}
+      </div>
+      <div class="o-home-section__cards">
+        {% for item in dining.diningOptions.all() %}
+          <div class="o-home-section__card">
+            {% include '_partials/card.twig' %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

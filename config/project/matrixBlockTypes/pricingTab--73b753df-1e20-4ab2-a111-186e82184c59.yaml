@@ -1,0 +1,211 @@
+field: f6f57ddb-d979-455a-8803-923779a0aece # Accommodation Pricing
+fieldLayouts:
+  163864e2-4c10-4a52-9285-ca3b83c9dea4:
+    tabs:
+      -
+        fields:
+          1c73a949-4efb-4981-9845-5fc07773a52e: # Tab Text
+            required: true
+            sortOrder: 1
+          4ab5842b-2eac-4ee9-9c9b-67194eda8f76: # Pricing Footer
+            required: false
+            sortOrder: 3
+          95bdf0b9-6728-4e50-badf-be87860d5240: # Golf Add-On Pricing
+            required: false
+            sortOrder: 4
+          3046ec83-6114-4d56-9a73-383b7243bd8d: # Pricing Table
+            required: true
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  1c73a949-4efb-4981-9845-5fc07773a52e: # Tab Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: tabText
+    instructions: ''
+    name: 'Tab Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4ab5842b-2eac-4ee9-9c9b-67194eda8f76: # Pricing Footer
+    contentColumnType: text
+    fieldGroup: null
+    handle: pricingFooter
+    instructions: ''
+    name: 'Pricing Footer'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - comment
+                -
+                  - heading
+                  - Comment
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  95bdf0b9-6728-4e50-badf-be87860d5240: # Golf Add-On Pricing
+    contentColumnType: text
+    fieldGroup: null
+    handle: golfAddOnPricing
+    instructions: ''
+    name: 'Golf Add-On Pricing'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - bluffsPrice
+                -
+                  - heading
+                  - 'Bluffs Price'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - handle
+                  - southCoursePrice
+                -
+                  - heading
+                  - 'South Course Price'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+                -
+                  - col3
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  3046ec83-6114-4d56-9a73-383b7243bd8d: # Pricing Table
+    contentColumnType: text
+    fieldGroup: null
+    handle: pricingTable
+    instructions: ''
+    name: 'Pricing Table'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - price
+                -
+                  - heading
+                  - Price
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: pricingTab
+name: 'Pricing Tab'
+sortOrder: 1

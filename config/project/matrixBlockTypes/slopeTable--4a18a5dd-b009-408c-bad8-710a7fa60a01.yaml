@@ -1,0 +1,91 @@
+field: 7da47c32-f9fb-4a89-9c30-22238ac588bd # Slope Tables
+fieldLayouts:
+  e4fa1745-424a-4a04-8c35-8d438a859872:
+    tabs:
+      -
+        fields:
+          cfc96944-eb9c-41e9-a313-1ac2fac8eec2: # Table
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  cfc96944-eb9c-41e9-a313-1ac2fac8eec2: # Table
+    contentColumnType: text
+    fieldGroup: null
+    handle: table
+    instructions: ''
+    name: Table
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - label
+                -
+                  - heading
+                  - Label
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - rating
+                -
+                  - heading
+                  - Rating
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - handle
+                  - slope
+                -
+                  - heading
+                  - Slope
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+                -
+                  - col3
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: slopeTable
+name: 'Slope Table'
+sortOrder: 1

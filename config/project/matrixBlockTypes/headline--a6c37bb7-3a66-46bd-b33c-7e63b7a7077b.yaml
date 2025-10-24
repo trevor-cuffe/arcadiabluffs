@@ -1,0 +1,31 @@
+field: d72e767d-d3ea-4731-8e82-2981e56059c7 # Local Airports
+fieldLayouts:
+  1df63586-1927-4a74-9164-60cf3935d0a2:
+    tabs:
+      -
+        fields:
+          a2401124-246c-4550-8353-d067b0edddf3: # Headline
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  a2401124-246c-4550-8353-d067b0edddf3: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: headline
+name: Headline
+sortOrder: 1

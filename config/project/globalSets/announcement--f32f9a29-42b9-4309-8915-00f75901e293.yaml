@@ -1,0 +1,13 @@
+fieldLayouts:
+  0045a9eb-898f-411c-a248-7ca60da523cf:
+    tabs:
+      -
+        fields:
+          856cdfa4-1efe-4001-886c-d78fedae1bb6: # Announcement
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+handle: announcement
+name: Announcement
+sortOrder: 1

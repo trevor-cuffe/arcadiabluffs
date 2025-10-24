@@ -1,0 +1,520 @@
+dateModified: 1761324908
+email:
+  fromEmail: thegolfshop@arcadiabluffs.com
+  fromName: 'Arcadia Bluffs'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: tls
+    host: smtp.sendgrid.net
+    password: $SENDGRID_API_KEY
+    port: '587'
+    timeout: '30'
+    useAuthentication: '1'
+    username: apikey
+  transportType: craft\mail\transportadapters\Smtp
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    0a728c97-fd69-4e4d-ab5d-2b16a6fae7bf: Button # Button
+    0a2670e7-65b0-45b5-96be-318580462d30: 'Featured Awards' # Featured Awards
+    00a79945-0f76-4aac-a30c-9d1f11441a84: 'Table Footer' # Table Footer
+    0a870800-b231-49d9-9cb3-c79728880aa0: Headline # Headline
+    0b7b3861-eb22-491a-8a7c-85aa93cbf287: Accommodations # Accommodations
+    0b58b535-d844-4f70-b1e8-40af7e74655e: Contact # Contact
+    0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e: Accommodations # Accommodations
+    0c261a33-5269-4599-9373-5f2b4037a4a1: General # General
+    0ce3edeb-61cd-41d6-9105-8c1d6c8d3be1: 'Staging Snippet' # Staging Snippet
+    0cf694de-6970-4003-8a9d-984c9ba91d3f: 'Course Landing' # Course Landing
+    0d74f61b-dc87-456d-8d90-e09e6f4f8efc: 'Intro Block' # Intro Block
+    0d624f18-bf3c-49b5-becb-533c2185c9b9: 'Button Text' # Button Text
+    0d4713d1-5055-456d-b451-5eacbc986e7d: 'Banner Image' # Banner Image
+    0e2a9e40-9910-47e0-b2d7-052c425013b2: 'Accommodation Extras' # Accommodation Extras
+    0e38621c-2421-4292-ae5b-aa86828ee673: 'Linked List' # Linked List
+    0ef55052-1ae5-436b-b9cd-64be16fcf0db: 'Accommodation Form Content' # Accommodation Form Content
+    0f863fe3-b46b-4804-a61e-1b62c737d2f7: 'Linked List' # Linked List
+    0f2543ba-0c6c-4a11-8c70-9cdefad272dc: 'Custom URL' # Custom URL
+    0fa1c15b-4316-4ff5-8918-6e3511d816d1: 'Items to Note' # Items to Note
+    0fe4d505-7477-47b4-977c-46a424a2984a: 'Private Events' # Private Events
+    1ae0ca48-e9ff-4b0a-aaba-9e8e23627850: Image # Image
+    01b17a99-3521-45f0-87a8-6b2cae017f98: 'Link Text' # Link Text
+    01ba22cd-6d8f-463b-9c88-11dbf58faae0: Headline # Headline
+    1c73a949-4efb-4981-9845-5fc07773a52e: 'Tab Text' # Tab Text
+    1e5a632d-5444-4c79-9ee0-5c924f29c0d6: 'General Contacts' # General Contacts
+    1e939607-791e-4d0d-9e90-da7db5cb3e58: Buttons # Buttons
+    1f3294c6-b9a7-46b9-aaf4-70bcf8b46237: 'Accommodation Buckets' # Accommodation Buckets
+    1f8433c3-5249-402b-93b7-8905212628b5: 'Home Slider' # Home Slider
+    2b8ba9ac-0e3e-470d-9eb1-905e54cb0a6f: 'Mobile Menu' # Mobile Menu
+    2b978a7a-e47d-4687-96a5-51cec43f3b21: Image # Image
+    2b2449dc-8378-450b-b227-d1947e6d9d6b: 'Executive Team Headline' # Executive Team Headline
+    2bc9f6e5-515f-41d6-8c72-a457d3bad7a0: 'Accommodations Overview' # Accommodations Overview
+    2c18936f-5777-4b43-9390-20d3b4f26d51: Metadata # Metadata
+    2cbe1637-1cb0-4d03-a7f0-61e14788e974: Image # Image
+    2d172af8-9b41-467b-a41b-bf1816d2d4f5: 'User Photos' # User Photos
+    2de0d27e-44cc-4a0b-b5b3-4e9537340946: Default # Default
+    2e0e521e-50dc-4fc4-b923-0360760a0c28: Text # Text
+    2e89d38a-eaec-4b2b-943f-d94ba49050d0: Headline # Headline
+    2eac97af-c8bb-4f52-82d5-7b98c2c2bb90: Accommodations # Accommodations
+    2f5576f9-a21b-4d75-95f4-cb5ca418dd3d: 'Home South Course' # Home South Course
+    3a0ddff3-cf2f-4791-91f2-b3ad3c8f34ab: Content # Content
+    3bc66f93-926c-4e23-a173-a807a5e9b3be: Headline # Headline
+    3db517f6-16a9-4595-8c7c-e8a43a106c13: Overview # Overview
+    3dfade29-0d50-45dd-9bf0-0b0a2fed7406: 'Utility Pages' # Utility Pages
+    3e3c3807-85da-43e2-87ea-87e96f52b568: Description # Description
+    3e7bdbb4-2ac0-4b7f-93b9-ea27df0416b6: 'Linked List' # Linked List
+    3ec5a707-06b4-47ff-9a7d-eec3255596fe: 'Accommodation Form' # Accommodation Form
+    4a18a5dd-b009-408c-bad8-710a7fa60a01: 'Slope Table' # Slope Table
+    4ab5842b-2eac-4ee9-9c9b-67194eda8f76: 'Pricing Footer' # Pricing Footer
+    4abaa592-1034-44af-8c86-16ffeb72caac: Description # Description
+    4acc9aa2-b819-474a-a0ef-aefcddc96fba: Instagram # Instagram
+    4afcce5f-4481-4f50-b3fd-b6c42cf22f5c: 'Link URL' # Link URL
+    4b4c2ec7-bb72-4d4e-91e8-1347888be1da: Headline # Headline
+    4b55a38d-f046-45c9-9305-eb9af5c49179: Headline # Headline
+    4c621108-9140-4ef7-b9f1-d1cc39429915: Headline # Headline
+    4cec7041-9e14-4365-91be-1b44b3e5f064: 'Home Courses Headline' # Home Courses Headline
+    4df910d9-30d4-4eac-8b59-435d3143c244: 'Video Headline' # Video Headline
+    5a412ccd-04da-4787-a28c-3ac60d56e066: Awards # Awards
+    5bc9bd11-dc96-4c5f-b37d-80b50b33de90: Course # Course
+    5c1f657e-0879-4a4b-beca-79003bf50cce: Table # Table
+    5c4dce04-09b5-4782-8525-f9501e72fd30: Headline # Headline
+    5eb6460b-344e-42df-91c3-1a71903d2dc3: Metadata # Metadata
+    5fd92c59-65ac-442f-883a-e5d8d867ed86: 'Content Block' # Content Block
+    6a19f290-12c7-40d3-b863-4dfc05650684: Yardage # Yardage
+    6a59f095-a24a-43ce-8443-e3068027152e: Headline # Headline
+    6ad5585d-72c6-4d83-a4f8-c364ef010008: 'Gift Cards' # Gift Cards
+    6c804630-a47b-490c-8e9f-751844e20691: Headline # Headline
+    6cbfc500-609a-481a-b793-29875ee605b0: Headline # Headline
+    6d64ce9e-9612-4838-b11d-4bc1689bff63: 'Accommodation Link' # Accommodation Link
+    6edff37a-8413-428a-9321-f22ec04201c0: Option # Option
+    6ef8762f-934c-4150-9f3a-c723ee40b0b8: Label # Label
+    6f49cb67-aebb-4e26-b227-32443ac15a43: Twitter # Twitter
+    7a6e640f-99e8-482a-b081-4155120a1e4b: 'Caddy Tip' # Caddy Tip
+    7a261b1e-d387-4b69-aa5b-4a21ed282daf: Body # Body
+    7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: Awards # Awards
+    7bbf65b1-050d-451a-a681-13b0bbe158a1: Body # Body
+    07d636bc-6c41-49a1-8dea-face54ffd745: 'Content Block' # Content Block
+    7da47c32-f9fb-4a89-9c30-22238ac588bd: 'Slope Tables' # Slope Tables
+    7ee3439a-7f3c-4587-aa00-541278985f78: 'Secondary Menu' # Secondary Menu
+    7f33d691-0281-4de9-8404-38467e35d592: Button # Button
+    7fd45083-2574-45a3-a3a6-e25418eb6925: 'Gift Cards Introduction' # Gift Cards Introduction
+    8a42b094-a01c-4cf3-b786-910fdfe04f19: 'Arcadia Bluffs (en-US)' # Arcadia Bluffs (en-US)
+    8aae9ee7-1b7b-42fc-92c4-363f55590494: Button # Button
+    8b26cdc7-ea7e-4875-9eb9-ed4bbac17bd0: Body # Body
+    8bd73b98-da2c-4be5-8469-9c6bbf19a909: Image # Image
+    8d3a52a0-3ef6-4c6f-a812-1b9972d643d9: 'Apply Callout' # Apply Callout
+    8d55db04-8897-450d-a5f2-625d80a8eab2: 'Call To Actions' # Call To Actions
+    8e05d955-2d0c-460c-ae59-bc51e9877ea8: CTA # CTA
+    8f38cf3e-638f-4bad-aff2-ecc59c8c6303: Text # Text
+    8f377780-b7ab-44cf-8b1e-47b3d95753c1: 'Background Image' # Background Image
+    8fc495a7-8412-4a5b-be78-376f097ff7ad: 'Dining Option' # Dining Option
+    8fd5e0a2-9d26-411e-a0bb-c3bf76cd05ce: 'Link Text' # Link Text
+    9ac36cd6-f8a3-4875-947e-fe3347369e24: Headline # Headline
+    9baae7f8-cf5b-40da-96a9-1a49f83765dd: 'Related Entry' # Related Entry
+    9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: 'Button URL' # Button URL
+    9d60212d-d586-49a1-9525-1f94da3d85f0: 'CTA Body' # CTA Body
+    9e6b2974-b890-456f-9a6f-75fef8b49e24: 'Footer Menu' # Footer Menu
+    9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
+    010fc3aa-1e18-47e8-a901-a5e2e5b085ba: 'Link Text' # Link Text
+    13cc40b6-25fd-4174-a481-7481f07eddd6: 'Primary Menu' # Primary Menu
+    13f7924e-3e35-4361-aa55-b3df417f8631: 'Home Intro' # Home Intro
+    17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: Name # Name
+    18d710bf-237c-4a66-9707-1a63cc543871: Headline # Headline
+    19d04551-214f-4e9b-9a5e-ff66d6fe1028: News # News
+    23bb67c9-f116-462a-a1dc-d13ac3f62749: 'The Dozen Hole by Hole' # The Dozen Hole by Hole
+    25fa5a36-9a68-4a58-906e-ca514a2e6ad9: Body # Body
+    28b935de-0139-4bde-bdbd-1323a9f2f676: 'Home Courses' # Home Courses
+    37f54e62-0b62-426a-8d3a-d2890b714689: Menus # Menus
+    40b5fa5a-5d55-4783-aac4-a7c9cc3c991d: 'Accommodation Layouts 2' # Accommodation Layouts 2
+    40cf8533-8180-4806-9383-dd85361794b4: Button # Button
+    043b0e31-2a28-45c5-853c-2723fe2ce724: Headline # Headline
+    44ea5fb0-62ec-4f26-8a0c-e1cbb3a93638: Headline # Headline
+    45bc99ca-410d-4b39-8f27-af81c81e4b67: Name # Name
+    46cca937-8546-4327-8431-bc4a28a8d551: 'Second Link Text' # Second Link Text
+    47d754b9-1700-4868-8979-47032cb893cd: Image # Image
+    48e899c2-d911-461d-90e2-6f404a72376f: Buttons # Buttons
+    49b14ddc-b863-47cf-9f09-87654c5b6f65: Headline # Headline
+    50b6f61a-8262-47d0-b09c-b7b2a0fcd920: Headline # Headline
+    55e3b54a-cb7a-4938-9316-9e74e1dde983: Video # Video
+    56eab1e4-7cb0-44ee-826e-6fe37e384e72: 'Hole Layout Image' # Hole Layout Image
+    58d379a7-f464-4baf-8555-e5b71c12d289: 'Intro Block' # Intro Block
+    59b47825-ae19-43d6-a9e5-825daed41a40: General # General
+    62f60a54-795c-49ce-bfd2-42a6f6888d92: Headline # Headline
+    63a1bc53-bfb2-49ae-9d5d-664627389036: 'Video Embed' # Video Embed
+    063e0238-928a-4bde-a39e-d034dabc5030: Contact # Contact
+    63fb01ad-6b5a-4cff-a65e-bcf1c4f4db11: Headline # Headline
+    66adacfc-e086-4bc6-ba8d-275e0c57a057: 'Link URL' # Link URL
+    73b753df-1e20-4ab2-a111-186e82184c59: 'Pricing Tab' # Pricing Tab
+    73bd5700-cbd2-4938-a0a8-4407156c7739: 'Page Link' # Page Link
+    73d0f7c4-cc1c-4018-9fdd-a049d964ad1f: 'Button Text' # Button Text
+    76ea3674-0bc3-44f7-9744-26866d2c7eec: Link # Link
+    78cae37d-a45a-4f37-ad52-6420abc15846: Headline # Headline
+    85ac2980-6656-430b-a5af-ec8d3411d678: 'Link URL' # Link URL
+    86dbf20b-c736-4e15-ad25-8d09e62097d4: 'Accommodation Layouts' # Accommodation Layouts
+    90f3e049-f49e-406f-b164-964f0224bde0: News # News
+    91fccfba-9349-4220-8a0e-5fbb09ac0fcb: Price # Price
+    92f217bd-fa1a-4b9e-8a7d-63dd0d48b6fc: 'Footer Menu' # Footer Menu
+    92f15527-4946-402a-b282-530cd0000b1e: 'Details List' # Details List
+    95bdf0b9-6728-4e50-badf-be87860d5240: 'Golf Add-On Pricing' # Golf Add-On Pricing
+    106e43e9-e710-4ddd-9c6d-ed1df333503c: 'Hole By Hole' # Hole By Hole
+    134bb354-9d26-4833-bd3c-ce458a4ca124: Landing # Landing
+    174c06d2-34aa-4a9b-a13a-6a1e14c85d0d: 'Team Member' # Team Member
+    188eaaca-c881-4c3f-96e3-f0a8fec28636: 'Link URL' # Link URL
+    243afeaf-346c-4b8b-af89-9bd633f855e6: 'General Awards' # General Awards
+    267e048a-991b-4411-a5f9-82512829882d: Home # Home
+    271def6b-0a5d-4ccc-9525-9e2cbb4229a7: ' Button' #  Button
+    325ae27a-3891-45e9-9543-bb4b0e42c7c0: 'Link Url' # Link Url
+    330eac69-3318-422a-861b-d841fff06fef: 'Video Subheadline' # Video Subheadline
+    0339d640-3170-4fbe-b05e-bc617f16c7c3: Tags # Tags
+    359c3304-e1b4-4382-8e8d-cd4ca6246277: 'Thank You Message' # Thank You Message
+    403c56a1-2a2c-4d43-b989-a2667bedbd22: General # General
+    410c8902-a790-4c5f-abc6-814d182c5d7c: Option # Option
+    412a248c-6877-45ce-a772-65fb0c295ac3: Gallery # Gallery
+    474ced41-234f-42f8-8654-ea3aaf7d4018: 'Background Image' # Background Image
+    600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: Text # Text
+    630d5ea2-1194-4140-90ee-aeb3fcb97a71: 'Staff Contacts' # Staff Contacts
+    0658bece-cc90-460f-bedc-b298ebf8037b: 'Secondary Menu' # Secondary Menu
+    682d4143-3055-4236-a72f-d8490d82a088: Description # Description
+    703e4c00-55cf-4b57-a7ee-db4aa2f6e060: 'Home Hero' # Home Hero
+    713a4f89-9d22-4ac3-b163-200d025dcb9e: Phone # Phone
+    716abbda-6a26-45cc-b52c-901463010380: 'Page Links' # Page Links
+    757ad3bc-3bc1-4828-91ee-a35c04d93e82: Image # Image
+    777c02dc-bca5-4517-8d40-5156270131fa: Form # Form
+    795d3c54-ebb3-4576-b04b-17046dd1da7a: Buttons # Buttons
+    801c9bc3-f061-454a-aa4e-acceba0abd52: Landing # Landing
+    803dc76f-627a-4c8f-8082-157ada849bea: Headline # Headline
+    814f1a4f-84ee-4fe3-8342-c04f4d1051da: 'Link Text' # Link Text
+    856cdfa4-1efe-4001-886c-d78fedae1bb6: Announcement # Announcement
+    870d5282-0576-4680-aa71-d2d5147444a2: 'Link Text' # Link Text
+    894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: Gallery # Gallery
+    904b1ef7-78d0-4c7c-8c3d-2bc9e07a74f6: 'Google Tag Manager' # Google Tag Manager
+    947f4266-c25e-42b4-a78e-07321ff4e4d3: 'Tab Text' # Tab Text
+    959a38bb-a856-451b-a3db-eff0e9bf621e: 'Course Intro Block' # Course Intro Block
+    1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
+    2007ae23-1a91-4b01-98d2-06518126607f: Items # Items
+    2110e6ce-45ed-474d-981b-5a7181bf639b: 'Linked List' # Linked List
+    2132d92c-8d1b-447c-9f8d-15b1e166d5f1: Par # Par
+    2695a13b-b6ac-4a11-8504-9e0de953e470: 'Link Text' # Link Text
+    2710ce99-0681-4cfb-bffb-2d1cbb375c57: 'Do Not Show Video Banner' # Do Not Show Video Banner
+    2721deb8-a3d6-483e-898f-d1f6508fe02d: Link # Link
+    2827c480-b1d0-47be-b8af-345fd310bdef: General # General
+    3046ec83-6114-4d56-9a73-383b7243bd8d: 'Pricing Table' # Pricing Table
+    3368f213-9481-489f-9612-93e8977b2133: 'Staff Contacts' # Staff Contacts
+    3738bc09-42b3-421c-8dce-fad8a340f8e8: Headline # Headline
+    4334bbd3-dee9-4b8a-8927-c67108e65b39: 'Content Block' # Content Block
+    4681e11e-24e7-4a51-988a-b49c3cf5f2d1: Body # Body
+    4875ccf4-6252-48af-8570-4a0d048ef253: 'Linked List' # Linked List
+    5608b240-5464-4dec-ab64-e254b72ad3e6: 'Private Events' # Private Events
+    5948f33e-dfdb-4f6c-bc85-fd56f965bf2c: Image # Image
+    6107e2da-178d-4799-9f01-eb1612a6ed70: 'Items to Know' # Items to Know
+    6320fc7f-9902-4986-b81d-38127d780d10: 'Content Block' # Content Block
+    8110e72c-3547-4f09-a48b-5e1237bbd977: 'Gift Cards' # Gift Cards
+    8655b922-94ee-4021-b63c-3fc8c4d8453e: 'Linked List' # Linked List
+    8901e690-f63a-4540-a2f6-9b4d1f0f50a2: Headshot # Headshot
+    8991f73e-fc38-46e6-a4db-49b9f6697e67: Headline # Headline
+    9432c02d-3660-469e-af4c-461baccc92ce: 'CTA Footer' # CTA Footer
+    9563f531-5d65-4f5f-8162-e18796aa1055: 'Second Link Url' # Second Link Url
+    9571c8e4-8952-4181-be89-5209f2fb9f1a: 'Sunset Camera' # Sunset Camera
+    36543e5f-0c33-43d5-a9c4-c024fadc72e4: 'Job Title' # Job Title
+    42076b35-8ab3-43d2-8ae3-980b5c280b2c: Headline # Headline
+    48927e8d-ba4b-4bf3-8531-81fd9408f4ab: 'Open in New Tab?' # Open in New Tab?
+    53352c27-2a47-44a6-a7a3-3d29eaace28e: Headline # Headline
+    53576eb0-38c9-4375-acd7-fb7d17c8f361: Label # Label
+    55488e76-80a0-494a-8adb-4f6cd00535a8: Body # Body
+    62205b39-03b5-46f0-a9c2-f24a32f28b65: 'Accommodation Link 2' # Accommodation Link 2
+    62214a13-5a4f-418d-b06f-2304227d9b58: 'Course History Block' # Course History Block
+    74008c7a-ec55-4cd8-9ad8-7656b11ca99b: Bucket # Bucket
+    75255ce3-487d-4279-9929-c1086221f9e7: Scorecard # Scorecard
+    076725fd-bc7e-48fa-88ce-2d58cbee2749: 'Arcadia Bluffs (en-US)' # Arcadia Bluffs (en-US)
+    087746ce-cab7-47d4-ae7d-7b653a9bbff3: General # General
+    87920f6c-d778-4955-a9eb-3ffbe093bc7e: 'Accommodations Headline' # Accommodations Headline
+    88498e7c-15c7-4de4-9b99-3dd79ea914e1: 'Details List' # Details List
+    95930b1a-46ab-472b-bbc8-08004eee0333: Link # Link
+    96026f6b-4401-4546-b7e2-9549a9ecbf38: Video # Video
+    98628ef5-a914-449f-95e6-0524f6aad125: Description # Description
+    146613ca-0235-4aee-b159-46c9769d9bc6: Facebook # Facebook
+    170684cb-0759-412d-8fe9-a4b049a2cb63: Awards # Awards
+    441642ef-65bb-460b-bf11-9a7b5014942b: Contact # Contact
+    588741f0-e901-4ecc-ae69-e7d46d686399: Headline # Headline
+    669373c9-7338-40ff-b910-b4e164a5c4e4: Description # Description
+    697114a4-18e6-4819-90f5-51be64ff46c4: 'Button Text' # Button Text
+    961562fa-ae3d-4a9d-b304-43d727329d53: 'Private Event Options' # Private Event Options
+    1511856b-ba19-4449-ad46-4f2a1bcd5f13: Description # Description
+    9651039f-e19a-4221-8236-603c868cac8d: 'Staff Contacts' # Staff Contacts
+    11950123-d1fd-4f74-b0cd-016b75c75cb9: Metadata # Metadata
+    27878486-148f-45b2-8d48-2a355ca5370b: Globals # Globals
+    30049732-fd90-437a-a48a-2fac94fdb736: 'Accommodation Pricing Headline' # Accommodation Pricing Headline
+    40372289-dc21-49a5-8fde-84b1b64f4c69: Headline # Headline
+    47333271-0ec9-46c1-8a97-252f94aff32c: Enabled # Enabled
+    47797459-7179-441b-8d49-e58016d12cb1: 'Executive Team' # Executive Team
+    50697409-d605-4863-b4ac-bb97c5881924: 'Link Text' # Link Text
+    70584659-d0e8-4e6d-84c6-2f748e564a52: Label # Label
+    88856313-68a9-44fd-8849-c2e1cecb3695: 'Featured Awards' # Featured Awards
+    a0ab0cd8-2161-45c5-bf59-4e2d5eef8703: 'Details List' # Details List
+    a0e3bb72-886e-4f18-b387-e9f0a10449d5: Excerpt # Excerpt
+    a2e1e7c1-d07f-4b31-b03a-d0851e8d2833: 'Rates Overview' # Rates Overview
+    a5ddb14d-a1eb-4827-99ac-326b355417d0: Label # Label
+    a6c2ddd7-0756-4257-a628-2d1917856bb6: Dining # Dining
+    a6c37bb7-3a66-46bd-b33c-7e63b7a7077b: Headline # Headline
+    a6ec054e-9735-4aa1-811a-f988e4ed82c4: 'Subscribe Tagline' # Subscribe Tagline
+    a7bdb249-2586-48a5-8288-0edf78c1edb5: Newsletter # Newsletter
+    a8ca8d80-d9ef-4912-9927-d7b9c51fb036: 'Content Block' # Content Block
+    a9d68e9a-5656-4fb6-b894-e9de89f44a74: 'Hole-by-Hole Button' # Hole-by-Hole Button
+    a22ed9d6-243d-484b-add7-97a6dd764551: Category # Category
+    a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf: CTA # CTA
+    a47dfd63-9d5b-4709-bda4-d057450f6f56: 'Pricing Footer' # Pricing Footer
+    a61b6ef6-9c03-4a39-8592-63f661928329: Value # Value
+    a83cba39-789b-4caf-8b1b-cc9e8ff854f2: Landing # Landing
+    a152dece-e53d-4f4f-b5ee-a5761cdefe3b: Link # Link
+    a1753ecd-41fd-41a1-bae9-5ee530faed0b: Headline # Headline
+    a2401124-246c-4550-8353-d067b0edddf3: Headline # Headline
+    aa0d55da-ba88-4ad8-a6e1-e1a3138f9c9a: 'Accommodation Layout' # Accommodation Layout
+    aaa2c471-b3eb-4a61-b353-2bb1d712c4f6: Body # Body
+    ab4827b9-4344-4f89-8d9f-435cdb4c0699: 'Accommodation Form Headline' # Accommodation Form Headline
+    ab98011d-e66d-4a2d-a51b-a20e625f4fca: 'Home Accommodations' # Home Accommodations
+    abde984f-81e8-4547-be65-7dc0bbcb1ba1: 'Link URL' # Link URL
+    ac587166-3729-4c1e-98dd-434c49b09657: Headline # Headline
+    acea35fc-de86-48eb-b5dc-f5f07375d2cb: Text # Text
+    acfcfa69-f556-4980-b0b3-b090928d30b3: 'Subscribe Headline' # Subscribe Headline
+    ad6faca2-5d60-4a28-866e-e60da73626d0: Description # Description
+    ad185f5b-815b-4a9e-8e04-99cc8b28b78d: 'Production Snippet' # Production Snippet
+    ae4070aa-bea2-4aea-97c5-9e71e2bf31c8: 'Hole Description' # Hole Description
+    aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
+    afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
+    b0b3b9e3-dbbd-46c7-a23d-11ff59eaa977: 'Rates Table' # Rates Table
+    b3b78fcf-ce15-4e36-9ca7-bc9d9b3fa63f: News # News
+    b4d4ca88-4eef-4fe4-92b6-9bc0ebdba29c: Bucket # Bucket
+    b7b6f2fe-0047-4f19-86c9-07f96a339ebb: Homepage # Homepage
+    b35f4131-c904-4509-bef0-05ef8d79e639: 'Link Text' # Link Text
+    b67c258a-ab57-4bce-8a04-dd8aa2b891dd: 'Executive Team Row' # Executive Team Row
+    b69e2489-a432-4e27-ae4b-af86cd023ac2: Headline # Headline
+    b86d426f-3cb1-445d-acc4-27ea2b665ea0: 'Hole Number' # Hole Number
+    b227f4d1-65be-4007-a1ac-a25781b6e254: 'Button URL' # Button URL
+    b495a4ae-8020-4403-8762-709236a9a0de: 'Button URL' # Button URL
+    b604dac5-2242-4481-a8b5-e8302061bbd6: 'The Bluffs Hole-By-Hole' # The Bluffs Hole-By-Hole
+    b9701f69-ede3-4a6c-b7b7-baa1856327ec: 'Banner Link' # Banner Link
+    ba8b1699-441e-4221-a451-a5a757bed564: General # General
+    ba69b64f-3ff8-44bd-873f-4a69abbdac12: Class # Class
+    bb004981-81b9-4612-824b-5d7781e3ed3f: Image # Image
+    bb91dec7-bb2b-4a8d-9c5b-8e6e1bc2c41d: 'Pricing Tab' # Pricing Tab
+    bbfb2374-a525-4465-984d-d47c476db769: 'Dining Options' # Dining Options
+    bc2a4d93-0407-4784-a6ae-8865c47d745b: Headline # Headline
+    bd1d2269-2e91-44bf-ba51-c56d396d5af9: Headline # Headline
+    bdf57dff-ef5e-48df-858e-00b3deaa82b9: Slide # Slide
+    be7f6147-5479-418b-890d-9bb9d155088d: Footer # Footer
+    bf4ceaad-c57f-48fb-9b8d-f611cd99f684: Image # Image
+    c4b4429d-4470-45da-8c0d-722f8a28277a: 'Call To Actions' # Call To Actions
+    c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: Headline # Headline
+    c7affb6c-68cd-45a6-82b8-fc01f1c8f8eb: 'Contact Information' # Contact Information
+    c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
+    c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
+    c73fb067-a5f1-44c7-9db5-2813a46b689d: Description # Description
+    c4013d73-abb2-4daa-bab0-5b4bf9ffb018: 'Development Snippet' # Development Snippet
+    c332017f-ad74-46b4-9fd3-2a4099534c82: Sidebar # Sidebar
+    ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43: Headline # Headline
+    cc80e5df-c1e8-40d1-9935-2b5a608b491a: 'Sidebar CTAs' # Sidebar CTAs
+    cd118c39-5937-4705-b0db-2cb2bb0b7e9b: Courses # Courses
+    cd572c92-ecc6-4ce7-bea3-e18ec2578bb0: Label # Label
+    cde13c4b-01bc-4465-ae64-8c0473b3931b: Rates # Rates
+    ce1d1e5c-5010-49e7-a946-99d7621d108f: 'Rates List' # Rates List
+    ce962529-a5c5-4d53-8330-22c3a6d5d6da: Awards # Awards
+    cfc96944-eb9c-41e9-a313-1ac2fac8eec2: Table # Table
+    d08f7f35-3977-48a8-8fea-d79697d19e1e: Text # Text
+    d094cea2-a9d5-492a-9663-e179d0878780: Email # Email
+    d1b81997-5115-4665-bf16-07368b4b258c: Label # Label
+    d1ff4ac0-fdc9-443f-81b2-13ba9e55e04a: Homepage # Homepage
+    d5cd7453-de1f-4641-9290-c5d728857cb9: 'Course History' # Course History
+    d6c54b4c-68b2-4867-b935-f068540aca7c: 'South Course Address' # South Course Address
+    d7e2cb09-2acc-4dba-b899-32c132b88c1d: 'Home Footer Image' # Home Footer Image
+    d8ddc7a5-755d-4328-9925-b048f31e343b: Image # Image
+    d9cb1d6c-2477-4fd3-8b36-6d7a1a3161f0: Headline # Headline
+    d72e767d-d3ea-4731-8e82-2981e56059c7: 'Local Airports' # Local Airports
+    d238cda2-b052-4d87-ac6b-67b58f334729: 'Link Text' # Link Text
+    d674a38b-5677-430e-90af-0524d99826b5: Text # Text
+    d838d1b8-1c0e-469d-bb0d-e1a9d81413fc: 'General Contacts' # General Contacts
+    d11198b5-a532-4961-974e-76283d24c133: Menus # Menus
+    d81677db-f7f5-4393-a4c3-6f56ef537fb6: Link # Link
+    dcb31393-3ea4-4a2a-a287-c79dfba31b0a: 'CTA Headline' # CTA Headline
+    ddfbbfff-4c50-4552-a93d-78d990a5b58d: Headline # Headline
+    de302066-8d0b-473e-ad2e-d992a4f236b9: 'Google Tag Manager' # Google Tag Manager
+    df2fb927-6c87-4678-9950-d3a004411ca8: Courses # Courses
+    dffa5382-9565-4238-b6e2-c72b56a76ddf: 'Button Text' # Button Text
+    e0c7ac16-2ecd-4551-8951-1928b93f8112: 'Social Links' # Social Links
+    e1b08e83-a1f1-4c82-9f19-ffa70434df89: 'Dining Options' # Dining Options
+    e3dd14d9-3105-4555-b8c3-9b7328d545ec: Default # Default
+    e7f3e789-e3c9-46ee-add0-1122214d324c: Button # Button
+    e8c3f5f7-be3b-4bed-9337-023c4afa1a12: 'Accommodation Form Success Message' # Accommodation Form Success Message
+    e56bd7a7-0aa9-4c05-bcc4-6b32ad8ab514: 'General Contacts' # General Contacts
+    e56f52dd-3a69-4735-9a6d-17b31a62ece9: Pages # Pages
+    e60c4308-b5df-400e-8a88-74b253f5ae8c: 'Gift Cards' # Gift Cards
+    e88d3e26-82c6-4157-b307-7fc5836aef6d: Description # Description
+    e99bb281-fc38-4e61-8d38-d19934bf170a: 'Background Image' # Background Image
+    e433d8bb-8a45-4fc3-b61c-14241393d931: Button # Button
+    e3849f1a-fd67-4828-937f-f256bba6987b: Image # Image
+    ea52dcf4-0ef2-443e-b70d-7ca566b249bb: Menus # Menus
+    ea78a6cf-7df9-415d-aa20-2f246a33e383: 'Home Dining' # Home Dining
+    ea96aca2-ea64-4585-b084-6cfd680271e1: 'Home Buckets' # Home Buckets
+    ea8304eb-f854-4dc5-b1df-84fbb8c51ea7: Button # Button
+    eaa1ff40-1ac8-4150-8a7f-035477ce3bb8: 'Pricing Table' # Pricing Table
+    eba4f40b-54de-43c7-ab5e-c180559134e8: Button # Button
+    ebccde73-cbc1-4e05-8a10-b7c5afff0f35: Video # Video
+    ebe1e8e8-af10-40ac-8a0d-b531441539e6: CTA # CTA
+    ec8ac1e2-115c-40f8-a9b6-4908a3b442cb: 'Home Buckets Intro' # Home Buckets Intro
+    ed71610d-27b5-4aa6-a099-2437d809df35: CTA # CTA
+    ee9dcd04-b2cf-416c-86a4-45519eae43ef: 'Link Url' # Link Url
+    ef4a4b55-2f0b-4ae9-a241-c51388f63ff5: Description # Description
+    ef70e1b7-cf97-43cd-a65e-52ccff3a11b2: Body # Body
+    ef20410f-26b2-4646-9ede-58291bab1f3a: Handicap # Handicap
+    f0dca59d-239c-4146-813f-2b147b0ce790: Image # Image
+    f02a0d8f-d625-405c-a782-87b045350b7f: Dining # Dining
+    f1c11c8d-f329-418c-bc33-04ebbd281450: 'Live Stream' # Live Stream
+    f3bf264b-71a5-4af8-9f9d-f2830e9cf33f: 'Dining Options' # Dining Options
+    f3cf412c-f5d5-463b-b63a-7b34943ecef5: Headline # Headline
+    f6bcefc8-ac26-490c-a830-4863fd39731d: Phone # Phone
+    f6e6587a-95e2-41ba-9aac-8dce148d0af5: 'Intro Block' # Intro Block
+    f6f57ddb-d979-455a-8803-923779a0aece: 'Accommodation Pricing' # Accommodation Pricing
+    f9d54a63-f4b4-46a3-9822-b08270fddf91: 'Home Courses' # Home Courses
+    f26d2c7f-68be-4794-ad59-7d0d35b3fad5: Excerpt # Excerpt
+    f32f9a29-42b9-4309-8915-00f75901e293: Announcement # Announcement
+    f79b6a44-12a4-4b24-9f20-320d05f18cd6: Rates # Rates
+    f166e127-51d5-4ea5-9f69-0e3973d61913: Rates # Rates
+    f502b915-b86e-4d5e-90b2-dca5cb3f56bf: 'Hole Number' # Hole Number
+    f718af73-ef50-482d-bcdd-53e98fac6099: Description # Description
+    f2452e29-cbb5-4dca-babe-7ac49286ec08: 'Rates Headline' # Rates Headline
+    f9251f64-af2b-45d5-a9bf-b3cbad6bb6f1: Address # Address
+    f56564ff-d257-438d-9faa-6f4e7dfada22: 'The South Course Hole-By-Hole' # The South Course Hole-By-Hole
+    f9434084-7efe-46f8-a382-f958cef7bf2a: 'Link URL' # Link URL
+    fa034695-f302-45c4-818c-842e1842a583: Gallery # Gallery
+    fa18f022-c31d-4657-8393-23057ca360d1: Headline # Headline
+    fb312029-7237-4952-9c49-b1746ce1bdac: 'Background Image' # Background Image
+    fba63ec7-54fe-491d-9313-e6d1e8c51705: 'Content Block' # Content Block
+    fbbd0fba-c1f3-4450-a63f-4ff62a510f01: News # News
+    fbd9a4ad-7fd5-495b-8367-17a73f5b8356: 'Accommodation Layout' # Accommodation Layout
+    fbf63f47-0d11-40d0-9889-18017e89451a: Link # Link
+    fc83a586-4acc-4bc2-a6d4-bb7d430a2a56: 'Mobile Menu' # Mobile Menu
+    fd52f2bc-9e8e-4025-9502-fab5a89e68ae: 'Arcadia Bluffs Address' # Arcadia Bluffs Address
+    fd799323-b5cd-4385-92ab-49dfe5e15759: 'Link URL' # Link URL
+    fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: Image # Image
+plugins:
+  charge:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.1.8
+    settings:
+      charges: null
+      connect: null
+      credentials: null
+      edition: '0'
+      licenseKey: null
+      logs: null
+      mode: null
+      tests: null
+      userreg: null
+      webhook: null
+  cp-sort-cols:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: '1.0'
+    settings: null
+  feed-me:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 4.4.1
+    settings: null
+  field-manager:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  focus-point:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.1
+    settings: null
+  fruit-link-it:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.3.0
+    settings: null
+  imager:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  imager-x:
+    edition: pro
+    enabled: true
+    licenseKey: MH64DAEMH0TLN6390980EK65
+    schemaVersion: 3.0.0
+  neo:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.4.1
+    settings: null
+  seomatic:
+    enabled: '1'
+    licenseKey: RFBY9F0ZR2XU6XC7HAW91919
+    schemaVersion: 3.0.12
+    settings: null
+  sprout-forms:
+    enabled: true
+    settings:
+      allowedAssetVolumes: '*'
+      captchaSettings:
+        barrelstrength\sproutforms\captchas\DuplicateCaptcha:
+          enabled: 0
+        barrelstrength\sproutforms\captchas\HoneypotCaptcha:
+          enabled: 0
+          honeypotFieldName: sprout-forms-hc
+          honeypotScreenReaderMessage: 'Leave this field blank'
+        barrelstrength\sproutforms\captchas\JavascriptCaptcha:
+          enabled: 1
+      cleanupProbability: 1000
+      defaultSection: entries
+      defaultSubmissionMethod: sync
+      defaultUploadLocationSubpath: ''
+      enableEditFormEntryViaFrontEnd: false
+      enableSaveData: true
+      enableSaveDataDefaultValue: true
+      formTemplateId: barrelstrength\sproutforms\formtemplates\AccessibleTemplates
+      pluginNameOverride: ''
+      saveSpamToDatabase: false
+      showNotificationsTab: true
+      showReportsTab: true
+      spamLimit: 500
+      spamRedirectBehavior: redirectAsNormal
+      trackRemoteIp: false
+  super-table:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.2.1
+    settings: null
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  vz-address:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  vz-url:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: '1.2'
+    settings: null
+system:
+  edition: pro
+  live: true
+  name: 'Arcadia Bluffs'
+  retryDuration: null
+  schemaVersion: 3.8.0.1
+  timeZone: UTC
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

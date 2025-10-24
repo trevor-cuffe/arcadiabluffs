@@ -1,0 +1,48 @@
+field: 6107e2da-178d-4799-9f01-eb1612a6ed70 # Items to Know
+fieldLayouts:
+  9c090b7e-e790-4038-90aa-61113f6b8d39:
+    tabs:
+      -
+        fields:
+          01ba22cd-6d8f-463b-9c88-11dbf58faae0: # Headline
+            required: 0
+            sortOrder: 1
+          2007ae23-1a91-4b01-98d2-06518126607f: # Items
+            required: 0
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  01ba22cd-6d8f-463b-9c88-11dbf58faae0: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2007ae23-1a91-4b01-98d2-06518126607f: # Items
+    contentColumnType: text
+    fieldGroup: null
+    handle: items
+    instructions: ''
+    name: Items
+    searchable: 1
+    settings:
+      columns:
+        col1:
+          handle: item
+          heading: Item
+          type: singleline
+          width: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table

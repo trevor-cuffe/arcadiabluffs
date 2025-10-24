@@ -1,0 +1,47 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'private-events' %}
+
+{% set title = 'Private Events' %}
+{% set home = 'false' %}
+{% set id = 'private-events' %}
+{% set data_page = 'privateEvents' %}
+
+{% block body %}
+
+    <main class="main main__{{ template }}" role="main">
+
+        {% for block in entry.privateEventOptions %}
+
+            <div class="private-events-option__wrap">
+
+                <article class="private-events-option">
+                    <h1 class="private-events-option__headline">{{ block.headline }}</h1>
+                    <div class="private-events-option__content">
+                        {{ block.description }}
+                    </div>
+
+                    <div class="private-events-option__list-wrap">
+                        <dl class="private-events-option__list">
+                            {% for row in block.detailsList %}
+                                <dt class="private-events-option__list-label">{{ row.label }}</dt>
+                                <dd class="private-events-option__list-name">{{ row.detail | raw }}</dd>
+                            {% endfor %}
+                        </dl>
+                        {% for row in block.menus %}
+                            {% set linkUrl = row.linkUrl.first().getURL() %}
+                            <p><a href="{{ linkUrl }}" target="_blank" class="private-events-option__list-link cta-link">{{ row.linkText }}</a></p>
+                        {% endfor %}
+                    </div>
+
+                    {{ macros.gallery(block.gallery, template) }}
+                </article>
+
+            </div>
+
+        {% endfor %}
+
+        {{ macros.cta(entry.cta, template) }}
+
+    </main>
+
+{% endblock %}

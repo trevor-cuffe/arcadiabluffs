@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: secondaryMenu
+name: 'Secondary Menu'
+propagationMethod: all
+siteSettings:
+  076725fd-bc7e-48fa-88ce-2d58cbee2749: # Arcadia Bluffs (en-US)
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 590d8e0d-5418-4f2c-934d-40923498acd1
+type: structure

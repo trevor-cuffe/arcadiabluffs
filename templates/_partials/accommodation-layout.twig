@@ -1,0 +1,19 @@
+{% set layout = {
+    mode: 'crop',
+    width: 600,
+    height: 366,
+    quality: 75,
+    position: 'center-center'
+} %}
+
+<div class="layouts__row">
+   <div class="layouts__image">
+       <img src="{{ block.image.first().getURL(layout) }}" alt="{{ block.headline }}" />
+   </div>
+   <div class="layouts__content">
+       <h3 class="layouts__headline">{{ block.headline }}</h3>
+       <div class="layouts__cms">
+           {{ block.description }}
+       </div>
+   </div>
+</div>

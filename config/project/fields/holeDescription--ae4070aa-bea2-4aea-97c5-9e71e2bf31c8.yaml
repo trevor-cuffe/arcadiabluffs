@@ -1,0 +1,16 @@
+contentColumnType: string
+fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
+handle: holeDescription
+instructions: ''
+name: 'Hole Description'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: '1'
+  columnType: text
+  configFile: ''
+  purifyHtml: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

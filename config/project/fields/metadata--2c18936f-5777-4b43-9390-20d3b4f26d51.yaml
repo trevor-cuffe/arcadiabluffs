@@ -1,0 +1,44 @@
+contentColumnType: string
+fieldGroup: 11950123-d1fd-4f74-b0cd-016b75c75cb9 # Metadata
+handle: metadata
+instructions: ''
+name: Metadata
+searchable: true
+settings:
+  assetSources:
+    - 'folder:5'
+  openGraphType: ''
+  openGraphTypeChangeable: '1'
+  robots: ''
+  robotsChangeable: '1'
+  seoDescription: ''
+  seoDescriptionSource: custom
+  seoDescriptionSourceChangeable: '1'
+  seoDescriptionSourceField: title
+  seoFacebookImageIdSource: custom
+  seoFacebookImageIdSourceChangeable: '1'
+  seoFacebookImageIdSourceField: bannerImage
+  seoFacebookImageTransform: ''
+  seoImageIdSource: custom
+  seoImageIdSourceChangeable: '1'
+  seoImageIdSourceField: bannerImage
+  seoImageTransform: ''
+  seoKeywords: ''
+  seoKeywordsSource: custom
+  seoKeywordsSourceChangeable: '1'
+  seoKeywordsSourceField: title
+  seoMainEntityCategory: CreativeWork
+  seoMainEntityOfPage: WebPage
+  seoTitle: ''
+  seoTitleSource: field
+  seoTitleSourceChangeable: '1'
+  seoTitleSourceField: title
+  seoTwitterImageIdSource: custom
+  seoTwitterImageIdSourceChangeable: '1'
+  seoTwitterImageIdSourceField: bannerImage
+  seoTwitterImageTransform: ''
+  twitterCardType: ''
+  twitterCardTypeChangeable: '1'
+translationKeyFormat: null
+translationMethod: none
+type: Seomatic_Meta

@@ -1,0 +1,39 @@
+field: 795d3c54-ebb3-4576-b04b-17046dd1da7a # Buttons
+fieldLayouts:
+  e3f7ea1d-d628-48bf-a7c9-03b7f38505d6:
+    tabs:
+      -
+        fields:
+          e433d8bb-8a45-4fc3-b61c-14241393d931: # Button
+            required: 0
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  e433d8bb-8a45-4fc3-b61c-14241393d931: # Button
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: ''
+    name: Button
+    searchable: 1
+    settings:
+      allowCustomText: '1'
+      allowTarget: '1'
+      assetSelectionLabel: 'Select an asset'
+      assetSources: '*'
+      categorySelectionLabel: 'Select a category'
+      categorySources: '*'
+      defaultText: ''
+      entrySelectionLabel: 'Select an entry'
+      entrySources: '*'
+      types:
+        - email
+        - tel
+        - custom
+        - entry
+        - category
+        - asset
+    translationKeyFormat: null
+    translationMethod: none
+    type: FruitLinkIt

@@ -1,0 +1,61 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'news' %}
+
+{% set title = 'News' %}
+{% set home = 'false' %}
+{% set id = 'news' %}
+{% set data_page = 'news' %}
+
+{# Get Cat Name #}
+{% set catSlug = craft.request.getSegment(2) %}
+{% set category = craft.categories.slug(catSlug).first() %}
+{% set title = category.title %}
+
+{# Fetch all of the entries related to this category #}
+{% set resultCount = 5 %}
+{% paginate craft.entries.relatedTo(category).limit(resultCount) as pageInfo, pageEntries  %}
+
+{% block body %}
+
+    {% include '_partials/banner' %}
+
+    <main class="main main__subpage" role="main">
+
+        <section class="subpage__content-col">
+
+            <ul class="article__list">
+
+                {% for entry in pageEntries %}
+
+                    <li class="article__bucket">
+                        <article>
+                            {% include '_partials/article' %}
+                        </article>
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+            {% if pageInfo.prevUrl or pageInfo.nextUrl %}
+                <nav class="article__nav">
+                    {% if pageInfo.prevUrl %}
+                        <a class="article__nav-prev" href="{{ pageInfo.prevUrl }}">Previous Page</a>
+                    {% endif %}
+
+                    {% if pageInfo.nextUrl %}
+                        <a class="article__nav-next" href="{{ pageInfo.nextUrl }}">Next Page</a>
+                    {% endif %}
+                </nav>
+            {% endif %}
+
+        </section>
+
+        <aside class="subpage__sidebar-col">
+            {% include '_partials/sidebar-menu' %}
+            {{ macros.sidebarContent() }}
+        </aside>
+
+    </main>
+
+{% endblock %}

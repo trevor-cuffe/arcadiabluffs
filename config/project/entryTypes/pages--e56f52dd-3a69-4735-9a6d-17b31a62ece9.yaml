@@ -1,0 +1,49 @@
+fieldLayouts:
+  17b9e017-0095-4de2-b34a-1d6125e6c394:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 55488e76-80a0-494a-8adb-4f6cd00535a8 # Body
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 777c02dc-bca5-4517-8d40-5156270131fa # Form
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: cc80e5df-c1e8-40d1-9935-2b5a608b491a # Sidebar CTAs
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Sidebar
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 3
+handle: pages
+hasTitleField: true
+name: Pages
+section: 3dfade29-0d50-45dd-9bf0-0b0a2fed7406 # Utility Pages
+sortOrder: 1
+titleFormat: null

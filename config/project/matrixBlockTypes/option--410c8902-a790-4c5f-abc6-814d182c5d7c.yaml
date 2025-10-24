@@ -1,0 +1,127 @@
+field: e1b08e83-a1f1-4c82-9f19-ffa70434df89 # Dining Options
+fieldLayouts:
+  53fab780-65a6-42f8-bc88-a80b60549608:
+    tabs:
+      -
+        fields:
+          2cbe1637-1cb0-4d03-a7f0-61e14788e974: # Image
+            required: false
+            sortOrder: 1
+          9f55b922-8eb2-447b-b877-f892b243f70f: # Details
+            required: false
+            sortOrder: 5
+          62f60a54-795c-49ce-bfd2-42a6f6888d92: # Headline
+            required: false
+            sortOrder: 2
+          795d3c54-ebb3-4576-b04b-17046dd1da7a: # Buttons
+            required: false
+            sortOrder: 4
+          d08f7f35-3977-48a8-8fea-d79697d19e1e: # Text
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  2cbe1637-1cb0-4d03-a7f0-61e14788e974: # Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+  9f55b922-8eb2-447b-b877-f892b243f70f: # Details
+    contentColumnType: string
+    fieldGroup: null
+    handle: details
+    instructions: ''
+    name: Details
+    searchable: 1
+    settings:
+      columns:
+        338:
+          width: ''
+        339:
+          width: ''
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationMethod: all
+      selectionLabel: 'Add a detail'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  62f60a54-795c-49ce-bfd2-42a6f6888d92: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  795d3c54-ebb3-4576-b04b-17046dd1da7a: # Buttons
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttons
+    instructions: ''
+    name: Buttons
+    searchable: 1
+    settings:
+      columns:
+        336:
+          width: ''
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationMethod: all
+      selectionLabel: 'Add a button'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  d08f7f35-3977-48a8-8fea-d79697d19e1e: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: option
+name: Option
+sortOrder: 1

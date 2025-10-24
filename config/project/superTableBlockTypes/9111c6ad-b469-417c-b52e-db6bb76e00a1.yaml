@@ -1,0 +1,45 @@
+field: 243afeaf-346c-4b8b-af89-9bd633f855e6 # General Awards
+fieldLayouts:
+  7d9ca38f-51e0-41f1-b511-ce69f8e4d927:
+    tabs:
+      -
+        fields:
+          7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
+            required: 0
+            sortOrder: 2
+          53352c27-2a47-44a6-a7a3-3d29eaace28e: # Headline
+            required: 0
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
+    contentColumnType: string
+    fieldGroup: null
+    handle: awards
+    instructions: ''
+    name: Awards
+    searchable: 1
+    settings:
+      contentTable: '{{%matrixcontent_awards}}'
+      maxBlocks: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Matrix
+  53352c27-2a47-44a6-a7a3-3d29eaace28e: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

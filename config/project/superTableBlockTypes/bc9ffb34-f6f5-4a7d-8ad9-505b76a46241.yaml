@@ -1,0 +1,55 @@
+field: ea52dcf4-0ef2-443e-b70d-7ca566b249bb # Menus
+fieldLayouts:
+  75a0de26-b2eb-4c6a-a983-b8232cd01dd5:
+    tabs:
+      -
+        fields:
+          870d5282-0576-4680-aa71-d2d5147444a2: # Link Text
+            required: 1
+            sortOrder: 1
+          ee9dcd04-b2cf-416c-86a4-45519eae43ef: # Link Url
+            required: 1
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  870d5282-0576-4680-aa71-d2d5147444a2: # Link Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkText
+    instructions: ''
+    name: 'Link Text'
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ee9dcd04-b2cf-416c-86a4-45519eae43ef: # Link Url
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkUrl
+    instructions: ''
+    name: 'Link Url'
+    searchable: 1
+    settings:
+      allowedKinds:
+        - pdf
+      defaultUploadLocationSource: 'folder:b63e33ee-fb83-4e3b-973b-4ec190b3c84d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add Menu'
+      singleUploadLocationSource: 'folder:b63e33ee-fb83-4e3b-973b-4ec190b3c84d'
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets

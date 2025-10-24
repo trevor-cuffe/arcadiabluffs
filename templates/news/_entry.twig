@@ -1,0 +1,44 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'news-entry' %}
+
+{% set title = 'News' %}
+{% set home = 'false' %}
+{% set id = 'news' %}
+{% set data_page = 'news' %}
+
+{% set params = craft.entries.section('news').order('postDate desc') %}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+{% block body %}
+
+    {% include '_partials/banner' %}
+
+    <main class="main main__subpage" role="main">
+
+        <article class="subpage__content-col">
+
+            {% include '_partials/article' %}
+
+            {% if prevEntry or nextEntry %}
+                <nav class="article__nav">
+                    {% if prevEntry %}
+                        <a class="article__nav-prev" href="{{ prevEntry.url }}">Previous Article</a>
+                    {% endif %}
+
+                    {% if nextEntry %}
+                        <a class="article__nav-next" href="{{ nextEntry.url }}">Next Article</a>
+                    {% endif %}
+                </nav>
+            {% endif %}
+
+        </article>
+
+        <aside class="subpage__sidebar-col">
+            {% include '_partials/sidebar-menu' %}
+            {{ macros.sidebarContent(entry.sidebarCtas) }}
+        </aside>
+
+    </main>
+
+{% endblock %}

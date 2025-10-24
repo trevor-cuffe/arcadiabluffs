@@ -1,0 +1,72 @@
+field: d72e767d-d3ea-4731-8e82-2981e56059c7 # Local Airports
+fieldLayouts:
+  c8ceb4dd-658f-4f3a-a350-f46c3db92a47:
+    tabs:
+      -
+        fields:
+          3e7bdbb4-2ac0-4b7f-93b9-ea27df0416b6: # Linked List
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  3e7bdbb4-2ac0-4b7f-93b9-ea27df0416b6: # Linked List
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkedList
+    instructions: ''
+    name: 'Linked List'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - handle
+                  - linkText
+                -
+                  - heading
+                  - 'Link Text'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - handle
+                  - linkUrl
+                -
+                  - heading
+                  - 'Link URL'
+                -
+                  - type
+                  - singleline
+                -
+                  - width
+                  - ''
+      defaults:
+        __assoc__:
+          -
+            - row1
+            -
+              __assoc__:
+                -
+                  - col1
+                  - ''
+                -
+                  - col2
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: linkedList
+name: 'Linked List'
+sortOrder: 2

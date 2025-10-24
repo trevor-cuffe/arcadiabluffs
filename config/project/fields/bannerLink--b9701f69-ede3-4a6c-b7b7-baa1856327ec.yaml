@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
+handle: bannerLink
+instructions: ''
+name: 'Banner Link'
+searchable: true
+settings:
+  allowCustomText: '1'
+  allowTarget: '1'
+  assetSelectionLabel: 'Select an asset'
+  assetSources: '*'
+  categorySelectionLabel: 'Select a category'
+  categorySources: '*'
+  defaultText: ''
+  entrySelectionLabel: 'Select an entry'
+  entrySources: '*'
+  types:
+    - custom
+    - entry
+translationKeyFormat: null
+translationMethod: none
+type: FruitLinkIt

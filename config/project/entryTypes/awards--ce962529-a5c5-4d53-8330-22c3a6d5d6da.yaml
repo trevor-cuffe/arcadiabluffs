@@ -1,0 +1,45 @@
+fieldLayouts:
+  adc6d8af-a523-4842-91fd-f873c0d9db0c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 55488e76-80a0-494a-8adb-4f6cd00535a8 # Body
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0a2670e7-65b0-45b5-96be-318580462d30 # Featured Awards
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 243afeaf-346c-4b8b-af89-9bd633f855e6 # General Awards
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: awards
+hasTitleField: false
+name: Awards
+section: 170684cb-0759-412d-8fe9-a4b049a2cb63 # Awards
+sortOrder: 1
+titleFormat: '{section.name|raw}'

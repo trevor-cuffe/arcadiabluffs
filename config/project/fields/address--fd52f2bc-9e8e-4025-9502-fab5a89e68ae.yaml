@@ -1,0 +1,12 @@
+contentColumnType: string
+fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
+handle: address
+instructions: ''
+name: 'Arcadia Bluffs Address'
+searchable: true
+settings:
+  defaultCountry: US
+  showName: '1'
+translationKeyFormat: null
+translationMethod: none
+type: VzAddress

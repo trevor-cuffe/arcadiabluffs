@@ -1,0 +1,61 @@
+fieldLayouts:
+  2694752c-8d42-493e-86ad-71a8bc1d3e46:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: b86d426f-3cb1-445d-acc4-27ea2b665ea0 # Hole Number
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 56eab1e4-7cb0-44ee-826e-6fe37e384e72 # Hole Layout Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 2132d92c-8d1b-447c-9f8d-15b1e166d5f1 # Par
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ef20410f-26b2-4646-9ede-58291bab1f3a # Handicap
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ae4070aa-bea2-4aea-97c5-9e71e2bf31c8 # Hole Description
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 7a6e640f-99e8-482a-b081-4155120a1e4b # Caddy Tip
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6a19f290-12c7-40d3-b863-4dfc05650684 # Yardage
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ebccde73-cbc1-4e05-8a10-b7c5afff0f35 # Video
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: general
+hasTitleField: true
+name: General
+section: 23bb67c9-f116-462a-a1dc-d13ac3f62749 # The Dozen Hole by Hole
+sortOrder: 1
+titleFormat: null

@@ -1,0 +1,32 @@
+field: d72e767d-d3ea-4731-8e82-2981e56059c7 # Local Airports
+fieldLayouts:
+  79129ec3-add6-48ef-8cab-ce80592f7f4a:
+    tabs:
+      -
+        fields:
+          c73fb067-a5f1-44c7-9db5-2813a46b689d: # Description
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  c73fb067-a5f1-44c7-9db5-2813a46b689d: # Description
+    contentColumnType: string
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifyHtml: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: description
+name: Description
+sortOrder: 3

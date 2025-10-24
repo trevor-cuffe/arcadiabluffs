@@ -1,0 +1,16 @@
+contentColumnType: string
+fieldGroup: 6ad5585d-72c6-4d83-a4f8-c364ef010008 # Gift Cards
+handle: thankYouMessage
+instructions: ''
+name: 'Thank You Message'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: '1'
+  columnType: text
+  configFile: ''
+  purifyHtml: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

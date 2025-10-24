@@ -1,0 +1,69 @@
+fieldLayouts:
+  6f6029a1-4500-419e-872a-ad4e6b13b19f:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b9701f69-ede3-4a6c-b7b7-baa1856327ec # Banner Link
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Do Not Show Video Banner
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 959a38bb-a856-451b-a3db-eff0e9bf621e # Course Intro Block
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 75255ce3-487d-4279-9929-c1086221f9e7 # Scorecard
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 7da47c32-f9fb-4a89-9c30-22238ac588bd # Slope Tables
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fa034695-f302-45c4-818c-842e1842a583 # Gallery
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a9d68e9a-5656-4fb6-b894-e9de89f44a74 # Hole-by-Hole Button
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d5cd7453-de1f-4641-9290-c5d728857cb9 # Course History
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ebccde73-cbc1-4e05-8a10-b7c5afff0f35 # Video
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Metadata
+        sortOrder: 2
+handle: landing
+hasTitleField: true
+name: Landing
+section: cd118c39-5937-4705-b0db-2cb2bb0b7e9b # Courses
+sortOrder: 3
+titleFormat: null

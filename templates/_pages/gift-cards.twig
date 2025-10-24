@@ -1,0 +1,320 @@
+{% extends '_layouts/default.twig' %}
+{% set template = 'gift-cards' %}
+
+{% set title = 'Gift Cards' %}
+{% set home = 'false' %}
+{% set id = 'gift-cards' %}
+{% set data_page = 'giftCards' %}
+
+{% block body %}
+
+    <main class="main main__{{ template }}" role="main">
+
+        {% if entry.giftCardsIntroduction | length %}
+            <div class="gift-cards-intro">
+                {{ entry.giftCardsIntroduction }}
+            </div>
+        {% endif %}
+
+        {% set param = craft.request.getParam('message') %}
+        {% if param == "thank-you" %}
+
+            <div class="gift-cards-confirmation">
+                {% if entry.thankYouMessage | length %}
+                    {{ entry.thankYouMessage }}
+                {% else %}
+                    <p>Your order has been successfully submitted! Thank you!</p>
+                {% endif %}
+            </div>
+
+        {% else %}
+
+            <form id="gc-form" method="post" action="/charge.php" accept-charset="UTF-8">
+
+                <div class="fields">
+
+                   <div class="field-group">
+
+                        <h2 class="form__headline">Gift Cards</h2>
+
+                        <div class="field field--gift">
+                            <label for="amount">Select Your Amount *</label>
+                        </div>
+
+                        <div class="field field--gift">
+                            <input class="btn gc-remove" type="button" value="Remove" aria-label="Remove">
+                            <span class="amount-wrap">
+                                <input required type="number" id="amount" name="amount[]" value="25.00" min="25" aria-label="Amount" data-qty>
+                            </span>
+                        </div>
+
+                        <div class="field field--gift">
+                            <input class="btn gc-add" type="button" value="Add Card" aria-label="Add Card">
+                            <p class="field-instructions">Minimum amount of $25.00</p>
+                        </div>
+
+                    </div><!-- end gift certificate information -->
+
+                    <div class="field-group">
+
+                         <h2 class="form__headline">Gift Boxes</h2>
+
+                         <div class="field field--gift">
+                           <label>Add a Gift Box to your order</label>
+                         </div>
+
+                         <div class="field field--box">
+                            <div class="c-box">
+                              <div class="c-box__image">
+                                <div class="c-box__image-inner">
+                                  <img src="/assets/img/gift-box-1.jpg" alt="Gift Box #1">
+                                </div>
+                              </div>
+                              <div class="c-box__content">
+                                <h3 class="c-box__title">Gift Box #1 <span>-</span> $75.00</h3>
+                                <ul class="c-box__items">
+                                  <li>2 Sleeves of Arcadia Bluffs Titleist Pro-V1</li>
+                                  <li>Arcadia Bluffs Ball Marker</li>
+                                  <li>Arcadia Bluffs Logo Cap (White)</li>
+                                </ul>
+                              </div>
+                              <div class="c-box__qty">
+                                <label for="gift-box-1">Qty.</label>
+                                <input type="number" id="gift-box-1" name="gift-box-1" value="0" min="0" data-unit-cost="75" aria-label="Gift Box 1" data-qty>
+                              </div>
+                            </div>
+                            <div class="c-box">
+                              <div class="c-box__image">
+                                <div class="c-box__image-inner">
+                                  <img src="/assets/img/gift-box-2.jpg" alt="Gift Box #2">
+                                </div>
+                              </div>
+                              <div class="c-box__content">
+                                <h3 class="c-box__title">Gift Box #2 <span>-</span> $50.00</h3>
+                                <ul class="c-box__items">
+                                  <li>Arcadia Bluffs Logo Cap (Blue)</li>
+                                  <li>Arcadia Bluffs Poker Chip</li>
+                                  <li>Arcadia Bluffs Logo Ball</li>
+                                </ul>
+                              </div>
+                              <div class="c-box__qty">
+                                <label for="gift-box-2">Qty.</label>
+                                <input type="number" id="gift-box-2" name="gift-box-2" value="0" min="0" data-unit-cost="50" aria-label="Gift Box 2" data-qty>
+                              </div>
+                            </div>
+                            <div class="c-box">
+                              <div class="c-box__image">
+                                <div class="c-box__image-inner">
+                                  <img src="/assets/img/gift-box-3.jpg" alt="Gift Box #3">
+                                </div>
+                              </div>
+                              <div class="c-box__content">
+                                <h3 class="c-box__title">Gift Box #3 <span>-</span> $25.00</h3>
+                                <ul class="c-box__items">
+                                  <li>Arcadia Bluffs Logo Ball</li>
+                                  <li>Arcadia Bluffs Divot Tool</li>
+                                  <li>Arcadia Bluffs Ball Marker</li>
+                                </ul>
+                              </div>
+                              <div class="c-box__qty">
+                                <label for="gift-box-3">Qty.</label>
+                                <input type="number" id="gift-box-3" name="gift-box-3" value="0" min="0" data-unit-cost="25" aria-label="Gift Box 3" data-qty>
+                              </div>
+                            </div>
+                         </div>
+                     </div>
+
+                    <div class="field-group">
+
+                        <h2 class="form__headline">Payment Information</h2>
+
+                        <div class="field">
+                            <label class="required" for="cardnumber">Card Number *</label>
+                            <input required type="text" name="cardnumber" value="" aria-label="Card Number">
+                        </div>
+
+                        <div class="field">
+                            <label class="required" for="expiry">Expiration Date *</label>
+                            <select required class="field--half" name="expirymonth" id="expirymonth" aria-label="Expiration Month">
+                                <option selected value="01">Jan (01)</option>
+                                <option value="02">Feb (02)</option>
+                                <option value="03">Mar (03)</option>
+                                <option value="04">Apr (04)</option>
+                                <option value="05">May (05)</option>
+                                <option value="06">June (06)</option>
+                                <option value="07">July (07)</option>
+                                <option value="08">Aug (08)</option>
+                                <option value="09">Sep (09)</option>
+                                <option value="10">Oct (10)</option>
+                                <option value="11">Nov (11)</option>
+                                <option value="12">Dec (12)</option>
+                            </select>
+                            <select required class="field--half" name="expiryyear" id="expiryyear" aria-label="Expiration Year">
+                                <option selected value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+
+                   </div><!-- end payment information -->
+
+                   <div class="field-group">
+
+                       <h2 class="form__headline">Billing Address</h2>
+
+                       <div class="field field--half">
+                           <label for="billing-firstname">First Name *</label>
+                           <input required type="text" name="billing-firstname" value="" aria-label="First Name">
+                       </div>
+
+                       <div class="field field--half">
+                           <label for="billing-lastname">Last Name *</label>
+                           <input required type="text" name="billing-lastname" value="" aria-label="Last Name">
+                       </div>
+
+                       <div class="field">
+                           <label for="billing-company">Company</label>
+                           <input type="text" name="billing-company" value="" aria-label="Company">
+                       </div>
+
+                       <div class="field">
+                           <label for="billing-address">Address *</label>
+                           <input required type="text" name="billing-address" value="" aria-label="Address">
+                       </div>
+
+                       <div class="field field--third">
+                           <label for="billing-city">City *</label>
+                           <input required type="text" name="billing-city" value="" aria-label="City">
+                       </div>
+
+                       <div class="field field--third">
+                           <label for="billing-state">State *</label>
+                           <input required type="text" name="billing-state" value="" aria-label="State">
+                       </div>
+
+                       <div class="field field--third">
+                           <label for="billing-zip">Zip Code *</label>
+                           <input required type="text" name="billing-zip" value="" aria-label="Zip Code">
+                       </div>
+
+                       <div class="field">
+                           <label for="billing-country">Country *</label>
+                           <input required type="text" name="billing-country" value="" aria-label="Country">
+                       </div>
+
+                       <div class="field">
+                           <label for="email">Email *</label>
+                           <input required type="email" name="email" value="" aria-label="Email">
+                       </div>
+
+                       <div class="field">
+                           <label for="phone">Phone *</label>
+                           <input required type="text" name="phone" value="" aria-label="Phone">
+                       </div>
+
+                   </div><!-- end billing address -->
+
+                    <div class="field-group">
+
+                        <h2 class="form__headline">Shipping Information</h2>
+
+                        <div class="field field--half">
+                            <label for="shipping-firstname">First Name *</label>
+                            <input required type="text" name="shipping-firstname" value="" aria-label="First Name">
+                        </div>
+
+                        <div class="field field--half">
+                            <label for="shipping-lastname">Last Name *</label>
+                            <input required type="text" name="shipping-lastname" value="" aria-label="Last Name">
+                        </div>
+
+                        <div class="field">
+                            <label for="shipping-company">Company</label>
+                            <input type="text" name="shipping-company" value="" aria-label="Company">
+                        </div>
+
+                        <div class="field">
+                            <label for="shipping-address">Address *</label>
+                            <input required type="text" name="shipping-address" value="" aria-label="Address">
+                        </div>
+
+                        <div class="field field--third">
+                            <label for="shipping-city">City *</label>
+                            <input required type="text" name="shipping-city" value="" aria-label="City">
+                        </div>
+
+                        <div class="field field--third">
+                            <label for="shipping-state">State *</label>
+                            <input required type="text" name="shipping-state" value="" aria-label="State">
+                        </div>
+
+                        <div class="field field--third">
+                            <label for="shipping-zip">Zip Code *</label>
+                            <input required type="text" name="shipping-zip" value="" aria-label="Zip Code">
+                        </div>
+
+                        <div class="field">
+                            <label for="shipping-country">Country *</label>
+                            <input required type="text" name="shipping-country" value="" aria-label="Country">
+                        </div>
+
+                        <div class="field field--half">
+                            <label for="description-to">To</label>
+                            <input type="text" name="description-to" value="" aria-label="To"maxlength="30">
+                        </div>
+
+                        <div class="field field--half">
+                            <label for="description-from">From</label>
+                            <input type="text" name="description-from" value="" aria-label="From" maxlength="30">
+                        </div>
+
+                        <div class="field">
+                            <label for="description-message">Message</label>
+                            <textarea name="description-message" aria-label="Message" maxlength="150"></textarea>
+                            <p class="field-instructions">150 characters maximum</p>
+                        </div>
+
+                    </div><!-- end shipping information -->
+
+                </div><!-- end fields -->
+
+                <div class="cart">
+                  <h2 class="cart__headline">Cart Summary</h2>
+                  <table class="cart__table" data-cart-table>
+                    <thead>
+                      <th>Product</th>
+                      <th>Unit Price</th>
+                      <th>Qty</th>
+                      <th>Total</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                      <td colspan="4"><strong>Total:</strong> <span data-cart-total>$175.00</span></td>
+                    </tfoot>
+                  </table>
+
+                  <div class="cart__captcha">
+                    <input id="error-checker" data-parsley-errors-container="#errorContainer" data-parsley-required="true" value="" type="text" style="display:none;">
+                    <div class="g-recaptcha" data-sitekey="6Leir-cUAAAAAMwezdlYi0mEiXdcxg_hRNWf9KG0" data-callback="recaptchaCallback"></div>
+                    <span id="errorContainer"></span>
+                  </div>
+
+                  <input id="gc-submit" class="cart__btn submit-btn btn" type="submit" value="Place Order" aria-label="Place Order">
+                </div>
+
+            </form>
+
+        {% endif %}
+
+    </main>
+
+{% endblock %}

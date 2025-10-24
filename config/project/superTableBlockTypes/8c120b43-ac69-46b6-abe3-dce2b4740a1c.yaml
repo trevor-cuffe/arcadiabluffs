@@ -1,0 +1,64 @@
+field: 856cdfa4-1efe-4001-886c-d78fedae1bb6 # Announcement
+fieldLayouts:
+  07806612-de8b-44e7-af31-dd5fb01e66bf:
+    tabs:
+      -
+        fields:
+          5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
+            required: 0
+            sortOrder: 2
+          47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
+            required: 0
+            sortOrder: 1
+          d674a38b-5677-430e-90af-0524d99826b5: # Text
+            required: 0
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: 1
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: enabledData
+    instructions: 'Turn the announcement on/off'
+    name: Enabled
+    searchable: 1
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d674a38b-5677-430e-90af-0524d99826b5: # Text
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: 1
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

@@ -1,0 +1,56 @@
+// Left Main, Right Sidebar
+.main__subpage {
+   @extend %wrapper;
+   @extend %lg-section;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.subpage__content-col {
+   width: 100%;
+   margin-bottom: $padding-content-md;
+   @include mq($from: m) {
+      width: calc(70% - #{$padding-content-lg});
+      margin-right: $padding-content-lg;
+      margin-bottom: 0;
+   }
+   @include mq($from: l) {
+      width: calc(80% - #{$padding-content-xl});
+      margin-right: $padding-content-xl;
+      margin-bottom: 0;
+   }
+}
+
+.subpage__sidebar-col {
+   width: 100%;
+   @include mq($from: m) {
+      width: 30%;
+   }
+   @include mq($from: l) {
+      width: 20%;
+   }
+}
+
+
+// Rates and Gift Cards Template
+.main__course-rates {
+   @extend %wrapper;
+}
+
+// Gift Cards
+.main__gift-cards {
+   @extend %sm-wrapper;
+   @extend %lg-section;
+}
+
+.main__course-landing {
+    @extend %lg-section;
+}
+
+// 404
+.main__error {
+   @extend %sm-wrapper;
+   @extend %lg-section;
+   text-align: center;
+}

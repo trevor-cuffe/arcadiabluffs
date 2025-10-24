@@ -1,0 +1,294 @@
+.hole-entry {
+   @include mq($until: m) {
+      padding-bottom: $padding-content-md;
+   }
+}
+
+.hole-entry__nav {
+   @extend %wrapper;
+   @extend %sm-section;
+   border-bottom: 1px solid $white-smoke;
+   display: none;
+   @include mq($from: l) {
+      display: block;
+   }
+}
+
+.hole-entry__nav--dozen {
+   margin-top: 20px;
+}
+
+.hole-entry__nav-list {
+   margin: 0; padding: 0;
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hole-entry__nav-list-item {
+   margin-right: .75rem;
+   position: relative;
+   &:not(.hole-entry__nav-list-item--dozen):nth-child(9) {
+      margin-right: $padding-content-md;
+   }
+   &.hole-entry__nav-list-item--dozen:nth-child(6) {
+      margin-right: $padding-content-md;
+   }
+   &:last-child {
+      margin-right: 0;
+   }
+   a {
+      @extend %sans;
+      @include font-size(16px);
+      text-transform: uppercase;
+      color: darken($gold, 20);
+      width: 30px;
+      height: 30px;
+      display: block;
+      border-radius: 100%;
+      border: 1px solid darken($gold, 20);
+      text-align: center;
+      line-height: 1.95rem;
+      background: transparent;
+      transition: all 200ms ease-in-out;
+   }
+
+   &:hover, &.--active {
+      a {
+         color: $white;
+         background: $maroon;
+         border: 1px solid $maroon;
+      }
+   }
+   &.--active {
+      a {
+         @include font-size(22px);
+         line-height: 2.2rem;
+         width: 35px;
+         height: 35px;
+      }
+   }
+}
+
+.hole-entry__nav-list-item__tag {
+   position: absolute;
+   bottom: 100%;
+}
+
+// Mobile Dropdown Nav
+$size: 3.125rem;
+
+.hole-entry__mobile-nav {
+   display: block;
+   width: 10rem;
+   margin: $padding-content-md auto 0 auto;
+   padding-left: $size + 1rem;
+   padding-right: $size + 1rem;
+   position: relative;
+   box-sizing: content-box;
+   @include mq($from: l) {
+      display: none;
+   }
+}
+
+.hole-entry__mobile-nav-dropdown {
+   display: block;
+   width: 10rem;
+   border: 0;
+   overflow: hidden;
+   background: $gold;
+   text-align: center;
+   @include font-size(20px);
+   height: $size;
+   border-radius: $size;
+   position: relative;
+   &:after {
+      content: '';
+      position: absolute;
+      right: $size * .5;
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid $white;
+      margin-top: -6px;
+   }
+}
+
+.holy-entry__mobile-nav-select {
+   @include font-size(22px);
+   @extend %headline;
+   color: $white;
+   border: 0;
+   outline: none;
+   background: none;
+   background-image: none;
+   -webkit-appearance: none;
+   line-height: 1.4rem;
+   @include vertical-align($position: relative);
+   &:focus {
+      outline: none;
+   }
+}
+
+.hole-entry__mobile-nav-prev, .hole-entry__mobile-nav-next {
+   background: $maroon;
+   height: $size;
+   width: $size;
+   border-radius: $size;
+   display: block;
+   position: absolute;
+   top: 0;
+   transition: all 200ms ease-in-out;
+   span {
+      display: none;
+   }
+   &:before {
+      content: '';
+      background: url(../img/svg/right-arrow-long-white.svg) no-repeat center center / contain;
+      width: 15px;
+      height: 5px;
+      display: block;
+      @include vertical-horizontal-align($position: absolute);
+   }
+}
+
+.hole-entry__mobile-nav-prev {
+   left: 0;
+   &:before {
+      transform: translate(-50%, -50%) rotate(180deg);
+   }
+}
+
+.hole-entry__mobile-nav-next {
+   right: 0;
+}
+
+// Content Styles
+.hole-entry {
+   @extend %wrapper;
+   @extend %lg-section;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   &:before {
+      content: '';
+      @extend %gradient;
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 75%;
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F5F5F5 100%);
+      z-index: -1;
+   }
+}
+
+.hole-entry__image {
+   width: 100%;
+   margin-bottom: $padding-content-sm;
+   @include mq($from: m) {
+      width: calc(40% - #{$padding-content-lg});
+      margin-right: $padding-content-lg;
+      margin-bottom: 0;
+   }
+   img {
+      width: 100%;
+      height: auto;
+      display: block;
+   }
+}
+
+.hole-entry__content {
+   width: 100%;
+   @include mq($from: m) {
+      width: 60%;
+   }
+}
+
+// Header
+.hole-entry__header {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+.hole-entry__headline {
+   @extend %headline;
+   margin-right: $padding-content-sm;
+}
+
+.hole-entry__meta {
+   color: $charcoal;
+}
+
+// Description & Tip
+.hole-entry__tip {
+   font-style: italic;
+   color: $maroon;
+   margin-bottom: 0;
+}
+
+// Yardage
+.hole-entry__yardage {
+   margin-top: $padding-content-md;
+   padding-top: $padding-content-md;
+   border-top: 1px solid $white-smoke;
+}
+
+.hole-entry__yardage-headline {
+   @extend %headline;
+   color: $charcoal;
+   margin-bottom: $padding-content-sm;
+}
+
+.hole-entry__yardage-list {
+   margin: 0; padding: 0;
+   @extend %sans;
+   text-transform: uppercase;
+}
+
+.hole-entry__yardage-item {
+   display: inline-block;
+   text-align: center;
+   padding-right: 1rem;
+   margin-right: 1rem;
+   border-right: 1px solid $white-smoke;
+   &:last-child {
+      border-right: 0;
+      margin-right: 0;
+   }
+   &--champion { color: #4D4D4D; }
+   &--blue     { color: #00529B; }
+   &--white    { color: #A6A6A6; }
+   &--gold     { color: #908B42;}
+   &--red      { color: #BF1E2D; }
+   @include mq(sm) {
+      padding-right: .75rem;
+      margin-right: .75rem;
+   }
+}
+
+.hole-entry__yardage-label {
+   margin-bottom: .25rem;
+}
+
+.hole-entry__yardage-number {
+   margin: 0;
+}
+
+.hole-entry__yardage-label,
+.hole-entry__yardage-number, {
+   @include mq($until: sm) {
+      font-size: 15px;
+   }
+}
+
+// Flyover
+.hole-entry__video-wrap {
+   width: 100%;
+   margin-top: $padding-content-lg;
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   COMPONENTS/RTE
+   ========================================================================== */
+
+
+.c-rte {
+	a {
+		transition: all 200ms ease-in-out;
+		color: $maroon;
+		text-decoration: underline;
+
+		&:hover {
+			color: darken($maroon, 10);
+		}
+	}
+
+	figure {
+		margin: 0;
+		padding: 0;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

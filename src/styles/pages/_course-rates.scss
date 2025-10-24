@@ -1,0 +1,196 @@
+.rates-overview {
+   @extend %lg-section;
+   border-bottom: 1px solid $white-smoke;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.rates-overview__headline {
+   @extend %headline;
+   margin-bottom: $padding-content-sm;
+   width: 100%;
+}
+
+.rates-overview__table-wrap {
+   width: 100%;
+   margin-bottom: $padding-content-md;
+   margin-right: 0;
+   @include mq($from: m) {
+      width: 45%;
+      margin-bottom: 0;
+   }
+}
+
+.rates-overview__table {
+   display: table;
+   width: 100%;
+   border: 1px solid $gold;
+   thead {
+      @extend %sans;
+      @include font-size(18px);
+      background: $maroon;
+      color: $white;
+   }
+   td, th {
+      padding: .5rem .5rem .25rem .5rem;
+      border-bottom: 1px solid $lightgold;
+   }
+   tbody {
+      tr td:first-child {
+         @extend %sans;
+         color: $charcoal;
+      }
+      tr:last-child {
+         td {
+            border-bottom: 0;
+         }
+      }
+   }
+}
+
+.rates-overview__table-footer {
+   @extend %sans;
+   margin-bottom: 0;
+}
+
+.rates-overview__notes {
+   width: 100%;
+   @include mq($from: m) {
+      width: 45%;
+   }
+}
+
+.rates-overview__notes-headline {
+   @extend %sans;
+   color: $gold;
+   margin-bottom: $padding-content-sm;
+}
+
+
+
+// Pricing
+.rates__pricing-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rates__pricing {
+  width: 100%;
+
+  @include mq($from: m) {
+    width: 65%;
+  }
+}
+
+.rates__pricing-headline {
+  @extend %headline;
+  margin-bottom: $padding-content-sm;
+  width: 100%;
+}
+
+.rates__pricing-subheadline {
+  @extend %headline;
+  color: $red;
+  margin-bottom: $padding-content-sm;
+}
+
+.rates__pricing-label {
+  @include font-size(15px);
+  color: $text-color;
+  margin-left: 2rem;
+  @include mq($until: m) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.rates__pricing {
+  .pricing__tab {
+    flex: 1;
+    width: 100%;
+    flex-basis: auto;
+    border: 1px solid $white-smoke;
+    @include mq($from: m) {
+      width: auto;
+      &:not(:last-child) {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.rates__table {
+   display: table;
+   width: 100%;
+   border: 1px solid $gold;
+   thead {
+      @extend %sans;
+      @include font-size(18px);
+      background: $maroon;
+      color: $white;
+   }
+   td, th {
+      padding: .5rem .5rem .25rem .5rem;
+      border-bottom: 1px solid $lightgold;
+   }
+   tbody {
+      tr td:first-child {
+         @extend %sans;
+         color: $charcoal;
+      }
+      tr:last-child {
+         td {
+            border-bottom: 0;
+         }
+      }
+   }
+}
+
+.rates__table-footer {
+   @extend %sans;
+   margin-bottom: 0;
+}
+
+// .rates__notes {
+//    width: 100%;
+//
+//    @include mq($from: m) {
+//       width: 35%;
+//    }
+// }
+
+.rates__notes-headline {
+   @extend %sans;
+   color: $gold;
+   margin-bottom: $padding-content-sm;
+}
+
+// 2x2 Grid
+.rates-list {
+   @extend %lg-section;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.rates-list__item {
+   width: 100%;
+   margin-bottom: $padding-content-md;
+   @include mq($from: m) {
+      width: 45%;
+   }
+}
+
+.rates-list__headline {
+   @extend %headline;
+   color: $charcoal;
+   margin-bottom: .5rem;
+}
+
+.rates-list__price {
+   @extend %sans;
+   @include font-size(18px);
+   color: $charcoal;
+}

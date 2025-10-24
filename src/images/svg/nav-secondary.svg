@@ -1,0 +1,11 @@
+<svg width="100%" height="44px" viewBox="0 0 795 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.203125,0 L794.860352,0 L794.860352,43 C794.860352,43 131.314453,43 79.0019531,43 C26.6894531,43 0.203125,0 0.203125,0 Z" id="path-1"></path>
+    </defs>
+    <mask id="mask-2" fill="white">
+        <use xlink:href="#path-1"></use>
+    </mask>
+    <use id="Rectangle-3" stroke="none" fill="#663333" fill-rule="evenodd" xlink:href="#path-1"></use>
+</svg>

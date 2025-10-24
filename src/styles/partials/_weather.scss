@@ -1,0 +1,185 @@
+// Extends
+%weather-panel-section {
+   padding: 1.5rem 2rem;
+   border-bottom: 1px solid #663333;
+}
+
+%weather-panel-headline {
+   @include font-size(18px);
+   color: #A6A6A6;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 1rem;
+}
+
+// Default Styles
+.weather-sm, .weather-panel {
+   background: darken($maroon, 10);
+}
+
+// Weather Widget Small
+.weather-sm {
+   @include font-size(17px);
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 2.75rem;
+   color: $gold;
+   cursor: pointer;
+   border: 0;
+   outline: none;
+   margin: 0; padding: 0;
+   transition: all 200ms ease-in-out;
+   &:hover {
+      background: darken($maroon, 15);
+   }
+   @include mq($until: sm) {
+      width: 5.5rem;
+   }
+   @include mq($from: sm) {
+      width: 6.125rem;
+   }
+}
+
+.weather-sm__inner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: nowrap;
+   margin: 0 auto;
+}
+
+.weather-sm__temp {
+   margin-right: 5px;
+}
+
+.weather-sm__icon {
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   @include font-size(18px);
+   &:before {
+      line-height: 25px;
+   }
+   img {
+      width: 100%;
+      height: auto;
+      display: block;
+   }
+}
+
+// Weather Widget Panel
+.weather-panel {
+   position: absolute;
+   top: 100%; right: 0;
+   width: 17rem;
+   display: block;
+   margin: 0; padding: 0;
+   @include font-size(18px);
+   color: $white;
+   border-bottom: 3px solid $smoke;
+   display: none;
+   z-index: 9999;
+   &.show {
+      display: block;
+   }
+}
+
+.weather-panel__headline {
+   @extend %weather-panel-section;
+   @include font-size(22px);
+   text-align: center;
+   margin: 0;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+// Today's Weather
+.weather-panel__today {
+   @extend %weather-panel-section;
+}
+
+.weather-panel__today-headline {
+   @extend %weather-panel-headline;
+}
+
+.weather-panel__today-forcast {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 0;
+   color: $white;
+}
+
+.weather-panel__today-forecast-label {
+   text-transform: capitalize;
+}
+
+.weather-panel__today-forecast-icon {
+   @include font-size(50px);
+   margin-right: 1rem;
+}
+
+// Today's Conditions
+.weather-panel__conditions {
+   @extend %weather-panel-section;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.weather-panel__conditions-headline {
+   @extend %weather-panel-headline;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.weather-panel__conditions-temp {
+   @include font-size(70px);
+   margin: 0;
+   width: 50%;
+}
+
+.weather-panel__conditions-list {
+   @extend %dl-flex;
+   justify-content: flex-start;
+   width: 50%;
+   dt {
+      margin-right: 5px;
+   }
+}
+
+// 5 Day Forecast
+.weather-panel__five-day {
+   @extend %weather-panel-section;
+   border-bottom: 0;
+}
+
+.weather-panel__five-day-headline {
+   @extend %weather-panel-headline;
+}
+
+.weather-panel__five-day-list {
+   @extend %dl-flex;
+   justify-content: space-between;
+}
+
+.weather-panel__five-day-label {
+   width: 50%;
+}
+.weather-panel__five-day-temp {
+   width: 40%;
+}
+.weather-panel__five-day-icon {
+   width: 10%;
+   text-align: center;
+}
+
+// Sunset camera link
+.weather-panel__link {
+   display: block;
+   text-align: center;
+   margin: 0 auto 15px auto;
+}

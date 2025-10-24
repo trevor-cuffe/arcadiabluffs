@@ -1,0 +1,62 @@
+.banner {
+   height: 440px;
+   padding: $padding-content-md;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.banner__headline {
+   @extend %symbol-headline;
+   @extend %symbol-headline--white;
+   @extend %serif;
+   @include font-size(40px);
+   text-transform: uppercase;
+   letter-spacing: 3.75px;
+   text-align: center;
+   color: $white;
+   @include vertical-align($position: relative);
+}
+
+// Course Entry Banner
+.banner__hole-entry {
+   .banner__headline, .banner__link {
+      @extend %sans;
+      @include font-size(18px);
+      text-transform: uppercase;
+      color: $white;
+   }
+   .banner__headline {
+      letter-spacing: 1px;
+      padding-top: 0;
+      position: absolute;
+      top: auto;
+      bottom: $padding-content-sm;
+      right: $padding-content-md;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+      &:before {
+         content: '';
+         display: none;
+      }
+      @include mq($until: m) {
+         right: $padding-content-sm;
+      }
+   }
+   .banner__link {
+      @extend .cta-link--left;
+      position: absolute;
+      top: $padding-content-sm;
+      left: $padding-content-md;
+      &:before {
+         background: url(../img/svg/right-arrow-white.svg) no-repeat center center / contain;
+      }
+      &:hover {
+         color: darken($white, 10);
+      }
+      @include mq($until: m) {
+         left: $padding-content-sm;
+      }
+   }
+}

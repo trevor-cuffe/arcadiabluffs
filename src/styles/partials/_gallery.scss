@@ -1,0 +1,154 @@
+.gallery__headline {
+	@extend %headline;
+	text-align: center;
+	margin-bottom: $padding-content-md;
+	span {
+		position: relative;
+		border-left: 1px solid $white-smoke;
+		border-right: 1px solid $white-smoke;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 25px;
+		display: inline-block;
+		&:before, &:after {
+			 position: absolute;
+			 content: '';
+			 width: 2000px;
+			 height: 1px;
+			 background-color: $white-smoke;
+			 top: 50%;
+			 right: 100%;
+		}
+		&:after {
+			 left: 100%;
+		}
+	}
+}
+
+.gallery-wrap {
+	margin-left: $padding-content-sm;
+	margin-right: $padding-content-sm;
+	width: 100%;
+}
+
+.gallery {
+	@extend %md-wrapper;
+	max-width: 1400px;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	@include mq($until: m) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 3rem;
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: 135px;
+		right: 12px;
+		margin: 0; padding: 0;
+		list-style: none;
+		width: 25px;
+		padding-bottom: $padding-content-sm;
+		border-bottom: 1px solid $gold;
+		li {
+			margin-left: auto;
+			margin-right: auto;
+			width: 12px;
+			height: 12px;
+			display: block;
+			text-indent: -9999px;
+			outline: none;
+			background: transparent;
+			border: 1px solid $gold;
+			border-radius: 12px;
+			cursor: pointer;
+			margin-bottom: 1.25rem;
+			transition: all 200ms ease-in-out;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:hover, &.slick-active {
+				background: $gold;
+			}
+		}
+		@include mq($until: m) {
+			@include horizontal-align($position: absolute);
+			bottom: 0;
+			width: auto;
+			border-bottom: 0;
+			text-align: center;
+			padding-bottom: 0;
+			height: 12px;
+			li {
+				display: inline-block;
+				margin-right: 1rem;
+				margin-bottom: 0;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.slick-arrow {
+		@extend %shadow;
+		position: absolute;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: $maroon url(../img/svg/right-arrow-white.svg) no-repeat center center;
+		background-size: 5px 9px;
+		border: 0;
+		outline: none;
+		border-radius: 100%;
+		text-indent: -9999px;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			background: darken($maroon, 10) url(../img/svg/right-arrow-white.svg) no-repeat center center
+		}
+		@include mq($until: m) {
+			display: none;
+		}
+	}
+	.slick-prev {
+		top: 50%;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	.slick-next {
+		top: 50%;
+		right: 0;
+	}
+}
+
+.gallery-wrap .slick-slide {
+	margin: 0 20px;
+}
+
+.gallery__slide {
+	width: auto;
+	text-align: center;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: 100%;
+		padding-top: 65.918%; //675 / 1024
+	}
+}
+
+.gallery__slide-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.gallery__slide-image {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+}

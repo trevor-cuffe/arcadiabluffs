@@ -1,0 +1,34 @@
+// =============================================================================
+// COMPONENTS/ANNOUNCEMENT
+// =============================================================================
+
+
+.c-announcement {
+  background: rgba(54, 54, 54, 0.9);
+  width: 100%;
+  padding: 15px;
+  z-index: 998;
+  text-align: center;
+}
+
+.c-announcement__headline {
+  @extend %sans;
+  color: $white;
+  // text-transform: uppercase;
+  
+}
+
+.c-announcement__text {
+  font-size: 13px;
+  line-height: 21px;
+  color: #CBCBC1;
+  margin-top: 5px;
+
+  p {
+    margin: 0;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

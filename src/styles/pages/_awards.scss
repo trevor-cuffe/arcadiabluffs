@@ -1,0 +1,125 @@
+/* ==========================================================================
+   PAGES/AWARDS
+   ========================================================================== */
+
+
+
+/*
+   Featured Awards
+   ========================================================================== */
+
+.c-featured-awards__headline {
+	margin-bottom: 20px;
+
+	@include mq($from: m) {
+		margin-bottom: 50px;
+	}
+}
+
+.c-featured-award {
+	padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $white-smoke;
+		margin-bottom: 50px;
+	}
+}
+
+.c-featured-award__image {
+	width: 100%;
+	margin-bottom: 25px;
+
+	@include mq($from: l) {
+		width: 35%;
+		padding-right: 25px;
+		margin-bottom: 0;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.c-featured-award__content {
+	width: 100%;
+
+	@include mq($from: l) {
+		width: 65%;
+	}
+
+	a {
+		@extend .cta-link;
+		text-decoration: none;
+	}
+}
+
+
+/*
+   General Awards
+   ========================================================================== */
+
+.c-general-awards__headline {
+	margin-bottom: 20px;
+
+	@include mq($from: m) {
+		margin-bottom: 50px;
+	}
+}
+
+.c-general-awards__grid {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include mq($from: m) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+.c-general-awards__grid-item {
+	width: 100%;
+	padding-bottom: 30px;
+
+	@include mq($from: m) {
+		width: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+	}
+
+	@include mq($from: l) {
+		width: 33.333%;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 50px;
+	}
+}
+
+.c-general-awards__image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+
+	img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
+
+.c-general-awards__label {
+	@extend %headline;
+	@include font-size(18px);
+ 	text-align: center;
+ 	margin-top: 25px;
+}

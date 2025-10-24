@@ -1,0 +1,313 @@
+// Upper Content
+
+.accommodations-entry__upper {
+  @extend .main__subpage;
+  @extend %gradient;
+}
+
+.accommodations-entry__content-col {
+  margin-bottom: $padding-content-md;
+  @include mq($from: sm) {
+    order: 1;
+  }
+  @include mq($from: m) {
+    width: calc(70% - #{$padding-content-lg});
+    margin-right: $padding-content-lg;
+    margin-bottom: 0;
+  }
+  @include mq($from: l) {
+    width: calc(80% - #{$padding-content-xl});
+    margin-right: $padding-content-xl;
+    margin-bottom: 0;
+  }
+}
+
+.accommodations-entry__sidebar-col {
+  @include mq($from: sm) {
+    order: 3;
+    margin-top: $padding-content-lg;
+  }
+  @include mq($from: m) {
+    width: 30%;
+    order: 2;
+    margin-top: 0;
+  }
+  @include mq($from: l) {
+    width: 20%;
+  }
+}
+
+.accommodations-entry__headline {
+  @extend %headline;
+}
+
+.accommodations-entry__layouts-headline {
+  @extend %headline;
+  margin-bottom: $padding-content-sm;
+}
+
+.accommodations-entry__layouts {
+  padding-top: $padding-content-md;
+  margin-top: $padding-content-md;
+  border-top: 1px solid $lightgold;
+}
+
+.accommodation-entry__link {
+  margin-top: 50px;
+}
+
+.layouts__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $padding-content-md;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.layouts__image {
+  margin-bottom: $padding-content-sm;
+  @include mq($from: m) {
+    width: calc(65% - #{$padding-content-md});
+    margin-right: $padding-content-md;
+    margin-bottom: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.layouts__content {
+  @include mq($from: m) {
+    width: 35%;
+  }
+}
+
+.layouts__cms {
+  ul {
+    margin: 0 0 0 20px;
+  }
+}
+
+.layouts__headline {
+  @extend %headline;
+  @include font-size(22px);
+  color: $charcoal;
+  margin-bottom: $padding-content-sm;
+}
+// Pricing
+.accommodations-entry__pricing-wrap {
+  width: 100%;
+  padding-top: 4rem;
+  border-top: 1px solid $lightgold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include mq($from: sm) {
+    order: 2;
+    margin-top: 0;
+  }
+  @include mq($from: m) {
+    order: 3;
+    margin-top: $padding-content-lg;
+  }
+  @include mq($from: l) {
+    justify-content: space-between;
+  }
+}
+
+.accommodations-entry__a-pricing {
+  width: calc(60% - 5rem);
+  border-right: 1px solid $white-smoke;
+  margin-right: 5rem;
+  padding-right: 5rem;
+  @include mq($until: l) {
+    width: 100%;
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.accommodations-entry__g-pricing {
+  width: 40%;
+  @include mq($until: l) {
+    width: 100%;
+  }
+}
+
+.accommodations-entry__pricing-headline {
+  @extend %headline;
+  margin-bottom: $padding-content-sm;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accommodations-entry__pricing-subheadline {
+  @extend %headline;
+  color: $red;
+  margin-bottom: $padding-content-sm;
+}
+
+.accommodations-entry__pricing-label {
+  @include font-size(15px);
+  color: $text-color;
+  margin-left: 2rem;
+  @include mq($until: m) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.pricing__tab {
+  width: 33.333%;
+  border: 1px solid $white-smoke;
+  &:not(:last-child) {
+    border-right: 0;
+  }
+  @include mq($until: sm) {
+    width: 100%;
+  }
+}
+
+.pricing__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 0 !important;
+}
+
+// Pricing Lists
+.pricing__list {
+  @extend %dl-flex;
+}
+
+.pricing__list--g-pricing {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 1px;
+      background: $lightgold;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.pricing__list-label {
+  @extend %dt-flex;
+  width: 50%;
+  @include mq($until: m) {
+    width: 100%;
+  }
+}
+
+.pricing__list-price {
+  width: 50%;
+  @include mq($until: m) {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.pricing__list-footer {
+  @include font-size(15px);
+  position: relative;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-left: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 1px;
+    background: $lightgold;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  li {
+    margin-left: 1.5rem;
+  }
+}
+
+// Pricing CTA
+.pricing__cta-wrap {
+  padding-top: 5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing__cta {
+  @extend %cta;
+}
+
+.book-cta {
+  padding-top: 5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-cta__btn {
+	@extend %sans;
+  font-size: 1.5rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	background: $red;
+	color: $white;
+  box-shadow: 0 0 10px 0 rgba(101,101,101,0.50);
+  padding: 1rem 2rem .75rem 2rem;
+	transition: all 200ms ease-in-out;
+	margin: 0;
+	&:hover {
+		transition: all 200ms ease-in-out;
+		color: darken($white, 10);
+	}
+}
+
+
+// Gallery
+.accommodations-entry__gallery-wrap {
+  @extend %lg-section;
+  max-width: 100%;
+  width: auto;
+}
+
+.accommodations-entry__extraContent {
+  width: 100%;
+  padding-top: $padding-content-lg;
+  border-top: 1px solid $lightgold;
+  margin-top: $padding-content-lg;
+
+  @include mq($from: sm) {
+    order: 2;
+    margin-top: 0;
+    padding-bottom: 4rem;
+  }
+  @include mq($from: m) {
+    order: 3;
+    padding-bottom: 0;
+    margin-top: $padding-content-lg;
+  }
+
+  .accommodations-entry__headline {
+    margin-bottom: 1rem;
+  }
+}

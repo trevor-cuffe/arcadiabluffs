@@ -1,0 +1,233 @@
+.course-intro {
+   @extend %wrapper;
+   @extend %lg-section;
+   @extend .intro;
+   padding-top: 0;
+   position: relative;
+   &:before {
+      content: '';
+      @extend %gradient;
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 75%;
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F5F5F5 100%);
+      z-index: -1;
+   }
+}
+
+// Course Intro Content
+.course-intro__headline {
+   @extend .intro__headline;
+}
+
+.course-intro__content {
+   @extend .intro__content;
+}
+
+.course-intro__content--full-width {
+    width: 100%;
+}
+
+// Course Intro List
+.course-intro__list-wrap {
+   @extend .intro__list-wrap;
+}
+
+.course-intro__list {
+   @extend .intro__list;
+   padding-bottom: $padding-content-sm;
+   margin-bottom: $padding-content-sm;
+   border-bottom: 1px solid $white-smoke;
+}
+
+.course-intro__list-label {
+   @extend .intro__list-label;
+}
+
+.course-intro__list-name {
+   @extend .intro__list-name;
+}
+
+// Score card and Slope
+.scorecard, .slope {
+   @extend %sans;
+}
+
+.scorecard__headline, .slope__headline {
+   @extend %headline;
+   @include font-size(22px);
+   color: $charcoal;
+   margin-bottom: $padding-content-sm;
+}
+
+.scorecard {
+   width: 100%;
+   text-transform: uppercase;
+   margin-top: $padding-content-lg;
+   margin-bottom: $padding-content-md;
+   @include mq($from: l) {
+      width: calc(80% - #{$padding-content-md});
+      margin-right: $padding-content-md;
+      margin-bottom: 0;
+   }
+}
+
+.slope {
+   width: 100%;
+   @include mq($from: l) {
+      width: 20%;
+      margin-top: $padding-content-lg;
+   }
+}
+
+.scorecard__table, .slope__table {
+   @include font-size(18px);
+}
+
+.scorecard__table {
+   display: table;
+   border: 1px solid $lightgold;
+   td, th {
+      width: calc(100% / 22);
+      text-align: center;
+      padding: .5rem .25rem .25rem .25rem;
+      border-right: 1px solid $lightgold;
+      border-bottom: 1px solid $lightgold;
+   }
+   td:last-child, th:last-child {
+      border-right: 0;
+   }
+   tr:last-child {
+      td, th {
+         border-bottom: 0;
+      }
+   }
+   @include mq($until: l) {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      border-collapse: collapse;
+      border-spacing: 0;
+      // Enable iOS momentum scrolling
+      -webkit-overflow-scrolling: touch;
+      box-shadow: inset -10px 0px 10px -10px rgba($black, .2), inset 10px 0px 10px -10px rgba($black, .2);
+      // Added to display shadow on child divs with background
+      .scorecard__thead--primary td,
+      .scorecard__thead--secondary td {
+         &:first-child {
+            box-shadow: inset 10px 0px 10px -10px rgba($black, .2);
+         }
+         &:last-child {
+            box-shadow: inset -10px 0px 10px -10px rgba($black, .2);
+         }
+      }
+   }
+}
+
+.scorecard__thead--primary {
+   background-color: $maroon;
+   color: $white;
+}
+
+.scorecard__thead--secondary {
+   background-color: $white-smoke;
+   color: $charcoal;
+}
+
+.scorecard__tr--champion { color: #4D4D4D; }
+.scorecard__tr--blue     { color: #00529B; }
+.scorecard__tr--white    { color: #A6A6A6; }
+.scorecard__tr--gold     { color: #908B42;}
+.scorecard__tr--red      { color: #BF1E2D; }
+.scorecard__tr--handicap { color: #777777; }
+
+.scorecard__link {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.slope__table {
+   margin-bottom: $padding-content-sm;
+   width: 100%;
+   td, th {
+      // 3 column table
+      width: 33.333%;
+      text-align: center;
+      padding: .25rem .15rem .15rem .15rem;
+   }
+   td:first-child, th:first-child {
+      text-align: left;
+   }
+   th, td:first-child {
+      color: $charcoal;
+   }
+   thead th {
+      text-transform: uppercase;
+      border-bottom: 1px solid $smoke;
+      color: $charcoal;
+   }
+}
+
+// Hole by Hole
+.hole-by-hole__cta-wrap {
+   @extend %lg-section;
+   width: 100%;
+   text-align: center;
+}
+
+// Course Landing Gallery
+.course-landing__gallery-wrap {
+    margin-top: $padding-content-lg;
+}
+
+// History
+.course-history {
+   @extend %xl-section;
+   border-top: 1px solid $white-smoke;
+   position: relative;
+   text-align: center;
+
+   .section-header__label {
+      top: 0%;
+   }
+}
+
+.course-history__content {
+   @extend %sm-wrapper;
+   margin-top: $padding-content-sm;
+   padding-top: 25px;
+   position: relative;
+   &:before {
+      content: '';
+      background: url(../img/svg/cross-gold.svg) no-repeat center center / contain;
+      width: 26px;
+      height: 12px;
+      display: block;
+      @include horizontal-align($position: absolute);
+      top: 0;
+   }
+}
+
+.course-history__link {
+   margin-top: $padding-content-sm;
+}
+
+.course-history__cta-wrap {
+   margin-top: $padding-content-md;
+}
+
+.course-history__cta {
+   @extend %cta;
+}
+
+// Flyover
+.course-flyover {
+   @extend %lg-section;
+   padding-bottom: 0;
+}

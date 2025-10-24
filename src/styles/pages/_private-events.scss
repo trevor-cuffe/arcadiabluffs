@@ -1,0 +1,103 @@
+.private-events-option__wrap {
+   position: relative;
+   // Gradient Background on Odd Childs
+   &:nth-child(odd) {
+      &:before {
+         content: '';
+         @extend %gradient;
+         display: block;
+         position: absolute;
+         top: 0; left: 0;
+         width: 100%;
+         height: calc(100% - 20rem);
+         background-image: linear-gradient(-180deg, #FFFFFF 0%, #F5F5F5 100%);
+         z-index: -1;
+      }
+   }
+   &.private-events-option__wrap--last {
+      .private-events-option__gallery-wrap {
+         padding-bottom: 0;
+         &:after {
+            display: none;
+         }
+      }
+   }
+}
+
+.private-events-option {
+   @extend %wrapper;
+   @extend %lg-section;
+   @extend .intro;
+}
+
+// private-events Content
+.private-events-option__headline {
+   @extend .intro__headline;
+}
+
+.private-events-option__content {
+   @extend .intro__content;
+}
+
+// private-events Lists
+.private-events-option__list-wrap {
+   @extend .intro__list-wrap;
+   margin-top: $padding-content-sm;
+   margin-bottom: $padding-content-sm;
+   @include mq($from: m) {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+}
+
+.private-events-option__list {
+   @extend .intro__list;
+}
+
+.private-events-option__list-label {
+   @extend .intro__list-label;
+}
+
+.private-events-option__list-name {
+   @extend .intro__list-name;
+   a {
+       color: $maroon;
+       text-decoration: underline;
+       transition: all 200ms ease-in-out;
+       &:hover {
+           color: darken($maroon, 10);
+       }
+   }
+}
+
+// Private Events Gallery
+.private-events__gallery-wrap {
+   margin-top: $padding-content-md;
+   padding-bottom: $padding-content-lg;
+   position: relative;
+   @include mq($until: m) {
+    padding-bottom: $padding-content-lg * .6667;
+   }
+   &:after {
+      content: '';
+      width: calc(100% - 10rem);
+      height: 1px;
+      display: block;
+      background: $white-smoke;
+      @include horizontal-align($position: absolute);
+      bottom: 0;
+      @include mq($until: m) {
+         width: 100%;
+      }
+   }
+}
+
+// private-events CTA
+.private-events__cta-wrap {
+   @extend %lg-section;
+   text-align: center;
+}
+
+.private-events__cta {
+   @extend %cta;
+}

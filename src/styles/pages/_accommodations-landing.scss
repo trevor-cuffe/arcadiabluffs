@@ -1,0 +1,126 @@
+.accommodations {
+   background: linear-gradient(-180deg, #FFFFFF 0%, #F5F5F5 100%);
+}
+
+.accommodations__intro {
+   @extend %lg-section;
+   @extend %wrapper;
+   border-bottom: 1px solid $lightgold;
+}
+
+.accommodations__grid {
+   @extend %lg-section;
+   @extend %wrapper;
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.accommodations__grid-item {
+   position: relative;
+   margin-bottom: $padding-content-md;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   @include mq($from: m) {
+      width: calc(33.33% - #{$padding-content-md});
+      margin-bottom: 0;
+   }
+}
+
+.accommodations__image {
+   width: 100%;
+   height: auto;
+   display: block;
+   margin-bottom: $padding-content-sm;
+}
+
+.accommodations__headline {
+   @extend %headline;
+}
+
+.accommodations__content {
+   padding-bottom: $padding-content-sm * 1.35;
+}
+
+.accommodations__link {
+   @extend .cta-link;
+   position: absolute;
+   bottom: 0; left: 0;
+}
+
+// Accommodations CTA
+.accommodations__cta {
+  @extend %lg-section;
+   border-top: 1px solid $lightgold;
+  .content-block__content {
+    font-size: 1.3rem;
+  }
+  .content-block__link {
+    font-size: 1.5rem;
+  }
+}
+
+// Extras
+.accommodations__extras {
+   @extend %lg-section;
+   @extend %wrapper;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.accommodations__extras-headline {
+   @extend %headline;
+   @include font-size(22px);
+}
+
+.accommodations__extras-col {
+   margin-bottom: $padding-content-md;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   @include mq($from: sm) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $padding-content-md;
+   }
+   @include mq($from: m) {
+      width: calc(50% - #{$padding-content-lg});
+      margin-right: $padding-content-lg;
+      margin-bottom: 0;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+   @include mq($from: l) {
+      width: calc(35% - #{$padding-content-lg});
+      margin-right: $padding-content-lg;
+      margin-bottom: 0;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+
+.accommodations__extras-linked-list__description {
+   padding-bottom: $padding-content-sm;
+   margin-bottom: $padding-content-sm;
+   border-bottom: 1px solid $white-smoke;
+   p:last-of-type {
+      margin-bottom: 0;
+   }
+}
+.accommodations__form-wrapper {
+   @extend %lg-section;
+}
+.accommodations__form {
+   max-width: 98%;
+   margin: 40px auto;
+   width: 800px;
+
+   .checkboxes, .radiobuttons {
+      margin-bottom: 30px;
+   }
+} 

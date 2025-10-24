@@ -1,0 +1,78 @@
+/*! Built by Mighty in the Midwest (@hellomighty) */
+
+@import 'node_modules/sass-mq/mq';
+
+// Screen specific stylesheet
+@import 'normalize';
+
+@import 'variables';
+@import 'mixins';
+@import 'utility';
+@import 'type';
+@import 'base';
+
+
+/*-------------------------------------------
+  Partials
+-------------------------------------------*/
+@import 'partials/header';
+@import 'partials/layouts';
+@import 'partials/footer';
+@import 'partials/sidebar';
+
+@import 'partials/subpage-menu';
+@import 'partials/banner';
+@import 'partials/banner-new';
+@import 'partials/weather';
+@import 'partials/social';
+@import 'partials/forms';
+@import 'partials/tabs';
+@import 'partials/modules';
+@import 'partials/rte';
+@import 'partials/card';
+@import 'partials/page-link';
+@import 'partials/btn-group';
+@import 'partials/dining-option';
+@import 'partials/modal';
+@import 'partials/ratio';
+@import 'partials/announcement';
+
+
+// Macros
+@import 'partials/intro';
+@import 'partials/content-blocks';
+@import 'partials/linked-list';
+@import 'partials/gallery';
+@import 'partials/video';
+@import 'partials/video-hero';
+
+
+/*-------------------------------------------
+  Pages
+-------------------------------------------*/
+@import 'pages/home';
+@import 'pages/news';
+@import 'pages/contact';
+@import 'pages/dining';
+@import 'pages/private-events';
+@import 'pages/accommodations-landing';
+@import 'pages/accommodations-entry';
+@import 'pages/course-landing';
+@import 'pages/course-rates';
+@import 'pages/course-news';
+@import 'pages/hole-entry';
+@import 'pages/giftcards';
+@import 'pages/awards';
+
+
+/*-------------------------------------------
+  Plugins
+-------------------------------------------*/
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/weather-icons-sass/sass/weather-icons.scss';
+@import 'node_modules/jquery-ui/themes/base/datepicker.css';
+
+/*-------------------------------------------
+  Vendor
+-------------------------------------------*/
+@import 'vendor/datepicker';

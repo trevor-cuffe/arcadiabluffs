@@ -1,0 +1,31 @@
+.linked-list__headline {
+   @extend %headline;
+   margin-bottom: $padding-content-sm;
+}
+
+.linked-list__list {
+   margin: 0; padding: 0;
+   list-style: none;
+   @extend %sans;
+   color: $charcoal;
+}
+
+.linked-list__list-item {
+   margin-bottom: .25rem;
+   a {
+      position: relative;
+      transition: color 200ms ease-in-out;
+      &:before {
+         content: '';
+         background: url(../img/svg/external.svg) no-repeat center center / contain;
+         width: 8px;
+         height: 8px;
+         display: block;
+         @include vertical-align($position: absolute);
+         right: -15px;
+      }
+      &:hover {
+         color: lighten($charcoal, 20);
+      }
+   }
+}

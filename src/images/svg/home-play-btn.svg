@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="69px" viewBox="0 0 68 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M65.8140828,49 L65.8140828,49 C60.3364237,60.8096307 48.3746935,69 34.5,69 C15.4461761,69 0,53.5538239 0,34.5 C0,15.4461761 15.4461761,0 34.5,0 C49.5215165,0 62.3007657,9.60028771 67.0368844,23" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="67.0368844" height="69" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Play">
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(36.275862, 35.275862) rotate(90.000000) translate(-36.275862, -35.275862) " points="36.2758621 29 42.5517241 41.5517241 30 41.5517241"></polygon>
+            <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

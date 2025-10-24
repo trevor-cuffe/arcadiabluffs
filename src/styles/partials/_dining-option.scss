@@ -1,0 +1,92 @@
+// =============================================================================
+// COMPONENTS/DINING-OPTION
+// =============================================================================
+
+.c-dining-option {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 85px;
+  }
+  
+  @include mq($from: m) {
+    &:nth-child(even) {
+      .c-dining-option__content {
+        order: 2;
+      }
+
+      .c-dining-option__image {
+        order: 1;
+      }
+    }
+  }
+}
+
+.c-dining-option__content {
+  order: 1;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include mq($from: m) {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
+.c-dining-option__image {
+  order: 2;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include mq($from: m) {
+    width: 45%;
+  }
+
+}
+
+.c-dining-option__btns {
+  margin-top: 25px;
+}
+
+.c-dining-options__details {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid $white-smoke;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+
+  @include mq($from: sm) {
+    flex-wrap: nowrap;
+  }
+}
+
+.c-dining-options__detail {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include mq($from: sm) {
+    width: auto;
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.c-dining-options__detail-label {
+  @extend %sans;
+  color: #484848;
+  font-size: 16px;
+}

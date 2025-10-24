@@ -1,0 +1,143 @@
+// Subscribe Footer
+.footer-subscribe {
+  @extend %section;
+  background: #F7F7F7;
+}
+
+.footer-subscribe__wrapper {
+  @extend %wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.footer-subscribe__content {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @include mq($from: m) {
+    text-align: left;
+    width: auto;
+    padding-right: 50px;
+  }
+}
+
+.footer-subscribe__headline {
+  color: $charcoal;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.footer-subscribe__excerpt {
+  font-size: 17px;
+  margin: 0;
+}
+
+.footer-subscribe__form-group {
+  display: flex;
+}
+
+.footer-subscribe__input[type=email] {
+  width: calc(100% - 100px);
+  padding-bottom: 3px;
+}
+
+.footer-subscribe__btn {
+  width: 100px;
+  text-align: center;
+  padding-left: 5px;
+
+  .btn {
+    height: 100%;
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+// Main Footer
+.footer-main {
+   @extend %section;
+   @extend %wrapper;
+   border-top: 1px solid rgba($gold,0.25);
+   border-bottom: 4px solid $gold;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   @include font-size(14px);
+   @include mq($until: m) {
+      padding-top: $padding-content-sm;
+      padding-bottom: $padding-content-sm;
+   }
+}
+
+.footer__logo {
+   background: url(../img/svg/logo-color.svg) no-repeat left center / contain;
+   width: 236px;
+   height: 82px;
+   text-indent: -9999px;
+   margin-right: $padding-content-sm;
+   @include mq($until: l) {
+      display: none;
+   }
+}
+
+.footer__menu {
+   @extend .nav__menu;
+   li {
+      margin-right: $padding-content-sm;
+      @include mq($until: m) {
+         width: 100%;
+         margin-right: 0;
+      }
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+   @include mq($until: l) {
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+         margin-top: .5rem;
+         margin-bottom: .5rem;
+      }
+   }
+}
+
+// Bottom Footer
+.footer-bottom {
+   @extend %wrapper;
+   padding-top: ($padding-content-sm * 0.5);
+   padding-bottom: ($padding-content-sm * 0.5);
+   background: $maroon;
+   @include font-size(14px);
+   color: $gold;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   @include mq($until: m) {
+      text-align: center;
+      justify-content: center;
+   }
+}
+
+.footer__copyright {
+   margin: 0 $padding-content-sm 0 0;
+   @include mq($until: m) {
+      margin-bottom: .5rem;
+      margin-right: 0;
+   }
+   span {
+      margin: 0 .35rem;
+   }
+   a {
+      transition: all 200ms ease-in-out;
+      &:hover {
+         color: darken($gold, 15);
+      }
+   }
+}

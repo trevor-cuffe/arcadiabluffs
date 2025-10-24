@@ -1,0 +1,63 @@
+$line-height: 2.5rem;
+
+label {
+   @extend %headline;
+   @include font-size(15px);
+   text-transform: uppercase;
+   display: block;
+   color: $charcoal;
+}
+
+.field-instructions {
+   @extend .small;
+   margin-top: .25rem;
+}
+
+.hidden {
+   display: none;
+}
+
+.form-control,
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=phone],
+input[type=search],
+input[type=text],
+textarea {
+   @include font-size(17px);
+   box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
+   border-radius: 0;
+   border: 1px solid $white-smoke;
+   outline: none;
+   padding: .5rem 1rem .5rem 1rem;
+   display: block;
+   width: 100%;
+   height: $line-height;
+}
+
+textarea {
+  height: auto;
+}
+
+input[type=submit],
+.submit-btn {
+  @extend .btn;
+  outline: none;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+// Validation
+.parsley-error {
+   background: rgba($red, 0.1);
+}
+
+.parsley-errors-list {
+   margin: .25rem 0 0 0; padding: 0;
+   list-style: none;
+   @extend .small;
+   color: $red;
+}

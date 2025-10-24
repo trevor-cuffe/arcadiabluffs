@@ -1,0 +1,44 @@
+.tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tab {
+	&:last-child {
+		.tabs__link { border-right: 0; }
+	}
+}
+
+.tabs__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	@extend %headline;
+	color: $maroon;
+	background: transparent;
+	display: inline-block;
+  padding: .75rem 1.5rem .5rem 1.5rem;
+	cursor: pointer;
+	border-right: 1px solid $lightgold;
+	border-bottom: 1px solid $lightgold;
+	transition: all 200ms ease-in-out;
+	&:hover, &.active {
+		background: $maroon;
+		color: $white;
+	}
+}
+
+.tabs__content {
+	display: none;
+  padding-top: $padding-content-sm;
+	&.active {
+		display: inherit;
+	}
+}
+
+.tabs__content--g-pricing {
+	padding-top: 0;
+}

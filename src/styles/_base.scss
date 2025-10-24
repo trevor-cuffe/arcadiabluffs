@@ -1,0 +1,21 @@
+body {
+	@extend %serif;
+	@include font-size(17px);
+	line-height: 1.65rem;
+	color: $text-color;
+	background: $smoke;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#page-wrap {
+   overflow: hidden;
+	max-width: 1600px;
+	background: $white;
+	margin: 0 auto;
+	position: relative;
+	@include mq($from: xxl) {
+		border-left: 1px solid darken($smoke, 5);
+		border-right: 1px solid darken($smoke, 5);
+	}
+}

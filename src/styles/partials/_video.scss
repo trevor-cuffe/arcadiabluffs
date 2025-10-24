@@ -1,0 +1,88 @@
+.video__headline {
+	@extend %headline;
+	text-align: center;
+	margin-bottom: $padding-content-md;
+	span {
+		position: relative;
+		border-left: 1px solid $white-smoke;
+		border-right: 1px solid $white-smoke;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 25px;
+		display: inline-block;
+		&:before, &:after {
+			 position: absolute;
+			 content: '';
+			 width: 2000px;
+			 height: 1px;
+			 background-color: $white-smoke;
+			 top: 50%;
+			 right: 100%;
+		}
+		&:after {
+			 left: 100%;
+		}
+	}
+}
+
+.video-wrap {
+	margin-left: $padding-content-sm;
+	margin-right: $padding-content-sm;
+}
+
+.video {
+   @extend %shadow;
+   @extend %md-wrapper;
+   position: relative;
+	padding: 0;
+   &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 56.25%;
+   }
+	iframe {
+		display: none;
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.video__btn {
+   @include font-size(17px);
+   @extend %sans;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   background: transparent;
+   margin: 0; padding: 0;
+   outline: none;
+   border: 0;
+   color: $white;
+	position: absolute;
+	bottom: $padding-content-md;
+	right: $padding-content-md;
+	backface-visibility: hidden;
+   span {
+      position: relative;
+		padding-left: 65px;
+      &:before {
+         content: '';
+         background: url(../img/svg/home-play-btn.svg) no-repeat center center / contain;
+         width: 75px;
+         height: 75px;
+         display: block;
+         @include vertical-align($position: absolute);
+         top: 40%;
+         left: 0;
+         opacity: .6;
+         transition: opacity 200ms ease-in-out;
+      }
+   }
+   &:hover {
+      span:before {
+         opacity: 1;
+      }
+   }
+}

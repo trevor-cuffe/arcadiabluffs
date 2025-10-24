@@ -1,0 +1,181 @@
+// Wrappers
+%wrapper,
+.o-wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $padding-content-sm;
+	padding-right: $padding-content-sm;
+	@include mq($from: m) {
+		padding-left: $padding-content-md;
+		padding-right: $padding-content-md;
+	}
+	@include mq($from: xxl) {
+		padding-left: $padding-content-lg;
+		padding-right: $padding-content-lg;
+	}
+}
+
+%sm-wrapper,
+.o-wrapper--sm {
+	@extend %wrapper;
+	max-width: 675px;
+	@include mq($from: xxl) {
+		padding-left: $padding-content-md;
+		padding-right: $padding-content-md;
+	}
+}
+
+%md-wrapper,
+.o-wrapper--md {
+	@extend %wrapper;
+	max-width: 1200px;
+	@include mq($from: xxl) {
+		padding-left: $padding-content-md;
+		padding-right: $padding-content-md;
+	}
+}
+
+// Section Spacing
+%section,
+.o-section {
+	padding-top: $padding-content-md;
+	padding-bottom: $padding-content-md;
+}
+
+%sm-section,
+.o-section--sm {
+	padding-top: $padding-content-sm;
+	padding-bottom: $padding-content-sm;
+}
+
+%md-section,
+.o-section--md {
+	padding-top: $padding-content-md * 1.5;
+	padding-bottom: $padding-content-md * 1.5;
+	@include mq($until: m) {
+		padding-top: ($padding-content-md);
+		padding-bottom: ($padding-content-md);
+	}
+}
+
+%lg-section,
+.o-section--lg {
+	padding-top: $padding-content-lg;
+	padding-bottom: $padding-content-lg;
+	@include mq($until: m) {
+		padding-top: ($padding-content-lg * .6667);
+		padding-bottom: ($padding-content-lg * .6667);
+	}
+}
+
+%xl-section,
+.o-section--xl {
+	padding-top: $padding-content-xl;
+	padding-bottom: $padding-content-xl;
+}
+
+// Shadows
+%shadow { box-shadow: 0 0 15px 0 rgba(147,147,147,0.50); }
+
+// Gradient
+%gradient { background-image: linear-gradient(-90deg, #FFFFFF 24%, #FAFAFA 61%); }
+
+// Watermark Header
+.section-header {
+   @extend %sans;
+   @include font-size(36px);
+	letter-spacing: 4px;
+   text-transform: uppercase;
+   color: $maroon;
+   position: relative;
+   z-index: 0;
+   text-align: center;
+}
+
+.section-header__label {
+   @include vertical-horizontal-align($position: absolute);
+   @extend %serif;
+   @include font-size(65px);
+   letter-spacing: 6px;
+   color: $white-smoke;
+   z-index: -1;
+   line-height: .85em;
+}
+
+.section-header--lines {
+   .section-header__headline {
+      span {
+         position: relative;
+         border-left: 1px solid $white-smoke;
+         border-right: 1px solid $white-smoke;
+         padding-left: 20px;
+         padding-right: 20px;
+         line-height: 25px;
+         display: inline-block;
+         &:before, &:after {
+             position: absolute;
+             content: '';
+             width: 2000px;
+             height: 1px;
+             background-color: $white-smoke;
+             top: 50%;
+             right: 100%;
+         }
+         &:after {
+             left: 100%;
+         }
+      }
+   }
+}
+
+// CTA
+%cta {
+	@extend %sans;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	background: $red;
+	color: $white;
+   box-shadow: 0 0 10px 0 rgba(101,101,101,0.50);
+   padding: .75rem 1.5rem .5rem 1.5rem;
+	transition: all 200ms ease-in-out;
+	margin: 0;
+	a {
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color: darken($white, 10);
+		}
+	}
+}
+
+// Definition Lists
+%dl-flex {
+   margin: 0; padding: 0;
+   list-style: none;
+	width: 100%;
+   display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+%dt-flex {
+	@extend %sans;
+	@include font-size(18px);
+	color: $charcoal;
+}
+
+
+// Hide Visually
+.hide-visually {
+  /* Hiding elements visually overrides any matching property declarations */
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}

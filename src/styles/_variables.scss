@@ -1,0 +1,47 @@
+/*-------------------------------------------
+  Colors
+-------------------------------------------*/
+$maroon: #663333;
+$gold: #CBCBC1;
+$lightgold: rgba($gold, 0.65);
+$red: #BF1E2D;
+$gray: #777777;
+$tundora: #4E4E4E;
+$charcoal: #4D4D4D;
+$white-smoke: #EBEBEB;
+$smoke: #D8D8D8;
+$wild-sand: #F5F5F5;
+$white: #FFFFFF;
+$black: #000000;
+
+$text-color: $gray;
+
+
+/*-------------------------------------------
+  Typography
+-------------------------------------------*/
+$serif: 'Plantagenet Cherokee', serif;
+$sans: 'alternate-gothic-no-3-d', sans-serif;
+
+
+/*-------------------------------------------
+  Layout
+-------------------------------------------*/
+$padding-content-sm: 1.5rem;
+$padding-content-md: 3rem;
+$padding-content-lg: 7rem;
+$padding-content-xl: 13rem;
+
+
+/*-------------------------------------------
+  Media query breakpoints
+-------------------------------------------*/
+$mq-breakpoints: (
+    sm: 400px,
+    m:  768px,
+    tweener:  900px,
+    l:  1100px,
+    nav: 1370px,
+    xl: 1440px,
+    xxl: 1680px
+);

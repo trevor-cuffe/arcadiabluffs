@@ -1,0 +1,125 @@
+.dining-announcement {
+   @extend %md-wrapper;
+   padding-top: 80px;
+   padding-bottom: 80px;
+}
+
+.dining-announcement__inner {
+   background: rgb(247, 247, 247);
+   padding: 30px;
+
+   & > *:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.dining-option__wrap {
+   padding-top: 80px;
+}
+
+.dining-announcement__headline {
+   @extend %sans;
+   text-transform: uppercase;
+   color: $maroon;
+   font-size: 24px;
+}
+
+.dining-option__wrap {
+   position: relative;
+   // Gradient Background on Odd Childs
+   &:nth-child(odd) {
+      &:before {
+         content: '';
+         @extend %gradient;
+         display: block;
+         position: absolute;
+         top: 0; left: 0;
+         width: 100%;
+         height: calc(100% - 20rem);
+         background-image: linear-gradient(-180deg, #FFFFFF 0%, #F5F5F5 100%);
+         z-index: -1;
+      }
+   }
+   &.dining-option__wrap--last {
+      .dining-option__gallery-wrap {
+         padding-bottom: 0;
+         &:after {
+            display: none;
+         }
+      }
+   }
+}
+
+.dining-option {
+   @extend %wrapper;
+   @extend %lg-section;
+   @extend .intro;
+
+   &:first-child {
+      padding-top: 0;
+   }
+}
+
+// Dining Content
+.dining-option__headline {
+   @extend .intro__headline;
+}
+
+.dining-option__content {
+   @extend .intro__content;
+}
+
+// Dining Lists
+.dining-option__list-wrap {
+   @extend .intro__list-wrap;
+   margin-top: $padding-content-sm;
+   margin-bottom: $padding-content-sm;
+   @include mq($from: m) {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+}
+
+.dining-option__list {
+   @extend .intro__list;
+}
+
+.dining-option__list-label {
+   @extend .intro__list-label;
+}
+
+.dining-option__list-name {
+   @extend .intro__list-name;
+}
+
+// Dining Gallery
+.dining__gallery-wrap {
+   margin-top: $padding-content-md;
+   padding-bottom: $padding-content-lg;
+   position: relative;
+   @include mq($until: m) {
+    padding-bottom: $padding-content-lg * .6667;
+   }
+   &:after {
+      content: '';
+      width: calc(100% - 10rem);
+      height: 1px;
+      display: block;
+      background: $white-smoke;
+      @include horizontal-align($position: absolute);
+      bottom: 0;
+      @include mq($until: m) {
+         width: 100%;
+      }
+   }
+}
+
+// Dining CTA
+.dining__cta-wrap {
+   @extend %lg-section;
+   text-align: center;
+}
+
+.dining__cta {
+   @extend %cta;
+}

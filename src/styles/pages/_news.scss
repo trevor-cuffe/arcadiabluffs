@@ -1,0 +1,57 @@
+// Default Article Styles
+.article__meta {
+   @extend %byline;
+   margin: 0 0 .15rem 0;
+}
+
+.article__headline {
+   @extend %headline;
+   @include font-size(28px);
+}
+
+.article__content {
+   margin: 1rem 0;
+}
+
+// Article List
+.article__list {
+   margin: 0; padding: 0;
+   list-style: none;
+}
+
+.article__bucket {
+   border-bottom: 1px solid $white-smoke;
+   padding-bottom: $padding-content-md;
+   margin-bottom: $padding-content-md;
+   &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+   }
+}
+
+.article__link {
+   @extend .cta-link;
+}
+
+// Post Navigation
+.article__nav {
+   padding-top: $padding-content-sm;
+   margin-top: $padding-content-md;
+   border-top: 1px solid $white-smoke;
+   display: flex;
+   justify-content: space-between;
+}
+
+.article__nav-next {
+   @extend .cta-link;
+}
+
+.article__nav-prev {
+   @extend .cta-link--left;
+}
+
+.article__nav-next {
+   margin-left: auto;
+   text-align: right;
+}

@@ -1,4 +1,4 @@
-dateModified: 1761340018
+dateModified: 1762206292
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -47,7 +47,6 @@ meta:
     1e5a632d-5444-4c79-9ee0-5c924f29c0d6: 'General Contacts' # General Contacts
     1e939607-791e-4d0d-9e90-da7db5cb3e58: Buttons # Buttons
     1f3294c6-b9a7-46b9-aaf4-70bcf8b46237: 'Accommodation Buckets' # Accommodation Buckets
-    1f8433c3-5249-402b-93b7-8905212628b5: 'Home Slider' # Home Slider
     2b8ba9ac-0e3e-470d-9eb1-905e54cb0a6f: 'Mobile Menu' # Mobile Menu
     2b978a7a-e47d-4687-96a5-51cec43f3b21: Image # Image
     2b2449dc-8378-450b-b227-d1947e6d9d6b: 'Executive Team Headline' # Executive Team Headline
@@ -58,7 +57,6 @@ meta:
     2e0e521e-50dc-4fc4-b923-0360760a0c28: Text # Text
     2e89d38a-eaec-4b2b-943f-d94ba49050d0: Headline # Headline
     2eac97af-c8bb-4f52-82d5-7b98c2c2bb90: Accommodations # Accommodations
-    2f5576f9-a21b-4d75-95f4-cb5ca418dd3d: 'Home South Course' # Home South Course
     3a0ddff3-cf2f-4791-91f2-b3ad3c8f34ab: Content # Content
     3bc66f93-926c-4e23-a173-a807a5e9b3be: Headline # Headline
     3db517f6-16a9-4595-8c7c-e8a43a106c13: Overview # Overview
@@ -78,7 +76,6 @@ meta:
     4cec7041-9e14-4365-91be-1b44b3e5f064: 'Home Courses Headline' # Home Courses Headline
     4df910d9-30d4-4eac-8b59-435d3143c244: 'Video Headline' # Video Headline
     5a412ccd-04da-4787-a28c-3ac60d56e066: Awards # Awards
-    5bc9bd11-dc96-4c5f-b37d-80b50b33de90: Course # Course
     5c1f657e-0879-4a4b-beca-79003bf50cce: Table # Table
     5c4dce04-09b5-4782-8525-f9501e72fd30: Headline # Headline
     5eb6460b-344e-42df-91c3-1a71903d2dc3: Metadata # Metadata
@@ -125,7 +122,6 @@ meta:
     19d04551-214f-4e9b-9a5e-ff66d6fe1028: News # News
     23bb67c9-f116-462a-a1dc-d13ac3f62749: 'The Dozen Hole by Hole' # The Dozen Hole by Hole
     25fa5a36-9a68-4a58-906e-ca514a2e6ad9: Body # Body
-    28b935de-0139-4bde-bdbd-1323a9f2f676: 'Home Courses' # Home Courses
     37f54e62-0b62-426a-8d3a-d2890b714689: Menus # Menus
     40b5fa5a-5d55-4783-aac4-a7c9cc3c991d: 'Accommodation Layouts 2' # Accommodation Layouts 2
     40cf8533-8180-4806-9383-dd85361794b4: Button # Button
@@ -226,7 +222,6 @@ meta:
     55488e76-80a0-494a-8adb-4f6cd00535a8: Body # Body
     62205b39-03b5-46f0-a9c2-f24a32f28b65: 'Accommodation Link 2' # Accommodation Link 2
     62214a13-5a4f-418d-b06f-2304227d9b58: 'Course History Block' # Course History Block
-    74008c7a-ec55-4cd8-9ad8-7656b11ca99b: Bucket # Bucket
     75255ce3-487d-4279-9929-c1086221f9e7: Scorecard # Scorecard
     076725fd-bc7e-48fa-88ce-2d58cbee2749: 'Arcadia Bluffs (en-US)' # Arcadia Bluffs (en-US)
     087746ce-cab7-47d4-ae7d-7b653a9bbff3: General # General
@@ -262,7 +257,6 @@ meta:
     a6c37bb7-3a66-46bd-b33c-7e63b7a7077b: Headline # Headline
     a6ec054e-9735-4aa1-811a-f988e4ed82c4: 'Subscribe Tagline' # Subscribe Tagline
     a7bdb249-2586-48a5-8288-0edf78c1edb5: Newsletter # Newsletter
-    a8ca8d80-d9ef-4912-9927-d7b9c51fb036: 'Content Block' # Content Block
     a9d68e9a-5656-4fb6-b894-e9de89f44a74: 'Hole-by-Hole Button' # Hole-by-Hole Button
     a22ed9d6-243d-484b-add7-97a6dd764551: Category # Category
     a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf: CTA # CTA
@@ -305,7 +299,6 @@ meta:
     bc2a4d93-0407-4784-a6ae-8865c47d745b: Headline # Headline
     bcdf19ad-2ee4-4342-86f4-32863b0069b7: Accommodation # Accommodation
     bd1d2269-2e91-44bf-ba51-c56d396d5af9: Headline # Headline
-    bdf57dff-ef5e-48df-858e-00b3deaa82b9: Slide # Slide
     be7f6147-5479-418b-890d-9bb9d155088d: Footer # Footer
     bf4ceaad-c57f-48fb-9b8d-f611cd99f684: Image # Image
     c4b4429d-4470-45da-8c0d-722f8a28277a: 'Call To Actions' # Call To Actions
@@ -359,13 +352,11 @@ meta:
     e3849f1a-fd67-4828-937f-f256bba6987b: Image # Image
     ea52dcf4-0ef2-443e-b70d-7ca566b249bb: Menus # Menus
     ea78a6cf-7df9-415d-aa20-2f246a33e383: 'Home Dining' # Home Dining
-    ea96aca2-ea64-4585-b084-6cfd680271e1: 'Home Buckets' # Home Buckets
     ea8304eb-f854-4dc5-b1df-84fbb8c51ea7: Button # Button
     eaa1ff40-1ac8-4150-8a7f-035477ce3bb8: 'Pricing Table' # Pricing Table
     eba4f40b-54de-43c7-ab5e-c180559134e8: Button # Button
     ebccde73-cbc1-4e05-8a10-b7c5afff0f35: Video # Video
     ebe1e8e8-af10-40ac-8a0d-b531441539e6: CTA # CTA
-    ec8ac1e2-115c-40f8-a9b6-4908a3b442cb: 'Home Buckets Intro' # Home Buckets Intro
     ed71610d-27b5-4aa6-a099-2437d809df35: CTA # CTA
     ee9dcd04-b2cf-416c-86a4-45519eae43ef: 'Link Url' # Link Url
     ef4a4b55-2f0b-4ae9-a241-c51388f63ff5: Description # Description
@@ -393,7 +384,6 @@ meta:
     fa034695-f302-45c4-818c-842e1842a583: Gallery # Gallery
     fa18f022-c31d-4657-8393-23057ca360d1: Headline # Headline
     fb312029-7237-4952-9c49-b1746ce1bdac: 'Background Image' # Background Image
-    fba63ec7-54fe-491d-9313-e6d1e8c51705: 'Content Block' # Content Block
     fbbd0fba-c1f3-4450-a63f-4ff62a510f01: News # News
     fbd9a4ad-7fd5-495b-8367-17a73f5b8356: 'Accommodation Layout' # Accommodation Layout
     fbf63f47-0d11-40d0-9889-18017e89451a: Link # Link

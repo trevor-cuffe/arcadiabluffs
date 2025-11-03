@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
 handle: homeIntro
@@ -7,7 +8,9 @@ searchable: true
 settings:
   contentTable: '{{%matrixcontent_homeintro}}'
   maxBlocks: '1'
+  minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Matrix

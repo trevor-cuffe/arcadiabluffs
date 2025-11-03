@@ -4,6 +4,14 @@ body {
    @include mq($from: m) {
       padding-top: 146px;
    }
+
+   &.with-announcement {
+      padding-top: 210px;
+   
+      @include mq($from: m) {
+         padding-top: 220px;
+      }
+   }
 }
 
 .header {

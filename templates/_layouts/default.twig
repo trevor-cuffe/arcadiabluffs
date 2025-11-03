@@ -34,7 +34,7 @@
 
 	</head>
 
-	<body id="{{ id }}" data-page="{{ data_page }}">
+	<body id="{{ id }}" data-page="{{ data_page }}" {% if announcement.announcement.enabledData %}class="with-announcement"{% endif %}>
 
 		<div id="page-wrap">
 

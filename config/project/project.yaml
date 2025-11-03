@@ -1,4 +1,4 @@
-dateModified: 1762206292
+dateModified: 1762206837
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -487,8 +487,9 @@ system:
   edition: pro
   live: true
   name: 'Arcadia Bluffs'
+  retryDuration: null
   schemaVersion: 3.8.0.1
-  timeZone: UTC
+  timeZone: America/Detroit
 users:
   allowPublicRegistration: false
   defaultGroup: null

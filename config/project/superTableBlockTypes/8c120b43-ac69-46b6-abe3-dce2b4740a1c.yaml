@@ -3,62 +3,97 @@ fieldLayouts:
   07806612-de8b-44e7-af31-dd5fb01e66bf:
     tabs:
       -
-        fields:
-          5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
-            required: 0
-            sortOrder: 2
-          47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
-            required: 0
-            sortOrder: 1
-          d674a38b-5677-430e-90af-0524d99826b5: # Text
-            required: 0
-            sortOrder: 3
+        elements:
+          -
+            fieldUid: 47333271-0ec9-46c1-8a97-252f94aff32c # Enabled
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5c4dce04-09b5-4782-8525-f9501e72fd30 # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d674a38b-5677-430e-90af-0524d99826b5 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
     instructions: ''
     name: Headline
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
+    columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: enabledData
     instructions: 'Turn the announcement on/off'
     name: Enabled
-    searchable: 1
+    searchable: true
     settings:
-      default: ''
+      default: false
+      offLabel: null
+      onLabel: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
   d674a38b-5677-430e-90af-0524d99826b5: # Text
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: text
     instructions: ''
     name: Text
-    searchable: 1
+    searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

@@ -3,26 +3,57 @@ fieldLayouts:
   fa5c8404-5f6c-4870-9e27-559fc0fdcf79:
     tabs:
       -
-        fields:
-          4b4c2ec7-bb72-4d4e-91e8-1347888be1da: # Headline
+        elements:
+          -
+            fieldUid: e99bb281-fc38-4e61-8d38-d19934bf170a # Background Image
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          53576eb0-38c9-4375-acd7-fb7d17c8f361: # Label
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4b4c2ec7-bb72-4d4e-91e8-1347888be1da # Headline
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          e99bb281-fc38-4e61-8d38-d19934bf170a: # Background Image
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53576eb0-38c9-4375-acd7-fb7d17c8f361 # Label
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          ed71610d-27b5-4aa6-a099-2437d809df35: # CTA
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ef70e1b7-cf97-43cd-a65e-52ccff3a11b2 # Body
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          ef70e1b7-cf97-43cd-a65e-52ccff3a11b2: # Body
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ed71610d-27b5-4aa6-a099-2437d809df35 # CTA
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   4b4c2ec7-bb72-4d4e-91e8-1347888be1da: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -30,15 +61,19 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   53576eb0-38c9-4375-acd7-fb7d17c8f361: # Label
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: label
@@ -46,15 +81,19 @@ fields:
     name: Label
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   e99bb281-fc38-4e61-8d38-d19934bf170a: # Background Image
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: backgroundImage
@@ -62,22 +101,33 @@ fields:
     name: 'Background Image'
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
-      defaultUploadLocationSource: '2'
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       defaultUploadLocationSubpath: ''
       limit: '1'
+      localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add an Image'
-      singleUploadLocationSource: '2'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       singleUploadLocationSubpath: ''
+      source: null
       sources: '*'
-      useSingleFolder: '1'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
-    translationMethod: none
-    type: FocusPoint_FocusPoint
+    translationMethod: site
+    type: craft\fields\Assets
   ed71610d-27b5-4aa6-a099-2437d809df35: # CTA
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: cta
@@ -85,16 +135,20 @@ fields:
     name: CTA
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   ef70e1b7-cf97-43cd-a65e-52ccff3a11b2: # Body
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: ''
@@ -103,11 +157,20 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: ''
       columnType: text
-      configFile: Standard.json
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: ''
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

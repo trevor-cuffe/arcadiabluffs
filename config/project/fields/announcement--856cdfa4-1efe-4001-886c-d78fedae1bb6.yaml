@@ -1,21 +1,43 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: announcement
 instructions: ''
 name: Announcement
-searchable: 1
+searchable: true
 settings:
   columns:
-    47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
-      width: ''
-    d674a38b-5677-430e-90af-0524d99826b5: # Text
-      width: ''
+    __assoc__:
+      -
+        - 47333271-0ec9-46c1-8a97-252f94aff32c # Enabled
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 5c4dce04-09b5-4782-8525-f9501e72fd30 # Headline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - d674a38b-5677-430e-90af-0524d99826b5 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_announcement_1}}'
   fieldLayout: row
-  maxRows: null
-  minRows: null
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a row'
   staticField: '1'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: verbb\supertable\fields\SuperTableField

@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
 handle: accommodationForm
@@ -5,9 +6,16 @@ instructions: ''
 name: 'Accommodation Form'
 searchable: true
 settings:
+  allowSelfRelations: false
   limit: '1'
+  localizeRelations: false
   selectionLabel: ''
+  showSiteMenu: true
+  source: null
   sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
 translationKeyFormat: null
-translationMethod: none
-type: SproutForms_Forms
+translationMethod: site
+type: barrelstrength\sproutforms\fields\Forms

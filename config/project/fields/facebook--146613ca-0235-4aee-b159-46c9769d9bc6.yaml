@@ -1,11 +1,15 @@
-contentColumnType: string
+columnSuffix: null
+contentColumnType: string(255)
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: facebook
 instructions: ''
 name: Facebook
 searchable: true
 settings:
-  followRedirects: ''
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
 translationKeyFormat: null
 translationMethod: none
-type: VzUrl
+type: craft\fields\Url

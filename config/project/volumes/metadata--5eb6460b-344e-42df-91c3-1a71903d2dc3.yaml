@@ -1,9 +1,40 @@
+fieldLayouts:
+  45a84583-7747-4b4f-8a35-e7b33a70c55a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
 handle: metadata
 hasUrls: true
 name: Metadata
 settings:
-  path: '@basePath/uploads/metadata'
-  url: '@siteUrl/uploads/metadata'
+  path: uploads/metadata
 sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
 type: craft\volumes\Local
-url: null
+url: /uploads/metadata

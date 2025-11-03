@@ -149,7 +149,7 @@
         height: 169,
         mode: 'crop',
         jpegQuality: 85,
-        position: image.focusPctX ~ '% ' ~ image.focusPctY ~ '%'
+        position: image.getFocalPoint()
       }) %}
       {% set bannerUrl = banner.url ?? null %}
 
@@ -257,3 +257,9 @@
     {% set arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"] %}
     {{ arr[(val % 16)] }} #}
 {% endmacro %}
+
+
+{# Google Maps Link #}
+{% macro googleMapsLink(address) %}{% apply spaceless %}
+	https://www.google.com/maps/search/?api=1&query= {{ address|replace({', ': '+', ' ': '+', ',': '+'}) }}
+{% endapply %}{% endmacro %}

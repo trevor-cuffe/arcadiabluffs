@@ -1,3 +1,5 @@
+{% import '_macros' as macros %}
+
 {# Get First Segment #}
 {% set current = craft.request.getFirstSegment() %}
 
@@ -54,7 +56,7 @@
 
     </div>
     <div class="footer-bottom">
-        <p class="footer__copyright">&copy; &reg; {{ contactInformation.address.name }} <span>-</span> <a href="{{ contactInformation.address.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.address.street }}, {{ contactInformation.address.city }}, {{ contactInformation.address.region }} {{ contactInformation.address.postalCode }}</a> <span>-</span> <a href="tel:{{ contactInformation.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ contactInformation.phone }}</a></p>
+        <p class="footer__copyright">&copy; &reg; {{ contactInformation.address.address1 }} <span>-</span> <a href="{{ macros.googleMapsLink(contactInformation.address.address2) }}" target="_blank">{{ contactInformation.address.address2 }}, {{ contactInformation.address.locality }}, {{ contactInformation.address.administrativeArea }} {{ contactInformation.address.postalCode }}</a> <span>-</span> <a href="tel:{{ contactInformation.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ contactInformation.phone }}</a></p>
         {% include '_partials/social' %}
     </div>
 </footer>

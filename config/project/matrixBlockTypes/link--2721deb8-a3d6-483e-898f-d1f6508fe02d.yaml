@@ -20,23 +20,36 @@ fields:
     settings:
       allowCustomText: ''
       allowTarget: ''
-      assetSelectionLabel: 'Select an asset'
-      assetSources: '*'
-      categorySelectionLabel: 'Select a category'
-      categorySources: '*'
       defaultText: ''
-      entrySelectionLabel: 'Select an entry'
-      entrySources: '*'
+      selectLinkText: ''
       types:
-        - email
-        - tel
-        - custom
-        - entry
-        - category
-        - asset
+        presseddigital\linkit\models\Asset:
+          customLabel: null
+          customSelectionLabel: 'Select an asset'
+          enabled: 1
+          sources: '*'
+        presseddigital\linkit\models\Category:
+          customLabel: null
+          customSelectionLabel: 'Select a category'
+          enabled: 1
+          sources: '*'
+        presseddigital\linkit\models\Email:
+          customLabel: null
+          enabled: 1
+        presseddigital\linkit\models\Entry:
+          customLabel: null
+          customSelectionLabel: 'Select an entry'
+          enabled: 1
+          sources: '*'
+        presseddigital\linkit\models\Phone:
+          customLabel: null
+          enabled: 1
+        presseddigital\linkit\models\Url:
+          customLabel: null
+          enabled: 1
     translationKeyFormat: null
     translationMethod: none
-    type: FruitLinkIt
+    type: presseddigital\linkit\fields\LinkitField
 handle: link
 name: Link
 sortOrder: 1

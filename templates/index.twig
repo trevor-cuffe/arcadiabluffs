@@ -91,7 +91,7 @@
       {% if accommodations.buttons|length %}
         <div class="o-home-accommodations__btns">
           {% for row in accommodations.buttons.all() %}
-            <a href="{{ row.button.url }}" class="btn">{{ row.button.text }}</a>
+            <a href="{{ row.button.getUrl() }}" class="btn">{{ row.button.getText() }}</a>
           {% endfor %}
         </div>
       {% endif %}

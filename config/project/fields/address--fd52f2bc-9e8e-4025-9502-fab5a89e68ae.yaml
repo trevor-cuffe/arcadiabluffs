@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: address
@@ -5,8 +6,12 @@ instructions: ''
 name: 'Arcadia Bluffs Address'
 searchable: true
 settings:
+  addressHelper: null
   defaultCountry: US
-  showName: '1'
+  defaultLanguage: en
+  hideCountryDropdown: null
+  showCountryDropdown: ''
+  value: null
 translationKeyFormat: null
 translationMethod: none
-type: VzAddress
+type: barrelstrength\sproutfields\fields\Address

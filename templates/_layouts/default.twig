@@ -1,5 +1,7 @@
 {% import '_macros' as macros %}
 
+{% set currentEnvironment = getenv('CRAFT_ENVIRONMENT') %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,15 +20,15 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 
-		{% if craft.config.env == 'production' and googleTagManager['productionSnippet'] | default(false) %}
+		{% if currentEnvironment == 'production' and googleTagManager['productionSnippet'] | default(false) %}
 			{{ googleTagManager.productionSnippet | raw }}
 		{% endif %}
 
-		{% if craft.config.env == 'staging' and googleTagManager['stagingSnippet'] | default(false) %}
+		{% if currentEnvironment == 'staging' and googleTagManager['stagingSnippet'] | default(false) %}
 			{{ googleTagManager.stagingSnippet | raw  }}
 		{% endif %}
 
-		{% if craft.config.env == 'dev' and googleTagManager['developmentSnippet'] | default(false) %}
+		{% if currentEnvironment == 'dev' and googleTagManager['developmentSnippet'] | default(false) %}
 			{{ googleTagManager.developmentSnippet | raw }}
 		{% endif %}
 

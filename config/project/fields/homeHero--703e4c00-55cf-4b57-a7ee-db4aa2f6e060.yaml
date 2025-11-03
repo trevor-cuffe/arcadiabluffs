@@ -10,6 +10,7 @@ settings:
       width: ''
     ea8304eb-f854-4dc5-b1df-84fbb8c51ea7: # Button
       width: ''
+  contentTable: '{{%stc_homehero}}'
   fieldLayout: row
   maxRows: null
   minRows: null

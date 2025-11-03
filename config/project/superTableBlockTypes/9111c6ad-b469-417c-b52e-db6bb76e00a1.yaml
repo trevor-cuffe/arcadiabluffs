@@ -3,43 +3,62 @@ fieldLayouts:
   7d9ca38f-51e0-41f1-b511-ce69f8e4d927:
     tabs:
       -
-        fields:
-          7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
-            required: 0
-            sortOrder: 2
-          53352c27-2a47-44a6-a7a3-3d29eaace28e: # Headline
-            required: 0
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 53352c27-2a47-44a6-a7a3-3d29eaace28e # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b3e1dd7-7c27-4a5a-839f-8b3f368349ef # Awards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: awards
     instructions: ''
     name: Awards
-    searchable: 1
+    searchable: true
     settings:
       contentTable: '{{%matrixcontent_awards}}'
-      maxBlocks: null
+      maxBlocks: ''
+      minBlocks: ''
+      propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Matrix
   53352c27-2a47-44a6-a7a3-3d29eaace28e: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
     instructions: ''
     name: Headline
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

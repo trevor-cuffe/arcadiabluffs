@@ -1,38 +1,11 @@
-field: ea78a6cf-7df9-415d-aa20-2f246a33e383 # Home Dining
+field: 48e899c2-d911-461d-90e2-6f404a72376f # Buttons
 fieldLayouts:
-  547e8b78-82de-4c1e-8f0c-02a503b827cb:
+  99408ad3-c793-4a54-9415-4bc080568ac6:
     tabs:
       -
         elements:
           -
-            fieldUid: 49b14ddc-b863-47cf-9f09-87654c5b6f65 # Headline
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 8f38cf3e-638f-4bad-aff2-ecc59c8c6303 # Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 95930b1a-46ab-472b-bbc8-08004eee0333 # Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: bbfb2374-a525-4465-984d-d47c476db769 # Dining Options
+            fieldUid: 40cf8533-8180-4806-9383-dd85361794b4 # Button
             instructions: null
             label: null
             required: false
@@ -43,61 +16,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
+  40cf8533-8180-4806-9383-dd85361794b4: # Button
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: text
+    handle: button
     instructions: ''
-    name: Text
-    searchable: true
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: true
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field
-  49b14ddc-b863-47cf-9f09-87654c5b6f65: # Headline
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: headline
-    instructions: ''
-    name: Headline
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  95930b1a-46ab-472b-bbc8-08004eee0333: # Link
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: linkData
-    instructions: ''
-    name: Link
+    name: Button
     searchable: true
     settings:
       allowCustomText: '1'
@@ -230,7 +155,7 @@ fields:
                     - 'section:3dfade29-0d50-45dd-9bf0-0b0a2fed7406' # Utility Pages
                 -
                   - customSelectionLabel
-                  - 'Select an entry'
+                  - ''
           -
             - presseddigital\linkit\models\Category
             -
@@ -285,20 +210,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: presseddigital\linkit\fields\LinkitField
-  bbfb2374-a525-4465-984d-d47c476db769: # Dining Options
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: diningOptions
-    instructions: ''
-    name: 'Dining Options'
-    searchable: true
-    settings:
-      contentTable: '{{%matrixcontent_diningoptions_1}}'
-      maxBlocks: '3'
-      minBlocks: ''
-      propagationKeyFormat: null
-      propagationMethod: all
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
+handle: button
+name: Button
+sortOrder: 1

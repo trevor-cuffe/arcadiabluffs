@@ -35,6 +35,8 @@ return [
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 
+    'resourceBasePath' => (dirname(__DIR__) . '/web/cpresources'),
+
 
     // copied from craft 2 project
     'defaultSearchTermOptions' => array(

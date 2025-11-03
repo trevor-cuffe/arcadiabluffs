@@ -7,16 +7,17 @@ searchable: true
 settings:
   allowCustomText: '1'
   allowTarget: '1'
-  assetSelectionLabel: 'Select an asset'
-  assetSources: '*'
-  categorySelectionLabel: 'Select a category'
-  categorySources: '*'
   defaultText: ''
-  entrySelectionLabel: 'Select an entry'
-  entrySources: '*'
+  selectLinkText: ''
   types:
-    - custom
-    - entry
+    presseddigital\linkit\models\Entry:
+      customLabel: null
+      customSelectionLabel: 'Select an entry'
+      enabled: 1
+      sources: '*'
+    presseddigital\linkit\models\Url:
+      customLabel: null
+      enabled: 1
 translationKeyFormat: null
 translationMethod: none
-type: FruitLinkIt
+type: presseddigital\linkit\fields\LinkitField

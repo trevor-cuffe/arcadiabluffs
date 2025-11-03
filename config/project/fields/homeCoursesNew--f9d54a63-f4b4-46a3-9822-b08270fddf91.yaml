@@ -1,29 +1,64 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
 handle: homeCoursesNew
 instructions: ''
 name: 'Home Courses'
-searchable: 1
+searchable: true
 settings:
   columns:
-    2e0e521e-50dc-4fc4-b923-0360760a0c28: # Text
-      width: ''
-    4df910d9-30d4-4eac-8b59-435d3143c244: # Video Headline
-      width: ''
-    6cbfc500-609a-481a-b793-29875ee605b0: # Headline
-      width: ''
-    330eac69-3318-422a-861b-d841fff06fef: # Video Subheadline
-      width: ''
-    96026f6b-4401-4546-b7e2-9549a9ecbf38: # Video
-      width: ''
-    df2fb927-6c87-4678-9950-d3a004411ca8: # Courses
-      width: ''
+    __assoc__:
+      -
+        - 6cbfc500-609a-481a-b793-29875ee605b0 # Headline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 2e0e521e-50dc-4fc4-b923-0360760a0c28 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 4df910d9-30d4-4eac-8b59-435d3143c244 # Video Headline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 330eac69-3318-422a-861b-d841fff06fef # Video Subheadline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 96026f6b-4401-4546-b7e2-9549a9ecbf38 # Video
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - df2fb927-6c87-4678-9950-d3a004411ca8 # Courses
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_homecoursesnew}}'
   fieldLayout: row
-  maxRows: null
-  minRows: null
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a row'
   staticField: '1'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: verbb\supertable\fields\SuperTableField

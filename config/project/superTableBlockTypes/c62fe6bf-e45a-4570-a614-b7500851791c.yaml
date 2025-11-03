@@ -3,43 +3,62 @@ fieldLayouts:
   2eaefc8d-9076-4f72-88b8-4805b07683a4:
     tabs:
       -
-        fields:
-          803dc76f-627a-4c8f-8082-157ada849bea: # Headline
-            required: 0
-            sortOrder: 1
-          88856313-68a9-44fd-8849-c2e1cecb3695: # Featured Awards
-            required: 0
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 803dc76f-627a-4c8f-8082-157ada849bea # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 88856313-68a9-44fd-8849-c2e1cecb3695 # Featured Awards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   803dc76f-627a-4c8f-8082-157ada849bea: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
     instructions: ''
     name: Headline
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   88856313-68a9-44fd-8849-c2e1cecb3695: # Featured Awards
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: featuredAwards
     instructions: ''
     name: 'Featured Awards'
-    searchable: 1
+    searchable: true
     settings:
       contentTable: '{{%matrixcontent_featuredawards}}'
-      maxBlocks: null
+      maxBlocks: ''
+      minBlocks: ''
+      propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Matrix

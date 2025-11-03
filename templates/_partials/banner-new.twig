@@ -10,7 +10,7 @@
     height: 440,
     mode: 'crop',
     jpegQuality: 100,
-    position: component.image.focusPctX ~ '% ' ~ component.image.focusPctY ~ '%'
+    position: component.image.getFocalPoint()
   }) %}
   {% if banner|length %}
     {% set url = banner.url %}

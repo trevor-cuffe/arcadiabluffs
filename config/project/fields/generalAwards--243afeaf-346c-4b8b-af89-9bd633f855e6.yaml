@@ -1,21 +1,36 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 5a412ccd-04da-4787-a28c-3ac60d56e066 # Awards
 handle: generalAwards
 instructions: ''
 name: 'General Awards'
-searchable: 1
+searchable: true
 settings:
   columns:
-    7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
-      width: ''
-    53352c27-2a47-44a6-a7a3-3d29eaace28e: # Headline
-      width: ''
+    __assoc__:
+      -
+        - 53352c27-2a47-44a6-a7a3-3d29eaace28e # Headline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 7b3e1dd7-7c27-4a5a-839f-8b3f368349ef # Awards
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_generalawards}}'
   fieldLayout: row
-  maxRows: null
-  minRows: null
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a row'
   staticField: '1'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: verbb\supertable\fields\SuperTableField

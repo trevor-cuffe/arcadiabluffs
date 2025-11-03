@@ -1,11 +1,11 @@
-field: ea78a6cf-7df9-415d-aa20-2f246a33e383 # Home Dining
+field: df2fb927-6c87-4678-9950-d3a004411ca8 # Courses
 fieldLayouts:
-  547e8b78-82de-4c1e-8f0c-02a503b827cb:
+  0222c75e-dfcb-456d-8e59-b66fe2a71732:
     tabs:
       -
         elements:
           -
-            fieldUid: 49b14ddc-b863-47cf-9f09-87654c5b6f65 # Headline
+            fieldUid: 757ad3bc-3bc1-4828-91ee-a35c04d93e82 # Image
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8f38cf3e-638f-4bad-aff2-ecc59c8c6303 # Text
+            fieldUid: 0a870800-b231-49d9-9cb3-c79728880aa0 # Headline
             instructions: null
             label: null
             required: false
@@ -23,16 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 95930b1a-46ab-472b-bbc8-08004eee0333 # Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: bbfb2374-a525-4465-984d-d47c476db769 # Dining Options
+            fieldUid: e7f3e789-e3c9-46ee-add0-1122214d324c # Button
             instructions: null
             label: null
             required: false
@@ -43,35 +34,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: text
-    instructions: ''
-    name: Text
-    searchable: true
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: true
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field
-  49b14ddc-b863-47cf-9f09-87654c5b6f65: # Headline
+  0a870800-b231-49d9-9cb3-c79728880aa0: # Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -91,17 +54,51 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  95930b1a-46ab-472b-bbc8-08004eee0333: # Link
+  757ad3bc-3bc1-4828-91ee-a35c04d93e82: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e7f3e789-e3c9-46ee-add0-1122214d324c: # Button
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: linkData
+    handle: button
     instructions: ''
-    name: Link
+    name: Button
     searchable: true
     settings:
       allowCustomText: '1'
-      allowTarget: '1'
+      allowTarget: ''
       defaultText: ''
       selectLinkText: ''
       types:
@@ -138,7 +135,7 @@ fields:
               __assoc__:
                 -
                   - enabled
-                  - '1'
+                  - ''
                 -
                   - customLabel
                   - ''
@@ -222,22 +219,17 @@ fields:
                 -
                   - sources
                   -
-                    - 'section:0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e' # Accommodations
                     - 'section:cd118c39-5937-4705-b0db-2cb2bb0b7e9b' # Courses
-                    - 'section:f02a0d8f-d625-405c-a782-87b045350b7f' # Dining
-                    - 'section:19d04551-214f-4e9b-9a5e-ff66d6fe1028' # News
-                    - singles
-                    - 'section:3dfade29-0d50-45dd-9bf0-0b0a2fed7406' # Utility Pages
                 -
                   - customSelectionLabel
-                  - 'Select an entry'
+                  - ''
           -
             - presseddigital\linkit\models\Category
             -
               __assoc__:
                 -
                   - enabled
-                  - '1'
+                  - ''
                 -
                   - customLabel
                   - ''
@@ -253,7 +245,7 @@ fields:
               __assoc__:
                 -
                   - enabled
-                  - '1'
+                  - ''
                 -
                   - customLabel
                   - ''
@@ -285,20 +277,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: presseddigital\linkit\fields\LinkitField
-  bbfb2374-a525-4465-984d-d47c476db769: # Dining Options
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: diningOptions
-    instructions: ''
-    name: 'Dining Options'
-    searchable: true
-    settings:
-      contentTable: '{{%matrixcontent_diningoptions_1}}'
-      maxBlocks: '3'
-      minBlocks: ''
-      propagationKeyFormat: null
-      propagationMethod: all
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
+handle: course
+name: Course
+sortOrder: 1

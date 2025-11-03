@@ -1,5 +1,5 @@
 fieldLayouts:
-  deca8054-18c6-48ee-b1c3-8448aa819240:
+  ce3a6341-432e-4438-9e84-b867623b1511:
     tabs:
       -
         elements:
@@ -28,13 +28,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: general
-hasUrls: true
-name: General
+handle: userPhotos
+hasUrls: false
+name: 'User Photos'
 settings:
-  path: uploads/general
-sortOrder: 1
+  path: userphotos
+sortOrder: 3
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: /uploads/general
+url: ''

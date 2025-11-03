@@ -103,3 +103,13 @@ gulp fonts
 # Moves static assets fonts from `src/static` to `web/assets/fonts`
 gulp static
 ```
+
+
+## Migration
+
+1) Need to remove forms from plugins in db, and remove sprout tables
+    -delete vzAddress, vzUrl, CpSortCols from plugins table
+
+2) Install plugins
+3) Manually reassign field types
+4) Manually fix "_1}}" content tables (except matrixcontent_diningoptions)

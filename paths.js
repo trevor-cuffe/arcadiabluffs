@@ -42,7 +42,7 @@ const paths = {
   },
   fonts: {
     src: 'src/fonts',
-    dest: 'web/assets/fonts',
+    dest: 'web/assets/font',
     ext: ['woff2', 'woff', 'eot', 'ttf', 'svg', 'otf']
   },
   static: {

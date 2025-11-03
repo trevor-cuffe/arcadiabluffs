@@ -156,112 +156,113 @@ function recaptchaCallback() {
             });
         },
 
-        getWeather: function() {
-            $.get('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/2673ef5c550abcb1a8f90394bbd20ddd/44.4779,-86.2515789', function(data) {
-                var currently = data.currently;
-                // console.log(currently.icon);
-                // Small Widget
-                $('.weather-sm__inner').html(
-                    '<span class="weather-sm__temp">' + Math.round(currently.temperature) + '&deg;</span>' +
-                    '<span class="weather-sm__icon ' + setWeatherIcon(currently.icon) + '"></span>'
-                );
-                // Today
-                $('.weather-panel__today').html(
-                    '<h2 class="weather-panel__today-headline">' + moment(currently.time * 1000).format("dddd, MMM D h:m A") + '</h2>' +
-                    '<p class="weather-panel__today-forcast"><span class="weather-panel__today-forecast-icon ' + setWeatherIcon(currently.icon) + '"></span> <span class="weather-panel__today-forecast-label">' + currently.summary + '</span></p>'
-                );
-                // Current Conditions
-                $('.weather-panel__conditions-temp').html(Math.round(currently.temperature) + '&deg;');
-                $('.weather-panel__conditions-list').html(
-                    '<dt class="weather-panel__conditions-list-label">Wind:</dt>' +
-                    '<dd class="weather-panel__conditions-list-term">' + currently.windSpeed + ' MPH' + ' ' + getCardinal(currently.windBearing) + '</dd>' +
-                    '<dt class="weather-panel__conditions-list-label">Humidity:</dt>' +
-                    '<dd class="weather-panel__conditions-list-term">' + (currently.humidity * 100) + '%</dd>' +
-                    '<dt class="weather-panel__conditions-list-label">Feels Like:</dt>' +
-                    '<dd class="weather-panel__conditions-list-term">' + Math.round(currently.apparentTemperature) + '&deg;</dd>'
-                );
+        // getWeather: function() {
+        //     console.log('get weather');
+        //     $.get('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/2673ef5c550abcb1a8f90394bbd20ddd/44.4779,-86.2515789', function(data) {
+        //         var currently = data.currently;
+        //         // console.log(currently.icon);
+        //         // Small Widget
+        //         $('.weather-sm__inner').html(
+        //             '<span class="weather-sm__temp">' + Math.round(currently.temperature) + '&deg;</span>' +
+        //             '<span class="weather-sm__icon ' + setWeatherIcon(currently.icon) + '"></span>'
+        //         );
+        //         // Today
+        //         $('.weather-panel__today').html(
+        //             '<h2 class="weather-panel__today-headline">' + moment(currently.time * 1000).format("dddd, MMM D h:m A") + '</h2>' +
+        //             '<p class="weather-panel__today-forcast"><span class="weather-panel__today-forecast-icon ' + setWeatherIcon(currently.icon) + '"></span> <span class="weather-panel__today-forecast-label">' + currently.summary + '</span></p>'
+        //         );
+        //         // Current Conditions
+        //         $('.weather-panel__conditions-temp').html(Math.round(currently.temperature) + '&deg;');
+        //         $('.weather-panel__conditions-list').html(
+        //             '<dt class="weather-panel__conditions-list-label">Wind:</dt>' +
+        //             '<dd class="weather-panel__conditions-list-term">' + currently.windSpeed + ' MPH' + ' ' + getCardinal(currently.windBearing) + '</dd>' +
+        //             '<dt class="weather-panel__conditions-list-label">Humidity:</dt>' +
+        //             '<dd class="weather-panel__conditions-list-term">' + (currently.humidity * 100) + '%</dd>' +
+        //             '<dt class="weather-panel__conditions-list-label">Feels Like:</dt>' +
+        //             '<dd class="weather-panel__conditions-list-term">' + Math.round(currently.apparentTemperature) + '&deg;</dd>'
+        //         );
 
-                // Five Day Forcast
-                // Get next 5 days in forecase
-                var forecast = data.daily.data.slice(1, 6);
-                // Loop through each object in array
-                $.each(forecast, function(i, val) {
-                    // Append to container
-                    // console.log(val.icon);
-                    $('.weather-panel__five-day-list').append(
-                        '<dt class="weather-panel__five-day-label">' + moment(val.time * 1000).format("dddd") + '</dt>' +
-                        '<dd class="weather-panel__five-day-temp">' + Math.round(val.temperatureLow) + '&deg; / ' + Math.round(val.temperatureHigh) + '&deg;</dd>' +
-                        '<dd class="weather-panel__five-day-icon ' + setWeatherIcon(val.icon) + '"></dd>'
-                    );
-                });
+        //         // Five Day Forcast
+        //         // Get next 5 days in forecase
+        //         var forecast = data.daily.data.slice(1, 6);
+        //         // Loop through each object in array
+        //         $.each(forecast, function(i, val) {
+        //             // Append to container
+        //             // console.log(val.icon);
+        //             $('.weather-panel__five-day-list').append(
+        //                 '<dt class="weather-panel__five-day-label">' + moment(val.time * 1000).format("dddd") + '</dt>' +
+        //                 '<dd class="weather-panel__five-day-temp">' + Math.round(val.temperatureLow) + '&deg; / ' + Math.round(val.temperatureHigh) + '&deg;</dd>' +
+        //                 '<dd class="weather-panel__five-day-icon ' + setWeatherIcon(val.icon) + '"></dd>'
+        //             );
+        //         });
 
-                // Convert Compass Direction to Cardinal Direction (i.e. "N/NE/E/SE/S/SW/W/NW/N")
-                function getCardinal(num) {
-                    var val = Math.floor((num / 22.5) + 0.5);
-                    var arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
-                    return arr[(val % 16)];
-                }
+        //         // Convert Compass Direction to Cardinal Direction (i.e. "N/NE/E/SE/S/SW/W/NW/N")
+        //         function getCardinal(num) {
+        //             var val = Math.floor((num / 22.5) + 0.5);
+        //             var arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+        //             return arr[(val % 16)];
+        //         }
 
-                function setWeatherIcon(code) {
-                    var icon = '';
-                    switch (code) {
-                        case 'day-sunny':
-                        case 'sunny':
-                            icon = 'wi-forecast-io-clear-day';
-                            break;
-                        case 'night-clear':
-                        case 'clear':
-                        case 'day-clear':
-                            icon = 'wi-forecast-io-clear-night';
-                            break;
-                        case 'rain':
-                            icon = 'wi-forecast-io-rain';
-                            break;
-                        case 'snow':
-                            icon = 'wi-forecast-io-snow';
-                            break;
-                        case 'sleet':
-                            icon = 'wi-forecast-io-sleet';
-                            break;
-                        case 'strong-wind':
-                            icon = 'wi-forecast-io-wind';
-                            break;
-                        case 'wind':
-                            icon = 'wi-forecast-io-wind';
-                            break;
-                        case 'fog':
-                            icon = 'wi-forecast-io-fog';
-                            break;
-                        case 'cloudy':
-                            icon = 'wi-forecast-io-cloudy';
-                            break;
-                        case 'day-cloudy':
-                        case 'partly-cloudy-day':
-                            icon = 'wi-forecast-io-partly-cloudy-day';
-                            break;
-                        case 'night-cloudy':
-                        case 'partly-cloudy-night':
-                            icon = 'wi-forecast-io-partly-cloudy-night';
-                            break;
-                        case 'hail':
-                            icon = 'wi-forecast-io-hail';
-                            break;
-                        case 'thunderstorm':
-                            icon = 'wi-forecast-io-thunderstorm';
-                            break;
-                        case 'tornado':
-                            icon = 'wi-forecast-io-tornado';
-                            break;
-                        default:
-                            icon = 'wi-forecast-io-cloudy';
-                            break;
-                    }
+        //         function setWeatherIcon(code) {
+        //             var icon = '';
+        //             switch (code) {
+        //                 case 'day-sunny':
+        //                 case 'sunny':
+        //                     icon = 'wi-forecast-io-clear-day';
+        //                     break;
+        //                 case 'night-clear':
+        //                 case 'clear':
+        //                 case 'day-clear':
+        //                     icon = 'wi-forecast-io-clear-night';
+        //                     break;
+        //                 case 'rain':
+        //                     icon = 'wi-forecast-io-rain';
+        //                     break;
+        //                 case 'snow':
+        //                     icon = 'wi-forecast-io-snow';
+        //                     break;
+        //                 case 'sleet':
+        //                     icon = 'wi-forecast-io-sleet';
+        //                     break;
+        //                 case 'strong-wind':
+        //                     icon = 'wi-forecast-io-wind';
+        //                     break;
+        //                 case 'wind':
+        //                     icon = 'wi-forecast-io-wind';
+        //                     break;
+        //                 case 'fog':
+        //                     icon = 'wi-forecast-io-fog';
+        //                     break;
+        //                 case 'cloudy':
+        //                     icon = 'wi-forecast-io-cloudy';
+        //                     break;
+        //                 case 'day-cloudy':
+        //                 case 'partly-cloudy-day':
+        //                     icon = 'wi-forecast-io-partly-cloudy-day';
+        //                     break;
+        //                 case 'night-cloudy':
+        //                 case 'partly-cloudy-night':
+        //                     icon = 'wi-forecast-io-partly-cloudy-night';
+        //                     break;
+        //                 case 'hail':
+        //                     icon = 'wi-forecast-io-hail';
+        //                     break;
+        //                 case 'thunderstorm':
+        //                     icon = 'wi-forecast-io-thunderstorm';
+        //                     break;
+        //                 case 'tornado':
+        //                     icon = 'wi-forecast-io-tornado';
+        //                     break;
+        //                 default:
+        //                     icon = 'wi-forecast-io-cloudy';
+        //                     break;
+        //             }
 
-                    return 'wi ' + icon;
-                }
+        //             return 'wi ' + icon;
+        //         }
 
-            });
-        },
+        //     });
+        // },
 
         toggleMobileNav: function() {
             $('.js-nav-toggle').click(function() {

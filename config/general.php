@@ -12,6 +12,7 @@ use craft\helpers\App;
 
 $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
+$allowAdmin = ($isDev or App::env('CRAFT_ALLOW_ADMIN_CHANGES') == 'true');
 
 return [
     // Default Week Start Day (0 = Sunday, 1 = Monday...)
@@ -30,12 +31,16 @@ return [
     'devMode' => $isDev,
 
     // Whether administrative changes should be allowed
-    'allowAdminChanges' => $isDev,
+    'allowAdminChanges' => $allowAdmin,
+
+    // disable template caching if in dev environment
+    'enableTemplateCaching' => !$isDev,
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 
     'resourceBasePath' => (dirname(__DIR__) . '/web/cpresources'),
+
 
 
     // copied from craft 2 project

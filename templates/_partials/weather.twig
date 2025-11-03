@@ -1,35 +1,60 @@
+{% import '_macros' as macros %}
+
+{% set params = {
+    url: 'https://api.openweathermap.org/data/3.0/onecall?lat=44.4566&lon=-86.2425&units=imperial&appid=5ce4eb0dcfea78a63897879e926938be',
+    type: 'json',
+    cache: 300
+} %}
+
+{# {% set feed = craft.feedme.feed(params) %}
+<pre>
+	{{ dump(feed) }}
+</pre> #}
+
+{% set feed = craft.feedme.feed(params) %}
+{% set code = feed['current']['weather'][0]['icon'] %}
+{% set icon = macros.setWeatherIcon('icon-'~code) %}
+
 {% set sunsetCamera = craft.entries.section('sunsetCamera').one() %}
 <button role="button" class="weather-sm js-weather-toggle">
-	<div class="weather-sm__inner">
-		<span class="weather-sm__temp"></span>
-		<span class="weather-sm__icon"></span>
-	</div>
+    <div class="weather-sm__inner">
+        <span class="weather-sm__temp">{{ feed['current']['temp']|round }} &deg;</span>
+        <span class="weather-sm__icon {{ icon }}"></span>
+    </div>
 </button>
 
 <aside class="weather-panel">
-	<h1 class="weather-panel__headline">Currrent Weather</h1>
+	<h1 class="weather-panel__headline">Current Weather</h1>
 	<div class="weather-panel__today">
-		<h2 class="weather-panel__today-headline"></h2>
-		<p class="weather-panel__today-forcast">
-			<span class="weather-panel__today-forecast-icon"></span>
-			<span class="weather-panel__today-forecast-label"></span>
-		</p>
+        <h2 class="weather-panel__today-headline">{{ feed['current']['dt']|date('l, F j Y g:i A', 'America/New_York') }}</h2>
+        <p class="weather-panel__today-forcast">
+            <span class="weather-panel__today-forecast-icon {{ icon }}"></span>
+            <span class="weather-panel__today-forecast-label">{{ feed['current']['weather'][0]['description'] }}</span>
+        </p>
 	</div>
 	<div class="weather-panel__conditions">
-		<h2 class="weather-panel__conditions-headline">Conditions</h2>
-		<p class="weather-panel__conditions-temp"></p>
-		<dl class="weather-panel__conditions-list">
-			<dt class="weather-panel__conditions-list-label">Wind:</dt>
-			<dd class="weather-panel__conditions-list-term"></dd>
-			<dt class="weather-panel__conditions-list-label">Humidity:</dt>
-			<dd class="weather-panel__conditions-list-term"></dd>
-			<dt class="weather-panel__conditions-list-label">Feels Like:</dt>
-			<dd class="weather-panel__conditions-list-term"></dd>
-		</dl>
+        <h2 class="weather-panel__conditions-headline">Conditions</h2>
+        <p class="weather-panel__conditions-temp">{{ feed['current']['temp']|round }} &deg;</p>
+        <dl class="weather-panel__conditions-list">
+            <dt class="weather-panel__conditions-list-label">Wind:</dt>
+            <dd class="weather-panel__conditions-list-term"> {{ feed['current']['wind_speed'] ~ ' MPH' ~ ' ' ~ macros.getCardinal(feed['current']['wind_deg']) }}</dd>
+            <dt class="weather-panel__conditions-list-label">Humidity:</dt>
+            <dd class="weather-panel__conditions-list-term">{{ (feed['current']['humidity']) ~ '%' }}</dd>
+            <dt class="weather-panel__conditions-list-label">Feels Like:</dt>
+            <dd class="weather-panel__conditions-list-term">{{ feed['current']['feels_like']|round }} &deg;</dd>
+        </dl>
 	</div>
 	<div class="weather-panel__five-day">
-		<h2 class="weather-panel__five-day-headline">5 Day Forecast</h2>
-		<dl class="weather-panel__five-day-list"></dl>
+        <h2 class="weather-panel__five-day-headline">5 Day Forecast</h2>
+        <dl class="weather-panel__five-day-list">
+            {% for val in feed['daily']|slice(1,6) %}
+                {% set icon = macros.setWeatherIcon('icon-'~val['weather'][0]['icon']) %}
+
+                <dt class="weather-panel__five-day-label">{{ val['dt']|date('l', 'America/New_York') }}</dt>
+                <dd class="weather-panel__five-day-temp">{{ val['temp']['night']|round }} &deg; / {{ val['temp']['day']|round }} &deg;</dd>
+                <dd class="weather-panel__five-day-icon {{ icon }}"></dd>
+            {% endfor %}
+        </dl>
 	</div>
 	{% if sunsetCamera | length %}
 		<a href="{{ sunsetCamera.url }}" class="weather-panel__link">View Sunset Camera &rarr;</a>

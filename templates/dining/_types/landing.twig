@@ -8,45 +8,45 @@
 {% set data_page = 'accommodations' %}
 
 {% if entry.headline is defined and entry.headline|length %}
-  {% set title = entry.headline %}
+	{% set title = entry.headline %}
 {% else %}
-  {% set title = entry.title %}
+	{% set title = entry.title %}
 {% endif %}
 
 {% block body %}
 
-    {% include '_partials/banner' %}
+	{% include '_partials/banner' %}
 
-    <main class="main main__{{ template }}" role="main">
+	<main class="main main__{{ template }}" role="main">
 
-        <section class="accommodations">
-            
-            {% if entry.pageLinks|length %}
-            <div class="accommodations__grid">
-                {% set buckets = entry.pageLinks %}
-                {% for bucket in buckets %}
-                    {% set image = bucket.image.first() %}
-                    <div class="accommodations__grid-item">
-                        {% include '_partials/page-link' %}
-                    </div>
-                {% endfor %}
-            </div>
-            {% endif %}
+		<section class="accommodations">
 
-        </section>
+			{% if entry.pageLinks|length %}
+				<div class="accommodations__grid">
+					{% set buckets = entry.pageLinks %}
+					{% for bucket in buckets %}
+						{% set image = bucket.image.one() %}
+						<div class="accommodations__grid-item">
+							{% include '_partials/page-link' %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
 
-        {% if entry.accommodationExtras|length %}
-        <section class="accommodations__extras">
-            {% for block in entry.accommodationExtras.level(1) %}
-                <div class="accommodations__extras-col">
-                    {% if block.type == "column" %}
-                        {{ macros.linkedList(block.linkedList, 'accommodations__extras') }}
-                    {% endif %}
-                </div>
-            {% endfor %}
-        </section>
-        {% endif %}
+		</section>
 
-    </main>
+		{% if entry.accommodationExtras|length %}
+			<section class="accommodations__extras">
+				{% for block in entry.accommodationExtras.level(1) %}
+					<div class="accommodations__extras-col">
+						{% if block.type == "column" %}
+							{{ macros.linkedList(block.linkedList, 'accommodations__extras') }}
+						{% endif %}
+					</div>
+				{% endfor %}
+			</section>
+		{% endif %}
+
+	</main>
 
 {% endblock %}

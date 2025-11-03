@@ -10,40 +10,42 @@
 
 {% block body %}
 
-    <main class="main main__{{ template }}" role="main">
+	<main class="main main__{{ template }}" role="main">
 
-        {% for block in entry.diningOptions %}
+		{% for block in entry.diningOptions %}
 
-            <div class="dining-option__wrap">
+			<div class="dining-option__wrap">
 
-                <article class="dining-option">
-                    <h1 class="dining-option__headline">{{ block.headline }}</h1>
-                    <div class="dining-option__content">
-                        {{ block.description }}
-                    </div>
+				<article class="dining-option">
+					<h1 class="dining-option__headline">{{ block.headline }}</h1>
+					<div class="dining-option__content">
+						{{ block.description }}
+					</div>
 
-                    <div class="dining-option__list-wrap">
-                        <dl class="dining-option__list">
-                            {% for row in block.detailsList %}
-                                <dt class="dining-option__list-label">{{ row.label }}</dt>
-                                <dd class="dining-option__list-name">{{ row.detail }}</dd>
-                            {% endfor %}
-                        </dl>
-                        {% for row in block.menus %}
-                            {% set linkUrl = row.linkUrl.first().getURL() %}
-                            <p><a href="{{ linkUrl }}" target="_blank" class="dining-option__list-link cta-link">{{ row.linkText }}</a></p>
-                        {% endfor %}
-                    </div>
+					<div class="dining-option__list-wrap">
+						<dl class="dining-option__list">
+							{% for row in block.detailsList %}
+								<dt class="dining-option__list-label">{{ row.label }}</dt>
+								<dd class="dining-option__list-name">{{ row.detail }}</dd>
+							{% endfor %}
+						</dl>
+						{% for row in block.menus %}
+							{% set linkUrl = row.linkUrl.one().getURL() %}
+							<p>
+								<a href="{{ linkUrl }}" target="_blank" class="dining-option__list-link cta-link">{{ row.linkText }}</a>
+							</p>
+						{% endfor %}
+					</div>
 
-                    {{ macros.gallery(block.gallery, template) }}
-                </article>
+					{{ macros.gallery(block.gallery, template) }}
+				</article>
 
-            </div>
+			</div>
 
-        {% endfor %}
+		{% endfor %}
 
-        {{ macros.cta(entry.cta, template) }}
+		{{ macros.cta(entry.cta, template) }}
 
-    </main>
+	</main>
 
 {% endblock %}

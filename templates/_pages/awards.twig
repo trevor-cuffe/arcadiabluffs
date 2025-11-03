@@ -21,88 +21,88 @@
 
 {% block body %}
 
-  {% include '_partials/banner' %}
+	{% include '_partials/banner' %}
 
-  <main class="main main__subpage" role="main">
+	<main class="main main__subpage" role="main">
 
-    <section class="subpage__content-col entry__content">
-      <div class="o-modules">
-        {% if body|length %}
-          <div class="c-rte">
-            {{ body }}
-          </div>
-        {% endif %}
+		<section class="subpage__content-col entry__content">
+			<div class="o-modules">
+				{% if body|length %}
+					<div class="c-rte">
+						{{ body }}
+					</div>
+				{% endif %}
 
-        {% if featuredAwards.featuredAwards|length %}
-          <div class="c-featured-awards">
-            {% if featuredAwards.headline|length %}
-              <h1 class="c-featured-awards__headline">{{ featuredAwards.headline }}</h1>
-            {% endif %}
-            {% for award in featuredAwards.featuredAwards %}
-              <div class="c-featured-award">
-                <div class="c-featured-award__image">
-                  {% set image = award.awardImage.first() %}
-                  {% if image %}
-                    <img src="{{ image.getUrl(awardImageSize) }}" alt="{{ image.title }}">
-                  {% endif %}
-                </div>
-                <div class="c-featured-award__content">
-                  <h3 class="c-featured-award__headline">{{ award.awardName }}</h3>
-                  {% if award.awardDescription|length %}
-                    <div class="c-rte">{{ award.awardDescription }}</div>
-                  {% endif %}
-                  {% if award.awardLink|length %}
-                    {{ award.awardLink.htmlLink }}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
+				{% if featuredAwards.featuredAwards|length %}
+					<div class="c-featured-awards">
+						{% if featuredAwards.headline|length %}
+							<h1 class="c-featured-awards__headline">{{ featuredAwards.headline }}</h1>
+						{% endif %}
+						{% for award in featuredAwards.featuredAwards %}
+							<div class="c-featured-award">
+								<div class="c-featured-award__image">
+									{% set image = award.awardImage.one() %}
+									{% if image %}
+										<img src="{{ image.getUrl(awardImageSize) }}" alt="{{ image.title }}">
+									{% endif %}
+								</div>
+								<div class="c-featured-award__content">
+									<h3 class="c-featured-award__headline">{{ award.awardName }}</h3>
+									{% if award.awardDescription|length %}
+										<div class="c-rte">{{ award.awardDescription }}</div>
+									{% endif %}
+									{% if award.awardLink|length %}
+										{{ award.awardLink.htmlLink }}
+									{% endif %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				{% endif %}
 
-        {% if generalAwards.awards|length %}
-          <div class="c-general-awards">
-            {% if generalAwards.headline|length %}
-              <h1 class="c-general-awards__headline">{{ generalAwards.headline }}</h1>
-            {% endif %}
-            <div class="c-general-awards__grid">
-              {% for award in generalAwards.awards %}
-                {% if award.awardLink|length %}
-                  <a href="{{ award.awardLink.url }}" target="{{ award.awardLink.target }}" class="c-general-awards__grid-item">
-                {% else %}
-                  <div class="c-general-awards__grid-item">
-                {% endif %}
+				{% if generalAwards.awards|length %}
+					<div class="c-general-awards">
+						{% if generalAwards.headline|length %}
+							<h1 class="c-general-awards__headline">{{ generalAwards.headline }}</h1>
+						{% endif %}
+						<div class="c-general-awards__grid">
+							{% for award in generalAwards.awards %}
+								{% if award.awardLink|length %}
+									<a href="{{ award.awardLink.url }}" target="{{ award.awardLink.target }}" class="c-general-awards__grid-item">
+									{% else %}
+										<div class="c-general-awards__grid-item">
+										{% endif %}
 
-                    {% set image = award.awardImage.first() %}
-                    {% if image %}
-                      <div class="c-general-awards__image">
-                        <img src="{{ image.getUrl(awardImageSize) }}" alt="{{ image.title }}">
-                      </div>
-                    {% endif %}
+										{% set image = award.awardImage.one() %}
+										{% if image %}
+											<div class="c-general-awards__image">
+												<img src="{{ image.getUrl(awardImageSize) }}" alt="{{ image.title }}">
+											</div>
+										{% endif %}
 
-                    {% if award.label|length %}
-                      <div class="c-general-awards__label">{{ award.label }}</div>
-                    {% endif %}
+										{% if award.label|length %}
+											<div class="c-general-awards__label">{{ award.label }}</div>
+										{% endif %}
 
-                {% if award.awardLink|length %}
-                  </a>
-                {% else %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
-      </div>
-    </section>
+										{% if award.awardLink|length %}
+										</a>
+								{% else %}
+									</div>
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			</div>
+		</section>
 
-    <aside class="subpage__sidebar-col">
-      {% if not entry.id in craft.entries.section('coursesStructure').ids() %}
-        {% include '_partials/sidebar-menu' %}
-      {% endif %}
-      {{ macros.sidebarContent(entry.sidebarCtas) }}
-    </aside>
+		<aside class="subpage__sidebar-col">
+			{% if not entry.id in craft.entries.section('coursesStructure').ids() %}
+				{% include '_partials/sidebar-menu' %}
+			{% endif %}
+			{{ macros.sidebarContent(entry.sidebarCtas) }}
+		</aside>
 
-  </main>
+	</main>
 
 {% endblock %}

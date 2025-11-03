@@ -1,16 +1,18 @@
 <nav class="nav-mobile">
 
-    {% set secondary = craft.entries.section('mobileMenu') %}
-    <ul class="nav-mobile__menu menu">
-        {% for entry in secondary %}
-           {% if entry.relatedEntry | length %}
-               {% set entry = entry.relatedEntry.first() %}
-               {% set url = entry.url %}
-               {% set slug = entry.slug %}
-           {% else %}
-               {% set url = entry.customUrl %}
-           {% endif %}
-           <li><a href="{{ url }}">{{ entry.title }}</a></li>
-        {% endfor %}
-    </ul>
+	{% set secondary = craft.entries.section('mobileMenu') %}
+	<ul class="nav-mobile__menu menu">
+		{% for entry in secondary %}
+			{% if entry.relatedEntry | length %}
+				{% set entry = entry.relatedEntry.one() %}
+				{% set url = entry.url %}
+				{% set slug = entry.slug %}
+			{% else %}
+				{% set url = entry.customUrl %}
+			{% endif %}
+			<li>
+				<a href="{{ url }}">{{ entry.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 </nav>

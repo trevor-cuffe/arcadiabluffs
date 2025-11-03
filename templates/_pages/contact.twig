@@ -18,91 +18,93 @@
 
 {% block body %}
 
-  {% include '_partials/banner' %}
+	{% include '_partials/banner' %}
 
-  <main class="main main__{{ template }}" role="main">
+	<main class="main main__{{ template }}" role="main">
 
-    <section class="contact">
-      <div class="contact__wrap">
+		<section class="contact">
+			<div class="contact__wrap">
 
-        <div class="contact__grid">
-          <div class="contact__grid-item">
-            {% for block in entry.introBlock %}
-              <h1 class="contact__headline">{{ block.headline }}</h1>
-              <div class="contact__content">
-                {{ block.body }}
-              </div>
-            {% endfor %}
-          </div>
-          <div class="contact__grid-item">
-            {% if entry.generalContacts | length %}
-              {% for block in entry.generalContacts %}
-                <h2 class="contact__headline">{{ block.headline }}</h2>
-                <ul class="contact__list general-contacts">
-                  {% for row in block.generalContacts %}
-                    <li class="contact__list-item">
-                      <span class="contact__list-label">{{ row.label }}</span> <a href="tel:{{ row.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ row.phone }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-                {% include '_partials/social' %}
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
+				<div class="contact__grid">
+					<div class="contact__grid-item">
+						{% for block in entry.introBlock %}
+							<h1 class="contact__headline">{{ block.headline }}</h1>
+							<div class="contact__content">
+								{{ block.body }}
+							</div>
+						{% endfor %}
+					</div>
+					<div class="contact__grid-item">
+						{% if entry.generalContacts | length %}
+							{% for block in entry.generalContacts %}
+								<h2 class="contact__headline">{{ block.headline }}</h2>
+								<ul class="contact__list general-contacts">
+									{% for row in block.generalContacts %}
+										<li class="contact__list-item">
+											<span class="contact__list-label">{{ row.label }}</span>
+											<a href="tel:{{ row.phone | replace({" (" : "1-", ") " : " -"}) }}">{{ row.phone }}</a>
+										</li>
+									{% endfor %}
+								</ul>
+								{% include '_partials/social' %}
+							{% endfor %}
+						{% endif %}
+					</div>
+				</div>
 
-        {% if entry.executiveTeam is defined and entry.executiveTeam | length %}
-          <div class="team">
-            <h2 class="team__headline">{{ entry.executiveTeamHeadline }}</h2>
-              {% for row in entry.executiveTeam %}
-                <ul class="team__grid">
-                  {% for member in row.executiveTeamRow %}
-                    <li class="team__grid-item">
-                      <img class="team__headshot" src="{{ member.headshot.first().getUrl(headshot) }}" alt="{{ member.teamMemberName }}">
-                      <h3 class="team__name">{{ member.teamMemberName }}</h3>
-                      <p class="team__job-title">{{ member.jobTitle }}</p>
-                      {% if member.email | length %}
-                        <a class="team__email" href="mailto:{{ member.email }}">Email</a>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endfor %}
-          </div>
-        {% endif %}
+				{% if entry.executiveTeam is defined and entry.executiveTeam | length %}
+					<div class="team">
+						<h2 class="team__headline">{{ entry.executiveTeamHeadline }}</h2>
+						{% for row in entry.executiveTeam %}
+							<ul class="team__grid">
+								{% for member in row.executiveTeamRow %}
+									<li class="team__grid-item">
+										{% set memberHeadshot = member.headshot.one() %}
+										<img class="team__headshot" src="{{ memberHeadshot ? memberHeadshot.getUrl(headshot) : "" }}" alt="{{ member.teamMemberName }}">
+										<h3 class="team__name">{{ member.teamMemberName }}</h3>
+										<p class="team__job-title">{{ member.jobTitle }}</p>
+										{% if member.email | length %}
+											<a class="team__email" href="mailto:{{ member.email }}">Email</a>
+										{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						{% endfor %}
+					</div>
+				{% endif %}
 
-      </div>
-    </section>
+			</div>
+		</section>
 
-    <section class="airports">
-      <div class="airports__content-col">
-        <div class="airports__addresses">
-          <h2 class="contact__headline">{{ contactInformation.address.name }}</h2>
-          <address class="contact__address">
-            <a href="{{ contactInformation.address.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.address.street }}<br>
-              {{ contactInformation.address.city }},
-              {{ contactInformation.address.region }}
-              {{ contactInformation.address.postalCode }}</a>
-          </address>
-          <h2 class="contact__headline">{{ contactInformation.southCourseAddress.name }}</h2>
-          <address class="contact__address">
-            <a href="{{ contactInformation.southCourseAddress.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.southCourseAddress.street }}<br>
-              {{ contactInformation.southCourseAddress.city }},
-              {{ contactInformation.southCourseAddress.region }}
-              {{ contactInformation.southCourseAddress.postalCode }}</a>
-          </address>
-        </div>
-        {{ macros.linkedList(entry.localAirports, 'airports') }}
-      </div>
-      <div class="airports__map-col">
-        <iframe class="airports__map-iframe" src="https://www.google.com/maps/d/embed?mid=1Du-z8zQV7nfj3jcJvbob_QSotiI&hl=en" widdt="640" height="480" title="Arcadia Bluffs Airports"></iframe>
-      </div>
-    </section>
+		<section class="airports">
+			<div class="airports__content-col">
+				<div class="airports__addresses">
+					<h2 class="contact__headline">{{ contactInformation.address.name }}</h2>
+					<address class="contact__address">
+						<a href="{{ contactInformation.address.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.address.street }}<br>
+							{{ contactInformation.address.city }},
+							{{ contactInformation.address.region }}
+							{{ contactInformation.address.postalCode }}</a>
+					</address>
+					<h2 class="contact__headline">{{ contactInformation.southCourseAddress.name }}</h2>
+					<address class="contact__address">
+						<a href="{{ contactInformation.southCourseAddress.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.southCourseAddress.street }}<br>
+							{{ contactInformation.southCourseAddress.city }},
+							{{ contactInformation.southCourseAddress.region }}
+							{{ contactInformation.southCourseAddress.postalCode }}</a>
+					</address>
+				</div>
+				{{ macros.linkedList(entry.localAirports, 'airports') }}
+			</div>
+			<div class="airports__map-col">
+				<iframe class="airports__map-iframe" src="https://www.google.com/maps/d/embed?mid=1Du-z8zQV7nfj3jcJvbob_QSotiI&hl=en" widdt="640" height="480" title="Arcadia Bluffs Airports"></iframe>
+			</div>
+		</section>
 
-    <section class="contact__cta">
-      {{ macros.contentBlock(entry.applyCallout) }}
-    </section>
+		<section class="contact__cta">
+			{{ macros.contentBlock(entry.applyCallout) }}
+		</section>
 
-  </main>
+	</main>
 
 {% endblock %}

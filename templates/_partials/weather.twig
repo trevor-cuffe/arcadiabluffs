@@ -1,37 +1,37 @@
-{% set sunsetCamera = craft.entries.section('sunsetCamera').first() %}
+{% set sunsetCamera = craft.entries.section('sunsetCamera').one() %}
 <button role="button" class="weather-sm js-weather-toggle">
-    <div class="weather-sm__inner">
-        <span class="weather-sm__temp"></span>
-        <span class="weather-sm__icon"></span>
-    </div>
+	<div class="weather-sm__inner">
+		<span class="weather-sm__temp"></span>
+		<span class="weather-sm__icon"></span>
+	</div>
 </button>
 
 <aside class="weather-panel">
-    <h1 class="weather-panel__headline">Currrent Weather</h1>
-    <div class="weather-panel__today">
-        <h2 class="weather-panel__today-headline"></h2>
-        <p class="weather-panel__today-forcast">
-            <span class="weather-panel__today-forecast-icon"></span>
-            <span class="weather-panel__today-forecast-label"></span>
-        </p>
-    </div>
-    <div class="weather-panel__conditions">
-        <h2 class="weather-panel__conditions-headline">Conditions</h2>
-        <p class="weather-panel__conditions-temp"></p>
-        <dl class="weather-panel__conditions-list">
-            <dt class="weather-panel__conditions-list-label">Wind:</dt>
-            <dd class="weather-panel__conditions-list-term"></dd>
-            <dt class="weather-panel__conditions-list-label">Humidity:</dt>
-            <dd class="weather-panel__conditions-list-term"></dd>
-            <dt class="weather-panel__conditions-list-label">Feels Like:</dt>
-            <dd class="weather-panel__conditions-list-term"></dd>
-        </dl>
-    </div>
-    <div class="weather-panel__five-day">
-        <h2 class="weather-panel__five-day-headline">5 Day Forecast</h2>
-        <dl class="weather-panel__five-day-list"></dl>
-    </div>
-    {% if sunsetCamera | length %}
-      <a href="{{ sunsetCamera.url }}" class="weather-panel__link">View Sunset Camera &rarr;</a>
-    {% endif %}
+	<h1 class="weather-panel__headline">Currrent Weather</h1>
+	<div class="weather-panel__today">
+		<h2 class="weather-panel__today-headline"></h2>
+		<p class="weather-panel__today-forcast">
+			<span class="weather-panel__today-forecast-icon"></span>
+			<span class="weather-panel__today-forecast-label"></span>
+		</p>
+	</div>
+	<div class="weather-panel__conditions">
+		<h2 class="weather-panel__conditions-headline">Conditions</h2>
+		<p class="weather-panel__conditions-temp"></p>
+		<dl class="weather-panel__conditions-list">
+			<dt class="weather-panel__conditions-list-label">Wind:</dt>
+			<dd class="weather-panel__conditions-list-term"></dd>
+			<dt class="weather-panel__conditions-list-label">Humidity:</dt>
+			<dd class="weather-panel__conditions-list-term"></dd>
+			<dt class="weather-panel__conditions-list-label">Feels Like:</dt>
+			<dd class="weather-panel__conditions-list-term"></dd>
+		</dl>
+	</div>
+	<div class="weather-panel__five-day">
+		<h2 class="weather-panel__five-day-headline">5 Day Forecast</h2>
+		<dl class="weather-panel__five-day-list"></dl>
+	</div>
+	{% if sunsetCamera | length %}
+		<a href="{{ sunsetCamera.url }}" class="weather-panel__link">View Sunset Camera &rarr;</a>
+	{% endif %}
 </aside>

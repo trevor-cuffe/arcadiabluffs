@@ -9,14 +9,15 @@
 
 {% for cta in ctas %}
 	<section class="sidebar-cta">
-		<img class="sidebar-cta__image" src="{{ cta.bannerImage.first().getUrl(banner) }}" alt="{{ cta.title }}" />
+		<img class="sidebar-cta__image" src="{{ cta.bannerImage.one().getUrl(banner) }}" alt="{{ cta.title }}"/>
 		<div class="sidebar-cta__body">
 			<h2 class="sidebar-cta__headline">{{ cta.title }}</h2>
 			<div class="sidebar-cta__content">
 				{{ cta.body }}
 			</div>
 			<p class="sidebar-cta__footer">{{ cta.cta }}<br>
-            <a href="tel:{{ contactInformation.phone | replace({"(" : "1-", ") " : "-"}) }}">{{ contactInformation.phone }}</a></p>
+				<a href="tel:{{ contactInformation.phone | replace({" (" : "1-", ") " : " -"}) }}">{{ contactInformation.phone }}</a>
+			</p>
 		</div>
 	</section>
 {% endfor %}

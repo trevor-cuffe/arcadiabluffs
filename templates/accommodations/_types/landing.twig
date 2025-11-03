@@ -8,74 +8,76 @@
 {% set data_page = 'accommodations' %}
 
 {% if entry.headline is defined and entry.headline|length %}
-  {% set title = entry.headline %}
+	{% set title = entry.headline %}
 {% else %}
-  {% set title = entry.title %}
+	{% set title = entry.title %}
 {% endif %}
 
 {% block body %}
 
-    {% include '_partials/video-hero' with { headline: title } %}
+	{% include '_partials/video-hero' with { headline: title } %}
 
-    <main class="main main__{{ template }}" role="main">
+	<main class="main main__{{ template }}" role="main">
 
-        <section class="accommodations">
+		<section class="accommodations">
 
-            <div class="accommodations__grid">
-                {% set buckets = entry.accommodationBuckets %}
-                {% for bucket in buckets %}
-                    {% set link = bucket.linkUrl.first() %}
-                    {% set image = bucket.image.first() %}
-                    {% set bucketImage = craft.imager.transformImage(image, {
+			<div class="accommodations__grid">
+				{% set buckets = entry.accommodationBuckets %}
+				{% for bucket in buckets %}
+					{% set link = bucket.linkUrl.one() %}
+					{% set image = bucket.image.one() %}
+					{% set bucketImage = craft.imager.transformImage(image, {
                         width: 600,
                         height: 380,
                         mode: 'crop',
                     }) %}
-                    <div class="accommodations__grid-item">
-                        <a href="{{ link.url }}"><img class="accommodations__image" src="{{ image.getUrl(bucketImage) }}" alt="{{ bucket.headline }}"/></a>
-                        <h2 class="accommodations__headline">{{ bucket.headline }}</h2>
-                        <div class="accommodations__content">
-                            {{ bucket.excerpt }}
-                        </div>
-                        <a class="accommodations__link" href="{{ link.url }}">{{ bucket.linkText }}</a>
-                    </div>
-                {% endfor %}
-            </div>
+					<div class="accommodations__grid-item">
+						<a href="{{ link.url }}"><img class="accommodations__image" src="{{ image.getUrl(bucketImage) }}" alt="{{ bucket.headline }}"/></a>
+						<h2 class="accommodations__headline">{{ bucket.headline }}</h2>
+						<div class="accommodations__content">
+							{{ bucket.excerpt }}
+						</div>
+						<a class="accommodations__link" href="{{ link.url }}">{{ bucket.linkText }}</a>
+					</div>
+				{% endfor %}
+			</div>
 
-            <div class="accommodations__cta">
-                {{ macros.contentBlock(entry.contentBlock) }}
-            </div>
+			<div class="accommodations__cta">
+				{{ macros.contentBlock(entry.contentBlock) }}
+			</div>
 
-        </section>
+		</section>
 
-        {% if entry.accommodationForm is defined and entry.accommodationForm|length %}
-        
-    
-            <section class="accommodations__form-wrapper" id="accommodation-form">
-            
-                <div class="accommodations__form">
-                    <h2 style="text-align:center;margin-bottom: 20px;">{{entry.accommodationFormHeadline}}</h2>
-                    <div style="margin-bottom: 30px;">{{entry.accommodationFormContent}}</div>
-                    {% if craft.request.getParam('message') == 'thankyou' %}{{entry.accommodationFormSuccessMessage}} {% endif %}
-                    
-                    {% set formHandle = entry.accommodationForm.first().handle %}
+		{% if entry.accommodationForm is defined and entry.accommodationForm|length %}
 
-                    {{ craft.sproutForms.displayForm(formHandle) }} 
-                </div>
-                
-            </section>
-        {% endif %}
 
-        <section class="accommodations__extras">
-            {% for block in entry.accommodationExtras.level(1) %}
-                <div class="accommodations__extras-col">
-                    {% if block.type == "column" %}
-                        {{ macros.linkedList(block.linkedList, 'accommodations__extras') }}
-                    {% endif %}
-                </div>
-            {% endfor %}
-        </section>
+			<section class="accommodations__form-wrapper" id="accommodation-form">
 
-    </main>
+				<div class="accommodations__form">
+					<h2 style="text-align:center;margin-bottom: 20px;">{{entry.accommodationFormHeadline}}</h2>
+					<div style="margin-bottom: 30px;">{{entry.accommodationFormContent}}</div>
+					{% if craft.request.getParam('message') == 'thankyou' %}
+						{{entry.accommodationFormSuccessMessage}}
+					{% endif %}
+
+					{% set formHandle = entry.accommodationForm.one().handle %}
+
+					{{ craft.sproutForms.displayForm(formHandle) }}
+				</div>
+
+			</section>
+		{% endif %}
+
+		<section class="accommodations__extras">
+			{% for block in entry.accommodationExtras.level(1) %}
+				<div class="accommodations__extras-col">
+					{% if block.type == "column" %}
+						{{ macros.linkedList(block.linkedList, 'accommodations__extras') }}
+					{% endif %}
+				</div>
+			{% endfor %}
+		</section>
+
+	</main>
 
 {% endblock %}

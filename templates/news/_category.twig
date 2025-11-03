@@ -10,54 +10,54 @@
 
 {# Get Cat Name #}
 {% set catSlug = craft.request.getSegment(2) %}
-{% set category = craft.categories.slug(catSlug).first() %}
+{% set category = craft.categories.slug(catSlug).one() %}
 {% set title = category.title %}
 
 {# Fetch all of the entries related to this category #}
 {% set resultCount = 5 %}
 {% paginate craft.entries.relatedTo(category).limit(resultCount) as pageInfo, pageEntries  %}
 
-{% block body %}
+	{% block body %}
 
-    {% include '_partials/banner' %}
+		{% include '_partials/banner' %}
 
-    <main class="main main__subpage" role="main">
+		<main class="main main__subpage" role="main">
 
-        <section class="subpage__content-col">
+			<section class="subpage__content-col">
 
-            <ul class="article__list">
+				<ul class="article__list">
 
-                {% for entry in pageEntries %}
+					{% for entry in pageEntries %}
 
-                    <li class="article__bucket">
-                        <article>
-                            {% include '_partials/article' %}
-                        </article>
-                    </li>
+						<li class="article__bucket">
+							<article>
+								{% include '_partials/article' %}
+							</article>
+						</li>
 
-                {% endfor %}
+					{% endfor %}
 
-            </ul>
+				</ul>
 
-            {% if pageInfo.prevUrl or pageInfo.nextUrl %}
-                <nav class="article__nav">
-                    {% if pageInfo.prevUrl %}
-                        <a class="article__nav-prev" href="{{ pageInfo.prevUrl }}">Previous Page</a>
-                    {% endif %}
+				{% if pageInfo.prevUrl or pageInfo.nextUrl %}
+					<nav class="article__nav">
+						{% if pageInfo.prevUrl %}
+							<a class="article__nav-prev" href="{{ pageInfo.prevUrl }}">Previous Page</a>
+						{% endif %}
 
-                    {% if pageInfo.nextUrl %}
-                        <a class="article__nav-next" href="{{ pageInfo.nextUrl }}">Next Page</a>
-                    {% endif %}
-                </nav>
-            {% endif %}
+						{% if pageInfo.nextUrl %}
+							<a class="article__nav-next" href="{{ pageInfo.nextUrl }}">Next Page</a>
+						{% endif %}
+					</nav>
+				{% endif %}
 
-        </section>
+			</section>
 
-        <aside class="subpage__sidebar-col">
-            {% include '_partials/sidebar-menu' %}
-            {{ macros.sidebarContent() }}
-        </aside>
+			<aside class="subpage__sidebar-col">
+				{% include '_partials/sidebar-menu' %}
+				{{ macros.sidebarContent() }}
+			</aside>
 
-    </main>
+		</main>
 
-{% endblock %}
+	{% endblock %}

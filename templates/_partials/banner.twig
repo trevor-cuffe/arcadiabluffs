@@ -1,36 +1,36 @@
 {% if entry.headline is defined and entry.headline | length %}
-    {% if template == 'accommodations-entry' %}
-        {% set title = entry.title %}
-    {% else %}
-        {% set title = entry.headline %}
-    {% endif %}
+	{% if template == 'accommodations-entry' %}
+		{% set title = entry.title %}
+	{% else %}
+		{% set title = entry.headline %}
+	{% endif %}
 {% endif %}
 
 {% if entry is defined and entry.bannerImage | length %}
-    {% set image = entry.bannerImage.first() %}
-    {% set banner = craft.imager.transformImage(image, {
+	{% set image = entry.bannerImage.one() %}
+	{% set banner = craft.imager.transformImage(image, {
         width: 1680,
         height: 440,
         mode: 'crop',
         jpegQuality: 100,
         position: image.getFocalPoint()
     }) %}
-    {% if banner | length %}
-        {% set url = banner.url %}
-    {% else %}
-        {% set url = "/assets/img/banner.jpg" %}
-    {% endif %}
+	{% if banner | length %}
+		{% set url = banner.url %}
+	{% else %}
+		{% set url = "/assets/img/banner.jpg" %}
+	{% endif %}
 {% else %}
-    {% set url = "/assets/img/banner.jpg" %}
+	{% set url = "/assets/img/banner.jpg" %}
 {% endif %}
 
 <div class="banner banner__{{ template }}" style="background-image: url({{ url }});">
-    {% if template == 'hole-entry' %}
-        {% set url = craft.request.getSegment(1) %}
-        <a href="/{{ url }}" class="banner__link">Back to Course</a>
-        <h1 class="banner__headline">{{ entry.title }}</h1>
-    {% else %}
-        <h1 class="banner__headline">{{ title }}</h1>
-    {% endif %}
+	{% if template == 'hole-entry' %}
+		{% set url = craft.request.getSegment(1) %}
+		<a href="/{{ url }}" class="banner__link">Back to Course</a>
+		<h1 class="banner__headline">{{ entry.title }}</h1>
+	{% else %}
+		<h1 class="banner__headline">{{ title }}</h1>
+	{% endif %}
 
 </div>

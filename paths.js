@@ -17,11 +17,16 @@ const paths = {
     ext: ['js', 'json']
   },
   vendor: [
-    'node_modules/lazysizes/lazysizes.js',
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery-ui/dist/jquery-ui.js', // Add jQuery UI JavaScript
+    'node_modules/parsleyjs/dist/parsley.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'src/scripts/lib/tabs.js',
+    'node_modules/moment/moment.js'
   ],
   images: {
     src: 'src/images',
-    dest: 'web/assets/images',
+    dest: 'web/assets/img',
     ext: ['jpg', 'jpeg', 'png', 'svg', 'gif']
   },
   videos: {

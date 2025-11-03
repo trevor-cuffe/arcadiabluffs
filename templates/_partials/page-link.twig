@@ -1,41 +1,41 @@
 {% set component = {
-  image: image ?? bucket.image.first() ?? null,
+  image: image ?? bucket.image.one() ?? null,
   headline: headline ?? bucket.headline ?? null,
   text: text ?? bucket.text ?? null,
   buttons: text ?? bucket.buttons ?? null
 } %}
 
 <div class="c-page-link">
-  {% if component.image|length %}
-    {% set pageLinkImage = craft.imager.transformImage(image, {
+	{% if component.image|length %}
+		{% set pageLinkImage = craft.imager.transformImage(image, {
         width: 600,
         height: 380,
         mode: 'crop',
     }) %}
-    {% if component.buttons|length %}
-      {% set row = component.buttons.first() %}
-      <a href="{{ row.button.getUrl() }}" class="c-page-link__image">
-        <img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
-      </a>
-    {% else %}
-      <div class="c-page-link__image">
-        <img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
-      </div>
-    {% endif %}
-  {% endif %}
-  {% if component.headline|length %}
-    <h2 class="c-page-link__headline">{{ component.headline }}</h2>
-  {% endif %}
-  {% if component.text|length %}
-  <div class="c-page-link__content">
-      <div class="c-rte">{{ bucket.text }}</div>
-  </div>
-  {% endif %}
-  {% if component.buttons|length %}
-    <div class="o-btn-group">
-      {% for row in component.buttons.all() %}
-        <a href="{{ row.button.getUrl() }}" class="btn btn--sm">{{ row.button.getText() }}</a>
-      {% endfor %}
-    </div>
-  {% endif %}
+		{% if component.buttons|length %}
+			{% set row = component.buttons.one() %}
+			<a href="{{ row.button.getUrl() }}" class="c-page-link__image">
+				<img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
+			</a>
+		{% else %}
+			<div class="c-page-link__image">
+				<img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
+			</div>
+		{% endif %}
+	{% endif %}
+	{% if component.headline|length %}
+		<h2 class="c-page-link__headline">{{ component.headline }}</h2>
+	{% endif %}
+	{% if component.text|length %}
+		<div class="c-page-link__content">
+			<div class="c-rte">{{ bucket.text }}</div>
+		</div>
+	{% endif %}
+	{% if component.buttons|length %}
+		<div class="o-btn-group">
+			{% for row in component.buttons.all() %}
+				<a href="{{ row.button.getUrl() }}" class="btn btn--sm">{{ row.button.getText() }}</a>
+			{% endfor %}
+		</div>
+	{% endif %}
 </div>

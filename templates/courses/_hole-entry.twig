@@ -17,138 +17,160 @@
 
 {% block body %}
 
-    {% include '_partials/banner' %}
+	{% include '_partials/banner' %}
 
-    {% include '_partials/subpage-menu' %}
+	{% include '_partials/subpage-menu' %}
 
-    <main class="main main__{{ template }}" role="main">
-        {% set current = craft.request.getLastSegment() %}
+	<main class="main main__{{ template }}" role="main">
+		{% set current = craft.request.getLastSegment() %}
 
-        {% if section =="theDozenHoleByHole" %}
-            <nav class="hole-entry__nav hole-entry__nav--dozen">
-                <ol class="hole-entry__nav-list">
-                    {% for entry in entries %}
-                        {% set cycleNumber = ((loop.index0 % 6) + 1) %}
-                        <li class="hole-entry__nav-list-item  hole-entry__nav-list-item--dozen {% if current == entry.slug %}--active{% endif %}">
-                            {% if cycleNumber == 1 and loop.index == 1 %} <span class="hole-entry__nav-list-item__tag">South</span> {% endif %}
-                            {% if cycleNumber == 1 and loop.index == 7 %} <span class="hole-entry__nav-list-item__tag">North</span> {% endif %}
-                            <a href="{{ entry.url }}">{{ cycleNumber }}</a>
-                        </li>
-                    {% endfor %}
-                </ol>
-            </nav>
+		{% if section =="theDozenHoleByHole" %}
+			<nav class="hole-entry__nav hole-entry__nav--dozen">
+				<ol class="hole-entry__nav-list">
+					{% for entry in entries %}
+						{% set cycleNumber = ((loop.index0 % 6) + 1) %}
+						<li class="hole-entry__nav-list-item  hole-entry__nav-list-item--dozen {% if current == entry.slug %}--active{% endif %}">
+							{% if cycleNumber == 1 and loop.index == 1 %}
+								<span class="hole-entry__nav-list-item__tag">South</span>
+							{% endif %}
+							{% if cycleNumber == 1 and loop.index == 7 %}
+								<span class="hole-entry__nav-list-item__tag">North</span>
+							{% endif %}
+							<a href="{{ entry.url }}">{{ cycleNumber }}</a>
+						</li>
+					{% endfor %}
+				</ol>
+			</nav>
 
-            <nav class="hole-entry__mobile-nav">
-                {% if prevEntry %}
-                    <a class="hole-entry__mobile-nav-prev" href="{{ prevEntry.url }}"><span>Previous Hole</span></a>
-                {% endif %}
+			<nav class="hole-entry__mobile-nav">
+				{% if prevEntry %}
+					<a class="hole-entry__mobile-nav-prev" href="{{ prevEntry.url }}">
+						<span>Previous Hole</span>
+					</a>
+				{% endif %}
 
-                <div class="hole-entry__mobile-nav-dropdown">
-                    <select class="holy-entry__mobile-nav-select" aria-label="Select Your Hole">
-                        {% for entry in entries %}
-                            <option {% if current == entry.slug %}selected{% endif %} value="{{ entry.url }}">{{ entry.title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
+				<div class="hole-entry__mobile-nav-dropdown">
+					<select class="holy-entry__mobile-nav-select" aria-label="Select Your Hole">
+						{% for entry in entries %}
+							<option {% if current == entry.slug %} selected {% endif %} value="{{ entry.url }}">{{ entry.title }}</option>
+						{% endfor %}
+					</select>
+				</div>
 
-                {% if nextEntry %}
-                    <a class="hole-entry__mobile-nav-next" href="{{ nextEntry.url }}"><span>Next Hole</span></a>
-                {% endif %}
-            </nav>
-        
-        {% else %}
-            <nav class="hole-entry__nav">
-                <ol class="hole-entry__nav-list">
-                    {% for entry in entries %}
-                        <li class="hole-entry__nav-list-item {% if current == entry.slug %}--active{% endif %}"><a href="{{ entry.url }}">{{ loop.index }}</a></li>
-                    {% endfor %}
-                </ol>
-            </nav>
+				{% if nextEntry %}
+					<a class="hole-entry__mobile-nav-next" href="{{ nextEntry.url }}">
+						<span>Next Hole</span>
+					</a>
+				{% endif %}
+			</nav>
 
-            <nav class="hole-entry__mobile-nav">
-                {% if prevEntry %}
-                    <a class="hole-entry__mobile-nav-prev" href="{{ prevEntry.url }}"><span>Previous Hole</span></a>
-                {% endif %}
+		{% else %}
+			<nav class="hole-entry__nav">
+				<ol class="hole-entry__nav-list">
+					{% for entry in entries %}
+						<li class="hole-entry__nav-list-item {% if current == entry.slug %}--active{% endif %}">
+							<a href="{{ entry.url }}">{{ loop.index }}</a>
+						</li>
+					{% endfor %}
+				</ol>
+			</nav>
 
-                <div class="hole-entry__mobile-nav-dropdown">
-                    <select class="holy-entry__mobile-nav-select" aria-label="Select Your Hole">
-                        {% for entry in entries %}
-                            <option {% if current == entry.slug %}selected{% endif %} value="{{ entry.url }}">{{ entry.title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
+			<nav class="hole-entry__mobile-nav">
+				{% if prevEntry %}
+					<a class="hole-entry__mobile-nav-prev" href="{{ prevEntry.url }}">
+						<span>Previous Hole</span>
+					</a>
+				{% endif %}
 
-                {% if nextEntry %}
-                    <a class="hole-entry__mobile-nav-next" href="{{ nextEntry.url }}"><span>Next Hole</span></a>
-                {% endif %}
-            </nav>
-        {% endif %}
+				<div class="hole-entry__mobile-nav-dropdown">
+					<select class="holy-entry__mobile-nav-select" aria-label="Select Your Hole">
+						{% for entry in entries %}
+							<option {% if current == entry.slug %} selected {% endif %} value="{{ entry.url }}">{{ entry.title }}</option>
+						{% endfor %}
+					</select>
+				</div>
 
-        <div class="hole-entry">
-            {% if entry.holeLayoutImage|length %}
-                <div class="hole-entry__image">
-                    {% set image = entry.holeLayoutImage.first() %}
-                    {% set layoutImage = craft.imager.transformImage(image, { height: 850 }) %}
-                    <img src="{{ layoutImage.url }}" alt="{{ entry.title }}" />
-                </div>
-            {% endif %}
-            <div class="hole-entry__content">
-                <header class="hole-entry__header">
-                    <h1 class="hole-entry__headline">{{ entry.title }}</h1>
-                    <p class="hole-entry__meta"><span>Par {{ entry.par }}</span> | <span>Handicap: {{ entry.handicap }}</span></p>
-                </header>
-                <div class="hole-entry__description">
-                    {{ entry.holeDescription }}
-                    {% if entry.caddyTip %}
-                        <p class="hole-entry__tip"><span>Caddy Tip:</span> {{ entry.caddyTip }}</p>
-                    {% endif %}
-                </div>
-                <div class="hole-entry__yardage">
-                    <h2 class="hole-entry__yardage-headline">Yardage</h2>
-                    <ul class="hole-entry__yardage-list">
-                        {% for row in entry.yardage %}
+				{% if nextEntry %}
+					<a class="hole-entry__mobile-nav-next" href="{{ nextEntry.url }}">
+						<span>Next Hole</span>
+					</a>
+				{% endif %}
+			</nav>
+		{% endif %}
 
-                            {% if loop.first %}
-                                {% set class = "hole-entry__yardage-item--champion" %}
-                            {% elseif loop.index == 2 %}
-                                {% set class = "hole-entry__yardage-item--blue" %}
-                            {% elseif loop.index == 3 %}
-                                {% set class = "hole-entry__yardage-item--white" %}
-                            {% elseif loop.index == 4 %}
-                                {% set class = "hole-entry__yardage-item--gold" %}
-                            {% elseif loop.index == 5 %}
-                                {% set class = "hole-entry__yardage-item--red" %}
-                            {% endif %}
+		<div class="hole-entry">
+			{% if entry.holeLayoutImage|length %}
+				<div class="hole-entry__image">
+					{% set image = entry.holeLayoutImage.one() %}
+					{% set layoutImage = craft.imager.transformImage(image, { height: 850 }) %}
+					<img src="{{ layoutImage.url }}" alt="{{ entry.title }}"/>
+				</div>
+			{% endif %}
+			<div class="hole-entry__content">
+				<header class="hole-entry__header">
+					<h1 class="hole-entry__headline">{{ entry.title }}</h1>
+					<p class="hole-entry__meta">
+						<span>Par
+							{{ entry.par }}</span>
+						|
+						<span>Handicap:
+							{{ entry.handicap }}</span>
+					</p>
+				</header>
+				<div class="hole-entry__description">
+					{{ entry.holeDescription }}
+					{% if entry.caddyTip %}
+						<p class="hole-entry__tip">
+							<span>Caddy Tip:</span>
+							{{ entry.caddyTip }}</p>
+					{% endif %}
+				</div>
+				<div class="hole-entry__yardage">
+					<h2 class="hole-entry__yardage-headline">Yardage</h2>
+					<ul class="hole-entry__yardage-list">
+						{% for row in entry.yardage %}
 
-                            {% if row.color %}
-                                {% if row.color == 'black' or row.color == 'Black' %}
-                                    {% set class = "hole-entry__yardage-item--champion" %}
-                                {% elseif row.color == 'blue' or row.color == 'Blue' %}
-                                    {% set class = "hole-entry__yardage-item--blue" %}
-                                {% elseif row.color == 'white' or row.color == 'White' %}
-                                    {% set class = "hole-entry__yardage-item--white" %}
-                                {% elseif row.color == 'gold' or row.color == 'Gold' %}
-                                    {% set class = "hole-entry__yardage-item--gold" %}
-                                {% elseif row.color == 'red' or row.color == 'Red' %}
-                                    {% set class = "hole-entry__yardage-item--red" %}
-                                {% elseif row.color == 'gray' or row.color == 'Gray' %}
-                                    {% set class = "scorecard__tr--handicap" %}
-                                {% endif %}
-                            {% endif %}
+							{% if loop.first %}
+								{% set class = "hole-entry__yardage-item--champion" %}
+							{% elseif loop.index == 2 %}
+								{% set class = "hole-entry__yardage-item--blue" %}
+							{% elseif loop.index == 3 %}
+								{% set class = "hole-entry__yardage-item--white" %}
+							{% elseif loop.index == 4 %}
+								{% set class = "hole-entry__yardage-item--gold" %}
+							{% elseif loop.index == 5 %}
+								{% set class = "hole-entry__yardage-item--red" %}
+							{% endif %}
 
-                            <li class="hole-entry__yardage-item {{ class }}">
-                                <h3 class="hole-entry__yardage-label">{{ row.label }}</h3>
-                                <p class="hole-entry__yardage-number">{{ row.distance }}</p>
-                            </li>
+							{% if row.color %}
+								{% if row.color == 'black' or row.color == 'Black' %}
+									{% set class = "hole-entry__yardage-item--champion" %}
+								{% elseif row.color == 'blue' or row.color == 'Blue' %}
+									{% set class = "hole-entry__yardage-item--blue" %}
+								{% elseif row.color == 'white' or row.color == 'White' %}
+									{% set class = "hole-entry__yardage-item--white" %}
+								{% elseif row.color == 'gold' or row.color == 'Gold' %}
+									{% set class = "hole-entry__yardage-item--gold" %}
+								{% elseif row.color == 'red' or row.color == 'Red' %}
+									{% set class = "hole-entry__yardage-item--red" %}
+								{% elseif row.color == 'gray' or row.color == 'Gray' %}
+									{% set class = "scorecard__tr--handicap" %}
+								{% endif %}
+							{% endif %}
 
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+							<li class="hole-entry__yardage-item {{ class }}">
+								<h3 class="hole-entry__yardage-label">{{ row.label }}</h3>
+								<p class="hole-entry__yardage-number">{{ row.distance }}</p>
+							</li>
 
-            {{ macros.video(entry.video, template) }}
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
 
-        </div>
-    </main>
+			{{ macros.video(entry.video, template) }}
+
+		</div>
+	</main>
 
 {% endblock %}

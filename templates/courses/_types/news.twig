@@ -10,7 +10,7 @@
 
 {# Fetch all of the entries related to this category #}
 {% set resultCount = 5 %}
-{% paginate craft.entries.section('news').limit(resultCount).order('postDate desc') as pageInfo, pageEntries %}
+{% paginate craft.entries.section('news').limit(resultCount).orderBy('postDate desc') as pageInfo, pageEntries %}
 
 {% block body %}
 

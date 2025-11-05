@@ -9,7 +9,7 @@
 {% set data_page = 'news' %}
 
 {# Get Cat Name #}
-{% set catSlug = craft.request.getSegment(2) %}
+{% set catSlug = craft.app.request.getSegment(2) %}
 {% set category = craft.categories.slug(catSlug).one() %}
 {% set title = category.title %}
 

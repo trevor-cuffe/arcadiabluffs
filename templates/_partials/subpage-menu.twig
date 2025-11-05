@@ -1,6 +1,6 @@
 {# Get Last Segment #}
 {% set firstSegment = craft.app.request.segments|first %}
-{% set current = craft.request.getLastSegment() %}
+{% set current = craft.app.request.segments|last %}
 {% set bluffs = craft.entries.section('theBluffsHoleByHole') %}
 {% set south = craft.entries.section('theSouthCourseHoleByHole') %}
 {% set dozen = craft.entries.section('theDozenHoleByHole') %}
@@ -24,7 +24,7 @@
 
 {% else %}
 
-	{% if craft.request.getSegments() | length == 1 %}
+	{% if craft.app.request.segments | length == 1 %}
 		{# Get current tree if on parent #}
 		{% set parent = craft.entries.id(entry.id).one() %}
 		{% set children = entry.children().level(2) %}

@@ -26,7 +26,7 @@
 
 <div class="banner banner__{{ template }}" style="background-image: url({{ url }});">
 	{% if template == 'hole-entry' %}
-		{% set url = craft.request.getSegment(1) %}
+		{% set url = craft.app.request.getSegment(1) %}
 		<a href="/{{ url }}" class="banner__link">Back to Course</a>
 		<h1 class="banner__headline">{{ entry.title }}</h1>
 	{% else %}

@@ -8,7 +8,7 @@
 {% set id = 'news' %}
 {% set data_page = 'news' %}
 
-{% set params = craft.entries.section('news').order('postDate desc') %}
+{% set params = craft.entries.section('news').orderBy('postDate desc') %}
 {% set prevEntry = entry.getPrev(params) %}
 {% set nextEntry = entry.getNext(params) %}
 

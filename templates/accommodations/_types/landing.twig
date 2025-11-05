@@ -56,7 +56,7 @@
 				<div class="accommodations__form">
 					<h2 style="text-align:center;margin-bottom: 20px;">{{entry.accommodationFormHeadline}}</h2>
 					<div style="margin-bottom: 30px;">{{entry.accommodationFormContent}}</div>
-					{% if craft.request.getParam('message') == 'thankyou' %}
+					{% if craft.app.request.getParam('message') == 'thankyou' %}
 						{{entry.accommodationFormSuccessMessage}}
 					{% endif %}
 

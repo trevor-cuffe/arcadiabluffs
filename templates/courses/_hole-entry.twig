@@ -11,7 +11,7 @@
 {# Get Current Section #}
 {% set section = entry.getSection().handle %}
 
-{% set entries = craft.entries.section(section).order('holeNumber') %}
+{% set entries = craft.entries.section(section).orderBy('holeNumber') %}
 {% set prevEntry = entry.getPrev(entries) %}
 {% set nextEntry = entry.getNext(entries) %}
 
@@ -22,7 +22,7 @@
 	{% include '_partials/subpage-menu' %}
 
 	<main class="main main__{{ template }}" role="main">
-		{% set current = craft.request.getLastSegment() %}
+		{% set current = craft.app.request.segments|last %}
 
 		{% if section =="theDozenHoleByHole" %}
 			<nav class="hole-entry__nav hole-entry__nav--dozen">

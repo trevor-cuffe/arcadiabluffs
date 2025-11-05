@@ -8,7 +8,7 @@
 {% set button = entry.bannerLink %}
 
 {# For links to scorecard holes #}
-{% set segments = craft.request.getSegments() %}
+{% set segments = craft.app.request.segments %}
 {% if 'the-dozen' in segments %}
 	{% set holeLinks = 'dozen'%}
 {% else %}
@@ -148,26 +148,26 @@
 										{% endfor %}
 
 										{# <th><a class="scorecard__link" href="{{ entry.url }}/hole-1">{{ row.one }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-2">{{ row.two }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-3">{{ row.three }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-4">{{ row.four }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-5">{{ row.five }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-6">{{ row.six }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-7">{{ row.seven }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-8">{{ row.eight }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-9">{{ row.nine }}</a></th> #}
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-2">{{ row.two }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-3">{{ row.three }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-4">{{ row.four }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-5">{{ row.five }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-6">{{ row.six }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-7">{{ row.seven }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-8">{{ row.eight }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-9">{{ row.nine }}</a></th> #}
 									{# <th>{{ row.out }}</th> #}
 										{# <th><a class="scorecard__link" href="{{ entry.url }}/hole-10">{{ row.ten }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-11">{{ row.eleven }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-12">{{ row.twelve }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-13">{{ row.thirteen }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-14">{{ row.fourteen }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-15">{{ row.fifteen }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-16">{{ row.sixteen }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-17">{{ row.seventeen }}</a></th>
-										                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-18">{{ row.eighteen }}</a></th> #}
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-11">{{ row.eleven }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-12">{{ row.twelve }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-13">{{ row.thirteen }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-14">{{ row.fourteen }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-15">{{ row.fifteen }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-16">{{ row.sixteen }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-17">{{ row.seventeen }}</a></th>
+																				                                        <th><a class="scorecard__link" href="{{ entry.url }}/hole-18">{{ row.eighteen }}</a></th> #}
 										{# <th>{{ row.in }}</th>
-										                                        <th>{{ row.total }}</th> #}
+																				                                        <th>{{ row.total }}</th> #}
 									</tr>
 								</thead>
 							{% endif %}
@@ -194,26 +194,26 @@
 											{% endif %}
 										{% endfor %}
 										{# <td>{{ row.one }}</td>
-										                                    <td>{{ row.two }}</td>
-										                                    <td>{{ row.three }}</td>
-										                                    <td>{{ row.four }}</td>
-										                                    <td>{{ row.five }}</td>
-										                                    <td>{{ row.six }}</td>
-										                                    <td>{{ row.seven }}</td>
-										                                    <td>{{ row.eight }}</td>
-										                                    <td>{{ row.nine }}</td>
-										                                    <td>{{ row.out }}</td>
-										                                    <td>{{ row.ten }}</td>
-										                                    <td>{{ row.eleven }}</td>
-										                                    <td>{{ row.twelve }}</td>
-										                                    <td>{{ row.thirteen }}</td>
-										                                    <td>{{ row.fourteen }}</td>
-										                                    <td>{{ row.fifteen }}</td>
-										                                    <td>{{ row.sixteen }}</td>
-										                                    <td>{{ row.seventeen }}</td>
-										                                    <td>{{ row.eighteen }}</td>
-										                                    <td>{{ row.in }}</td>
-										                                    <td>{{ row.total }}</td> #}
+																				                                    <td>{{ row.two }}</td>
+																				                                    <td>{{ row.three }}</td>
+																				                                    <td>{{ row.four }}</td>
+																				                                    <td>{{ row.five }}</td>
+																				                                    <td>{{ row.six }}</td>
+																				                                    <td>{{ row.seven }}</td>
+																				                                    <td>{{ row.eight }}</td>
+																				                                    <td>{{ row.nine }}</td>
+																				                                    <td>{{ row.out }}</td>
+																				                                    <td>{{ row.ten }}</td>
+																				                                    <td>{{ row.eleven }}</td>
+																				                                    <td>{{ row.twelve }}</td>
+																				                                    <td>{{ row.thirteen }}</td>
+																				                                    <td>{{ row.fourteen }}</td>
+																				                                    <td>{{ row.fifteen }}</td>
+																				                                    <td>{{ row.sixteen }}</td>
+																				                                    <td>{{ row.seventeen }}</td>
+																				                                    <td>{{ row.eighteen }}</td>
+																				                                    <td>{{ row.in }}</td>
+																				                                    <td>{{ row.total }}</td> #}
 									</tr>
 								{% endif %}
 

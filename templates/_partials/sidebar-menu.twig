@@ -1,5 +1,7 @@
+{% import "_macros" as macros %}
+
 {# Get Last Segment #}
-{% set current = craft.request.getLastSegment() %}
+{% set current = craft.app.request.segments|last %}
 
 {% if template == 'accommodations-entry' %}
 
@@ -11,11 +13,9 @@
 {% elseif template == 'news' or template == 'news-entry' %}
 
     {% set sidebarMenuTitle = 'News' %}
-    {% set activeClass = current == "news" ? 'active' %}
 
     {# Get News Categories #}
-    {% set entryIds = craft.entries.section('news').ids() %}
-    {% set entries = craft.categories.relatedTo({ sourceElement: entryIds }).groupId(1).find() %}
+    {% set entries = craft.categories.group('news').all() %}
 
 
 {% else %}
@@ -32,12 +32,13 @@
     <ul class="sidebar-menu__list">
 
         {% if template == 'news' or template == 'news-entry' %}
-            <li><a class="{{ activeClass }}" href="/news">All</a></li>
+            <li><a class="{{ current == "news" ? 'active' }}" href="/news">All</a></li>
         {% endif %}
 
         {% nav entry in entries %}
-        {% set activeClass = entry.slug == current ? 'active' %}
-            <li><a class="{{ activeClass }}" href="{{ entry.url }}">{{ entry.title }}</a></li>
+            <li>
+                <a class="{{ macros.link_is_current(entry.url) }}" href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
         {% endnav %}
 
     </ul>

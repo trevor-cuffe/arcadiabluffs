@@ -1,4 +1,4 @@
-dateModified: 1762366586
+dateModified: 1762366960
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -46,7 +46,6 @@ meta:
     1e5a632d-5444-4c79-9ee0-5c924f29c0d6: 'General Contacts' # General Contacts
     1e939607-791e-4d0d-9e90-da7db5cb3e58: Buttons # Buttons
     1f3294c6-b9a7-46b9-aaf4-70bcf8b46237: 'Accommodation Buckets' # Accommodation Buckets
-    2b8ba9ac-0e3e-470d-9eb1-905e54cb0a6f: 'Mobile Menu' # Mobile Menu
     2b978a7a-e47d-4687-96a5-51cec43f3b21: Image # Image
     2b2449dc-8378-450b-b227-d1947e6d9d6b: 'Executive Team Headline' # Executive Team Headline
     2bc9f6e5-515f-41d6-8c72-a457d3bad7a0: 'Accommodations Overview' # Accommodations Overview
@@ -96,7 +95,6 @@ meta:
     07d636bc-6c41-49a1-8dea-face54ffd745: 'Content Block' # Content Block
     7da47c32-f9fb-4a89-9c30-22238ac588bd: 'Slope Tables' # Slope Tables
     7df2599b-80fe-4758-8542-add1e40c5d27: 'Nav CTA' # Nav CTA
-    7ee3439a-7f3c-4587-aa00-541278985f78: 'Secondary Menu' # Secondary Menu
     7f33d691-0281-4de9-8404-38467e35d592: Button # Button
     7fd45083-2574-45a3-a3a6-e25418eb6925: 'Gift Cards Introduction' # Gift Cards Introduction
     8aae9ee7-1b7b-42fc-92c4-363f55590494: Button # Button
@@ -112,10 +110,8 @@ meta:
     9baae7f8-cf5b-40da-96a9-1a49f83765dd: 'Related Entry' # Related Entry
     9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: 'Button URL' # Button URL
     9d60212d-d586-49a1-9525-1f94da3d85f0: 'CTA Body' # CTA Body
-    9e6b2974-b890-456f-9a6f-75fef8b49e24: 'Footer Menu' # Footer Menu
     9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
     010fc3aa-1e18-47e8-a901-a5e2e5b085ba: 'Link Text' # Link Text
-    13cc40b6-25fd-4174-a481-7481f07eddd6: 'Primary Menu' # Primary Menu
     16ea3636-5874-40e9-aa29-e602ce41ffcf: Navigation # Navigation
     17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: Name # Name
     18d710bf-237c-4a66-9707-1a63cc543871: Headline # Headline
@@ -152,7 +148,6 @@ meta:
     86dbf20b-c736-4e15-ad25-8d09e62097d4: 'Accommodation Layouts' # Accommodation Layouts
     90f3e049-f49e-406f-b164-964f0224bde0: News # News
     91fccfba-9349-4220-8a0e-5fbb09ac0fcb: Price # Price
-    92f217bd-fa1a-4b9e-8a7d-63dd0d48b6fc: 'Footer Menu' # Footer Menu
     92f15527-4946-402a-b282-530cd0000b1e: 'Details List' # Details List
     95bdf0b9-6728-4e50-badf-be87860d5240: 'Golf Add-On Pricing' # Golf Add-On Pricing
     106e43e9-e710-4ddd-9c6d-ed1df333503c: 'Hole By Hole' # Hole By Hole
@@ -171,7 +166,6 @@ meta:
     412a248c-6877-45ce-a772-65fb0c295ac3: Gallery # Gallery
     474ced41-234f-42f8-8654-ea3aaf7d4018: 'Background Image' # Background Image
     600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: Text # Text
-    0658bece-cc90-460f-bedc-b298ebf8037b: 'Secondary Menu' # Secondary Menu
     682d4143-3055-4236-a72f-d8490d82a088: Description # Description
     703e4c00-55cf-4b57-a7ee-db4aa2f6e060: 'Home Hero' # Home Hero
     713a4f89-9d22-4ac3-b163-200d025dcb9e: Phone # Phone
@@ -277,7 +271,6 @@ meta:
     aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
     afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
     b3b78fcf-ce15-4e36-9ca7-bc9d9b3fa63f: News # News
-    b4c92967-be57-4120-a30e-eeba275a8830: 'Footer Menu' # Footer Menu
     b4d4ca88-4eef-4fe4-92b6-9bc0ebdba29c: Bucket # Bucket
     b7b6f2fe-0047-4f19-86c9-07f96a339ebb: Homepage # Homepage
     b35f4131-c904-4509-bef0-05ef8d79e639: 'Link Text' # Link Text
@@ -329,7 +322,6 @@ meta:
     d238cda2-b052-4d87-ac6b-67b58f334729: 'Link Text' # Link Text
     d674a38b-5677-430e-90af-0524d99826b5: Text # Text
     d838d1b8-1c0e-469d-bb0d-e1a9d81413fc: 'General Contacts' # General Contacts
-    d11198b5-a532-4961-974e-76283d24c133: Menus # Menus
     d81677db-f7f5-4393-a4c3-6f56ef537fb6: Link # Link
     dcb31393-3ea4-4a2a-a287-c79dfba31b0a: 'CTA Headline' # CTA Headline
     ddfbbfff-4c50-4552-a93d-78d990a5b58d: Headline # Headline
@@ -383,7 +375,6 @@ meta:
     fbbd0fba-c1f3-4450-a63f-4ff62a510f01: News # News
     fbd9a4ad-7fd5-495b-8367-17a73f5b8356: 'Accommodation Layout' # Accommodation Layout
     fbf63f47-0d11-40d0-9889-18017e89451a: Link # Link
-    fc83a586-4acc-4bc2-a6d4-bb7d430a2a56: 'Mobile Menu' # Mobile Menu
     fd52f2bc-9e8e-4025-9502-fab5a89e68ae: 'Arcadia Bluffs Address' # Arcadia Bluffs Address
     fd799323-b5cd-4385-92ab-49dfe5e15759: 'Link URL' # Link URL
     fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: Image # Image

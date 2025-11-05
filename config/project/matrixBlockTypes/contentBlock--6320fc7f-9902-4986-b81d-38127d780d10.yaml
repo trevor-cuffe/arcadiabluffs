@@ -3,65 +3,82 @@ fieldLayouts:
   1325dbcd-368a-4480-b956-20682912043c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 40372289-dc21-49a5-8fde-84b1b64f4c69 # Headline
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 23874469-7326-40bc-b452-47b7b0410fa1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7a261b1e-d387-4b69-aa5b-4a21ed282daf # Body
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cb28edd7-e1f2-4302-a296-5ab3757c65d7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d238cda2-b052-4d87-ac6b-67b58f334729 # Link Text
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8744d5fe-2bce-4f60-a9d9-dc832820bacd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fd799323-b5cd-4385-92ab-49dfe5e15759 # Link URL
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c01346e0-8569-4085-a132-8b9ba38c4bc0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 2944dbd0-6186-447e-98f6-1509c1087bd5
+        userCondition: null
 fields:
   7a261b1e-d387-4b69-aa5b-4a21ed282daf: # Body
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: body
-    instructions: ''
+    instructions: null
     name: Body
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: '1'
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
@@ -70,7 +87,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -78,8 +95,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -90,7 +107,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkText
-    instructions: ''
+    instructions: null
     name: 'Link Text'
     searchable: true
     settings:
@@ -98,8 +115,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -110,7 +127,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkUrl
-    instructions: ''
+    instructions: null
     name: 'Link URL'
     searchable: true
     settings:
@@ -118,8 +135,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

@@ -1,33 +1,39 @@
+changedFieldIndicator: null
 field: c90430ca-7754-4503-bfdb-eeb26150198b # Secondary Navigation
 fieldLayouts:
   0df16f04-d176-4adb-acb3-c60b50fa5807:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f23347f-6f48-42b2-bdc4-1791e7d43919 # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7fcb9746-7417-4a1b-8ae7-00c086f55009
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 88e94d2d-a049-460a-addd-b90c4bfb1a86
+        userCondition: null
 fields:
   4f23347f-6f48-42b2-bdc4-1791e7d43919: # Link
     columnSuffix: lfxhtrqz
     contentColumnType: text
     fieldGroup: null
     handle: linkField
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
-      allowCustomText: '1'
-      allowTarget: '1'
-      defaultText: ''
+      allowCustomText: true
+      allowTarget: true
+      defaultText: null
       selectLinkText: ''
       types:
         __assoc__:

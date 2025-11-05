@@ -1,45 +1,54 @@
+changedFieldIndicator: null
 field: 0a2670e7-65b0-45b5-96be-318580462d30 # Featured Awards
 fieldLayouts:
   2eaefc8d-9076-4f72-88b8-4805b07683a4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 803dc76f-627a-4c8f-8082-157ada849bea # Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e1500d56-c7ae-4157-8473-ff94652bef48
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 88856313-68a9-44fd-8849-c2e1cecb3695 # Featured Awards
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3c2711e4-344a-472e-9a4a-c45d6d65b949
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: d1a7778c-0fe7-486c-bf15-eceb7c8aeaa1
+        userCondition: null
 fields:
   803dc76f-627a-4c8f-8082-157ada849bea: # Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -50,13 +59,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: featuredAwards
-    instructions: ''
+    instructions: null
     name: 'Featured Awards'
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_featuredawards}}'
-      maxBlocks: ''
-      minBlocks: ''
+      maxBlocks: null
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null

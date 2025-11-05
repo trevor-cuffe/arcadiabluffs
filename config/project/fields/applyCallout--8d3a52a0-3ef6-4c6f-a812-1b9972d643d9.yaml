@@ -2,12 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
 handle: applyCallout
-instructions: ''
+instructions: null
 name: 'Apply Callout'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_applycallout}}'
-  maxBlocks: '1'
+  maxBlocks: 1
   minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all

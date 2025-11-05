@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
 handle: caddyTip
-instructions: ''
+instructions: null
 name: 'Caddy Tip'
 searchable: true
 settings:
@@ -10,8 +10,8 @@ settings:
   charLimit: null
   code: false
   columnType: text
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

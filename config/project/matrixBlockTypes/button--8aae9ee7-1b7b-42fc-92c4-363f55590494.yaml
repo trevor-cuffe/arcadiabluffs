@@ -3,34 +3,42 @@ fieldLayouts:
   a5613ebf-c413-4b33-918a-97c15c2bd3ad:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 73d0f7c4-cc1c-4018-9fdd-a049d964ad1f # Button Text
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fe641514-29f0-4c09-a828-9827e39bc4e8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b227f4d1-65be-4007-a1ac-a25781b6e254 # Button URL
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7055fa6f-6ea8-4858-9ef5-053de8629bde
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 8bf8573e-9218-4dbf-ab75-e2b42608b33f
+        userCondition: null
 fields:
   73d0f7c4-cc1c-4018-9fdd-a049d964ad1f: # Button Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
-    instructions: ''
+    instructions: null
     name: 'Button Text'
     searchable: true
     settings:
@@ -38,8 +46,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -50,7 +58,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: buttonUrl
-    instructions: ''
+    instructions: null
     name: 'Button URL'
     searchable: true
     settings:
@@ -58,8 +66,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

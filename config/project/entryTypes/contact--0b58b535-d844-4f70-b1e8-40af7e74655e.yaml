@@ -2,6 +2,7 @@ fieldLayouts:
   f154514f-8d55-47f4-81df-c38729d92512:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,99 +27,134 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 137fc7c8-a39d-497b-ac7b-62ff74fdfb6f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 16c39f4f-6bc4-4169-88c6-3f47027544c4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4f013979-3b76-48d7-aae9-3b0fdbf191a2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 58d379a7-f464-4baf-8555-e5b71c12d289 # Intro Block
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3ddd5dc1-f016-4e14-a772-addeaf50c441
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d838d1b8-1c0e-469d-bb0d-e1a9d81413fc # General Contacts
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4eab9edb-3457-45bd-b084-0d77aa9b828e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2b2449dc-8378-450b-b227-d1947e6d9d6b # Executive Team Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 66310e80-24f9-4e12-9574-8dbbe37a25a8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 47797459-7179-441b-8d49-e58016d12cb1 # Executive Team
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2cfaa0cb-f576-47ab-a641-2b0450069a56
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d72e767d-d3ea-4731-8e82-2981e56059c7 # Local Airports
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 28689d6b-6d79-4fb8-ac40-1867edaf8cc6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8d3a52a0-3ef6-4c6f-a812-1b9972d643d9 # Apply Callout
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d8b82e6e-d476-4674-8109-38344a34ee57
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 78ba8e3c-1c9a-4bc1-85ba-06069f8801a4
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cb4561f6-db1e-4f58-8153-d3ba7aadf7b0
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: c9d17fdd-f08f-43a6-90cc-3933aa9db4ea
+        userCondition: null
 handle: contact
 hasTitleField: false
 name: Contact
 section: 063e0238-928a-4bde-a39e-d034dabc5030 # Contact
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -2,53 +2,71 @@ fieldLayouts:
   0045a9eb-898f-411c-a248-7ca60da523cf:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c61fd93f-7f29-4221-af77-fa7a42f2a104 # Main Navigation
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b172df5b-c7aa-49b2-b634-ff9a0c84c4c2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7df2599b-80fe-4758-8542-add1e40c5d27 # Nav CTA
             instructions: 'Optional - select a special link to be styled as a button next to the main navigation'
-            label: ''
-            required: ''
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c40ba9c7-671c-4ed6-9f5d-5f4f4bc891ce
+            userCondition: null
             warning: null
             width: 100
         name: 'Main Navigation'
-        sortOrder: 1
+        uid: 3a27b376-5292-4a68-9dbe-4122d52df256
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c90430ca-7754-4503-bfdb-eeb26150198b # Secondary Navigation
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ba50d03a-555c-4069-8667-fa62ecd509d7
+            userCondition: null
             warning: null
             width: 100
         name: 'Secondary Navigation'
-        sortOrder: 2
+        uid: 538950ad-595f-4c08-af43-300f7897cf46
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 856cdfa4-1efe-4001-886c-d78fedae1bb6 # Announcement
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e541d92f-db95-4e91-bd5c-0e6e3a25b6b6
+            userCondition: null
             warning: null
             width: 100
         name: Announcement
-        sortOrder: 3
+        uid: e2ed767b-090f-4a94-b003-42843876dd19
+        userCondition: null
 handle: header
 name: Header
 sortOrder: 1

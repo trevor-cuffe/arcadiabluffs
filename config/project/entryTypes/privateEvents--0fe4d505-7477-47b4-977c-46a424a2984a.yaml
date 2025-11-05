@@ -2,6 +2,7 @@ fieldLayouts:
   44cc5c97-a241-4ca9-91da-2f62648cbbbe:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,45 +27,62 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bf8c8509-537d-49eb-80ce-72893f1afcde
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 961562fa-ae3d-4a9d-b304-43d727329d53 # Private Event Options
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 40c18568-82a3-40d9-86df-65cf36dc5089
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8e05d955-2d0c-460c-ae59-bc51e9877ea8 # CTA
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7ee075bf-94ea-4dc3-a485-61cd074eb847
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 69049a3e-8f4c-4816-b297-030fa3228d07
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cb60b5e0-b212-4b4d-82e0-5c1d579bece0
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 46b876c9-eada-40ec-be9d-64f669a33eb5
+        userCondition: null
 handle: privateEvents
 hasTitleField: false
 name: 'Private Events'
 section: c11abc3b-eb4a-4143-8aee-27b44d77675a # Private Events
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

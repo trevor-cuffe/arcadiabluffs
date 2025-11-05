@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
 handle: accommodationLink2
-instructions: ''
+instructions: null
 name: 'Accommodation Link 2'
 searchable: true
 settings:
-  allowCustomText: '1'
-  allowTarget: '1'
-  defaultText: ''
+  allowCustomText: true
+  allowTarget: true
+  defaultText: null
   selectLinkText: ''
   types:
     __assoc__:

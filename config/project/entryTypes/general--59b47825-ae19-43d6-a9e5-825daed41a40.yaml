@@ -2,6 +2,7 @@ fieldLayouts:
   083b7652-a432-406e-9857-7d11ab4fb7dc:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,165 +27,224 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f6070a16-cf2d-447b-bd2a-be703fb1edca
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1f0d9e7c-6b75-4e4f-827c-83436a629022
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6a2c9bfb-cef6-407c-95d7-67a9465749b7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 3db517f6-16a9-4595-8c7c-e8a43a106c13 # Overview
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2ecd10da-d035-4c92-ba4b-4669d894ec1d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 86dbf20b-c736-4e15-ad25-8d09e62097d4 # Accommodation Layouts
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: edbde556-8987-45f3-b5ae-30477c6f70f2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6d64ce9e-9612-4838-b11d-4bc1689bff63 # Accommodation Link
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: af08c020-a78a-4672-83f6-0b03f9ac0f2a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 87920f6c-d778-4955-a9eb-3ffbe093bc7e # Accommodations Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c3267801-a4e2-426c-9a48-452e4434f990
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2bc9f6e5-515f-41d6-8c72-a457d3bad7a0 # Accommodations Overview
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fa6e30f2-55f3-41e6-b96c-e4a0ef6719bf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 40b5fa5a-5d55-4783-aac4-a7c9cc3c991d # Accommodation Layouts 2
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8436b220-ca8e-43f5-83d3-5b42c9f9743b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 62205b39-03b5-46f0-a9c2-f24a32f28b65 # Accommodation Link 2
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1fe690c7-998c-4831-af04-822a93d63138
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 03410c92-1515-4c60-b239-531fb64a493a
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 30049732-fd90-437a-a48a-2fac94fdb736 # Accommodation Pricing Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c98acd2f-f81c-4ea2-ad5b-8d93758e6c27
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f6f57ddb-d979-455a-8803-923779a0aece # Accommodation Pricing
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4a7feac9-9676-4916-a549-be73953a8688
+            userCondition: null
             warning: null
             width: 100
         name: Pricing
-        sortOrder: 2
+        uid: 91cd9892-721c-4948-bec8-729f7f644874
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 5fd92c59-65ac-442f-883a-e5d8d867ed86 # Content Block
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8e0bdb9a-f45b-4763-a9fd-ebfefcee4a1d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fa034695-f302-45c4-818c-842e1842a583 # Gallery
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7fefb1dd-75b6-46f0-91d4-c1a6ae6a22db
+            userCondition: null
             warning: null
             width: 100
         name: Gallery
-        sortOrder: 3
+        uid: c53fc6fc-4ee4-4315-9866-c8d4b82008da
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: cc80e5df-c1e8-40d1-9935-2b5a608b491a # Sidebar CTAs
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b5a18bff-badf-4396-a5ac-e667a7d262dd
+            userCondition: null
             warning: null
             width: 100
         name: Sidebar
-        sortOrder: 4
+        uid: 6b5071fd-d2a0-44df-b723-89eb8af64d5e
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 10793e5f-7ef0-4870-85db-015902ace4a3
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 5
+        uid: bd0c584a-8576-4882-8968-dd8d33f65e57
+        userCondition: null
 handle: general
 hasTitleField: true
 name: General
 section: 0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e # Accommodations
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

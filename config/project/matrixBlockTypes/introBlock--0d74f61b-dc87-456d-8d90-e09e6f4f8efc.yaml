@@ -3,79 +3,102 @@ fieldLayouts:
   3ea2db2e-a349-4665-99c6-39cbbf8f7e18:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4b55a38d-f046-45c9-9305-eb9af5c49179 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 170bc240-0ef3-4fbd-8d1a-b8def624f5fd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f718af73-ef50-482d-bcdd-53e98fac6099 # Description
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2b80b1c3-e8d0-407c-a3b0-78bb1dbe82fc
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 88498e7c-15c7-4de4-9b99-3dd79ea914e1 # Details List
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bd32d010-4750-4b59-aa75-131fb04b9e37
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 01b17a99-3521-45f0-87a8-6b2cae017f98 # Link Text
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2f5c991d-c521-4561-895d-e07d78943728
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 325ae27a-3891-45e9-9543-bb4b0e42c7c0 # Link Url
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4c352b76-5186-486f-94e6-7642acb22d55
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 46cca937-8546-4327-8431-bc4a28a8d551 # Second Link Text
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9a7eb7ee-9239-4a81-aa52-1fe291283a13
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9563f531-5d65-4f5f-8162-e18796aa1055 # Second Link Url
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 21c9e260-1bc3-48f5-af49-513cc2c33051
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: ca368337-6e5a-47d2-a856-703f9dccf359
+        userCondition: null
 fields:
   01b17a99-3521-45f0-87a8-6b2cae017f98: # Link Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
-    instructions: ''
+    instructions: null
     name: 'Link Text'
     searchable: true
     settings:
@@ -83,8 +106,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -95,7 +118,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -103,8 +126,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -115,7 +138,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: secondLinkText
-    instructions: ''
+    instructions: null
     name: 'Second Link Text'
     searchable: true
     settings:
@@ -123,8 +146,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -135,7 +158,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkUrl
-    instructions: ''
+    instructions: null
     name: 'Link Url'
     searchable: true
     settings:
@@ -143,8 +166,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -155,7 +178,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: secondLinkUrl
-    instructions: ''
+    instructions: null
     name: 'Second Link Url'
     searchable: true
     settings:
@@ -163,8 +186,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -175,7 +198,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: detailsList
-    instructions: ''
+    instructions: null
     name: 'Details List'
     searchable: true
     settings:
@@ -226,6 +249,7 @@ fields:
               - ''
       maxRows: null
       minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -234,20 +258,23 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: description
-    instructions: ''
+    instructions: null
     name: Description
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: ''
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field

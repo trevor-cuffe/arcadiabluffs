@@ -2,6 +2,7 @@ fieldLayouts:
   733ba3b9-3bcd-4da2-a137-e095ad984f3d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,72 +27,98 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e7186c21-b73f-4043-ae1d-8794eaf3c9ea
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 81522e5e-5cfc-4004-bac6-6284d3030cbf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2d4a591d-687c-4f52-95db-3b1cdbd5c262
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f2452e29-cbb5-4dca-babe-7ac49286ec08 # Rates Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 852f3315-6e2d-4568-ace7-7aee1fb5d3ee
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cde13c4b-01bc-4465-ae64-8c0473b3931b # Rates
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9eedb8d7-659c-45f4-9360-dd8f634d0765
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ce1d1e5c-5010-49e7-a946-99d7621d108f # Rates List
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ebbc5fb8-9d97-4fb0-b0aa-6df7438cc03e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 2126659e-3eb5-4f67-b564-158a81fdfda7
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cd575f53-8157-4056-8af3-eb16c15ec77c
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 98a069b7-e622-411d-9952-8e5a53fc285d
+        userCondition: null
 handle: rates
 hasTitleField: true
 name: Rates
 section: cd118c39-5937-4705-b0db-2cb2bb0b7e9b # Courses
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -3,74 +3,94 @@ fieldLayouts:
   113c60f5-ca3a-4b35-b3a1-2d8f9bff4a60:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: d8ddc7a5-755d-4328-9925-b048f31e343b # Image
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 98f053c9-40a5-4916-a903-78505cde8b5b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ddfbbfff-4c50-4552-a93d-78d990a5b58d # Headline
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e49836bb-27e4-4892-84e3-de71c51958ef
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a0e3bb72-886e-4f18-b387-e9f0a10449d5 # Excerpt
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b07e8da3-4434-45ac-8d97-3cfc035c4ac7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b35f4131-c904-4509-bef0-05ef8d79e639 # Link Text
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2d1d68de-f15a-495f-aefa-6f42ec4b7e0f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: abde984f-81e8-4547-be65-7dc0bbcb1ba1 # Link URL
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d5f59bc4-e8ad-45af-a735-b4efe9f317ca
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 59658251-d37f-497c-9c01-462ceec4544c
+        userCondition: null
 fields:
   a0e3bb72-886e-4f18-b387-e9f0a10449d5: # Excerpt
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: excerpt
-    instructions: ''
+    instructions: null
     name: Excerpt
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: '1'
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
@@ -79,16 +99,18 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: linkUrl
-    instructions: ''
+    instructions: null
     name: 'Link URL'
     searchable: true
     settings:
       allowSelfRelations: false
-      limit: '1'
+      branchLimit: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       selectionLabel: 'Add an entry'
       showSiteMenu: true
-      source: null
       sources:
         - 'section:0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e' # Accommodations
       targetSiteId: null
@@ -102,7 +124,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkText
-    instructions: ''
+    instructions: null
     name: 'Link Text'
     searchable: true
     settings:
@@ -110,8 +132,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -122,30 +144,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
+    instructions: null
     name: Image
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      restrictedLocationSubpath: null
       selectionLabel: 'Add an Image'
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -156,7 +182,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -164,8 +190,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

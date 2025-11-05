@@ -2,6 +2,7 @@ fieldLayouts:
   af4c01c4-d74c-4647-a097-dc66153c607f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,45 +27,62 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dda5c207-ea62-4b32-a8a6-bf98b7593ba8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1552ee6c-8954-47dc-9d27-20b12a0e9b54
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f1c11c8d-f329-418c-bc33-04ebbd281450 # Live Stream
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a79f950b-b8b7-4f06-acfc-dc47f3369a09
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 30c40944-1cef-4efe-865c-db3f7b40d168
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 78ea7d8a-7914-4689-a19e-acc5d25dbf2a
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 20d42485-7004-4cfb-8e65-af98c52840f5
+        userCondition: null
 handle: sunsetCamera
 hasTitleField: false
 name: 'Sunset Camera'
 section: c8c999e8-e655-4295-b5e0-892430740cc7 # Sunset Camera
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

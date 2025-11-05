@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 11950123-d1fd-4f74-b0cd-016b75c75cb9 # Metadata
 handle: metadata
-instructions: ''
+instructions: null
 name: Metadata
 searchable: true
 settings:

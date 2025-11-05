@@ -1,67 +1,85 @@
+changedFieldIndicator: null
 field: ea78a6cf-7df9-415d-aa20-2f246a33e383 # Home Dining
 fieldLayouts:
   547e8b78-82de-4c1e-8f0c-02a503b827cb:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 49b14ddc-b863-47cf-9f09-87654c5b6f65 # Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e25dfb2c-95b6-4cbc-b125-c692de8b95ac
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8f38cf3e-638f-4bad-aff2-ecc59c8c6303 # Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 610e81ba-1d61-4412-bf5e-c0ebfbe6e1d4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 95930b1a-46ab-472b-bbc8-08004eee0333 # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 78753744-a34e-4b07-93fa-6d9cd523050d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bbfb2374-a525-4465-984d-d47c476db769 # Dining Options
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 386f1016-f233-4e10-a9f0-fa77887b2a17
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 302ead6f-69cb-4d01-8cac-97d3470b17bb
+        userCondition: null
 fields:
   8f38cf3e-638f-4bad-aff2-ecc59c8c6303: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: text
-    instructions: ''
+    instructions: null
     name: Text
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: '1'
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
@@ -70,16 +88,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -90,13 +108,13 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkData
-    instructions: ''
+    instructions: null
     name: Link
     searchable: true
     settings:
-      allowCustomText: '1'
-      allowTarget: '1'
-      defaultText: ''
+      allowCustomText: true
+      allowTarget: true
+      defaultText: null
       selectLinkText: ''
       types:
         __assoc__:
@@ -284,13 +302,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: diningOptions
-    instructions: ''
+    instructions: null
     name: 'Dining Options'
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_diningoptions_1}}'
-      maxBlocks: '3'
-      minBlocks: ''
+      maxBlocks: 3
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null

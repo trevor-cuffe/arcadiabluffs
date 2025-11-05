@@ -2,13 +2,13 @@ columnSuffix: pgfjqcom
 contentColumnType: text
 fieldGroup: 16ea3636-5874-40e9-aa29-e602ce41ffcf # Navigation
 handle: navCta
-instructions: ''
+instructions: null
 name: 'Nav CTA'
 searchable: false
 settings:
-  allowCustomText: '1'
-  allowTarget: '1'
-  defaultText: ''
+  allowCustomText: true
+  allowTarget: true
+  defaultText: null
   selectLinkText: ''
   types:
     __assoc__:

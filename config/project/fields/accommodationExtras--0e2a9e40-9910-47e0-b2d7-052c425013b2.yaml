@@ -2,17 +2,19 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
 handle: accommodationExtras
-instructions: ''
+instructions: null
 name: 'Accommodation Extras'
 searchable: true
 settings:
-  maxBlocks: '2'
+  maxBlocks: 2
   maxLevels: null
   maxTopBlocks: null
   minBlocks: null
+  minLevels: null
+  minTopBlocks: null
+  newBlockButtonLabel: null
   propagationKeyFormat: null
   propagationMethod: all
-  wasModified: false
 translationKeyFormat: null
 translationMethod: site
 type: benf\neo\Field

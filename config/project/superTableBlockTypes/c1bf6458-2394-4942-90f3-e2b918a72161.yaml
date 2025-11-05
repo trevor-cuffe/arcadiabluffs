@@ -1,36 +1,45 @@
+changedFieldIndicator: null
 field: 703e4c00-55cf-4b57-a7ee-db4aa2f6e060 # Home Hero
 fieldLayouts:
   ee123b70-5612-4fa9-9d01-5193efd37fa4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: d9cb1d6c-2477-4fd3-8b36-6d7a1a3161f0 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 87ad127a-2d4e-4a13-89a4-a71beaaea728
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ea8304eb-f854-4dc5-b1df-84fbb8c51ea7 # Button
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 690f7a22-b7ad-43de-b39a-2c34758a70fb
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: eae245fd-3a99-4eae-ad29-c7192bf7b557
+        userCondition: null
 fields:
   d9cb1d6c-2477-4fd3-8b36-6d7a1a3161f0: # Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -38,8 +47,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -50,13 +59,13 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: button
-    instructions: ''
+    instructions: null
     name: Button
     searchable: true
     settings:
-      allowCustomText: '1'
-      allowTarget: '1'
-      defaultText: ''
+      allowCustomText: true
+      allowTarget: true
+      defaultText: null
       selectLinkText: ''
       types:
         __assoc__:

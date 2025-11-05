@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 5608b240-5464-4dec-ab64-e254b72ad3e6 # Private Events
 handle: privateEventOptions
-instructions: ''
+instructions: null
 name: 'Private Event Options'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_privateeventoptions}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

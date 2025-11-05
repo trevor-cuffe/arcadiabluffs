@@ -2,6 +2,7 @@ fieldLayouts:
   eb5455dc-7c31-42aa-9e73-07e4d3534e3c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,45 +27,62 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e6f10f76-f9c8-4066-8c49-54b9fd6a1073
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7fd45083-2574-45a3-a3a6-e25418eb6925 # Gift Cards Introduction
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e62a8a13-228c-4a68-b47d-3026ecf1287c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 359c3304-e1b4-4382-8e8d-cd4ca6246277 # Thank You Message
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d19f3d57-ca72-4765-9095-74eedf8670a8
+            userCondition: null
             warning: null
             width: 100
         name: 'Gift Cards'
-        sortOrder: 1
+        uid: 348ac7ea-bfed-4e40-8649-0b58b8985e54
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5c422a40-7e35-4e2f-a8c6-28af8729b041
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: c12ecf9c-2210-4ac1-a269-28f23602f97a
+        userCondition: null
 handle: giftCards
 hasTitleField: false
 name: 'Gift Cards'
 section: e60c4308-b5df-400e-8a88-74b253f5ae8c # Gift Cards
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

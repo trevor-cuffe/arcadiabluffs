@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: f166e127-51d5-4ea5-9f69-0e3973d61913 # Rates
 handle: ratesHeadline
-instructions: ''
+instructions: null
 name: 'Rates Headline'
 searchable: true
 settings:
@@ -10,8 +10,8 @@ settings:
   charLimit: null
   code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

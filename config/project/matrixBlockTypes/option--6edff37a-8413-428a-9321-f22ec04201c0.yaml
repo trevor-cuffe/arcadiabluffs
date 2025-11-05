@@ -3,70 +3,87 @@ fieldLayouts:
   036dcd0f-62aa-4d41-954f-9d8109c35872:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 18d710bf-237c-4a66-9707-1a63cc543871 # Headline
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 33db43b7-4c8c-4fd8-a100-238861d2eef8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 669373c9-7338-40ff-b910-b4e164a5c4e4 # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1194a265-f4ce-4b76-ab37-90537f7b59a9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a0ab0cd8-2161-45c5-bf59-4e2d5eef8703 # Details List
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3c517ae3-ba35-4bcf-bf88-760c59fef792
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ea52dcf4-0ef2-443e-b70d-7ca566b249bb # Menus
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c7434347-4ef4-469b-853e-f7e7f37afe08
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 894ceebd-0a7f-4a96-a00b-87e7a5a69aa1 # Gallery
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e89955b4-3bc8-4b5d-adf3-2452c6f8a3ff
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f2772359-43d7-4be5-aae9-5245828b765c
+        userCondition: null
 fields:
   18d710bf-237c-4a66-9707-1a63cc543871: # Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -77,30 +94,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: gallery
-    instructions: ''
+    instructions: null
     name: Gallery
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      restrictedLocationSubpath: null
       selectionLabel: 'Add an Image'
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -111,20 +132,23 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: description
-    instructions: ''
+    instructions: null
     name: Description
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: '1'
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
@@ -133,7 +157,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: detailsList
-    instructions: ''
+    instructions: null
     name: 'Details List'
     searchable: true
     settings:
@@ -182,8 +206,9 @@ fields:
             -
               - col2
               - ''
-      maxRows: ''
-      minRows: ''
+      maxRows: null
+      minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -192,10 +217,12 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: menus
-    instructions: ''
+    instructions: null
     name: Menus
     searchable: true
     settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
       columns:
         __assoc__:
           -
@@ -214,13 +241,12 @@ fields:
                   - ''
       contentTable: '{{%stc_38_menus_1}}'
       fieldLayout: row
-      maxRows: ''
-      minRows: ''
-      placeholderKey: null
+      maxRows: null
+      minRows: null
       propagationKeyFormat: null
       propagationMethod: all
       selectionLabel: 'Add a Menu'
-      staticField: ''
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField

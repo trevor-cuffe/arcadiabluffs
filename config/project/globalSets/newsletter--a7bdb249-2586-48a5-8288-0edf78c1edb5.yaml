@@ -2,27 +2,35 @@ fieldLayouts:
   ca2f8969-e50d-4ebc-b21c-4217de14362e:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: acfcfa69-f556-4980-b0b3-b090928d30b3 # Subscribe Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f9fcee97-1970-4877-a457-bfc13a9ac20b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a6ec054e-9735-4aa1-811a-f988e4ed82c4 # Subscribe Tagline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a72e58e5-62dc-4995-8225-c9f25108238b
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: dd1292e6-1cb4-4f3f-b7a4-20253b0ab9ff
+        userCondition: null
 handle: newsletter
 name: Newsletter
 sortOrder: 4

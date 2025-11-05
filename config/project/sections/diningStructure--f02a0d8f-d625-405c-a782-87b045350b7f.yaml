@@ -4,16 +4,9 @@ handle: diningStructure
 name: Dining
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   076725fd-bc7e-48fa-88ce-2d58cbee2749: # Arcadia Bluffs (en-US)

@@ -1,90 +1,114 @@
+changedFieldIndicator: null
 field: fd52f2bc-9e8e-4025-9502-fab5a89e68ae # Arcadia Bluffs Address
 fieldLayouts:
   3bf83eeb-a959-4cbe-8470-88a96fd628b9:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: aae837ba-06f9-4343-b212-2889073937b0 # Name
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fbe34fae-ac49-4ded-9bc7-266215cc3fb1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fc68f54b-60ab-4251-8ec9-15ea9b776eef # Street Address 1
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 38de3627-f408-4da1-8d9a-dd97273ab9e9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbae5fec-e67e-4c89-b03f-a329eefefcda # Street Address 2
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5bff65d4-f56a-4e98-9099-d3db5bea8671
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5554e38f-dda8-4910-8ef4-8c4b7e1a63ee # City
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9499808e-cec8-48b6-959c-fb07bf6cc171
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 928a4a05-b9d0-4bbe-aefb-6ca1bb44af92 # State
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3f6c20c3-c33f-4f08-83cf-bac40162a64f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0c6882d0-e994-4811-afea-7c1c2d619d97 # Postal Code
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cb93aa17-07ed-4c6a-9e0b-29487079671d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d1b93d4f-3a60-41aa-ab26-b13840fa86e0 # Country
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9729ba6c-1bb9-442e-ad8e-24490d1301e2
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3c7ecc76-2c9d-4e02-91f3-d11f20a86f46
+        userCondition: null
 fields:
   0c6882d0-e994-4811-afea-7c1c2d619d97: # Postal Code
     columnSuffix: soalzyst
     contentColumnType: text
     fieldGroup: null
     handle: postalCode
-    instructions: ''
+    instructions: null
     name: 'Postal Code'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -95,16 +119,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: state
-    instructions: ''
+    instructions: null
     name: State
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -115,16 +139,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: city
-    instructions: ''
+    instructions: null
     name: City
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -135,16 +159,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: addressName
-    instructions: ''
+    instructions: null
     name: Name
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -155,16 +179,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: streetAddress2
-    instructions: ''
+    instructions: null
     name: 'Street Address 2'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -175,16 +199,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: country
-    instructions: ''
+    instructions: null
     name: Country
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -195,16 +219,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: streetAddress1
-    instructions: ''
+    instructions: null
     name: 'Street Address 1'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

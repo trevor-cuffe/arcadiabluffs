@@ -2,19 +2,20 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 16ea3636-5874-40e9-aa29-e602ce41ffcf # Navigation
 handle: mainNavigation
-instructions: ''
+instructions: null
 name: 'Main Navigation'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   contentTable: '{{%stc_mainnavigation}}'
   fieldLayout: row
-  maxRows: '8'
-  minRows: ''
-  placeholderKey: null
+  maxRows: 8
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a Link'
-  staticField: ''
+  staticField: null
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

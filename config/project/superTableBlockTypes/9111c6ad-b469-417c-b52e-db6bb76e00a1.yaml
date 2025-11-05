@@ -1,42 +1,51 @@
+changedFieldIndicator: null
 field: 243afeaf-346c-4b8b-af89-9bd633f855e6 # General Awards
 fieldLayouts:
   7d9ca38f-51e0-41f1-b511-ce69f8e4d927:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 53352c27-2a47-44a6-a7a3-3d29eaace28e # Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 60b3f896-707b-4560-ad69-4b95fd6fa2a8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7b3e1dd7-7c27-4a5a-839f-8b3f368349ef # Awards
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f058e708-c6ef-4aaa-b615-30db2c748d98
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 196c60fa-154b-4e3c-a573-9b22bbd6073b
+        userCondition: null
 fields:
   7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: # Awards
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: awards
-    instructions: ''
+    instructions: null
     name: Awards
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_awards}}'
-      maxBlocks: ''
-      minBlocks: ''
+      maxBlocks: null
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
@@ -47,16 +56,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

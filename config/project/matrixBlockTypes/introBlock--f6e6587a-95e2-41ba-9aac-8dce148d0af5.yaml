@@ -3,47 +3,58 @@ fieldLayouts:
   4d627346-d89d-4ae9-9223-ea57605acf36:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 043b0e31-2a28-45c5-853c-2723fe2ce724 # Headline
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9a0b95c1-7d09-4726-b962-33ac872a9573
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7bbf65b1-050d-451a-a681-13b0bbe158a1 # Body
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 74f0a7b1-b151-4044-aada-ab4b710600be
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 92f0d75c-ba48-4cd5-bf3e-f8b38fefd50b
+        userCondition: null
 fields:
   7bbf65b1-050d-451a-a681-13b0bbe158a1: # Body
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: body
-    instructions: ''
+    instructions: null
     name: Body
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
+      defaultTransform: null
       purifierConfig: null
-      purifyHtml: '1'
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
@@ -52,7 +63,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -60,8 +71,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

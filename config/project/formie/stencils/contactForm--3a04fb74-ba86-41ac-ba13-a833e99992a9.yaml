@@ -1,10 +1,6 @@
 data:
-  availability: always
-  availabilityFrom: null
-  availabilitySubmissions: null
-  availabilityTo: null
   dataRetention: forever
-  dataRetentionValue: ''
+  dataRetentionValue: null
   fileUploadsAction: retain
   notifications:
     -
@@ -151,23 +147,19 @@ data:
         showBackButton: false
         submitButtonLabel: 'Contact us'
       sortOrder: 0
-  requireUser: false
   settings:
-    availabilityMessage: null
-    availabilityMessageDate: null
-    availabilityMessageSubmissions: null
-    collectIp: ''
-    collectUser: ''
+    collectIp: false
+    collectUser: false
     dataRetention: null
     dataRetentionValue: null
-    defaultEmailTemplateId: ''
+    defaultEmailTemplateId: null
     defaultInstructionsPosition: verbb\formie\positions\AboveInput
     defaultLabelPosition: verbb\formie\positions\AboveInput
     disableCaptchas: false
-    displayCurrentPageTitle: ''
-    displayFormTitle: ''
-    displayPageProgress: ''
-    displayPageTabs: ''
+    displayCurrentPageTitle: false
+    displayFormTitle: false
+    displayPageProgress: false
+    displayPageTabs: false
     errorMessage:
       -
         content:
@@ -177,15 +169,30 @@ data:
         type: paragraph
     errorMessagePosition: top-form
     fileUploadsAction: null
+    limitSubmissions: null
+    limitSubmissionsIpAddressMessage: null
+    limitSubmissionsIpAddressNumber: null
+    limitSubmissionsIpAddressType: null
+    limitSubmissionsMessage: null
+    limitSubmissionsNumber: null
+    limitSubmissionsType: null
     loadingIndicator: spinner
-    loadingIndicatorText: ''
+    loadingIndicatorText: null
+    pageRedirectUrl: null
     progressPosition: end
+    progressValuePosition: inside-center
     redirectUrl: null
-    scrollToTop: '1'
-    storeData: null
+    requireUser: false
+    requireUserMessage: null
+    scheduleForm: false
+    scheduleFormEnd: null
+    scheduleFormExpiredMessage: null
+    scheduleFormPendingMessage: null
+    scheduleFormStart: null
+    scrollToTop: true
     submissionTitleFormat: '{timestamp}'
     submitAction: message
-    submitActionFormHide: ''
+    submitActionFormHide: false
     submitActionMessage:
       -
         content:
@@ -194,13 +201,12 @@ data:
             type: text
         type: paragraph
     submitActionMessagePosition: top-form
-    submitActionMessageTimeout: ''
+    submitActionMessageTimeout: null
     submitActionTab: null
-    submitActionUrl: ''
+    submitActionUrl: null
     submitMethod: ajax
-    userDeletedAction: null
-    validationOnFocus: '1'
-    validationOnSubmit: '1'
+    validationOnFocus: true
+    validationOnSubmit: true
   userDeletedAction: retain
 defaultStatus: 6feaa463-c415-465d-b07c-4a222f39d880 # New
 handle: contactForm

@@ -2,20 +2,23 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
 handle: accommodationsOverview
-instructions: ''
+instructions: null
 name: 'Accommodations Overview'
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
   columnType: text
-  defaultTransform: ''
-  enableSourceEditingForNonAdmins: true
-  purifierConfig: ''
-  purifyHtml: '1'
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
+  showWordCount: false
+  sourceEditingGroups: '*'
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

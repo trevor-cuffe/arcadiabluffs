@@ -3,61 +3,75 @@ fieldLayouts:
   163864e2-4c10-4a52-9285-ca3b83c9dea4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 1c73a949-4efb-4981-9845-5fc07773a52e # Tab Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 038d79c9-9115-48b7-b9b3-124039d454e0
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 3046ec83-6114-4d56-9a73-383b7243bd8d # Pricing Table
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4441454a-80ef-4d9d-a84c-ce23826b7085
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 4ab5842b-2eac-4ee9-9c9b-67194eda8f76 # Pricing Footer
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7a747b2b-8290-4218-9fd1-cd0a7cf29748
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 95bdf0b9-6728-4e50-badf-be87860d5240 # Golf Add-On Pricing
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 920d1386-7743-4dd5-8b22-a2ccaba5a486
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: fb74ed20-6f42-439f-ae94-b2de2f856d24
+        userCondition: null
 fields:
   1c73a949-4efb-4981-9845-5fc07773a52e: # Tab Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: tabText
-    instructions: ''
+    instructions: null
     name: 'Tab Text'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,7 +82,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: pricingFooter
-    instructions: ''
+    instructions: null
     name: 'Pricing Footer'
     searchable: true
     settings:
@@ -98,8 +112,9 @@ fields:
             -
               - col1
               - ''
-      maxRows: ''
-      minRows: ''
+      maxRows: null
+      minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -108,7 +123,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: golfAddOnPricing
-    instructions: ''
+    instructions: null
     name: 'Golf Add-On Pricing'
     searchable: true
     settings:
@@ -176,8 +191,9 @@ fields:
             -
               - col3
               - ''
-      maxRows: ''
-      minRows: ''
+      maxRows: null
+      minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -186,7 +202,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: pricingTable
-    instructions: ''
+    instructions: null
     name: 'Pricing Table'
     searchable: true
     settings:
@@ -235,8 +251,9 @@ fields:
             -
               - col2
               - ''
-      maxRows: ''
-      minRows: ''
+      maxRows: null
+      minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

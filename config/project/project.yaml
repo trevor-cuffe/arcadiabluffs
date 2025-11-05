@@ -1,4 +1,4 @@
-dateModified: 1762379248
+dateModified: 1762379330
 elementSources:
   SproutForms_Entry:
     -
@@ -156,9 +156,7 @@ fs:
     url: null
 meta:
   __names__:
-    0a728c97-fd69-4e4d-ab5d-2b16a6fae7bf: Button # Button
     0a2670e7-65b0-45b5-96be-318580462d30: 'Featured Awards' # Featured Awards
-    00a79945-0f76-4aac-a30c-9d1f11441a84: 'Table Footer' # Table Footer
     0a870800-b231-49d9-9cb3-c79728880aa0: Headline # Headline
     0b7b3861-eb22-491a-8a7c-85aa93cbf287: Accommodations # Accommodations
     0b58b535-d844-4f70-b1e8-40af7e74655e: Contact # Contact
@@ -174,11 +172,9 @@ meta:
     0ef55052-1ae5-436b-b9cd-64be16fcf0db: 'Accommodation Form Content' # Accommodation Form Content
     0f863fe3-b46b-4804-a61e-1b62c737d2f7: 'Linked List' # Linked List
     0f2543ba-0c6c-4a11-8c70-9cdefad272dc: 'Custom URL' # Custom URL
-    0fa1c15b-4316-4ff5-8918-6e3511d816d1: 'Items to Note' # Items to Note
     0fe4d505-7477-47b4-977c-46a424a2984a: 'Private Events' # Private Events
     1ae0ca48-e9ff-4b0a-aaba-9e8e23627850: Image # Image
     01b17a99-3521-45f0-87a8-6b2cae017f98: 'Link Text' # Link Text
-    01ba22cd-6d8f-463b-9c88-11dbf58faae0: Headline # Headline
     1c4e88bc-b69c-48b5-92ca-f9bce29e29f6: 'Street Address 1' # Street Address 1
     1c73a949-4efb-4981-9845-5fc07773a52e: 'Tab Text' # Tab Text
     1dd6e9ca-3dfc-4093-836d-65077300be08: Button # Button
@@ -196,7 +192,6 @@ meta:
     2eac97af-c8bb-4f52-82d5-7b98c2c2bb90: Accommodations # Accommodations
     3a0ddff3-cf2f-4791-91f2-b3ad3c8f34ab: Content # Content
     3a04fb74-ba86-41ac-ba13-a833e99992a9: 'Contact Form' # Contact Form
-    3bc66f93-926c-4e23-a173-a807a5e9b3be: Headline # Headline
     3db517f6-16a9-4595-8c7c-e8a43a106c13: Overview # Overview
     3dfade29-0d50-45dd-9bf0-0b0a2fed7406: 'Utility Pages' # Utility Pages
     3e3c3807-85da-43e2-87ea-87e96f52b568: Description # Description
@@ -208,7 +203,6 @@ meta:
     4ab5842b-2eac-4ee9-9c9b-67194eda8f76: 'Pricing Footer' # Pricing Footer
     4abaa592-1034-44af-8c86-16ffeb72caac: Description # Description
     4acc9aa2-b819-474a-a0ef-aefcddc96fba: Instagram # Instagram
-    4afcce5f-4481-4f50-b3fd-b6c42cf22f5c: 'Link URL' # Link URL
     4b4c2ec7-bb72-4d4e-91e8-1347888be1da: Headline # Headline
     4b55a38d-f046-45c9-9305-eb9af5c49179: Headline # Headline
     4c621108-9140-4ef7-b9f1-d1cc39429915: Headline # Headline
@@ -217,12 +211,10 @@ meta:
     4f23347f-6f48-42b2-bdc4-1791e7d43919: Link # Link
     04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5: 'Banner Link' # Banner Link
     5a412ccd-04da-4787-a28c-3ac60d56e066: Awards # Awards
-    5c1f657e-0879-4a4b-beca-79003bf50cce: Table # Table
     5c4dce04-09b5-4782-8525-f9501e72fd30: Headline # Headline
     5eb6460b-344e-42df-91c3-1a71903d2dc3: Metadata # Metadata
     5fd92c59-65ac-442f-883a-e5d8d867ed86: 'Content Block' # Content Block
     6a19f290-12c7-40d3-b863-4dfc05650684: Yardage # Yardage
-    6a59f095-a24a-43ce-8443-e3068027152e: Headline # Headline
     6ad5585d-72c6-4d83-a4f8-c364ef010008: 'Gift Cards' # Gift Cards
     6c804630-a47b-490c-8e9f-751844e20691: Headline # Headline
     6cbfc500-609a-481a-b793-29875ee605b0: Headline # Headline
@@ -249,11 +241,8 @@ meta:
     8e05d955-2d0c-460c-ae59-bc51e9877ea8: CTA # CTA
     8f38cf3e-638f-4bad-aff2-ecc59c8c6303: Text # Text
     8f377780-b7ab-44cf-8b1e-47b3d95753c1: 'Background Image' # Background Image
-    8fd5e0a2-9d26-411e-a0bb-c3bf76cd05ce: 'Link Text' # Link Text
-    9ac36cd6-f8a3-4875-947e-fe3347369e24: Headline # Headline
     9baae7f8-cf5b-40da-96a9-1a49f83765dd: 'Related Entry' # Related Entry
     9bcdb2fc-72a4-4110-86a9-7d1d306532da: City # City
-    9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: 'Button URL' # Button URL
     9d60212d-d586-49a1-9525-1f94da3d85f0: 'CTA Body' # CTA Body
     9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
     010fc3aa-1e18-47e8-a901-a5e2e5b085ba: 'Link Text' # Link Text
@@ -263,18 +252,15 @@ meta:
     19d04551-214f-4e9b-9a5e-ff66d6fe1028: News # News
     23bb67c9-f116-462a-a1dc-d13ac3f62749: 'The Dozen Hole by Hole' # The Dozen Hole by Hole
     25fa5a36-9a68-4a58-906e-ca514a2e6ad9: Body # Body
-    37f54e62-0b62-426a-8d3a-d2890b714689: Menus # Menus
     40b5fa5a-5d55-4783-aac4-a7c9cc3c991d: 'Accommodation Layouts 2' # Accommodation Layouts 2
     40cf8533-8180-4806-9383-dd85361794b4: Button # Button
     043b0e31-2a28-45c5-853c-2723fe2ce724: Headline # Headline
     44ea5fb0-62ec-4f26-8a0c-e1cbb3a93638: Headline # Headline
     45bc99ca-410d-4b39-8f27-af81c81e4b67: Name # Name
     46cca937-8546-4327-8431-bc4a28a8d551: 'Second Link Text' # Second Link Text
-    47d754b9-1700-4868-8979-47032cb893cd: Image # Image
     48e899c2-d911-461d-90e2-6f404a72376f: Buttons # Buttons
     49a3924a-193d-40e7-ac57-4709787234ed: Simple # Simple
     49b14ddc-b863-47cf-9f09-87654c5b6f65: Headline # Headline
-    50b6f61a-8262-47d0-b09c-b7b2a0fcd920: Headline # Headline
     53c1de92-d636-410f-89c5-2bd580f7f86d: Country # Country
     55e3b54a-cb7a-4938-9316-9e74e1dde983: Video # Video
     56eab1e4-7cb0-44ee-826e-6fe37e384e72: 'Hole Layout Image' # Hole Layout Image
@@ -285,22 +271,18 @@ meta:
     63a1bc53-bfb2-49ae-9d5d-664627389036: 'Video Embed' # Video Embed
     063e0238-928a-4bde-a39e-d034dabc5030: Contact # Contact
     63fb01ad-6b5a-4cff-a65e-bcf1c4f4db11: Headline # Headline
-    66adacfc-e086-4bc6-ba8d-275e0c57a057: 'Link URL' # Link URL
     73b753df-1e20-4ab2-a111-186e82184c59: 'Pricing Tab' # Pricing Tab
     73bd5700-cbd2-4938-a0a8-4407156c7739: 'Page Link' # Page Link
     73d0f7c4-cc1c-4018-9fdd-a049d964ad1f: 'Button Text' # Button Text
-    76ea3674-0bc3-44f7-9744-26866d2c7eec: Link # Link
     78cae37d-a45a-4f37-ad52-6420abc15846: Headline # Headline
     85ac2980-6656-430b-a5af-ec8d3411d678: 'Link URL' # Link URL
     86dbf20b-c736-4e15-ad25-8d09e62097d4: 'Accommodation Layouts' # Accommodation Layouts
     90f3e049-f49e-406f-b164-964f0224bde0: News # News
     91fccfba-9349-4220-8a0e-5fbb09ac0fcb: Price # Price
-    92f15527-4946-402a-b282-530cd0000b1e: 'Details List' # Details List
     95bdf0b9-6728-4e50-badf-be87860d5240: 'Golf Add-On Pricing' # Golf Add-On Pricing
     106e43e9-e710-4ddd-9c6d-ed1df333503c: 'Hole By Hole' # Hole By Hole
     134bb354-9d26-4833-bd3c-ce458a4ca124: Landing # Landing
     174c06d2-34aa-4a9b-a13a-6a1e14c85d0d: 'Team Member' # Team Member
-    188eaaca-c881-4c3f-96e3-f0a8fec28636: 'Link URL' # Link URL
     243afeaf-346c-4b8b-af89-9bd633f855e6: 'General Awards' # General Awards
     267e048a-991b-4411-a5f9-82512829882d: Home # Home
     271def6b-0a5d-4ccc-9525-9e2cbb4229a7: ' Button' #  Button
@@ -311,12 +293,9 @@ meta:
     359c3304-e1b4-4382-8e8d-cd4ca6246277: 'Thank You Message' # Thank You Message
     403c56a1-2a2c-4d43-b989-a2667bedbd22: General # General
     410c8902-a790-4c5f-abc6-814d182c5d7c: Option # Option
-    412a248c-6877-45ce-a772-65fb0c295ac3: Gallery # Gallery
-    474ced41-234f-42f8-8654-ea3aaf7d4018: 'Background Image' # Background Image
     600b7de6-7c7a-4e9b-897f-2f2def2e9bbd: Text # Text
     682d4143-3055-4236-a72f-d8490d82a088: Description # Description
     703e4c00-55cf-4b57-a7ee-db4aa2f6e060: 'Home Hero' # Home Hero
-    713a4f89-9d22-4ac3-b163-200d025dcb9e: Phone # Phone
     716abbda-6a26-45cc-b52c-901463010380: 'Page Links' # Page Links
     757ad3bc-3bc1-4828-91ee-a35c04d93e82: Image # Image
     777c02dc-bca5-4517-8d40-5156270131fa: Form # Form
@@ -333,17 +312,13 @@ meta:
     947f4266-c25e-42b4-a78e-07321ff4e4d3: 'Tab Text' # Tab Text
     959a38bb-a856-451b-a3db-eff0e9bf621e: 'Course Intro Block' # Course Intro Block
     1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
-    2007ae23-1a91-4b01-98d2-06518126607f: Items # Items
     2110e6ce-45ed-474d-981b-5a7181bf639b: 'Linked List' # Linked List
     2132d92c-8d1b-447c-9f8d-15b1e166d5f1: Par # Par
-    2695a13b-b6ac-4a11-8504-9e0de953e470: 'Link Text' # Link Text
     2710ce99-0681-4cfb-bffb-2d1cbb375c57: 'Do Not Show Video Banner' # Do Not Show Video Banner
     2721deb8-a3d6-483e-898f-d1f6508fe02d: Link # Link
     2827c480-b1d0-47be-b8af-345fd310bdef: General # General
     3046ec83-6114-4d56-9a73-383b7243bd8d: 'Pricing Table' # Pricing Table
-    3738bc09-42b3-421c-8dce-fad8a340f8e8: Headline # Headline
     4681e11e-24e7-4a51-988a-b49c3cf5f2d1: Body # Body
-    4875ccf4-6252-48af-8570-4a0d048ef253: 'Linked List' # Linked List
     5554e38f-dda8-4910-8ef4-8c4b7e1a63ee: City # City
     5608b240-5464-4dec-ab64-e254b72ad3e6: 'Private Events' # Private Events
     5948f33e-dfdb-4f6c-bc85-fd56f965bf2c: Image # Image
@@ -360,7 +335,6 @@ meta:
     9571c8e4-8952-4181-be89-5209f2fb9f1a: 'Sunset Camera' # Sunset Camera
     13738d5c-9682-4007-bd59-cb6397761dc9: Award # Award
     36543e5f-0c33-43d5-a9c4-c024fadc72e4: 'Job Title' # Job Title
-    42076b35-8ab3-43d2-8ae3-980b5c280b2c: Headline # Headline
     045577fd-6a4e-45e8-acd8-26e0787d2376: Name # Name
     48927e8d-ba4b-4bf3-8531-81fd9408f4ab: 'Open in New Tab?' # Open in New Tab?
     53352c27-2a47-44a6-a7a3-3d29eaace28e: Headline # Headline
@@ -379,12 +353,8 @@ meta:
     146613ca-0235-4aee-b159-46c9769d9bc6: Facebook # Facebook
     170684cb-0759-412d-8fe9-a4b049a2cb63: Awards # Awards
     441642ef-65bb-460b-bf11-9a7b5014942b: Contact # Contact
-    588741f0-e901-4ecc-ae69-e7d46d686399: Headline # Headline
     669373c9-7338-40ff-b910-b4e164a5c4e4: Description # Description
-    697114a4-18e6-4819-90f5-51be64ff46c4: 'Button Text' # Button Text
     961562fa-ae3d-4a9d-b304-43d727329d53: 'Private Event Options' # Private Event Options
-    1511856b-ba19-4449-ad46-4f2a1bcd5f13: Description # Description
-    9651039f-e19a-4221-8236-603c868cac8d: 'Staff Contacts' # Staff Contacts
     11296663-245b-4f30-a14a-3c31b3690349: Course # Course
     11950123-d1fd-4f74-b0cd-016b75c75cb9: Metadata # Metadata
     27878486-148f-45b2-8d48-2a355ca5370b: Globals # Globals
@@ -392,8 +362,6 @@ meta:
     40372289-dc21-49a5-8fde-84b1b64f4c69: Headline # Headline
     47333271-0ec9-46c1-8a97-252f94aff32c: Enabled # Enabled
     47797459-7179-441b-8d49-e58016d12cb1: 'Executive Team' # Executive Team
-    50697409-d605-4863-b4ac-bb97c5881924: 'Link Text' # Link Text
-    70584659-d0e8-4e6d-84c6-2f748e564a52: Label # Label
     88856313-68a9-44fd-8849-c2e1cecb3695: 'Featured Awards' # Featured Awards
     a0ab0cd8-2161-45c5-bf59-4e2d5eef8703: 'Details List' # Details List
     a0e3bb72-886e-4f18-b387-e9f0a10449d5: Excerpt # Excerpt
@@ -411,7 +379,6 @@ meta:
     a1753ecd-41fd-41a1-bae9-5ee530faed0b: Headline # Headline
     a2401124-246c-4550-8353-d067b0edddf3: Headline # Headline
     aa0d55da-ba88-4ad8-a6e1-e1a3138f9c9a: 'Accommodation Layout' # Accommodation Layout
-    aaa2c471-b3eb-4a61-b353-2bb1d712c4f6: Body # Body
     aae837ba-06f9-4343-b212-2889073937b0: Name # Name
     ab4827b9-4344-4f89-8d9f-435cdb4c0699: 'Accommodation Form Headline' # Accommodation Form Headline
     ab98011d-e66d-4a2d-a51b-a20e625f4fca: 'Home Accommodations' # Home Accommodations
@@ -419,10 +386,8 @@ meta:
     ac587166-3729-4c1e-98dd-434c49b09657: Headline # Headline
     acea35fc-de86-48eb-b5dc-f5f07375d2cb: Text # Text
     acfcfa69-f556-4980-b0b3-b090928d30b3: 'Subscribe Headline' # Subscribe Headline
-    ad6faca2-5d60-4a28-866e-e60da73626d0: Description # Description
     ae4070aa-bea2-4aea-97c5-9e71e2bf31c8: 'Hole Description' # Hole Description
     aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
-    afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
     b3b78fcf-ce15-4e36-9ca7-bc9d9b3fa63f: News # News
     b4d4ca88-4eef-4fe4-92b6-9bc0ebdba29c: Bucket # Bucket
     b7b6f2fe-0047-4f19-86c9-07f96a339ebb: Homepage # Homepage
@@ -431,35 +396,27 @@ meta:
     b69e2489-a432-4e27-ae4b-af86cd023ac2: Headline # Headline
     b86d426f-3cb1-445d-acc4-27ea2b665ea0: 'Hole Number' # Hole Number
     b227f4d1-65be-4007-a1ac-a25781b6e254: 'Button URL' # Button URL
-    b495a4ae-8020-4403-8762-709236a9a0de: 'Button URL' # Button URL
     b604dac5-2242-4481-a8b5-e8302061bbd6: 'The Bluffs Hole-By-Hole' # The Bluffs Hole-By-Hole
     b9701f69-ede3-4a6c-b7b7-baa1856327ec: 'Banner Link' # Banner Link
     ba8b1699-441e-4221-a451-a5a757bed564: General # General
     ba69b64f-3ff8-44bd-873f-4a69abbdac12: Class # Class
-    bb004981-81b9-4612-824b-5d7781e3ed3f: Image # Image
     bb91dec7-bb2b-4a8d-9c5b-8e6e1bc2c41d: 'Pricing Tab' # Pricing Tab
     bbfb2374-a525-4465-984d-d47c476db769: 'Dining Options' # Dining Options
-    bc2a4d93-0407-4784-a6ae-8865c47d745b: Headline # Headline
     bcdf19ad-2ee4-4342-86f4-32863b0069b7: Accommodation # Accommodation
-    bd1d2269-2e91-44bf-ba51-c56d396d5af9: Headline # Headline
-    be7f6147-5479-418b-890d-9bb9d155088d: Footer # Footer
     bf4ceaad-c57f-48fb-9b8d-f611cd99f684: Image # Image
     c4b4429d-4470-45da-8c0d-722f8a28277a: 'Call To Actions' # Call To Actions
-    c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: Headline # Headline
     c7affb6c-68cd-45a6-82b8-fc01f1c8f8eb: 'Contact Information' # Contact Information
     c8a078f3-ae95-49f6-9963-c431f5f5a956: 'Team Row' # Team Row
     c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
     c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
     c61fd93f-7f29-4221-af77-fa7a42f2a104: 'Main Navigation' # Main Navigation
     c73fb067-a5f1-44c7-9db5-2813a46b689d: Description # Description
-    c3204ae4-29c1-495d-8e47-7f6810535c43: Link # Link
     c90430ca-7754-4503-bfdb-eeb26150198b: 'Secondary Navigation' # Secondary Navigation
     c332017f-ad74-46b4-9fd3-2a4099534c82: Sidebar # Sidebar
     ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43: Headline # Headline
     cbae5fec-e67e-4c89-b03f-a329eefefcda: 'Street Address 2' # Street Address 2
     cc80e5df-c1e8-40d1-9935-2b5a608b491a: 'Sidebar CTAs' # Sidebar CTAs
     cd118c39-5937-4705-b0db-2cb2bb0b7e9b: Courses # Courses
-    cd572c92-ecc6-4ce7-bea3-e18ec2578bb0: Label # Label
     cde13c4b-01bc-4465-ae64-8c0473b3931b: Rates # Rates
     ce1d1e5c-5010-49e7-a946-99d7621d108f: 'Rates List' # Rates List
     ce962529-a5c5-4d53-8330-22c3a6d5d6da: Awards # Awards
@@ -468,7 +425,6 @@ meta:
     d08f7f35-3977-48a8-8fea-d79697d19e1e: Text # Text
     d094cea2-a9d5-492a-9663-e179d0878780: Email # Email
     d1b93d4f-3a60-41aa-ab26-b13840fa86e0: Country # Country
-    d1b81997-5115-4665-bf16-07368b4b258c: Label # Label
     d1ff4ac0-fdc9-443f-81b2-13ba9e55e04a: Homepage # Homepage
     d5cd7453-de1f-4641-9290-c5d728857cb9: 'Course History' # Course History
     d6c54b4c-68b2-4867-b935-f068540aca7c: 'South Course Address' # South Course Address
@@ -482,7 +438,6 @@ meta:
     dcb31393-3ea4-4a2a-a287-c79dfba31b0a: 'CTA Headline' # CTA Headline
     ddfbbfff-4c50-4552-a93d-78d990a5b58d: Headline # Headline
     df2fb927-6c87-4678-9950-d3a004411ca8: Courses # Courses
-    dffa5382-9565-4238-b6e2-c72b56a76ddf: 'Button Text' # Button Text
     e0c7ac16-2ecd-4551-8951-1928b93f8112: 'Social Links' # Social Links
     e1b08e83-a1f1-4c82-9f19-ffa70434df89: 'Dining Options' # Dining Options
     e3dd14d9-3105-4555-b8c3-9b7328d545ec: Default # Default
@@ -501,7 +456,6 @@ meta:
     eaa1ff40-1ac8-4150-8a7f-035477ce3bb8: 'Pricing Table' # Pricing Table
     eba4f40b-54de-43c7-ab5e-c180559134e8: Button # Button
     ebccde73-cbc1-4e05-8a10-b7c5afff0f35: Video # Video
-    ebe1e8e8-af10-40ac-8a0d-b531441539e6: CTA # CTA
     ed71610d-27b5-4aa6-a099-2437d809df35: CTA # CTA
     ee9dcd04-b2cf-416c-86a4-45519eae43ef: 'Link Url' # Link Url
     ef4a4b55-2f0b-4ae9-a241-c51388f63ff5: Description # Description
@@ -515,26 +469,21 @@ meta:
     f6e6587a-95e2-41ba-9aac-8dce148d0af5: 'Intro Block' # Intro Block
     f6f57ddb-d979-455a-8803-923779a0aece: 'Accommodation Pricing' # Accommodation Pricing
     f9d54a63-f4b4-46a3-9822-b08270fddf91: 'Home Courses' # Home Courses
-    f26d2c7f-68be-4794-ad59-7d0d35b3fad5: Excerpt # Excerpt
     f32f9a29-42b9-4309-8915-00f75901e293: Header # Header
     f79b6a44-12a4-4b24-9f20-320d05f18cd6: Rates # Rates
     f166e127-51d5-4ea5-9f69-0e3973d61913: Rates # Rates
-    f502b915-b86e-4d5e-90b2-dca5cb3f56bf: 'Hole Number' # Hole Number
     f718af73-ef50-482d-bcdd-53e98fac6099: Description # Description
     f2452e29-cbb5-4dca-babe-7ac49286ec08: 'Rates Headline' # Rates Headline
-    f9251f64-af2b-45d5-a9bf-b3cbad6bb6f1: Address # Address
     f56564ff-d257-438d-9faa-6f4e7dfada22: 'The South Course Hole-By-Hole' # The South Course Hole-By-Hole
     f9434084-7efe-46f8-a382-f958cef7bf2a: 'Link URL' # Link URL
     fa034695-f302-45c4-818c-842e1842a583: Gallery # Gallery
     fa18f022-c31d-4657-8393-23057ca360d1: Headline # Headline
-    fb312029-7237-4952-9c49-b1746ce1bdac: 'Background Image' # Background Image
     fbbd0fba-c1f3-4450-a63f-4ff62a510f01: News # News
     fbd9a4ad-7fd5-495b-8367-17a73f5b8356: 'Accommodation Layout' # Accommodation Layout
     fbf63f47-0d11-40d0-9889-18017e89451a: Link # Link
     fc68f54b-60ab-4251-8ec9-15ea9b776eef: 'Street Address 1' # Street Address 1
     fd52f2bc-9e8e-4025-9502-fab5a89e68ae: 'Arcadia Bluffs Address' # Arcadia Bluffs Address
     fd799323-b5cd-4385-92ab-49dfe5e15759: 'Link URL' # Link URL
-    fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: Image # Image
 plugins:
   charge:
     enabled: 1

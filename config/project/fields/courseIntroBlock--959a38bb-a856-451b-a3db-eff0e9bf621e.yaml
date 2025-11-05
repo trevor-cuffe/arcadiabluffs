@@ -2,12 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
 handle: courseIntroBlock
-instructions: ''
+instructions: null
 name: 'Course Intro Block'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_courseintroblock}}'
-  maxBlocks: '1'
+  maxBlocks: 1
   minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all

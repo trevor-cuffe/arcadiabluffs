@@ -2,6 +2,7 @@ fieldLayouts:
   6f6029a1-4500-419e-872a-ad4e6b13b19f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,126 +27,170 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 725f5f88-4b71-4473-945f-d6f874940785
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 65bb3a76-b814-40b9-b233-7e32c4450e0e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a54c3ef4-2744-48e9-9929-584a89250713
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b9701f69-ede3-4a6c-b7b7-baa1856327ec # Banner Link
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 46bfa147-d5c5-4866-9a0a-f4aae860f57c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Do Not Show Video Banner
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f4b4ae6c-1c11-476b-8859-e4267d2e5910
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 959a38bb-a856-451b-a3db-eff0e9bf621e # Course Intro Block
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cd7a281c-2d86-4bc3-b910-46ac5752e380
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 75255ce3-487d-4279-9929-c1086221f9e7 # Scorecard
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4e3b1cbd-b469-491c-9b36-2b850d7633a8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7da47c32-f9fb-4a89-9c30-22238ac588bd # Slope Tables
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9da18f41-fef5-43ba-bfc2-8b1a50961606
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fa034695-f302-45c4-818c-842e1842a583 # Gallery
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c3aa31a9-126a-45bc-8f55-87cf36a4b5da
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a9d68e9a-5656-4fb6-b894-e9de89f44a74 # Hole-by-Hole Button
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6236707d-103e-469b-99f9-4f0c10afb318
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d5cd7453-de1f-4641-9290-c5d728857cb9 # Course History
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8e9284c7-e16a-4c4d-b149-8630049434bb
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ebccde73-cbc1-4e05-8a10-b7c5afff0f35 # Video
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 46a597f2-0892-443d-9f15-31741dfce740
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 53f8fc75-d6ba-44c5-90dd-f6e0a30b6ba2
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3ef65b10-1fde-4f7e-93a8-7f524ed9a0c0
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: c8a253bf-cf1a-45e0-af80-ae3958b67494
+        userCondition: null
 handle: landing
 hasTitleField: true
 name: Landing
 section: cd118c39-5937-4705-b0db-2cb2bb0b7e9b # Courses
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 3
 titleFormat: null
 titleTranslationKeyFormat: null

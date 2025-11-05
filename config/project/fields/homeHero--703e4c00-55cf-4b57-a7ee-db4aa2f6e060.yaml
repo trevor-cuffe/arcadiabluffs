@@ -2,10 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 267e048a-991b-4411-a5f9-82512829882d # Home
 handle: homeHero
-instructions: ''
+instructions: null
 name: 'Home Hero'
 searchable: true
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -26,11 +28,10 @@ settings:
   fieldLayout: row
   maxRows: null
   minRows: null
-  placeholderKey: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a row'
-  staticField: '1'
+  staticField: true
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: verbb\supertable\fields\SuperTableField

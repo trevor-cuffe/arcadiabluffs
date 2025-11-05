@@ -3,25 +3,30 @@ fieldLayouts:
   8fe67d73-71a0-4966-b57b-3a66f50ce7dd:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4c621108-9140-4ef7-b9f1-d1cc39429915 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c837836d-e126-4104-af6f-e6cd4f3d76d8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b34aac58-2b11-47af-965c-aa4d2984580c
+        userCondition: null
 fields:
   4c621108-9140-4ef7-b9f1-d1cc39429915: # Headline
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -29,8 +34,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

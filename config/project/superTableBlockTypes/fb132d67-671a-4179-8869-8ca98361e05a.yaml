@@ -1,60 +1,75 @@
+changedFieldIndicator: null
 field: ab98011d-e66d-4a2d-a51b-a20e625f4fca # Home Accommodations
 fieldLayouts:
   3d120703-3508-4019-b2ab-d1d0f1086f0c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 6c804630-a47b-490c-8e9f-751844e20691 # Headline
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e6162755-997f-4f92-a91f-1374994323a3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 600b7de6-7c7a-4e9b-897f-2f2def2e9bbd # Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b3c94877-0738-42a3-b41e-e49c60b8f5a7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0b7b3861-eb22-491a-8a7c-85aa93cbf287 # Accommodations
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a31f12e9-2f21-4bf0-bf02-cb7344dbc2e8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 48e899c2-d911-461d-90e2-6f404a72376f # Buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f83bbd0e-2e3c-443e-9bc4-38fbfc99bf05
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: c0f15183-915d-402e-9b11-2d5cba84a5b3
+        userCondition: null
 fields:
   0b7b3861-eb22-491a-8a7c-85aa93cbf287: # Accommodations
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: accommodations
-    instructions: ''
+    instructions: null
     name: Accommodations
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_accommodations}}'
-      maxBlocks: '3'
-      minBlocks: ''
+      maxBlocks: 3
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
@@ -65,16 +80,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -85,13 +100,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: buttons
-    instructions: ''
+    instructions: null
     name: Buttons
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_buttons}}'
-      maxBlocks: ''
-      minBlocks: ''
+      maxBlocks: null
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
@@ -102,20 +117,23 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: text
-    instructions: ''
+    instructions: null
     name: Text
     searchable: true
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
       ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      defaultTransform: ''
-      enableSourceEditingForNonAdmins: true
-      purifierConfig: ''
-      purifyHtml: '1'
+      defaultTransform: null
+      purifierConfig: null
+      purifyHtml: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
+      showWordCount: false
+      sourceEditingGroups: '*'
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field

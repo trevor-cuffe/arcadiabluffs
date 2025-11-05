@@ -3,25 +3,30 @@ fieldLayouts:
   45466537-869f-4fb4-9e20-e684c498f7ef:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 0f863fe3-b46b-4804-a61e-1b62c737d2f7 # Linked List
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c140e321-0614-4d99-97e5-b79837037896
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 5e1b4f38-4364-4c86-a43a-4e255be3f511
+        userCondition: null
 fields:
   0f863fe3-b46b-4804-a61e-1b62c737d2f7: # Linked List
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkedList
-    instructions: ''
+    instructions: null
     name: 'Linked List'
     searchable: true
     settings:
@@ -72,6 +77,7 @@ fields:
               - ''
       maxRows: null
       minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

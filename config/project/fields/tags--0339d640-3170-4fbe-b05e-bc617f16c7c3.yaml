@@ -6,15 +6,15 @@ instructions: null
 name: Tags
 searchable: true
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  limit: null
+  branchLimit: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   selectionLabel: null
   showSiteMenu: true
   source: 'taggroup:e3dd14d9-3105-4555-b8c3-9b7328d545ec' # Default
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

@@ -3,52 +3,66 @@ fieldLayouts:
   585e3cce-ec73-4a8b-9751-fc573a385677:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 8901e690-f63a-4540-a2f6-9b4d1f0f50a2 # Headshot
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2d11c02a-8e10-43f0-aec3-c46752ba1d3c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 17e2c1dd-aecc-48d0-bdee-ee898abe0a3b # Name
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c753d8bc-69d8-4e29-bf6f-a8ad8a06fa35
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 36543e5f-0c33-43d5-a9c4-c024fadc72e4 # Job Title
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a796865b-899e-4364-9258-6814ed38bc4b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d094cea2-a9d5-492a-9663-e179d0878780 # Email
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e8ba983f-a67b-4de4-a020-509f23e34cd7
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 200c88df-fb6d-445d-8c2d-a22bd7849fc0
+        userCondition: null
 fields:
   17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: # Name
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: teamMemberName
-    instructions: ''
+    instructions: null
     name: Name
     searchable: true
     settings:
@@ -56,8 +70,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,30 +82,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: headshot
-    instructions: ''
+    instructions: null
     name: Headshot
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -102,7 +120,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: jobTitle
-    instructions: ''
+    instructions: null
     name: 'Job Title'
     searchable: true
     settings:
@@ -110,8 +128,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -122,7 +140,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: email
-    instructions: ''
+    instructions: null
     name: Email
     searchable: true
     settings:
@@ -130,8 +148,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

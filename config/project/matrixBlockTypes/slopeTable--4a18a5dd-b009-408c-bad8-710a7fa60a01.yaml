@@ -3,25 +3,30 @@ fieldLayouts:
   e4fa1745-424a-4a04-8c35-8d438a859872:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: cfc96944-eb9c-41e9-a313-1ac2fac8eec2 # Table
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b49c5f7e-936b-441f-899e-e22a7d8f2d4f
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 292878d2-db72-48b0-b097-c63ad3672d06
+        userCondition: null
 fields:
   cfc96944-eb9c-41e9-a313-1ac2fac8eec2: # Table
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: table
-    instructions: ''
+    instructions: null
     name: Table
     searchable: true
     settings:
@@ -91,6 +96,7 @@ fields:
               - ''
       maxRows: null
       minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

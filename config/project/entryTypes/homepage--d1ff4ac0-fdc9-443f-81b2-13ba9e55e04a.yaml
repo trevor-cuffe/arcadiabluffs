@@ -2,6 +2,7 @@ fieldLayouts:
   3aa063c9-0938-4ffc-b39a-afbf2250da7b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,63 +27,86 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d2eacddb-bfe7-4a3c-bd8d-03fa018aeaa2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 703e4c00-55cf-4b57-a7ee-db4aa2f6e060 # Home Hero
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 832f5e06-b417-4b03-bae9-d3946a7ffb27
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f9d54a63-f4b4-46a3-9822-b08270fddf91 # Home Courses
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 785ef106-12c2-4ccf-ae46-14d5b76026d6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ab98011d-e66d-4a2d-a51b-a20e625f4fca # Home Accommodations
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4ed55cbd-6443-4d05-8664-76386b7254bd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ea78a6cf-7df9-415d-aa20-2f246a33e383 # Home Dining
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 098b3e49-0fe7-4d0c-b7d1-2946f2cdbbdc
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 005b4900-926f-4c94-94ce-545d26778241
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 888e718e-3220-4091-ab8d-ac502f42c240
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: c8ff5de3-afe9-43a4-a091-3c13cb3a9b76
+        userCondition: null
 handle: homepage
 hasTitleField: true
 name: Homepage
 section: b7b6f2fe-0047-4f19-86c9-07f96a339ebb # Homepage
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

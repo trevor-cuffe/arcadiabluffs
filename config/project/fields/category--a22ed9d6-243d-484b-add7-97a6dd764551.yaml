@@ -2,20 +2,19 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: fbbd0fba-c1f3-4450-a63f-4ff62a510f01 # News
 handle: category
-instructions: ''
+instructions: null
 name: Category
 searchable: true
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: ''
-  limit: null
+  branchLimit: null
   localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
   selectionLabel: 'Add a category'
   showSiteMenu: true
   source: 'group:90f3e049-f49e-406f-b164-964f0224bde0' # News
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

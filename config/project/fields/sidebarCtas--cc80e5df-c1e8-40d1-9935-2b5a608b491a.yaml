@@ -2,16 +2,18 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: c332017f-ad74-46b4-9fd3-2a4099534c82 # Sidebar
 handle: sidebarCtas
-instructions: ''
+instructions: null
 name: 'Sidebar CTAs'
 searchable: true
 settings:
   allowSelfRelations: false
-  limit: ''
+  branchLimit: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   selectionLabel: 'Add a Call to Action'
   showSiteMenu: true
-  source: null
   sources:
     - 'section:8d55db04-8897-450d-a5f2-625d80a8eab2' # Call To Actions
   targetSiteId: null

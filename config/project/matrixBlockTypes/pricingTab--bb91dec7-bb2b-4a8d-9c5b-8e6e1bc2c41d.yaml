@@ -3,43 +3,54 @@ fieldLayouts:
   04387683-58e3-4625-81ac-eeb77c9a2df8:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 947f4266-c25e-42b4-a78e-07321ff4e4d3 # Tab Text
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 10dd4d5c-c28f-4b13-96e4-f740c60a205d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: eaa1ff40-1ac8-4150-8a7f-035477ce3bb8 # Pricing Table
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9c3ca390-cf0e-47bc-b869-b9bb815fc45e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a47dfd63-9d5b-4709-bda4-d057450f6f56 # Pricing Footer
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0a0e0205-ce26-4a52-b5eb-1bd0acea0192
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 2bd18b27-5fec-47e9-893c-a8c72737c09c
+        userCondition: null
 fields:
   947f4266-c25e-42b4-a78e-07321ff4e4d3: # Tab Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: tabText
-    instructions: ''
+    instructions: null
     name: 'Tab Text'
     searchable: true
     settings:
@@ -47,8 +58,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -59,7 +70,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: pricingFooter
-    instructions: ''
+    instructions: null
     name: 'Pricing Footer'
     searchable: true
     settings:
@@ -91,6 +102,7 @@ fields:
               - ''
       maxRows: null
       minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -99,7 +111,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: pricingTable
-    instructions: ''
+    instructions: null
     name: 'Pricing Table'
     searchable: true
     settings:
@@ -150,6 +162,7 @@ fields:
               - ''
       maxRows: null
       minRows: null
+      staticRows: false
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

@@ -2,10 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: address
-instructions: ''
+instructions: null
 name: 'Arcadia Bluffs Address'
 searchable: true
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -59,13 +61,12 @@ settings:
               - ''
   contentTable: '{{%stc_address}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: ''
-  staticField: '1'
+  selectionLabel: null
+  staticField: true
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

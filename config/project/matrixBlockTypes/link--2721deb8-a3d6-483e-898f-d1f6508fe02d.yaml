@@ -3,31 +3,36 @@ fieldLayouts:
   dbf7c039-b08e-4daa-b4bb-f60906bcf9bf:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: a152dece-e53d-4f4f-b5ee-a5761cdefe3b # Link
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4f41e49b-c739-44a6-a842-b018c71dec8b
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: c2de253b-6355-4ed7-89bb-9c97211d12b3
+        userCondition: null
 fields:
   a152dece-e53d-4f4f-b5ee-a5761cdefe3b: # Link
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: ctaLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: true
     settings:
-      allowCustomText: ''
-      allowTarget: ''
-      defaultText: ''
+      allowCustomText: false
+      allowTarget: false
+      defaultText: null
       selectLinkText: ''
       types:
         __assoc__:

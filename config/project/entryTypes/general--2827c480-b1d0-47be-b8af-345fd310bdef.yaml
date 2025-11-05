@@ -2,6 +2,7 @@ fieldLayouts:
   903260c5-bc08-4fae-a4e7-2d207dd3de62:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,108 +27,146 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8d16bc32-9c48-442f-9fbe-33e38e81d0c1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b86d426f-3cb1-445d-acc4-27ea2b665ea0 # Hole Number
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e521a328-5536-4697-af4c-701b353eccba
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d9594119-6d65-4806-bc5b-7a075cf714ea
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 56eab1e4-7cb0-44ee-826e-6fe37e384e72 # Hole Layout Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 36302e92-0be7-43d4-8b0b-c8c5112544d2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2132d92c-8d1b-447c-9f8d-15b1e166d5f1 # Par
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 503259ed-9920-40c0-ad6f-ee9e204ed907
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ef20410f-26b2-4646-9ede-58291bab1f3a # Handicap
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: aa981fd3-22da-4124-98ff-7da63544bde3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ae4070aa-bea2-4aea-97c5-9e71e2bf31c8 # Hole Description
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a42ba2cb-9bab-4129-8255-442d9b5a1982
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7a6e640f-99e8-482a-b081-4155120a1e4b # Caddy Tip
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 715aa56d-8f01-4a23-8d93-51063de3acdf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6a19f290-12c7-40d3-b863-4dfc05650684 # Yardage
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1482e5a7-7f54-429b-b1ba-bcbb30654f04
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ebccde73-cbc1-4e05-8a10-b7c5afff0f35 # Video
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 31b47c9f-1118-4149-83d2-d774993959fd
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f3766b5c-847d-4a6b-8f86-769f65e36ad2
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ff0ab94c-ab3c-4a04-bcb4-3ab2d24e60be
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 2
+        uid: 551c78df-944a-4843-86bb-b1de1c4d0605
+        userCondition: null
 handle: general
 hasTitleField: true
 name: General
 section: f56564ff-d257-438d-9faa-6f4e7dfada22 # The South Course Hole-By-Hole
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

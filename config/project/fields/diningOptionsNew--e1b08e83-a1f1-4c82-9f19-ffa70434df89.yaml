@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: a6c2ddd7-0756-4257-a628-2d1917856bb6 # Dining
 handle: diningOptionsNew
-instructions: ''
+instructions: null
 name: 'Dining Options'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_diningoptionsnew}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

@@ -3,52 +3,66 @@ fieldLayouts:
   510aad00-c8ef-48c1-8164-c58b4dbc4556:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: f3cf412c-f5d5-463b-b63a-7b34943ecef5 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e6063df3-f96e-4451-80fb-dc035a6d9ae3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8f377780-b7ab-44cf-8b1e-47b3d95753c1 # Background Image
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 93213438-8616-4414-8744-5550c570bc39
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d624f18-bf3c-49b5-becb-533c2185c9b9 # Button Text
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9cad30bc-5f84-4810-b56f-b04b97b42d6a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 63a1bc53-bfb2-49ae-9d5d-664627389036 # Video Embed
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d00ccc3b-a56b-418d-95f9-e14d8997d670
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 52298a55-a873-430d-be8a-19e40f09b7b0
+        userCondition: null
 fields:
   0d624f18-bf3c-49b5-becb-533c2185c9b9: # Button Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
-    instructions: ''
+    instructions: null
     name: 'Button Text'
     searchable: true
     settings:
@@ -56,8 +70,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -68,30 +82,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: backgroundImage
-    instructions: ''
+    instructions: null
     name: 'Background Image'
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -110,8 +128,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: '1'
+      initialRows: 4
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -122,7 +140,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: headline
-    instructions: ''
+    instructions: null
     name: Headline
     searchable: true
     settings:
@@ -130,8 +148,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

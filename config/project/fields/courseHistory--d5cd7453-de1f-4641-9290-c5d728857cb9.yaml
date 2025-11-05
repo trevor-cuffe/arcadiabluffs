@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
 handle: courseHistory
-instructions: ''
+instructions: null
 name: 'Course History'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_coursehistory}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

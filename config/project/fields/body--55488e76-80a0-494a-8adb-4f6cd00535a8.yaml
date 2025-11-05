@@ -2,20 +2,23 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
 handle: body
-instructions: ''
+instructions: null
 name: Body
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
   columnType: text
-  defaultTransform: ''
-  enableSourceEditingForNonAdmins: true
-  purifierConfig: ''
-  purifyHtml: ''
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
+  showWordCount: false
+  sourceEditingGroups: '*'
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

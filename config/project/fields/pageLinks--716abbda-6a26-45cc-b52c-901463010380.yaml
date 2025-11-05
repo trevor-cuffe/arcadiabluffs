@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: a6c2ddd7-0756-4257-a628-2d1917856bb6 # Dining
 handle: pageLinks
-instructions: ''
+instructions: null
 name: 'Page Links'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_pagelinks}}'
-  maxBlocks: '3'
-  minBlocks: ''
+  maxBlocks: 3
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

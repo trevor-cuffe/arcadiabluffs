@@ -2,10 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: announcement
-instructions: ''
+instructions: null
 name: Announcement
 searchable: true
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -38,13 +40,12 @@ settings:
               - ''
   contentTable: '{{%stc_announcement_1}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a row'
-  staticField: '1'
+  staticField: true
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

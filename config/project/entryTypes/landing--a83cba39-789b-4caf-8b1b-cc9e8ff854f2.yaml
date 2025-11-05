@@ -2,6 +2,7 @@ fieldLayouts:
   7825e274-3c43-48a9-9433-d9d0ed3b31a0:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,116 +27,158 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 374855e2-a6a3-4dd0-9f2c-6e921dd2c3d1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 594b3fa4-21c1-4cbc-b123-f2b7a74fbb93
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a108b2b8-24b6-4c5c-bc20-958be99137e6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 58d379a7-f464-4baf-8555-e5b71c12d289 # Intro Block
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 37b10e1a-739e-4398-9557-a13cd9c4ebd1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1f3294c6-b9a7-46b9-aaf4-70bcf8b46237 # Accommodation Buckets
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2a3ac170-0474-4738-a892-a287e9b14dc9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5fd92c59-65ac-442f-883a-e5d8d867ed86 # Content Block
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 074c5409-efe6-4547-a80e-abb9797d8759
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f8f2f03e-0c0f-42b5-9c26-55fa779fc89e
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: ab4827b9-4344-4f89-8d9f-435cdb4c0699 # Accommodation Form Headline
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cb638e92-0f3f-4def-b637-ea40b9d163f6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0ef55052-1ae5-436b-b9cd-64be16fcf0db # Accommodation Form Content
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 359ea22f-a9aa-4371-a70e-d64ca85ffd83
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 3ec5a707-06b4-47ff-9a7d-eec3255596fe # Accommodation Form
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 04ef569f-9d8e-4c0c-bbcb-342055eff26e
+            userCondition: null
             warning: null
             width: 100
         name: Form
-        sortOrder: 2
+        uid: a9120d75-79ab-4291-8aa9-9903b2ca85e2
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 0e2a9e40-9910-47e0-b2d7-052c425013b2 # Accommodation Extras
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5db68bf3-d429-464c-9a36-fd813b8abcd8
+            userCondition: null
             warning: null
             width: 100
         name: Extras
-        sortOrder: 3
+        uid: 3bc3c370-2b25-4738-b88b-382cd2d62aaf
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bf7cc58b-8208-4d4a-9c80-cdb0db109d33
+            userCondition: null
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 4
+        uid: 655dbfc8-3384-4c4d-967f-d5c479a2107f
+        userCondition: null
 handle: landing
 hasTitleField: true
 name: Landing
 section: 0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e # Accommodations
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

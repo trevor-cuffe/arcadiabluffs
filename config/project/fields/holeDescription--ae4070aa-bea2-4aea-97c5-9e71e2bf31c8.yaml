@@ -2,20 +2,23 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
 handle: holeDescription
-instructions: ''
+instructions: null
 name: 'Hole Description'
 searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
   columnType: text
-  defaultTransform: ''
-  enableSourceEditingForNonAdmins: true
+  defaultTransform: null
   purifierConfig: null
-  purifyHtml: '1'
+  purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
+  showWordCount: false
+  sourceEditingGroups: '*'
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

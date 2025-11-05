@@ -1,4 +1,4 @@
-dateModified: 1762206837
+dateModified: 1762307004
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -73,7 +73,6 @@ meta:
     4b4c2ec7-bb72-4d4e-91e8-1347888be1da: Headline # Headline
     4b55a38d-f046-45c9-9305-eb9af5c49179: Headline # Headline
     4c621108-9140-4ef7-b9f1-d1cc39429915: Headline # Headline
-    4cec7041-9e14-4365-91be-1b44b3e5f064: 'Home Courses Headline' # Home Courses Headline
     4df910d9-30d4-4eac-8b59-435d3143c244: 'Video Headline' # Video Headline
     5a412ccd-04da-4787-a28c-3ac60d56e066: Awards # Awards
     5c1f657e-0879-4a4b-beca-79003bf50cce: Table # Table
@@ -106,7 +105,6 @@ meta:
     8e05d955-2d0c-460c-ae59-bc51e9877ea8: CTA # CTA
     8f38cf3e-638f-4bad-aff2-ecc59c8c6303: Text # Text
     8f377780-b7ab-44cf-8b1e-47b3d95753c1: 'Background Image' # Background Image
-    8fc495a7-8412-4a5b-be78-376f097ff7ad: 'Dining Option' # Dining Option
     8fd5e0a2-9d26-411e-a0bb-c3bf76cd05ce: 'Link Text' # Link Text
     9ac36cd6-f8a3-4875-947e-fe3347369e24: Headline # Headline
     9baae7f8-cf5b-40da-96a9-1a49f83765dd: 'Related Entry' # Related Entry
@@ -116,7 +114,6 @@ meta:
     9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
     010fc3aa-1e18-47e8-a901-a5e2e5b085ba: 'Link Text' # Link Text
     13cc40b6-25fd-4174-a481-7481f07eddd6: 'Primary Menu' # Primary Menu
-    13f7924e-3e35-4361-aa55-b3df417f8631: 'Home Intro' # Home Intro
     17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: Name # Name
     18d710bf-237c-4a66-9707-1a63cc543871: Headline # Headline
     19d04551-214f-4e9b-9a5e-ff66d6fe1028: News # News
@@ -198,12 +195,10 @@ meta:
     2827c480-b1d0-47be-b8af-345fd310bdef: General # General
     3046ec83-6114-4d56-9a73-383b7243bd8d: 'Pricing Table' # Pricing Table
     3738bc09-42b3-421c-8dce-fad8a340f8e8: Headline # Headline
-    4334bbd3-dee9-4b8a-8927-c67108e65b39: 'Content Block' # Content Block
     4681e11e-24e7-4a51-988a-b49c3cf5f2d1: Body # Body
     4875ccf4-6252-48af-8570-4a0d048ef253: 'Linked List' # Linked List
     5608b240-5464-4dec-ab64-e254b72ad3e6: 'Private Events' # Private Events
     5948f33e-dfdb-4f6c-bc85-fd56f965bf2c: Image # Image
-    6107e2da-178d-4799-9f01-eb1612a6ed70: 'Items to Know' # Items to Know
     6320fc7f-9902-4986-b81d-38127d780d10: 'Content Block' # Content Block
     7624e05d-94c9-46bf-bf38-00dbb0509f1d: 'Featured Award' # Featured Award
     8110e72c-3547-4f09-a48b-5e1237bbd977: 'Gift Cards' # Gift Cards
@@ -251,7 +246,6 @@ meta:
     88856313-68a9-44fd-8849-c2e1cecb3695: 'Featured Awards' # Featured Awards
     a0ab0cd8-2161-45c5-bf59-4e2d5eef8703: 'Details List' # Details List
     a0e3bb72-886e-4f18-b387-e9f0a10449d5: Excerpt # Excerpt
-    a2e1e7c1-d07f-4b31-b03a-d0851e8d2833: 'Rates Overview' # Rates Overview
     a5ddb14d-a1eb-4827-99ac-326b355417d0: Label # Label
     a6c2ddd7-0756-4257-a628-2d1917856bb6: Dining # Dining
     a6c37bb7-3a66-46bd-b33c-7e63b7a7077b: Headline # Headline
@@ -279,7 +273,6 @@ meta:
     ae4070aa-bea2-4aea-97c5-9e71e2bf31c8: 'Hole Description' # Hole Description
     aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
     afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
-    b0b3b9e3-dbbd-46c7-a23d-11ff59eaa977: 'Rates Table' # Rates Table
     b3b78fcf-ce15-4e36-9ca7-bc9d9b3fa63f: News # News
     b4d4ca88-4eef-4fe4-92b6-9bc0ebdba29c: Bucket # Bucket
     b7b6f2fe-0047-4f19-86c9-07f96a339ebb: Homepage # Homepage
@@ -324,7 +317,6 @@ meta:
     d1ff4ac0-fdc9-443f-81b2-13ba9e55e04a: Homepage # Homepage
     d5cd7453-de1f-4641-9290-c5d728857cb9: 'Course History' # Course History
     d6c54b4c-68b2-4867-b935-f068540aca7c: 'South Course Address' # South Course Address
-    d7e2cb09-2acc-4dba-b899-32c132b88c1d: 'Home Footer Image' # Home Footer Image
     d8ddc7a5-755d-4328-9925-b048f31e343b: Image # Image
     d9cb1d6c-2477-4fd3-8b36-6d7a1a3161f0: Headline # Headline
     d72e767d-d3ea-4731-8e82-2981e56059c7: 'Local Airports' # Local Airports
@@ -365,7 +357,6 @@ meta:
     f0dca59d-239c-4146-813f-2b147b0ce790: Image # Image
     f02a0d8f-d625-405c-a782-87b045350b7f: Dining # Dining
     f1c11c8d-f329-418c-bc33-04ebbd281450: 'Live Stream' # Live Stream
-    f3bf264b-71a5-4af8-9f9d-f2830e9cf33f: 'Dining Options' # Dining Options
     f3cf412c-f5d5-463b-b63a-7b34943ecef5: Headline # Headline
     f6bcefc8-ac26-490c-a830-4863fd39731d: Phone # Phone
     f6e6587a-95e2-41ba-9aac-8dce148d0af5: 'Intro Block' # Intro Block

@@ -136,15 +136,6 @@
       </div>
     {% endif %}
 
-    {# {% if entry.ctaNew is defined and entry.ctaNew|length %}
-      <div class="book-cta">
-        <a href="{{ entry.ctaNew.buttonUrl }}" target="_blank" class="book-cta__btn">{{ entry.ctaNew.buttonText }}</a>
-        {% if entry.ctaNew.footer|length %}
-          <p class="book-cta__footer">{{ entry.ctaNew.footer }}</p>
-        {% endif %}
-      </div>
-    {% endif %} #}
-
     {% if entry.gallery | length %}
       <div class="accommodations-entry__lower">
         {{ macros.gallery(entry.gallery, template) }}

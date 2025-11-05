@@ -107,6 +107,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
           -
             fieldUid: 30049732-fd90-437a-a48a-2fac94fdb736 # Accommodation Pricing Headline
             instructions: null
@@ -125,15 +129,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf # CTA
-            instructions: null
-            label: null
-            required: 0
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
+        name: Pricing
+        sortOrder: 2
+      -
+        elements:
           -
             fieldUid: 5fd92c59-65ac-442f-883a-e5d8d867ed86 # Content Block
             instructions: null
@@ -152,8 +151,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
+        name: Gallery
+        sortOrder: 3
       -
         elements:
           -
@@ -166,7 +165,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: Sidebar
-        sortOrder: 2
+        sortOrder: 4
       -
         elements:
           -
@@ -179,7 +178,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: Metadata
-        sortOrder: 3
+        sortOrder: 5
 handle: general
 hasTitleField: true
 name: General

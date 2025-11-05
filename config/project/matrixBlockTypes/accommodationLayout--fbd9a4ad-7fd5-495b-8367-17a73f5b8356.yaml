@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: e3849f1a-fd67-4828-937f-f256bba6987b # Image
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43 # Headline
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -26,7 +26,7 @@ fieldLayouts:
             fieldUid: ef4a4b55-2f0b-4ae9-a241-c51388f63ff5 # Description
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -45,7 +45,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
@@ -106,10 +106,10 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
       uiMode: enlarged

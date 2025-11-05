@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 63fb01ad-6b5a-4cff-a65e-bcf1c4f4db11 # Headline
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: 8b26cdc7-ea7e-4875-9eb9-ed4bbac17bd0 # Body
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -26,7 +26,7 @@ fieldLayouts:
             fieldUid: 814f1a4f-84ee-4fe3-8342-c04f4d1051da # Link Text
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -35,7 +35,7 @@ fieldLayouts:
             fieldUid: 85ac2980-6656-430b-a5af-ec8d3411d678 # Link URL
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -61,10 +61,10 @@ fields:
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
       uiMode: enlarged
@@ -82,7 +82,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
@@ -102,7 +102,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
@@ -122,7 +122,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''

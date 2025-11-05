@@ -7,8 +7,8 @@ name: 'Accommodation Layouts 2'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_accommodationlayouts2}}'
-  maxBlocks: null
-  minBlocks: null
+  maxBlocks: ''
+  minBlocks: ''
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

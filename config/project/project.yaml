@@ -1,4 +1,4 @@
-dateModified: 1762376064
+dateModified: 1762378224
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -260,7 +260,6 @@ meta:
     a7bdb249-2586-48a5-8288-0edf78c1edb5: Newsletter # Newsletter
     a9d68e9a-5656-4fb6-b894-e9de89f44a74: 'Hole-by-Hole Button' # Hole-by-Hole Button
     a22ed9d6-243d-484b-add7-97a6dd764551: Category # Category
-    a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf: CTA # CTA
     a47dfd63-9d5b-4709-bda4-d057450f6f56: 'Pricing Footer' # Pricing Footer
     a61b6ef6-9c03-4a39-8592-63f661928329: Detail # Detail
     a83cba39-789b-4caf-8b1b-cc9e8ff854f2: Landing # Landing

@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 1c73a949-4efb-4981-9845-5fc07773a52e # Tab Text
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: 3046ec83-6114-4d56-9a73-383b7243bd8d # Pricing Table
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -26,7 +26,7 @@ fieldLayouts:
             fieldUid: 4ab5842b-2eac-4ee9-9c9b-67194eda8f76 # Pricing Footer
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -35,7 +35,7 @@ fieldLayouts:
             fieldUid: 95bdf0b9-6728-4e50-badf-be87860d5240 # Golf Add-On Pricing
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -54,7 +54,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
@@ -81,25 +81,25 @@ fields:
             -
               __assoc__:
                 -
-                  - handle
-                  - comment
-                -
                   - heading
                   - Comment
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - comment
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
       defaults:
         -
           __assoc__:
             -
               - col1
               - ''
-      maxRows: null
-      minRows: null
+      maxRows: ''
+      minRows: ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -121,49 +121,49 @@ fields:
             -
               __assoc__:
                 -
-                  - handle
-                  - label
-                -
                   - heading
                   - Label
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - label
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
           -
             - col2
             -
               __assoc__:
                 -
-                  - handle
-                  - bluffsPrice
-                -
                   - heading
                   - 'Bluffs Price'
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - bluffsPrice
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
           -
             - col3
             -
               __assoc__:
                 -
-                  - handle
-                  - southCoursePrice
-                -
                   - heading
                   - 'South Course Price'
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - southCoursePrice
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
       defaults:
         -
           __assoc__:
@@ -176,8 +176,8 @@ fields:
             -
               - col3
               - ''
-      maxRows: null
-      minRows: null
+      maxRows: ''
+      minRows: ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
@@ -199,33 +199,33 @@ fields:
             -
               __assoc__:
                 -
-                  - handle
-                  - label
-                -
                   - heading
                   - Label
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - label
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
           -
             - col2
             -
               __assoc__:
                 -
-                  - handle
-                  - price
-                -
                   - heading
                   - Price
                 -
-                  - type
-                  - singleline
+                  - handle
+                  - price
                 -
                   - width
                   - ''
+                -
+                  - type
+                  - singleline
       defaults:
         -
           __assoc__:
@@ -235,8 +235,8 @@ fields:
             -
               - col2
               - ''
-      maxRows: null
-      minRows: null
+      maxRows: ''
+      minRows: ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

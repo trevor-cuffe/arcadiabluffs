@@ -6,12 +6,66 @@ instructions: ''
 name: 'Arcadia Bluffs Address'
 searchable: true
 settings:
-  addressHelper: null
-  defaultCountry: US
-  defaultLanguage: en
-  hideCountryDropdown: null
-  showCountryDropdown: ''
-  value: null
+  columns:
+    __assoc__:
+      -
+        - aae837ba-06f9-4343-b212-2889073937b0 # Name
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - fc68f54b-60ab-4251-8ec9-15ea9b776eef # Street Address 1
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - cbae5fec-e67e-4c89-b03f-a329eefefcda # Street Address 2
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 5554e38f-dda8-4910-8ef4-8c4b7e1a63ee # City
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 928a4a05-b9d0-4bbe-aefb-6ca1bb44af92 # State
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 0c6882d0-e994-4811-afea-7c1c2d619d97 # Postal Code
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - d1b93d4f-3a60-41aa-ab26-b13840fa86e0 # Country
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_address}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
 translationKeyFormat: null
-translationMethod: none
-type: barrelstrength\sproutfields\fields\Address
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

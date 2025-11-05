@@ -7,8 +7,8 @@ name: 'Dining Options'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_diningoptionsnew}}'
-  maxBlocks: null
-  minBlocks: null
+  maxBlocks: ''
+  minBlocks: ''
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

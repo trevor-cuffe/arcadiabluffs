@@ -6,12 +6,66 @@ instructions: ''
 name: 'South Course Address'
 searchable: true
 settings:
-  addressHelper: null
-  defaultCountry: US
-  defaultLanguage: en
-  hideCountryDropdown: null
-  showCountryDropdown: ''
-  value: null
+  columns:
+    __assoc__:
+      -
+        - 045577fd-6a4e-45e8-acd8-26e0787d2376 # Name
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1c4e88bc-b69c-48b5-92ca-f9bce29e29f6 # Street Address 1
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 3fb6dfc9-3996-466e-a067-d2cdbc09d62f # Street Address 2
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 9bcdb2fc-72a4-4110-86a9-7d1d306532da # City
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - e7abf986-5d53-4c23-baa6-c6a8b574595c # State
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 7895c2a5-3303-44df-807e-7bce64be70ad # Postal Code
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 53c1de92-d636-410f-89c5-2bd580f7f86d # Country
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_southcourseaddress}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
 translationKeyFormat: null
-translationMethod: none
-type: barrelstrength\sproutfields\fields\Address
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

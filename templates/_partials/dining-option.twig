@@ -12,7 +12,7 @@
 			<div class="c-dining-option__btns">
 				<div class="o-btn-group">
 					{% for row in option.buttons.all() %}
-						<a href="{{ row.button.getUrl() }}" class="btn btn--sm">{{ row.button.getText() }}</a>
+						<a href="{{ row.button.getUrl() }}" class="btn btn--sm" target="{{ row.button.target }}">{{ row.button.getText() }}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 				{% for item in option.details %}
 					<div class="c-dining-options__detail">
 						<div class="c-dining-options__detail-label">{{ item.label }}</div>
-						<div class="c-dining-options__detail-value">{{ item.value }}</div>
+						<div class="c-dining-options__detail-value">{{ item.detail }}</div>
 					</div>
 				{% endfor %}
 			</div>
@@ -32,11 +32,11 @@
 		{% if option.image|length %}
 			{% set image = option.image.one() %}
 			{% set diningOptionImage = craft.imager.transformImage(image, {
-          width: 1000,
-          height: 1200,
-          mode: 'crop',
-      }) %}
-			<img src="{{ image.getUrl(diningOptionImage) }}" alt="{{ option.headline }}"/>
+				width: 1000,
+				height: 1200,
+				mode: 'crop',
+			}) %}
+			<img src="{{ diningOptionImage.url }}" alt="{{ option.headline }}"/>
 		{% endif %}
 	</div>
 </div>

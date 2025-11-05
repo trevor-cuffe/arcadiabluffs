@@ -55,11 +55,12 @@
 	</div>
 	<div class="footer-bottom">
 		<p class="footer__copyright">&copy; &reg;
-			{{ contactInformation.address.address1 }}
+			{{ contactInformation.address.addressName }}
 			<span>-</span>
-			<a href="{{ macros.googleMapsLink(contactInformation.address.address2 ~ "+" ~ contactInformation.address.locality ~ "+" ~ contactInformation.address.administrativeArea) }}" target="_blank">{{ contactInformation.address.address2 }},
-				{{ contactInformation.address.locality }},
-				{{ contactInformation.address.administrativeArea }}
+			<a href="{{ macros.googleMapsLink(contactInformation.address.streetAddress1 ~ "+" ~ contactInformation.address.city ~ "+" ~ contactInformation.address.state) }}" target="_blank">
+				{{ contactInformation.address.streetAddress1 }}{% if contactInformation.southCourseAddress.streetAddress2 %} {{ contactInformation.southCourseAddress.streetAddress2 }}{% endif %},
+				{{ contactInformation.address.city }},
+				{{ contactInformation.address.state }}
 				{{ contactInformation.address.postalCode }}</a>
 			<span>-</span>
 			<a href="tel:{{ contactInformation.phone | replace({" (" : "1-", ") " : " -"}) }}">{{ contactInformation.phone }}</a>

@@ -79,19 +79,21 @@
 		<section class="airports">
 			<div class="airports__content-col">
 				<div class="airports__addresses">
-					<h2 class="contact__headline">{{ contactInformation.address.address1 }}</h2>
+					<h2 class="contact__headline">{{ contactInformation.address.addressName }}</h2>
 					<address class="contact__address">
-						<a href="{{ macros.googleMapsLink(contactInformation.address.address2 ~ "+" ~ contactInformation.address.locality ~ "+" ~ contactInformation.address.administrativeArea) }}" target="_blank">
-							{{ contactInformation.address.address2 }}<br>
-							{{ contactInformation.address.locality }}, {{ contactInformation.address.administrativeArea }}
+						<a href="{{ macros.googleMapsLink(contactInformation.address.streetAddress1 ~ "+" ~ contactInformation.address.city ~ "+" ~ contactInformation.address.state) }}" target="_blank">
+							{{ contactInformation.address.streetAddress1 }}<br>
+							{% if contactInformation.address.streetAddress2 %}{{ contactInformation.address.streetAddress2 }}<br>{% endif %}
+							{{ contactInformation.address.city }}, {{ contactInformation.address.state }}
 							{{ contactInformation.address.postalCode }}
 						</a>
 					</address>
-					<h2 class="contact__headline">{{ contactInformation.southCourseAddress.address1 }}</h2>
+					<h2 class="contact__headline">{{ contactInformation.southCourseAddress.addressName }}</h2>
 					<address class="contact__address">
-						<a href="{{ macros.googleMapsLink(contactInformation.southCourseAddress.address2 ~ "+" ~ contactInformation.southCourseAddress.locality ~ "+" ~ contactInformation.southCourseAddress.administrativeArea) }}" target="_blank">
-							{{ contactInformation.southCourseAddress.address2 }}<br>
-							{{ contactInformation.southCourseAddress.locality }}, {{ contactInformation.southCourseAddress.administrativeArea }}
+						<a href="{{ macros.googleMapsLink(contactInformation.southCourseAddress.streetAddress1 ~ "+" ~ contactInformation.southCourseAddress.city ~ "+" ~ contactInformation.southCourseAddress.state) }}" target="_blank">
+							{{ contactInformation.southCourseAddress.streetAddress1 }}<br>
+							{% if contactInformation.southCourseAddress.streetAddress2 %}{{ contactInformation.southCourseAddress.streetAddress2 }}<br>{% endif %}
+							{{ contactInformation.southCourseAddress.city }}, {{ contactInformation.southCourseAddress.state }}
 							{{ contactInformation.southCourseAddress.postalCode }}
 						</a>
 					</address>

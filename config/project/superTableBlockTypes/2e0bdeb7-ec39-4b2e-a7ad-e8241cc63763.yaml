@@ -1,0 +1,212 @@
+field: d6c54b4c-68b2-4867-b935-f068540aca7c # South Course Address
+fieldLayouts:
+  417d9506-0f51-498c-90ef-831f1ccc7088:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 045577fd-6a4e-45e8-acd8-26e0787d2376 # Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c4e88bc-b69c-48b5-92ca-f9bce29e29f6 # Street Address 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3fb6dfc9-3996-466e-a067-d2cdbc09d62f # Street Address 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9bcdb2fc-72a4-4110-86a9-7d1d306532da # City
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e7abf986-5d53-4c23-baa6-c6a8b574595c # State
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7895c2a5-3303-44df-807e-7bce64be70ad # Postal Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 53c1de92-d636-410f-89c5-2bd580f7f86d # Country
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c4e88bc-b69c-48b5-92ca-f9bce29e29f6: # Street Address 1
+    columnSuffix: ebyygxxm
+    contentColumnType: text
+    fieldGroup: null
+    handle: streetAddress1
+    instructions: ''
+    name: 'Street Address 1'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3fb6dfc9-3996-466e-a067-d2cdbc09d62f: # Street Address 2
+    columnSuffix: ztlhvveh
+    contentColumnType: text
+    fieldGroup: null
+    handle: streetAddress2
+    instructions: ''
+    name: 'Street Address 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9bcdb2fc-72a4-4110-86a9-7d1d306532da: # City
+    columnSuffix: iokmcbwx
+    contentColumnType: text
+    fieldGroup: null
+    handle: city
+    instructions: ''
+    name: City
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  53c1de92-d636-410f-89c5-2bd580f7f86d: # Country
+    columnSuffix: rlfjkmoh
+    contentColumnType: text
+    fieldGroup: null
+    handle: country
+    instructions: ''
+    name: Country
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7895c2a5-3303-44df-807e-7bce64be70ad: # Postal Code
+    columnSuffix: nbswrbby
+    contentColumnType: text
+    fieldGroup: null
+    handle: postalCode
+    instructions: ''
+    name: 'Postal Code'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  045577fd-6a4e-45e8-acd8-26e0787d2376: # Name
+    columnSuffix: fnrnwcnw
+    contentColumnType: text
+    fieldGroup: null
+    handle: addressName
+    instructions: ''
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e7abf986-5d53-4c23-baa6-c6a8b574595c: # State
+    columnSuffix: hzjwotkv
+    contentColumnType: text
+    fieldGroup: null
+    handle: state
+    instructions: ''
+    name: State
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

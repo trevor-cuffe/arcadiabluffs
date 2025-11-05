@@ -1,4 +1,4 @@
-dateModified: 1762371982
+dateModified: 1762374986
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -23,6 +23,7 @@ meta:
     0b58b535-d844-4f70-b1e8-40af7e74655e: Contact # Contact
     0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e: Accommodations # Accommodations
     0c261a33-5269-4599-9373-5f2b4037a4a1: General # General
+    0c6882d0-e994-4811-afea-7c1c2d619d97: 'Postal Code' # Postal Code
     0cf694de-6970-4003-8a9d-984c9ba91d3f: 'Course Landing' # Course Landing
     0d74f61b-dc87-456d-8d90-e09e6f4f8efc: 'Intro Block' # Intro Block
     0d624f18-bf3c-49b5-becb-533c2185c9b9: 'Button Text' # Button Text
@@ -37,6 +38,7 @@ meta:
     1ae0ca48-e9ff-4b0a-aaba-9e8e23627850: Image # Image
     01b17a99-3521-45f0-87a8-6b2cae017f98: 'Link Text' # Link Text
     01ba22cd-6d8f-463b-9c88-11dbf58faae0: Headline # Headline
+    1c4e88bc-b69c-48b5-92ca-f9bce29e29f6: 'Street Address 1' # Street Address 1
     1c73a949-4efb-4981-9845-5fc07773a52e: 'Tab Text' # Tab Text
     1dd6e9ca-3dfc-4093-836d-65077300be08: Button # Button
     1e5a632d-5444-4c79-9ee0-5c924f29c0d6: 'General Contacts' # General Contacts
@@ -60,6 +62,7 @@ meta:
     3e7bdbb4-2ac0-4b7f-93b9-ea27df0416b6: 'Linked List' # Linked List
     3e174f3d-eccc-4bcc-8f02-b8a3dc911c3e: Options # Options
     3ec5a707-06b4-47ff-9a7d-eec3255596fe: 'Accommodation Form' # Accommodation Form
+    3fb6dfc9-3996-466e-a067-d2cdbc09d62f: 'Street Address 2' # Street Address 2
     4a18a5dd-b009-408c-bad8-710a7fa60a01: 'Slope Table' # Slope Table
     4ab5842b-2eac-4ee9-9c9b-67194eda8f76: 'Pricing Footer' # Pricing Footer
     4abaa592-1034-44af-8c86-16ffeb72caac: Description # Description
@@ -106,6 +109,7 @@ meta:
     8fd5e0a2-9d26-411e-a0bb-c3bf76cd05ce: 'Link Text' # Link Text
     9ac36cd6-f8a3-4875-947e-fe3347369e24: Headline # Headline
     9baae7f8-cf5b-40da-96a9-1a49f83765dd: 'Related Entry' # Related Entry
+    9bcdb2fc-72a4-4110-86a9-7d1d306532da: City # City
     9c0bdaed-ba3d-45a0-a4cb-bdd5ca1d4cfe: 'Button URL' # Button URL
     9d60212d-d586-49a1-9525-1f94da3d85f0: 'CTA Body' # CTA Body
     9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
@@ -127,6 +131,7 @@ meta:
     48e899c2-d911-461d-90e2-6f404a72376f: Buttons # Buttons
     49b14ddc-b863-47cf-9f09-87654c5b6f65: Headline # Headline
     50b6f61a-8262-47d0-b09c-b7b2a0fcd920: Headline # Headline
+    53c1de92-d636-410f-89c5-2bd580f7f86d: Country # Country
     55e3b54a-cb7a-4938-9316-9e74e1dde983: Video # Video
     56eab1e4-7cb0-44ee-826e-6fe37e384e72: 'Hole Layout Image' # Hole Layout Image
     58d379a7-f464-4baf-8555-e5b71c12d289: 'Intro Block' # Intro Block
@@ -158,7 +163,7 @@ meta:
     325ae27a-3891-45e9-9543-bb4b0e42c7c0: 'Link Url' # Link Url
     330eac69-3318-422a-861b-d841fff06fef: 'Video Subheadline' # Video Subheadline
     0339d640-3170-4fbe-b05e-bc617f16c7c3: Tags # Tags
-    346f306c-8a09-4175-813b-89d3ac895822: 'Public Schema'
+    346f306c-8a09-4175-813b-89d3ac895822: 'Public Schema' # Public Schema
     359c3304-e1b4-4382-8e8d-cd4ca6246277: 'Thank You Message' # Thank You Message
     403c56a1-2a2c-4d43-b989-a2667bedbd22: General # General
     410c8902-a790-4c5f-abc6-814d182c5d7c: Option # Option
@@ -180,6 +185,7 @@ meta:
     870d5282-0576-4680-aa71-d2d5147444a2: 'Link Text' # Link Text
     894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: Gallery # Gallery
     923e1879-e0ce-4332-b880-14ca511d242c: Link # Link
+    928a4a05-b9d0-4bbe-aefb-6ca1bb44af92: State # State
     947f4266-c25e-42b4-a78e-07321ff4e4d3: 'Tab Text' # Tab Text
     959a38bb-a856-451b-a3db-eff0e9bf621e: 'Course Intro Block' # Course Intro Block
     1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
@@ -194,12 +200,14 @@ meta:
     3738bc09-42b3-421c-8dce-fad8a340f8e8: Headline # Headline
     4681e11e-24e7-4a51-988a-b49c3cf5f2d1: Body # Body
     4875ccf4-6252-48af-8570-4a0d048ef253: 'Linked List' # Linked List
+    5554e38f-dda8-4910-8ef4-8c4b7e1a63ee: City # City
     5608b240-5464-4dec-ab64-e254b72ad3e6: 'Private Events' # Private Events
     5948f33e-dfdb-4f6c-bc85-fd56f965bf2c: Image # Image
     6320fc7f-9902-4986-b81d-38127d780d10: 'Content Block' # Content Block
     7624e05d-94c9-46bf-bf38-00dbb0509f1d: 'Featured Award' # Featured Award
+    7895c2a5-3303-44df-807e-7bce64be70ad: 'Postal Code' # Postal Code
     8110e72c-3547-4f09-a48b-5e1237bbd977: 'Gift Cards' # Gift Cards
-    8574d7d4-f14b-46ea-88a8-b77fcfa88927: Column
+    8574d7d4-f14b-46ea-88a8-b77fcfa88927: Column # Column
     8655b922-94ee-4021-b63c-3fc8c4d8453e: 'Linked List' # Linked List
     8901e690-f63a-4540-a2f6-9b4d1f0f50a2: Headshot # Headshot
     8991f73e-fc38-46e6-a4db-49b9f6697e67: Headline # Headline
@@ -209,6 +217,7 @@ meta:
     13738d5c-9682-4007-bd59-cb6397761dc9: Award # Award
     36543e5f-0c33-43d5-a9c4-c024fadc72e4: 'Job Title' # Job Title
     42076b35-8ab3-43d2-8ae3-980b5c280b2c: Headline # Headline
+    045577fd-6a4e-45e8-acd8-26e0787d2376: Name # Name
     48927e8d-ba4b-4bf3-8531-81fd9408f4ab: 'Open in New Tab?' # Open in New Tab?
     53352c27-2a47-44a6-a7a3-3d29eaace28e: Headline # Headline
     53576eb0-38c9-4375-acd7-fb7d17c8f361: Label # Label
@@ -253,13 +262,14 @@ meta:
     a22ed9d6-243d-484b-add7-97a6dd764551: Category # Category
     a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf: CTA # CTA
     a47dfd63-9d5b-4709-bda4-d057450f6f56: 'Pricing Footer' # Pricing Footer
-    a61b6ef6-9c03-4a39-8592-63f661928329: Value # Value
+    a61b6ef6-9c03-4a39-8592-63f661928329: Detail # Detail
     a83cba39-789b-4caf-8b1b-cc9e8ff854f2: Landing # Landing
     a152dece-e53d-4f4f-b5ee-a5761cdefe3b: Link # Link
     a1753ecd-41fd-41a1-bae9-5ee530faed0b: Headline # Headline
     a2401124-246c-4550-8353-d067b0edddf3: Headline # Headline
     aa0d55da-ba88-4ad8-a6e1-e1a3138f9c9a: 'Accommodation Layout' # Accommodation Layout
     aaa2c471-b3eb-4a61-b353-2bb1d712c4f6: Body # Body
+    aae837ba-06f9-4343-b212-2889073937b0: Name # Name
     ab4827b9-4344-4f89-8d9f-435cdb4c0699: 'Accommodation Form Headline' # Accommodation Form Headline
     ab98011d-e66d-4a2d-a51b-a20e625f4fca: 'Home Accommodations' # Home Accommodations
     abde984f-81e8-4547-be65-7dc0bbcb1ba1: 'Link URL' # Link URL
@@ -294,7 +304,7 @@ meta:
     c4b4429d-4470-45da-8c0d-722f8a28277a: 'Call To Actions' # Call To Actions
     c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: Headline # Headline
     c7affb6c-68cd-45a6-82b8-fc01f1c8f8eb: 'Contact Information' # Contact Information
-    c8a078f3-ae95-49f6-9963-c431f5f5a956: 'Team Row'
+    c8a078f3-ae95-49f6-9963-c431f5f5a956: 'Team Row' # Team Row
     c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
     c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
     c61fd93f-7f29-4221-af77-fa7a42f2a104: 'Main Navigation' # Main Navigation
@@ -303,6 +313,7 @@ meta:
     c90430ca-7754-4503-bfdb-eeb26150198b: 'Secondary Navigation' # Secondary Navigation
     c332017f-ad74-46b4-9fd3-2a4099534c82: Sidebar # Sidebar
     ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43: Headline # Headline
+    cbae5fec-e67e-4c89-b03f-a329eefefcda: 'Street Address 2' # Street Address 2
     cc80e5df-c1e8-40d1-9935-2b5a608b491a: 'Sidebar CTAs' # Sidebar CTAs
     cd118c39-5937-4705-b0db-2cb2bb0b7e9b: Courses # Courses
     cd572c92-ecc6-4ce7-bea3-e18ec2578bb0: Label # Label
@@ -313,6 +324,7 @@ meta:
     d02a9c6c-376c-4ddf-b819-ab59d7e1afc7: 'User Photos' # User Photos
     d08f7f35-3977-48a8-8fea-d79697d19e1e: Text # Text
     d094cea2-a9d5-492a-9663-e179d0878780: Email # Email
+    d1b93d4f-3a60-41aa-ab26-b13840fa86e0: Country # Country
     d1b81997-5115-4665-bf16-07368b4b258c: Label # Label
     d1ff4ac0-fdc9-443f-81b2-13ba9e55e04a: Homepage # Homepage
     d5cd7453-de1f-4641-9290-c5d728857cb9: 'Course History' # Course History
@@ -331,6 +343,7 @@ meta:
     e0c7ac16-2ecd-4551-8951-1928b93f8112: 'Social Links' # Social Links
     e1b08e83-a1f1-4c82-9f19-ffa70434df89: 'Dining Options' # Dining Options
     e3dd14d9-3105-4555-b8c3-9b7328d545ec: Default # Default
+    e7abf986-5d53-4c23-baa6-c6a8b574595c: State # State
     e7f3e789-e3c9-46ee-add0-1122214d324c: Button # Button
     e56bd7a7-0aa9-4c05-bcc4-6b32ad8ab514: 'General Contacts' # General Contacts
     e56f52dd-3a69-4735-9a6d-17b31a62ece9: Pages # Pages
@@ -375,6 +388,7 @@ meta:
     fbbd0fba-c1f3-4450-a63f-4ff62a510f01: News # News
     fbd9a4ad-7fd5-495b-8367-17a73f5b8356: 'Accommodation Layout' # Accommodation Layout
     fbf63f47-0d11-40d0-9889-18017e89451a: Link # Link
+    fc68f54b-60ab-4251-8ec9-15ea9b776eef: 'Street Address 1' # Street Address 1
     fd52f2bc-9e8e-4025-9502-fab5a89e68ae: 'Arcadia Bluffs Address' # Arcadia Bluffs Address
     fd799323-b5cd-4385-92ab-49dfe5e15759: 'Link URL' # Link URL
     fef901ea-0f88-43c5-a6b0-b9994bdd7b5f: Image # Image

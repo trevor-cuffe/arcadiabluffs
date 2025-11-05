@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23d2f2fbcabc7baf5b4589c0a68d481b",
+    "content-hash": "74b5db26977a9773c4a38558d90a6825",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5398,66 +5398,6 @@
             "time": "2024-11-27T12:13:42+00:00"
         },
         {
-            "name": "sebastianlenz/craft-utils",
-            "version": "2.3.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/a38cb3d86af31bbdc7c59e433158492d76c8a282",
-                "reference": "a38cb3d86af31bbdc7c59e433158492d76c8a282",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.6.0",
-                "php": ">=7.2.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lenz\\craft\\utils\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A collection of utility classes for Craft CMS development",
-            "time": "2022-11-02T15:10:43+00:00"
-        },
-        {
-            "name": "sebastianlenz/linkfield",
-            "version": "2.0.0-rc.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/5a5d072417542352f136022b8ff1539a040155e4",
-                "reference": "5a5d072417542352f136022b8ff1539a040155e4",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.6.0",
-                "php": "^7.2.5 || ^8.0",
-                "sebastianlenz/craft-utils": "^2.3.1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "typedlinkfield",
-                "name": "Typed link field",
-                "developer": "Sebastian Lenz",
-                "developerUrl": "https://github.com/sebastian-lenz/"
-            },
-            "autoload": {
-                "classmap": [
-                    "legacy"
-                ],
-                "psr-4": {
-                    "lenz\\linkfield\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Craft field type for selecting links",
-            "time": "2022-02-26T16:13:17+00:00"
-        },
-        {
             "name": "seld/cli-prompt",
             "version": "1.0.4",
             "dist": {
@@ -9003,9 +8943,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sebastianlenz/linkfield": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

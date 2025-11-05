@@ -1,4 +1,4 @@
-dateModified: 1762354114
+dateModified: 1762366586
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -73,6 +73,8 @@ meta:
     4b55a38d-f046-45c9-9305-eb9af5c49179: Headline # Headline
     4c621108-9140-4ef7-b9f1-d1cc39429915: Headline # Headline
     4df910d9-30d4-4eac-8b59-435d3143c244: 'Video Headline' # Video Headline
+    4f23347f-6f48-42b2-bdc4-1791e7d43919: Link # Link
+    04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5: 'Banner Link' # Banner Link
     5a412ccd-04da-4787-a28c-3ac60d56e066: Awards # Awards
     5c1f657e-0879-4a4b-beca-79003bf50cce: Table # Table
     5c4dce04-09b5-4782-8525-f9501e72fd30: Headline # Headline
@@ -93,6 +95,7 @@ meta:
     7bbf65b1-050d-451a-a681-13b0bbe158a1: Body # Body
     07d636bc-6c41-49a1-8dea-face54ffd745: 'Content Block' # Content Block
     7da47c32-f9fb-4a89-9c30-22238ac588bd: 'Slope Tables' # Slope Tables
+    7df2599b-80fe-4758-8542-add1e40c5d27: 'Nav CTA' # Nav CTA
     7ee3439a-7f3c-4587-aa00-541278985f78: 'Secondary Menu' # Secondary Menu
     7f33d691-0281-4de9-8404-38467e35d592: Button # Button
     7fd45083-2574-45a3-a3a6-e25418eb6925: 'Gift Cards Introduction' # Gift Cards Introduction
@@ -134,6 +137,7 @@ meta:
     56eab1e4-7cb0-44ee-826e-6fe37e384e72: 'Hole Layout Image' # Hole Layout Image
     58d379a7-f464-4baf-8555-e5b71c12d289: 'Intro Block' # Intro Block
     59b47825-ae19-43d6-a9e5-825daed41a40: General # General
+    61c2c0d9-54a6-4589-a06d-7f846a05c4d0: Footer # Footer
     62f60a54-795c-49ce-bfd2-42a6f6888d92: Headline # Headline
     63a1bc53-bfb2-49ae-9d5d-664627389036: 'Video Embed' # Video Embed
     063e0238-928a-4bde-a39e-d034dabc5030: Contact # Contact
@@ -182,6 +186,7 @@ meta:
     856cdfa4-1efe-4001-886c-d78fedae1bb6: Announcement # Announcement
     870d5282-0576-4680-aa71-d2d5147444a2: 'Link Text' # Link Text
     894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: Gallery # Gallery
+    923e1879-e0ce-4332-b880-14ca511d242c: Link # Link
     947f4266-c25e-42b4-a78e-07321ff4e4d3: 'Tab Text' # Tab Text
     959a38bb-a856-451b-a3db-eff0e9bf621e: 'Course Intro Block' # Course Intro Block
     1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
@@ -272,6 +277,7 @@ meta:
     aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
     afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
     b3b78fcf-ce15-4e36-9ca7-bc9d9b3fa63f: News # News
+    b4c92967-be57-4120-a30e-eeba275a8830: 'Footer Menu' # Footer Menu
     b4d4ca88-4eef-4fe4-92b6-9bc0ebdba29c: Bucket # Bucket
     b7b6f2fe-0047-4f19-86c9-07f96a339ebb: Homepage # Homepage
     b35f4131-c904-4509-bef0-05ef8d79e639: 'Link Text' # Link Text
@@ -297,7 +303,10 @@ meta:
     c7affb6c-68cd-45a6-82b8-fc01f1c8f8eb: 'Contact Information' # Contact Information
     c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
     c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
+    c61fd93f-7f29-4221-af77-fa7a42f2a104: 'Main Navigation' # Main Navigation
     c73fb067-a5f1-44c7-9db5-2813a46b689d: Description # Description
+    c3204ae4-29c1-495d-8e47-7f6810535c43: Link # Link
+    c90430ca-7754-4503-bfdb-eeb26150198b: 'Secondary Navigation' # Secondary Navigation
     c332017f-ad74-46b4-9fd3-2a4099534c82: Sidebar # Sidebar
     ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43: Headline # Headline
     cc80e5df-c1e8-40d1-9935-2b5a608b491a: 'Sidebar CTAs' # Sidebar CTAs
@@ -359,7 +368,7 @@ meta:
     f6f57ddb-d979-455a-8803-923779a0aece: 'Accommodation Pricing' # Accommodation Pricing
     f9d54a63-f4b4-46a3-9822-b08270fddf91: 'Home Courses' # Home Courses
     f26d2c7f-68be-4794-ad59-7d0d35b3fad5: Excerpt # Excerpt
-    f32f9a29-42b9-4309-8915-00f75901e293: Announcement # Announcement
+    f32f9a29-42b9-4309-8915-00f75901e293: Header # Header
     f79b6a44-12a4-4b24-9f20-320d05f18cd6: Rates # Rates
     f166e127-51d5-4ea5-9f69-0e3973d61913: Rates # Rates
     f502b915-b86e-4d5e-90b2-dca5cb3f56bf: 'Hole Number' # Hole Number

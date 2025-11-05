@@ -214,6 +214,10 @@ body {
    width: 100%;
    @extend %gradient;
 
+   // don't extend past screen, make sure its scrollable
+   max-height: calc(98dvh - var(--header-height, 0px));
+   overflow: scroll;
+
    &.show {
       display: block;
    }
@@ -228,17 +232,28 @@ body {
 
 .nav-mobile__menu {
    display: block;
+   width: 92%;
+   max-width: 600px;
+   margin: auto;
    border-top: 1px solid $white-smoke;
    border-bottom: 1px solid $white-smoke;
    padding-top: 1rem;
    padding-bottom: 1rem;
    letter-spacing: 1.5px;
    text-transform: uppercase;
+
    li {
       text-align: center;
       display: block;
       width: 100%;
       @include font-size(16px);
+
+      &.sm-only {
+         @include mq($from: m) {
+            display: none;
+         }
+      }
+
       a {
          display: block;
          padding: .5rem;

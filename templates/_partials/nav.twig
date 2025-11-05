@@ -1,5 +1,4 @@
-{# Get First Segment #}
-{% set current = craft.app.request.segments|first %}
+{% import '_macros' as macros %}
 
 <div class="nav">
 	<div class="nav__logo">
@@ -8,29 +7,21 @@
 			{% include '_assets/logo.svg' %}
 		</a>
 	</div>
-	{% set secondary = craft.entries.section('primaryMenu') %}
+	{% set mainNav = header.mainNavigation.all() %}
 	<ul class="nav__menu menu">
-		{% for entry in secondary %}
-			{% set class = entry.class %}
-			{% set newTab = entry.openInNewTab %}
-			{% if newTab == 'true' %}
-				{% set target = '_blank' %}
-			{% else %}
-				{% set target = '' %}
+		{% for link in mainNav %}
+			{% set linkUrl = link.linkField.getUrl() %}
+			{% if linkUrl %}
+				<li>
+					<a class="{{ macros.link_is_current(linkUrl) }}" target="{{link.linkField.target}}" href="{{ linkUrl }}">{{ link.linkField.getText() }}</a>
+				</li>
 			{% endif %}
-			{% if entry.relatedEntry | length %}
-				{% set entry = entry.relatedEntry.one() %}
-				{% set url = entry.url %}
-				{% set slug = entry.slug %}
-				{% set activeClass = slug == current ? 'active' %}
-
-			{% else %}
-				{% set url = entry.customUrl %}
-			{% endif %}
-			<li>
-				<a class="{{ activeClass }} {{class}}" target="{{target}}" href="{{ url }}">{{ entry.title }}</a>
-			</li>
 		{% endfor %}
+		{% if header.navCta and header.navCta.getUrl() %}
+			<li>
+				<a class="btn" target="{{header.navCta.target}}" href="{{ header.navCta.getUrl() }}">{{ header.navCta.getText() }}</a>
+			</li>
+		{% endif %}
 	</ul>
 	<button class="nav__toggle js-nav-toggle">Menu</button>
 </div>

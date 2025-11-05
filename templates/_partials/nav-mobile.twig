@@ -1,8 +1,29 @@
 <nav class="nav-mobile">
 
-	{% set secondary = craft.entries.section('mobileMenu') %}
+	{# {% set secondary = craft.entries.section('mobileMenu') %} #}
+	{% set mainNav = header.mainNavigation.all() %}
+	{% set secondary = header.secondaryNavigation.all() %}
 	<ul class="nav-mobile__menu menu">
-		{% for entry in secondary %}
+		{% if header.navCta and header.navCta.getUrl() %}
+			<li>
+				<a class="btn" target="{{header.navCta.target}}" href="{{ header.navCta.getUrl() }}">{{ header.navCta.getText() }}</a>
+			</li>
+		{% endif %}
+		{% for link in mainNav %}
+			{% if link.linkField.getUrl() %}
+				<li>
+					<a target="{{link.linkField.target}}" href="{{ link.linkField.getUrl() }}">{{ link.linkField.getText() }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+		{% for link in secondary %}
+			{% if link.linkField.getUrl() %}
+				<li class="sm-only">
+					<a target="{{link.linkField.target}}" href="{{ link.linkField.getUrl() }}">{{ link.linkField.getText() }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+		{# {% for entry in secondary %}
 			{% if entry.relatedEntry | length %}
 				{% set entry = entry.relatedEntry.one() %}
 				{% set url = entry.url %}
@@ -13,6 +34,6 @@
 			<li>
 				<a href="{{ url }}">{{ entry.title }}</a>
 			</li>
-		{% endfor %}
+		{% endfor %} #}
 	</ul>
 </nav>

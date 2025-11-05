@@ -1,15 +1,13 @@
+{% set navMenu = header.secondaryNavigation.all() %}
+
 <nav class="nav-secondary">
-	{% set secondary = craft.entries.section('secondaryMenu') %}
 	<ul class="nav-secondary__menu menu">
-		{% for entry in secondary %}
-			{% if entry.relatedEntry | length %}
-				{% set url = entry.relatedEntry.one().getUrl() %}
-			{% else %}
-				{% set url = entry.customUrl %}
+		{% for link in navMenu %}
+			{% if link.linkField.getUrl() %}
+				<li>
+					<a target="{{link.linkField.target}}" href="{{ link.linkField.getUrl() }}">{{ link.linkField.getText() }}</a>
+				</li>
 			{% endif %}
-			<li>
-				<a href="{{ url }}">{{ entry.title }}</a>
-			</li>
 		{% endfor %}
 	</ul>
 	{% include '_partials/nav-weather' %}

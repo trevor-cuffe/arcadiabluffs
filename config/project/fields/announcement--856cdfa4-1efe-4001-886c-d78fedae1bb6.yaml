@@ -29,6 +29,13 @@ settings:
             -
               - width
               - ''
+      -
+        - 04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5 # Banner Link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
   contentTable: '{{%stc_announcement_1}}'
   fieldLayout: row
   maxRows: ''

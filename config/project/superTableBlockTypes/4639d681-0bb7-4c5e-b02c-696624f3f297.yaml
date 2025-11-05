@@ -1,38 +1,11 @@
-field: 856cdfa4-1efe-4001-886c-d78fedae1bb6 # Announcement
+field: c61fd93f-7f29-4221-af77-fa7a42f2a104 # Main Navigation
 fieldLayouts:
-  07806612-de8b-44e7-af31-dd5fb01e66bf:
+  0b346c03-f956-4563-961d-fe9bf28c0d6c:
     tabs:
       -
         elements:
           -
-            fieldUid: 47333271-0ec9-46c1-8a97-252f94aff32c # Enabled
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 5c4dce04-09b5-4782-8525-f9501e72fd30 # Headline
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: d674a38b-5677-430e-90af-0524d99826b5 # Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5 # Banner Link
+            fieldUid: 923e1879-e0ce-4332-b880-14ca511d242c # Link
             instructions: null
             label: null
             required: false
@@ -43,16 +16,16 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5: # Banner Link
-    columnSuffix: whfgeidm
+  923e1879-e0ce-4332-b880-14ca511d242c: # Link
+    columnSuffix: slduzldi
     contentColumnType: text
     fieldGroup: null
-    handle: bannerLink
-    instructions: 'Optional - turn the whole announcement banner into a link'
-    name: 'Banner Link'
+    handle: linkField
+    instructions: ''
+    name: Link
     searchable: false
     settings:
-      allowCustomText: ''
+      allowCustomText: '1'
       allowTarget: '1'
       defaultText: ''
       selectLinkText: ''
@@ -205,7 +178,7 @@ fields:
               __assoc__:
                 -
                   - enabled
-                  - '1'
+                  - ''
                 -
                   - customLabel
                   - ''
@@ -237,66 +210,3 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: presseddigital\linkit\fields\LinkitField
-  5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: headline
-    instructions: ''
-    name: Headline
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
-    columnSuffix: null
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: enabledData
-    instructions: 'Turn the announcement on/off'
-    name: Enabled
-    searchable: true
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
-  d674a38b-5677-430e-90af-0524d99826b5: # Text
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: text
-    instructions: ''
-    name: Text
-    searchable: true
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: true
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field

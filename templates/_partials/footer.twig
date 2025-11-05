@@ -40,21 +40,15 @@
 	<div class="footer-main">
 		<div class="footer__logo">{{ siteName }}</div>
 
-		{% set secondary = craft.entries.section('footerMenu') %}
 		<ul class="footer__menu menu">
-			{% for entry in secondary %}
-				{% if entry.relatedEntry | length %}
-					{% set entry = entry.relatedEntry.one() %}
-					{% set url = entry.url %}
-					{% set slug = entry.slug %}
-					{% set activeClass = slug == current ? 'active' %}
-				{% else %}
-					{% set url = entry.customUrl %}
-					{% set activeClass = "news" == current ? 'active' %}
+			{% set footerNav = footer.mainNavigation.all() %}
+			{% for link in footerNav %}
+				{% set linkUrl = link.linkField.getUrl() %}
+				{% if linkUrl %}
+					<li>
+						<a class="{{ macros.link_is_current(linkUrl) }}" target="{{link.linkField.target}}" href="{{ linkUrl }}">{{ link.linkField.getText() }}</a>
+					</li>
 				{% endif %}
-				<li>
-					<a class="{{ activeClass }}" href="{{ url }}">{{ entry.title }}</a>
-				</li>
 			{% endfor %}
 		</ul>
 

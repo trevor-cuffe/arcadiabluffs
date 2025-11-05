@@ -1,38 +1,11 @@
-field: 856cdfa4-1efe-4001-886c-d78fedae1bb6 # Announcement
+field: b4c92967-be57-4120-a30e-eeba275a8830 # Footer Menu
 fieldLayouts:
-  07806612-de8b-44e7-af31-dd5fb01e66bf:
+  1b9e079c-1500-4d7e-a8ab-963f96c297f8:
     tabs:
       -
         elements:
           -
-            fieldUid: 47333271-0ec9-46c1-8a97-252f94aff32c # Enabled
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 5c4dce04-09b5-4782-8525-f9501e72fd30 # Headline
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: d674a38b-5677-430e-90af-0524d99826b5 # Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5 # Banner Link
+            fieldUid: c3204ae4-29c1-495d-8e47-7f6810535c43 # Link
             instructions: null
             label: null
             required: false
@@ -43,16 +16,16 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  04fe3ac1-ed7d-4c8e-b9ab-a5b99c8e4df5: # Banner Link
-    columnSuffix: whfgeidm
+  c3204ae4-29c1-495d-8e47-7f6810535c43: # Link
+    columnSuffix: kzfeyukr
     contentColumnType: text
     fieldGroup: null
-    handle: bannerLink
-    instructions: 'Optional - turn the whole announcement banner into a link'
-    name: 'Banner Link'
+    handle: linkField
+    instructions: ''
+    name: Link
     searchable: false
     settings:
-      allowCustomText: ''
+      allowCustomText: '1'
       allowTarget: '1'
       defaultText: ''
       selectLinkText: ''
@@ -179,6 +152,9 @@ fields:
                     - 'section:f02a0d8f-d625-405c-a782-87b045350b7f' # Dining
                     - 'section:19d04551-214f-4e9b-9a5e-ff66d6fe1028' # News
                     - singles
+                    - 'section:b604dac5-2242-4481-a8b5-e8302061bbd6' # The Bluffs Hole-By-Hole
+                    - 'section:23bb67c9-f116-462a-a1dc-d13ac3f62749' # The Dozen Hole by Hole
+                    - 'section:f56564ff-d257-438d-9faa-6f4e7dfada22' # The South Course Hole-By-Hole
                     - 'section:3dfade29-0d50-45dd-9bf0-0b0a2fed7406' # Utility Pages
                 -
                   - customSelectionLabel
@@ -205,7 +181,7 @@ fields:
               __assoc__:
                 -
                   - enabled
-                  - '1'
+                  - ''
                 -
                   - customLabel
                   - ''
@@ -237,66 +213,3 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: presseddigital\linkit\fields\LinkitField
-  5c4dce04-09b5-4782-8525-f9501e72fd30: # Headline
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: headline
-    instructions: ''
-    name: Headline
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  47333271-0ec9-46c1-8a97-252f94aff32c: # Enabled
-    columnSuffix: null
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: enabledData
-    instructions: 'Turn the announcement on/off'
-    name: Enabled
-    searchable: true
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
-  d674a38b-5677-430e-90af-0524d99826b5: # Text
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: text
-    instructions: ''
-    name: Text
-    searchable: true
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: true
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field

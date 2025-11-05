@@ -1,16 +1,27 @@
 {% set component =  {
-  enabled: announcement.announcement.enabledData ?? null,
-  headline: announcement.announcement.headline ?? 'Announcement',
-  text: announcement.announcement.text ?? null,
+  enabled: header.announcement.enabledData ?? null,
+  headline: header.announcement.headline ?? 'Announcement',
+  text: header.announcement.text ?? null,
+  link: header.announcement.bannerLink,
 } %}
 
+{% set linkEnabled = component.link and component.link.getUrl() %}
+
 {% if component.enabled %}
-  <div class="c-announcement">
-    <div class="c-announcement__headline">{{ component.headline }}</div>
-    {% if component.text|length %}
-      <div class="c-announcement__text">
-        {{ component.text }}
-      </div>
-    {% endif %}
-  </div>
+	{% if linkEnabled %}
+		<a class="c-announcement" href="{{ component.link.getUrl() }}" target="{{ component.link.target }}">
+	{% else %}
+		<div class="c-announcement">
+	{% endif %}
+		<div class="c-announcement__headline">{{ component.headline }}</div>
+		{% if component.text|length %}
+			<div class="c-announcement__text">
+				{{ component.text }}
+			</div>
+		{% endif %}
+	{% if linkEnabled %}
+		</a>
+	{% else %}
+		</div>
+	{% endif %}
 {% endif %}

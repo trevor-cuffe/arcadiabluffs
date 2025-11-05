@@ -275,3 +275,10 @@
 	{{ address|replace({', ': '+', ' ': '+', ',': '+'}) }}
 	{% endapply %}
 {% endmacro %}
+
+
+{% macro link_is_current(segment) %}{% apply spaceless %}
+    {% set baseUrl = craft.app.sites.primarySite.baseUrl %}
+    {% set path = craft.app.request.segments | join("/") %}
+    {% if path == segment|replace(baseUrl, "") %}active{% endif %}
+{% endapply %}{% endmacro %}

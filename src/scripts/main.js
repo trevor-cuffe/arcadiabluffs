@@ -484,4 +484,20 @@ function recaptchaCallback() {
     };
 
     ARCADIA.init();
+
+
+    function setHeaderHeight() {
+        let header = document.querySelector('header.header');
+        if (!header) return;
+        document.body.style.setProperty('--header-height', `${header.clientHeight}px`);
+    }
+
+
+    setHeaderHeight();
+    // additional event listeners
+    window.addEventListener('resize', () => {
+        setHeaderHeight();
+    });
+
+
 })(window, document);

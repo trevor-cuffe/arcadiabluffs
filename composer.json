@@ -1,16 +1,16 @@
 {
   "require": {
-    "craftcms/ckeditor": "1.5.0",
-    "craftcms/cms": "^3.7.26",
-    "craftcms/feed-me": "^4.8.1",
-    "craftcms/redactor": "2.10.12",
-    "nystudio107/craft-seomatic": "3.5.22",
-    "presseddigital/linkit": "3.0.4.1",
-    "spacecatninja/imager-x": "v3.6.8",
-    "spicyweb/craft-neo": "2.13.21",
-    "verbb/field-manager": "2.2.5",
-    "verbb/formie": "1.6.47",
-    "verbb/super-table": "2.7.5.1",
+    "craftcms/ckeditor": "3.14.1",
+    "craftcms/cms": "^4.0.0",
+    "craftcms/feed-me": "^5.14.0",
+    "craftcms/redactor": "3.1.0",
+    "nystudio107/craft-seomatic": "4.1.19",
+    "presseddigital/linkit": "4.0.4.1",
+    "spacecatninja/imager-x": "4.5.3",
+    "spicyweb/craft-neo": "4.4.7",
+    "verbb/field-manager": "3.0.9",
+    "verbb/formie": "2.2.5",
+    "verbb/super-table": "3.0.16",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

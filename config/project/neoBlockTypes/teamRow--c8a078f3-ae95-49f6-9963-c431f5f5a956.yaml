@@ -22,5 +22,4 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Team Row'
-sortOrder: 1
 topLevel: true

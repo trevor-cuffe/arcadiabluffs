@@ -1,4 +1,123 @@
-dateModified: 1762378224
+dateModified: 1762378485
+elementSources:
+  SproutForms_Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - formName
+        - dateCreated
+        - dateUpdated
+      type: native
+    -
+      key: 'form:1316'
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+      type: native
+    -
+      key: 'form:256'
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+      type: native
+    -
+      heading: 'Charitable Donations Request Form'
+      type: heading
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: 'Main Pages'
+      type: heading
+    -
+      key: singles
+      type: native
+    -
+      key: 'section:0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e' # Accommodations
+      tableAttributes:
+        - uri
+      type: native
+    -
+      key: 'section:f02a0d8f-d625-405c-a782-87b045350b7f' # Dining
+      tableAttributes:
+        - uri
+      type: native
+    -
+      key: 'section:cd118c39-5937-4705-b0db-2cb2bb0b7e9b' # Courses
+      tableAttributes:
+        - uri
+      type: native
+    -
+      key: 'section:3dfade29-0d50-45dd-9bf0-0b0a2fed7406' # Utility Pages
+      tableAttributes:
+        - uri
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      key: 'section:19d04551-214f-4e9b-9a5e-ff66d6fe1028' # News
+      tableAttributes:
+        - 'field:a22ed9d6-243d-484b-add7-97a6dd764551' # Category
+        - postDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:b604dac5-2242-4481-a8b5-e8302061bbd6' # The Bluffs Hole-By-Hole
+      tableAttributes:
+        - 'field:b86d426f-3cb1-445d-acc4-27ea2b665ea0' # Hole Number
+        - postDate
+        - link
+      type: native
+    -
+      key: 'section:f56564ff-d257-438d-9faa-6f4e7dfada22' # The South Course Hole-By-Hole
+      tableAttributes:
+        - 'field:b86d426f-3cb1-445d-acc4-27ea2b665ea0' # Hole Number
+        - link
+      type: native
+    -
+      key: 'section:23bb67c9-f116-462a-a1dc-d13ac3f62749' # The Dozen Hole by Hole
+      type: native
+    -
+      key: 'section:8d55db04-8897-450d-a5f2-625d80a8eab2' # Call To Actions
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - id
+      type: native
+    -
+      heading: Navigation
+      type: heading
+    -
+      key: 'section:13cc40b6-25fd-4174-a481-7481f07eddd6'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:0658bece-cc90-460f-bedc-b298ebf8037b'
+      type: native
+    -
+      key: 'section:9e6b2974-b890-456f-9a6f-75fef8b49e24'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:2b8ba9ac-0e3e-470d-9eb1-905e54cb0a6f'
+      type: native
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -13,6 +132,28 @@ email:
     useAuthentication: '1'
     username: apikey
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  general:
+    hasUrls: true
+    name: General
+    settings:
+      path: uploads/general
+    type: craft\fs\Local
+    url: /uploads/general
+  metadata:
+    hasUrls: true
+    name: Metadata
+    settings:
+      path: uploads/metadata
+    type: craft\fs\Local
+    url: /uploads/metadata
+  userPhotos:
+    hasUrls: false
+    name: 'User Photos'
+    settings:
+      path: userphotos
+    type: craft\fs\Local
+    url: null
 meta:
   __names__:
     0a728c97-fd69-4e4d-ab5d-2b16a6fae7bf: Button # Button
@@ -53,6 +194,7 @@ meta:
     2e0e521e-50dc-4fc4-b923-0360760a0c28: Text # Text
     2e89d38a-eaec-4b2b-943f-d94ba49050d0: Headline # Headline
     2eac97af-c8bb-4f52-82d5-7b98c2c2bb90: Accommodations # Accommodations
+    2f942cb1-204d-490e-b50d-d515fdb3d2bb: Simple # Simple
     3a0ddff3-cf2f-4791-91f2-b3ad3c8f34ab: Content # Content
     3a04fb74-ba86-41ac-ba13-a833e99992a9: 'Contact Form' # Contact Form
     3bc66f93-926c-4e23-a173-a807a5e9b3be: Headline # Headline
@@ -410,11 +552,11 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 3.0.0.0
   feed-me:
     enabled: 1
     licenseKey: null
-    schemaVersion: 4.4.1
+    schemaVersion: 5.14.0
     settings: null
   field-manager:
     enabled: 1
@@ -425,7 +567,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: AM5G0RI48NJFUWPL5DC584QN
-    schemaVersion: 1.2.9
+    schemaVersion: 2.0.21
   imager:
     enabled: 1
     licenseKey: null
@@ -435,7 +577,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: PEK35YGFZ9LQDNROZLAMMX56
-    schemaVersion: 3.0.0
+    schemaVersion: 4.0.0
   linkit:
     edition: standard
     enabled: true
@@ -444,7 +586,7 @@ plugins:
   neo:
     enabled: 1
     licenseKey: 43IQIDMG2DI71XIMXP85AW5S
-    schemaVersion: 2.13.0
+    schemaVersion: 4.0.0
     settings: null
   redactor:
     edition: standard
@@ -453,22 +595,23 @@ plugins:
   seomatic:
     enabled: 1
     licenseKey: HO7TAQJSULJQP5WCCHJATQO3
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings: null
   super-table:
     enabled: 1
     licenseKey: null
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
     settings: null
 system:
   edition: pro
   live: true
   name: 'Arcadia Bluffs'
   retryDuration: null
-  schemaVersion: 3.8.0.1
+  schemaVersion: 4.15.0.0
   timeZone: America/Detroit
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

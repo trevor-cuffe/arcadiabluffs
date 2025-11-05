@@ -1,4 +1,4 @@
-dateModified: 1762366960
+dateModified: 1762371719
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -56,6 +56,7 @@ meta:
     2e89d38a-eaec-4b2b-943f-d94ba49050d0: Headline # Headline
     2eac97af-c8bb-4f52-82d5-7b98c2c2bb90: Accommodations # Accommodations
     3a0ddff3-cf2f-4791-91f2-b3ad3c8f34ab: Content # Content
+    3a04fb74-ba86-41ac-ba13-a833e99992a9: 'Contact Form' # Contact Form
     3bc66f93-926c-4e23-a173-a807a5e9b3be: Headline # Headline
     3db517f6-16a9-4595-8c7c-e8a43a106c13: Overview # Overview
     3dfade29-0d50-45dd-9bf0-0b0a2fed7406: 'Utility Pages' # Utility Pages
@@ -88,6 +89,7 @@ meta:
     6edff37a-8413-428a-9321-f22ec04201c0: Option # Option
     6ef8762f-934c-4150-9f3a-c723ee40b0b8: Label # Label
     6f49cb67-aebb-4e26-b227-32443ac15a43: Twitter # Twitter
+    6feaa463-c415-465d-b07c-4a222f39d880: New # New
     7a6e640f-99e8-482a-b081-4155120a1e4b: 'Caddy Tip' # Caddy Tip
     7a261b1e-d387-4b69-aa5b-4a21ed282daf: Body # Body
     7b3e1dd7-7c27-4a5a-839f-8b3f368349ef: Awards # Awards
@@ -331,7 +333,6 @@ meta:
     e1b08e83-a1f1-4c82-9f19-ffa70434df89: 'Dining Options' # Dining Options
     e3dd14d9-3105-4555-b8c3-9b7328d545ec: Default # Default
     e7f3e789-e3c9-46ee-add0-1122214d324c: Button # Button
-    e8c3f5f7-be3b-4bed-9337-023c4afa1a12: 'Accommodation Form Success Message' # Accommodation Form Success Message
     e56bd7a7-0aa9-4c05-bcc4-6b32ad8ab514: 'General Contacts' # General Contacts
     e56f52dd-3a69-4735-9a6d-17b31a62ece9: Pages # Pages
     e60c4308-b5df-400e-8a88-74b253f5ae8c: 'Gift Cards' # Gift Cards
@@ -394,6 +395,10 @@ plugins:
       tests: null
       userreg: null
       webhook: null
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   feed-me:
     enabled: 1
     licenseKey: null
@@ -404,6 +409,11 @@ plugins:
     licenseKey: null
     schemaVersion: 1.0.0
     settings: null
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: AM5G0RI48NJFUWPL5DC584QN
+    schemaVersion: 1.2.9
   imager:
     enabled: 1
     licenseKey: null
@@ -437,54 +447,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.5.3
-  sprout-forms:
-    enabled: true
-    settings:
-      allowedAssetVolumes: '*'
-      captchaSettings:
-        __assoc__:
-          -
-            - barrelstrength\sproutforms\captchas\DuplicateCaptcha
-            -
-              __assoc__:
-                -
-                  - enabled
-                  - ''
-          -
-            - barrelstrength\sproutforms\captchas\JavascriptCaptcha
-            -
-              __assoc__:
-                -
-                  - enabled
-                  - '1'
-          -
-            - barrelstrength\sproutforms\captchas\HoneypotCaptcha
-            -
-              __assoc__:
-                -
-                  - enabled
-                  - '1'
-                -
-                  - honeypotFieldName
-                  - sprout-forms-hc
-                -
-                  - honeypotScreenReaderMessage
-                  - 'Leave this field blank'
-      cleanupProbability: '1000'
-      defaultSection: entries
-      defaultSubmissionMethod: sync
-      defaultUploadLocationSubpath: ''
-      enableEditFormEntryViaFrontEnd: false
-      enableSaveData: true
-      enableSaveDataDefaultValue: true
-      formTemplateId: barrelstrength\sproutforms\formtemplates\AccessibleTemplates
-      pluginNameOverride: ''
-      saveSpamToDatabase: false
-      showNotificationsTab: true
-      showReportsTab: true
-      spamLimit: '500'
-      spamRedirectBehavior: redirectAsNormal
-      trackRemoteIp: false
   super-table:
     enabled: 1
     licenseKey: null

@@ -9,7 +9,7 @@ settings:
   allowSelfRelations: false
   limit: '1'
   localizeRelations: false
-  selectionLabel: ''
+  selectionLabel: 'Select a Form'
   showSiteMenu: true
   source: null
   sources: '*'
@@ -18,4 +18,4 @@ settings:
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: barrelstrength\sproutforms\fields\Forms
+type: verbb\formie\fields\Forms

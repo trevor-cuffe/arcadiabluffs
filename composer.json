@@ -1,7 +1,7 @@
 {
   "require": {
     "barrelstrength/sprout-fields": "3.8.6",
-    "barrelstrength/sprout-forms": "3.14.0",
+    "craftcms/ckeditor": "1.5.0",
     "craftcms/cms": "^3.7.26",
     "craftcms/feed-me": "^4.8.1",
     "craftcms/redactor": "2.10.12",
@@ -10,6 +10,7 @@
     "spacecatninja/imager-x": "v3.6.8",
     "spicyweb/craft-neo": "2.13.21",
     "verbb/field-manager": "2.2.5",
+    "verbb/formie": "1.6.47",
     "verbb/super-table": "2.7.5.1",
     "vlucas/phpdotenv": "^5.4.0"
   },

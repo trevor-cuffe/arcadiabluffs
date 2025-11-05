@@ -20,10 +20,13 @@
 
         <section class="subpage__content-col entry__content">
             {{ entry.body }}
-            {% if entry.form is defined and entry.form|length %}
-              <div style="margin-top: 40px;">
-                {{ craft.sproutForms.displayForm(entry.form.handle) }}
-              </div>
+            
+            {% if entry.form is defined and entry.form.one() %}
+                <div style="margin-top: 40px;">
+                    <div class="o-formie">
+                        {{ craft.formie.renderForm(entry.form.one().handle) }}
+                    </div>
+                </div>
             {% endif %}
         </section>
 

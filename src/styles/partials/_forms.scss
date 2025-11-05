@@ -65,6 +65,42 @@ button[type=submit],
    color: $red;
 }
 
+// formie forms
+.o-formie {
+   --fui-label-font-size: 17px;
+   --fui-label-color: #{$charcoal};
+   --fui-input-font-size: 15px;
+   --fui-input-line-height: 1.2;
+
+   .fui-i {
+      font-family: inherit;
+   }
+   .fui-instructions {
+      color: inherit;
+   }
+
+   .fui-legend {
+      @extend %headline;
+      @include font-size(17px);
+      text-transform: uppercase;
+      display: block;
+      color: $charcoal;
+   }
+
+   .fui-select {
+      padding: 0.6rem;
+      border: 1px solid $smoke;
+      border-radius: 2px;
+   }
+
+   .fui-checkbox,
+   .fui-radio {
+      label {
+         font-family: $serif;
+         text-transform: none;
+      }
+   }
+}
 
 
 // sprout forms

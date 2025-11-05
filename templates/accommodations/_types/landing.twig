@@ -48,8 +48,9 @@
 
 		</section>
 
-		{% if entry.accommodationForm is defined and entry.accommodationForm|length %}
+		{% if entry.accommodationForm is defined and entry.accommodationForm.one() %}
 
+			{% set selectedForm = entry.accommodationForm.one() %}
 
 			<section class="accommodations__form-wrapper" id="accommodation-form">
 
@@ -60,9 +61,9 @@
 						{{entry.accommodationFormSuccessMessage}}
 					{% endif %}
 
-					{% set formHandle = entry.accommodationForm.one().handle %}
-
-					{{ craft.sproutForms.displayForm(formHandle) }}
+					<div class="o-formie">
+						{{ craft.formie.renderForm(selectedForm.handle) }}
+					</div>
 				</div>
 
 			</section>

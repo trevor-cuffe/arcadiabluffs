@@ -88,6 +88,8 @@ body {
    a:not(.btn) {
       color: $charcoal;
       position: relative;
+      display: block;
+      
       &:before, &:after {
          content: '';
          width: 0;

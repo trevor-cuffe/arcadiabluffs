@@ -154,12 +154,12 @@
 
 		{% set image = cta.bannerImage.one() %}
 		{% set banner = craft.imager.transformImage(image, {
-        width: 500,
-        height: 169,
-        mode: 'crop',
-        jpegQuality: 85,
-        position: image.getFocalPoint()
-      }) %}
+			width: 500,
+			height: 169,
+			mode: 'crop',
+			jpegQuality: 85,
+			position: image.getFocalPoint()
+		}) %}
 		{% set bannerUrl = banner.url ?? null %}
 
 		<section class="sidebar-cta">

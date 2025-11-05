@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 5608b240-5464-4dec-ab64-e254b72ad3e6 # Private Events
 handle: privateEventOptions
@@ -6,8 +7,10 @@ name: 'Private Event Options'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_privateeventoptions}}'
-  maxBlocks: null
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Matrix

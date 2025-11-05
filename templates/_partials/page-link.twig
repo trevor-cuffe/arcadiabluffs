@@ -8,18 +8,18 @@
 <div class="c-page-link">
 	{% if component.image|length %}
 		{% set pageLinkImage = craft.imager.transformImage(image, {
-        width: 600,
-        height: 380,
-        mode: 'crop',
-    }) %}
+			width: 600,
+			height: 380,
+			mode: 'crop',
+		}) %}
 		{% if component.buttons|length %}
 			{% set row = component.buttons.one() %}
 			<a href="{{ row.button.getUrl() }}" class="c-page-link__image">
-				<img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
+				<img src="{{ pageLinkImage.url }}" alt="{{ component.headline }}"/>
 			</a>
 		{% else %}
 			<div class="c-page-link__image">
-				<img src="{{ image.getUrl(pageLinkImage) }}" alt="{{ component.headline }}"/>
+				<img src="{{ pageLinkImage.url }}" alt="{{ component.headline }}"/>
 			</div>
 		{% endif %}
 	{% endif %}

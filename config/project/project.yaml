@@ -1,4 +1,4 @@
-dateModified: 1762350533
+dateModified: 1762354114
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -113,6 +113,7 @@ meta:
     9f55b922-8eb2-447b-b877-f892b243f70f: Details # Details
     010fc3aa-1e18-47e8-a901-a5e2e5b085ba: 'Link Text' # Link Text
     13cc40b6-25fd-4174-a481-7481f07eddd6: 'Primary Menu' # Primary Menu
+    16ea3636-5874-40e9-aa29-e602ce41ffcf: Navigation # Navigation
     17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: Name # Name
     18d710bf-237c-4a66-9707-1a63cc543871: Headline # Headline
     19d04551-214f-4e9b-9a5e-ff66d6fe1028: News # News

@@ -3,53 +3,79 @@ fieldLayouts:
   75a0de26-b2eb-4c6a-a983-b8232cd01dd5:
     tabs:
       -
-        fields:
-          870d5282-0576-4680-aa71-d2d5147444a2: # Link Text
-            required: 1
-            sortOrder: 1
-          ee9dcd04-b2cf-416c-86a4-45519eae43ef: # Link Url
-            required: 1
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 870d5282-0576-4680-aa71-d2d5147444a2 # Link Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ee9dcd04-b2cf-416c-86a4-45519eae43ef # Link Url
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   870d5282-0576-4680-aa71-d2d5147444a2: # Link Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
     instructions: ''
     name: 'Link Text'
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   ee9dcd04-b2cf-416c-86a4-45519eae43ef: # Link Url
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: linkUrl
     instructions: ''
     name: 'Link Url'
-    searchable: 1
+    searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - pdf
-      defaultUploadLocationSource: 'folder:b63e33ee-fb83-4e3b-973b-4ec190b3c84d'
+      defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add Menu'
-      singleUploadLocationSource: 'folder:b63e33ee-fb83-4e3b-973b-4ec190b3c84d'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       singleUploadLocationSubpath: ''
+      source: null
       sources: '*'
-      useSingleFolder: '1'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Assets

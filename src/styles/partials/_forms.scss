@@ -19,6 +19,7 @@ label {
 
 .form-control,
 input[type=email],
+input[type=tel],
 input[type=number],
 input[type=password],
 input[type=phone],
@@ -41,8 +42,10 @@ textarea {
 }
 
 input[type=submit],
+button[type=submit],
 .submit-btn {
   @extend .btn;
+  padding-bottom: 0.75rem;
   outline: none;
   appearance: none;
   border: 0;
@@ -60,4 +63,40 @@ input[type=submit],
    list-style: none;
    @extend .small;
    color: $red;
+}
+
+
+
+// sprout forms
+.fields {
+   .field {
+      select {
+         padding: 0.5rem;
+         height: 40px;
+         font-family: inherit;
+         font-size: 15px;
+         border: 1px solid $smoke;
+         border-radius: 2px;
+      }
+
+      input[type=date] {
+         padding: 0.5rem;
+         height: 40px;
+         border: 1px solid $smoke;
+         border-radius: 2px;
+      }
+
+      &.phone {
+         .phone-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+         }
+
+         input[type=tel] {
+            width: unset;
+            display: inline-block;
+         }
+      }
+   }
 }

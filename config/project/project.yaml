@@ -1,4 +1,4 @@
-dateModified: 1762307651
+dateModified: 1762350533
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -441,15 +441,35 @@ plugins:
     settings:
       allowedAssetVolumes: '*'
       captchaSettings:
-        barrelstrength\sproutforms\captchas\DuplicateCaptcha:
-          enabled: 0
-        barrelstrength\sproutforms\captchas\HoneypotCaptcha:
-          enabled: 0
-          honeypotFieldName: sprout-forms-hc
-          honeypotScreenReaderMessage: 'Leave this field blank'
-        barrelstrength\sproutforms\captchas\JavascriptCaptcha:
-          enabled: 1
-      cleanupProbability: 1000
+        __assoc__:
+          -
+            - barrelstrength\sproutforms\captchas\DuplicateCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+          -
+            - barrelstrength\sproutforms\captchas\JavascriptCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+          -
+            - barrelstrength\sproutforms\captchas\HoneypotCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - '1'
+                -
+                  - honeypotFieldName
+                  - sprout-forms-hc
+                -
+                  - honeypotScreenReaderMessage
+                  - 'Leave this field blank'
+      cleanupProbability: '1000'
       defaultSection: entries
       defaultSubmissionMethod: sync
       defaultUploadLocationSubpath: ''
@@ -461,7 +481,7 @@ plugins:
       saveSpamToDatabase: false
       showNotificationsTab: true
       showReportsTab: true
-      spamLimit: 500
+      spamLimit: '500'
       spamRedirectBehavior: redirectAsNormal
       trackRemoteIp: false
   super-table:

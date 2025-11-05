@@ -63,7 +63,7 @@
 		<p class="footer__copyright">&copy; &reg;
 			{{ contactInformation.address.address1 }}
 			<span>-</span>
-			<a href="{{ macros.googleMapsLink(contactInformation.address.address2) }}" target="_blank">{{ contactInformation.address.address2 }},
+			<a href="{{ macros.googleMapsLink(contactInformation.address.address2 ~ "+" ~ contactInformation.address.locality ~ "+" ~ contactInformation.address.administrativeArea) }}" target="_blank">{{ contactInformation.address.address2 }},
 				{{ contactInformation.address.locality }},
 				{{ contactInformation.address.administrativeArea }}
 				{{ contactInformation.address.postalCode }}</a>

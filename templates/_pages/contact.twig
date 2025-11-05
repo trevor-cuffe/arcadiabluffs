@@ -79,19 +79,21 @@
 		<section class="airports">
 			<div class="airports__content-col">
 				<div class="airports__addresses">
-					<h2 class="contact__headline">{{ contactInformation.address.name }}</h2>
+					<h2 class="contact__headline">{{ contactInformation.address.address1 }}</h2>
 					<address class="contact__address">
-						<a href="{{ contactInformation.address.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.address.street }}<br>
-							{{ contactInformation.address.city }},
-							{{ contactInformation.address.region }}
-							{{ contactInformation.address.postalCode }}</a>
+						<a href="{{ macros.googleMapsLink(contactInformation.address.address2 ~ "+" ~ contactInformation.address.locality ~ "+" ~ contactInformation.address.administrativeArea) }}" target="_blank">
+							{{ contactInformation.address.address2 }}<br>
+							{{ contactInformation.address.locality }}, {{ contactInformation.address.administrativeArea }}
+							{{ contactInformation.address.postalCode }}
+						</a>
 					</address>
-					<h2 class="contact__headline">{{ contactInformation.southCourseAddress.name }}</h2>
+					<h2 class="contact__headline">{{ contactInformation.southCourseAddress.address1 }}</h2>
 					<address class="contact__address">
-						<a href="{{ contactInformation.southCourseAddress.mapUrl('google', { zoom: 5 }) }}" target="_blank">{{ contactInformation.southCourseAddress.street }}<br>
-							{{ contactInformation.southCourseAddress.city }},
-							{{ contactInformation.southCourseAddress.region }}
-							{{ contactInformation.southCourseAddress.postalCode }}</a>
+						<a href="{{ macros.googleMapsLink(contactInformation.southCourseAddress.address2 ~ "+" ~ contactInformation.southCourseAddress.locality ~ "+" ~ contactInformation.southCourseAddress.administrativeArea) }}" target="_blank">
+							{{ contactInformation.southCourseAddress.address2 }}<br>
+							{{ contactInformation.southCourseAddress.locality }}, {{ contactInformation.southCourseAddress.administrativeArea }}
+							{{ contactInformation.southCourseAddress.postalCode }}
+						</a>
 					</address>
 				</div>
 				{{ macros.linkedList(entry.localAirports, 'airports') }}

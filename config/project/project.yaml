@@ -1,4 +1,4 @@
-dateModified: 1762374986
+dateModified: 1762376064
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -456,10 +456,6 @@ plugins:
     licenseKey: HO7TAQJSULJQP5WCCHJATQO3
     schemaVersion: 3.0.12
     settings: null
-  sprout-fields:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.5.3
   super-table:
     enabled: 1
     licenseKey: null

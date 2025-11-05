@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc82058f540d57b309a3e81716b9fc04",
+    "content-hash": "a002ee1092dc5cebfd8b9aed15ca6e30",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -142,135 +142,6 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.357.1"
             },
             "time": "2025-10-23T18:05:18+00:00"
-        },
-        {
-            "name": "barrelstrength/sprout-base",
-            "version": "6.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barrelstrength/craft-sprout-base/zipball/1aad19c3c4b63415f9c59c57fcbfca938069e315",
-                "reference": "1aad19c3c4b63415f9c59c57fcbfca938069e315",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.1.0"
-            },
-            "type": "yii-module",
-            "autoload": {
-                "psr-4": {
-                    "barrelstrength\\sproutbase\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Barrel Strength",
-                    "homepage": "https://www.barrelstrengthdesign.com/"
-                }
-            ],
-            "description": "Common libraries for Sprout Plugins for Craft CMS",
-            "support": {
-                "email": "sprout@barrelstrengthdesign.com",
-                "issues": "https://github.com/barrelstrength/sprout-base/issues?state=open",
-                "source": "https://github.com/barrelstrength/sprout-base",
-                "docs": "https://github.com/barrelstrength/sprout-base",
-                "rss": "https://github.com/barrelstrength/sprout-base/commits/v2.atom"
-            },
-            "time": "2020-10-14T01:24:37+00:00"
-        },
-        {
-            "name": "barrelstrength/sprout-base-fields",
-            "version": "1.4.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barrelstrength/craft-sprout-base-fields/zipball/67d9e423935cb8ee2ae0c84e4f6648782a7cfedd",
-                "reference": "67d9e423935cb8ee2ae0c84e4f6648782a7cfedd",
-                "shasum": ""
-            },
-            "require": {
-                "commerceguys/addressing": "^1.0.6",
-                "craftcms/cms": "^3.1.0",
-                "giggsey/libphonenumber-for-php": "^8.12.4"
-            },
-            "type": "yii-module",
-            "autoload": {
-                "psr-4": {
-                    "barrelstrength\\sproutbasefields\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Barrel Strength",
-                    "homepage": "https://www.barrelstrengthdesign.com/"
-                }
-            ],
-            "description": "Common fields libraries for Sprout Plugins for Craft CMS",
-            "support": {
-                "email": "sprout@barrelstrengthdesign.com",
-                "issues": "https://github.com/barrelstrength/sprout-base/issues?state=open",
-                "source": "https://github.com/barrelstrength/sprout-base",
-                "docs": "https://github.com/barrelstrength/sprout-base",
-                "rss": "https://github.com/barrelstrength/sprout-base/commits/v2.atom"
-            },
-            "time": "2022-11-04T21:11:12+00:00"
-        },
-        {
-            "name": "barrelstrength/sprout-fields",
-            "version": "3.8.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barrelstrength/craft-sprout-fields/zipball/57d0311eaecd331296988193777527f951102ff4",
-                "reference": "57d0311eaecd331296988193777527f951102ff4",
-                "shasum": ""
-            },
-            "require": {
-                "barrelstrength/sprout-base": "^6.0.0",
-                "barrelstrength/sprout-base-fields": "^1.4.6",
-                "craftcms/cms": "^3.2.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Sprout Fields",
-                "handle": "sprout-fields",
-                "developer": "Barrel Strength",
-                "documentationUrl": "https://sprout.barrelstrengthdesign.com/docs/fields",
-                "class": "barrelstrength\\sproutfields\\SproutFields"
-            },
-            "autoload": {
-                "psr-4": {
-                    "barrelstrength\\sproutfields\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Barrel Strength",
-                    "homepage": "https://www.barrelstrengthdesign.com/"
-                }
-            ],
-            "description": "International, Craft-friendly field types.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craftcms",
-                "fields",
-                "sprout fields"
-            ],
-            "support": {
-                "email": "sprout@barrelstrengthdesign.com",
-                "issues": "https://github.com/barrelstrength/sprout-fields/issues?state=open",
-                "source": "https://github.com/barrelstrength/sprout-fields",
-                "docs": "https://sprout.barrelstrengthdesign.com/docs/fields",
-                "rss": "https://github.com/barrelstrength/sprout-fields/commits/v2.atom"
-            },
-            "time": "2022-11-05T12:56:57+00:00"
         },
         {
             "name": "brick/math",

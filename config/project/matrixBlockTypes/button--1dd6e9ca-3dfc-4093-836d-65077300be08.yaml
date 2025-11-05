@@ -3,31 +3,36 @@ fieldLayouts:
   99408ad3-c793-4a54-9415-4bc080568ac6:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 40cf8533-8180-4806-9383-dd85361794b4 # Button
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a3a3fcd9-56c1-41c7-be42-35f1db2fd7e9
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 238205a3-eeaa-495b-aab4-0bd00406cd77
+        userCondition: null
 fields:
   40cf8533-8180-4806-9383-dd85361794b4: # Button
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: button
-    instructions: ''
+    instructions: null
     name: Button
     searchable: true
     settings:
-      allowCustomText: '1'
-      allowTarget: '1'
-      defaultText: ''
+      allowCustomText: true
+      allowTarget: true
+      defaultText: null
       selectLinkText: ''
       types:
         __assoc__:

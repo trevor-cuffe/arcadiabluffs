@@ -1,0 +1,35 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: Standard
+options:
+  alignment:
+    options:
+      - left
+      - right
+  code:
+    indentSequence: '  '
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - underline
+  - strikethrough
+  - link
+  - blockQuote
+  - horizontalLine
+  - '|'
+  - alignment
+  - bulletedList
+  - numberedList
+  - outdent
+  - indent
+  - '|'
+  - undo
+  - redo
+  - sourceEditing

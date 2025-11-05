@@ -1,45 +1,54 @@
+changedFieldIndicator: null
 field: ea52dcf4-0ef2-443e-b70d-7ca566b249bb # Menus
 fieldLayouts:
   75a0de26-b2eb-4c6a-a983-b8232cd01dd5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 870d5282-0576-4680-aa71-d2d5147444a2 # Link Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 33498e07-9a3b-4aca-9c09-fa12e2954a37
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ee9dcd04-b2cf-416c-86a4-45519eae43ef # Link Url
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f4c31036-1185-4421-a134-8bf09ca28f89
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: ff5912b6-a571-46c7-9b7c-0ec1a10f2748
+        userCondition: null
 fields:
   870d5282-0576-4680-aa71-d2d5147444a2: # Link Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
-    instructions: ''
+    instructions: null
     name: 'Link Text'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: text
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -50,30 +59,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: linkUrl
-    instructions: ''
+    instructions: null
     name: 'Link Url'
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - pdf
+      branchLimit: null
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
+      restrictedLocationSubpath: null
       selectionLabel: 'Add Menu'
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null

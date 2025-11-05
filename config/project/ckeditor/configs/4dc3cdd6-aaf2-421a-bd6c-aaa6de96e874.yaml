@@ -1,0 +1,46 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: Default
+options:
+  alignment:
+    options:
+      - left
+      - right
+  code:
+    indentSequence: '  '
+  htmlSupport:
+    allow:
+      -
+        attributes: true
+        classes: true
+        styles: true
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - underline
+  - strikethrough
+  - link
+  - blockQuote
+  - horizontalLine
+  - '|'
+  - alignment
+  - bulletedList
+  - numberedList
+  - outdent
+  - indent
+  - '|'
+  - bookmark
+  - insertImage
+  - mediaEmbed
+  - codeBlock
+  - '|'
+  - undo
+  - redo
+  - sourceEditing

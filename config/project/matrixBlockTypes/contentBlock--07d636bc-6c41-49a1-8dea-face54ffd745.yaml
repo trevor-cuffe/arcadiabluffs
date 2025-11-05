@@ -123,23 +123,17 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      ckeConfig: 4dc3cdd6-aaf2-421a-bd6c-aaa6de96e874 # Default
       columnType: text
-      configSelectionMode: choose
       defaultTransform: ''
-      manualConfig: ''
+      enableSourceEditingForNonAdmins: true
       purifierConfig: null
       purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   f9434084-7efe-46f8-a382-f958cef7bf2a: # Link URL
     columnSuffix: null
     contentColumnType: text

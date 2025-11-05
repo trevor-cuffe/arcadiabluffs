@@ -6,9 +6,11 @@ headingLevels:
   - 5
   - 6
 name: Simple
+options:
+  code:
+    indentSequence: '  '
 toolbar:
-  - heading
-  - '|'
   - bold
   - italic
+  - underline
   - link

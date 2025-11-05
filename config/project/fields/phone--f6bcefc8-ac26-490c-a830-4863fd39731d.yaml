@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 27878486-148f-45b2-8d48-2a355ca5370b # Globals
 handle: phone
@@ -5,11 +6,14 @@ instructions: ''
 name: Phone
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

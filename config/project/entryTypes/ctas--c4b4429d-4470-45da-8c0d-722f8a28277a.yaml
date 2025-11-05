@@ -4,25 +4,64 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: dcb31393-3ea4-4a2a-a287-c79dfba31b0a # CTA Headline
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
-            required: true
+            instructions: null
+            label: null
+            required: 1
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 9d60212d-d586-49a1-9525-1f94da3d85f0 # CTA Body
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 9432c02d-3660-469e-af4c-461baccc92ce # CTA Footer
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: ctas
@@ -31,3 +70,5 @@ name: 'Call To Actions'
 section: 8d55db04-8897-450d-a5f2-625d80a8eab2 # Call To Actions
 sortOrder: 1
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

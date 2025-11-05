@@ -3,24 +3,49 @@ fieldLayouts:
   1325dbcd-368a-4480-b956-20682912043c:
     tabs:
       -
-        fields:
-          7a261b1e-d387-4b69-aa5b-4a21ed282daf: # Body
-            required: false
-            sortOrder: 2
-          40372289-dc21-49a5-8fde-84b1b64f4c69: # Headline
-            required: true
-            sortOrder: 1
-          d238cda2-b052-4d87-ac6b-67b58f334729: # Link Text
-            required: false
-            sortOrder: 3
-          fd799323-b5cd-4385-92ab-49dfe5e15759: # Link URL
-            required: false
-            sortOrder: 4
+        elements:
+          -
+            fieldUid: 40372289-dc21-49a5-8fde-84b1b64f4c69 # Headline
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7a261b1e-d387-4b69-aa5b-4a21ed282daf # Body
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d238cda2-b052-4d87-ac6b-67b58f334729 # Link Text
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fd799323-b5cd-4385-92ab-49dfe5e15759 # Link URL
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   7a261b1e-d387-4b69-aa5b-4a21ed282daf: # Body
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: ''
@@ -29,15 +54,25 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
   40372289-dc21-49a5-8fde-84b1b64f4c69: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -45,15 +80,19 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   d238cda2-b052-4d87-ac6b-67b58f334729: # Link Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
@@ -61,15 +100,19 @@ fields:
     name: 'Link Text'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   fd799323-b5cd-4385-92ab-49dfe5e15759: # Link URL
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkUrl
@@ -77,11 +120,14 @@ fields:
     name: 'Link URL'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

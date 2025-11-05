@@ -2,16 +2,34 @@ fieldLayouts:
   107cfd93-9291-47f9-aa83-40721975e3a1:
     tabs:
       -
-        fields:
-          d6c54b4c-68b2-4867-b935-f068540aca7c: # South Course Address
+        elements:
+          -
+            fieldUid: fd52f2bc-9e8e-4025-9502-fab5a89e68ae # Arcadia Bluffs Address
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          f6bcefc8-ac26-490c-a830-4863fd39731d: # Phone
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d6c54b4c-68b2-4867-b935-f068540aca7c # South Course Address
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          fd52f2bc-9e8e-4025-9502-fab5a89e68ae: # Arcadia Bluffs Address
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f6bcefc8-ac26-490c-a830-4863fd39731d # Phone
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: contactInformation

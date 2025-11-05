@@ -1,10 +1,16 @@
+defaultPlacement: end
 enableVersioning: true
 handle: contact
 name: Contact
 previewTargets:
   -
-    label: 'Primary entry page'
-    urlFormat: '{url}'
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   076725fd-bc7e-48fa-88ce-2d58cbee2749: # Arcadia Bluffs (en-US)

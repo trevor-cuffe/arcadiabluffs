@@ -3,20 +3,39 @@ fieldLayouts:
   04387683-58e3-4625-81ac-eeb77c9a2df8:
     tabs:
       -
-        fields:
-          947f4266-c25e-42b4-a78e-07321ff4e4d3: # Tab Text
-            required: true
-            sortOrder: 1
-          a47dfd63-9d5b-4709-bda4-d057450f6f56: # Pricing Footer
-            required: false
-            sortOrder: 3
-          eaa1ff40-1ac8-4150-8a7f-035477ce3bb8: # Pricing Table
-            required: true
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 947f4266-c25e-42b4-a78e-07321ff4e4d3 # Tab Text
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eaa1ff40-1ac8-4150-8a7f-035477ce3bb8 # Pricing Table
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a47dfd63-9d5b-4709-bda4-d057450f6f56 # Pricing Footer
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   947f4266-c25e-42b4-a78e-07321ff4e4d3: # Tab Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: tabText
@@ -24,15 +43,19 @@ fields:
     name: 'Tab Text'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   a47dfd63-9d5b-4709-bda4-d057450f6f56: # Pricing Footer
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: pricingFooter
@@ -40,6 +63,8 @@ fields:
     name: 'Pricing Footer'
     searchable: true
     settings:
+      addRowLabel: 'Add a row'
+      columnType: text
       columns:
         __assoc__:
           -
@@ -59,18 +84,18 @@ fields:
                   - width
                   - ''
       defaults:
-        __assoc__:
-          -
-            - row1
+        -
+          __assoc__:
             -
-              __assoc__:
-                -
-                  - col1
-                  - ''
+              - col1
+              - ''
+      maxRows: null
+      minRows: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
   eaa1ff40-1ac8-4150-8a7f-035477ce3bb8: # Pricing Table
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: pricingTable
@@ -78,6 +103,8 @@ fields:
     name: 'Pricing Table'
     searchable: true
     settings:
+      addRowLabel: 'Add a row'
+      columnType: text
       columns:
         __assoc__:
           -
@@ -113,17 +140,16 @@ fields:
                   - width
                   - ''
       defaults:
-        __assoc__:
-          -
-            - row1
+        -
+          __assoc__:
             -
-              __assoc__:
-                -
-                  - col1
-                  - ''
-                -
-                  - col2
-                  - ''
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table

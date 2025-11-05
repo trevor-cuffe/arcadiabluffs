@@ -3,23 +3,48 @@ fieldLayouts:
   510aad00-c8ef-48c1-8164-c58b4dbc4556:
     tabs:
       -
-        fields:
-          0d624f18-bf3c-49b5-becb-533c2185c9b9: # Button Text
-            required: true
-            sortOrder: 3
-          8f377780-b7ab-44cf-8b1e-47b3d95753c1: # Background Image
-            required: true
-            sortOrder: 2
-          63a1bc53-bfb2-49ae-9d5d-664627389036: # Video Embed
-            required: true
-            sortOrder: 4
-          f3cf412c-f5d5-463b-b63a-7b34943ecef5: # Headline
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: f3cf412c-f5d5-463b-b63a-7b34943ecef5 # Headline
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8f377780-b7ab-44cf-8b1e-47b3d95753c1 # Background Image
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0d624f18-bf3c-49b5-becb-533c2185c9b9 # Button Text
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 63a1bc53-bfb2-49ae-9d5d-664627389036 # Video Embed
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   0d624f18-bf3c-49b5-becb-533c2185c9b9: # Button Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
@@ -27,15 +52,19 @@ fields:
     name: 'Button Text'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   8f377780-b7ab-44cf-8b1e-47b3d95753c1: # Background Image
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: backgroundImage
@@ -43,23 +72,33 @@ fields:
     name: 'Background Image'
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       singleUploadLocationSubpath: ''
+      source: null
       sources: '*'
-      useSingleFolder: '1'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Assets
   63a1bc53-bfb2-49ae-9d5d-664627389036: # Video Embed
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: videoEmbed
@@ -67,15 +106,19 @@ fields:
     name: 'Video Embed'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   f3cf412c-f5d5-463b-b63a-7b34943ecef5: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -83,11 +126,14 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

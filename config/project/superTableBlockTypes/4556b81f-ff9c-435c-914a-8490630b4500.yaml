@@ -3,45 +3,65 @@ fieldLayouts:
   e76d72f5-1258-415d-aa97-b090567571e2:
     tabs:
       -
-        fields:
-          6ef8762f-934c-4150-9f3a-c723ee40b0b8: # Label
+        elements:
+          -
+            fieldUid: 6ef8762f-934c-4150-9f3a-c723ee40b0b8 # Label
+            instructions: null
+            label: null
             required: 0
-            sortOrder: 1
-          a61b6ef6-9c03-4a39-8592-63f661928329: # Value
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a61b6ef6-9c03-4a39-8592-63f661928329 # Value
+            instructions: null
+            label: null
             required: 0
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   6ef8762f-934c-4150-9f3a-c723ee40b0b8: # Label
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: label
     instructions: ''
     name: Label
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   a61b6ef6-9c03-4a39-8592-63f661928329: # Value
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: value
     instructions: ''
     name: Value
-    searchable: 1
+    searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

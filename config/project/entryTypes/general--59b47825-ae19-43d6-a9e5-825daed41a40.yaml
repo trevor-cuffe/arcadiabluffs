@@ -4,81 +4,180 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 8991f73e-fc38-46e6-a4db-49b9f6697e67 # Headline
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 3db517f6-16a9-4595-8c7c-e8a43a106c13 # Overview
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 86dbf20b-c736-4e15-ad25-8d09e62097d4 # Accommodation Layouts
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 6d64ce9e-9612-4838-b11d-4bc1689bff63 # Accommodation Link
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 87920f6c-d778-4955-a9eb-3ffbe093bc7e # Accommodations Headline
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 2bc9f6e5-515f-41d6-8c72-a457d3bad7a0 # Accommodations Overview
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 40b5fa5a-5d55-4783-aac4-a7c9cc3c991d # Accommodation Layouts 2
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 62205b39-03b5-46f0-a9c2-f24a32f28b65 # Accommodation Link 2
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 30049732-fd90-437a-a48a-2fac94fdb736 # Accommodation Pricing Headline
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: f6f57ddb-d979-455a-8803-923779a0aece # Accommodation Pricing
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: a33ff164-6e0c-45b9-af83-6ca2cbd9b7cf # CTA
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 5fd92c59-65ac-442f-883a-e5d8d867ed86 # Content Block
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: fa034695-f302-45c4-818c-842e1842a583 # Gallery
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
         elements:
           -
             fieldUid: cc80e5df-c1e8-40d1-9935-2b5a608b491a # Sidebar CTAs
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Sidebar
         sortOrder: 2
       -
         elements:
           -
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Metadata
         sortOrder: 3
 handle: general
@@ -87,3 +186,5 @@ name: General
 section: 0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e # Accommodations
 sortOrder: 1
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

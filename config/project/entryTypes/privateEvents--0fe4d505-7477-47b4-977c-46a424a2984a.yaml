@@ -4,25 +4,59 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
             label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 961562fa-ae3d-4a9d-b304-43d727329d53 # Private Event Options
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 8e05d955-2d0c-460c-ae59-bc51e9877ea8 # CTA
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Metadata
         sortOrder: 2
 handle: privateEvents
@@ -31,3 +65,5 @@ name: 'Private Events'
 section: c11abc3b-eb4a-4143-8aee-27b44d77675a # Private Events
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

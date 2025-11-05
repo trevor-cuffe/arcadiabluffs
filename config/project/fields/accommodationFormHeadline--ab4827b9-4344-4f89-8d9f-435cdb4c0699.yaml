@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 2eac97af-c8bb-4f52-82d5-7b98c2c2bb90 # Accommodations
 handle: accommodationFormHeadline
@@ -5,11 +6,14 @@ instructions: ''
 name: 'Accommodation Form Headline'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

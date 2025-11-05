@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
 handle: liveStream
@@ -5,11 +6,14 @@ instructions: ''
 name: 'Live Stream'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
   initialRows: '4'
   multiline: '1'
-  placeholder: ''
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

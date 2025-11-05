@@ -4,25 +4,59 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
             label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 7fd45083-2574-45a3-a3a6-e25418eb6925 # Gift Cards Introduction
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 359c3304-e1b4-4382-8e8d-cd4ca6246277 # Thank You Message
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Gift Cards'
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Metadata
         sortOrder: 2
 handle: giftCards
@@ -31,3 +65,5 @@ name: 'Gift Cards'
 section: e60c4308-b5df-400e-8a88-74b253f5ae8c # Gift Cards
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

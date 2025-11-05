@@ -1,4 +1,5 @@
-contentColumnType: string
+columnSuffix: null
+contentColumnType: text
 fieldGroup: 2de0d27e-44cc-4a0b-b5b3-4e9537340946 # Default
 handle: overview
 instructions: ''
@@ -7,10 +8,20 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: '1'
   columnType: text
-  configFile: ''
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
   purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\redactor\Field

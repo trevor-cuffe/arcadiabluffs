@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: aeecde4f-2032-46b1-968b-ad04618e7172 # Menu
 handle: openInNewTab
@@ -9,25 +10,25 @@ settings:
     -
       __assoc__:
         -
-          - default
-          - ''
-        -
           - label
           - 'No'
         -
           - value
           - 'false'
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - 'Yes'
         -
           - value
           - 'true'
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\RadioButtons

@@ -3,15 +3,22 @@ fieldLayouts:
   faf6fedb-b25d-4979-8e98-dd59fa8e910a:
     tabs:
       -
-        fields:
-          4abaa592-1034-44af-8c86-16ffeb72caac: # Description
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 4abaa592-1034-44af-8c86-16ffeb72caac # Description
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   4abaa592-1034-44af-8c86-16ffeb72caac: # Description
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: description
     instructions: ''
@@ -20,10 +27,20 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

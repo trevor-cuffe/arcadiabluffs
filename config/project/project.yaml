@@ -1,4 +1,4 @@
-dateModified: 1762371719
+dateModified: 1762371982
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -13,10 +13,6 @@ email:
     useAuthentication: '1'
     username: apikey
   transportType: craft\mail\transportadapters\Smtp
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0a728c97-fd69-4e4d-ab5d-2b16a6fae7bf: Button # Button
@@ -162,6 +158,7 @@ meta:
     325ae27a-3891-45e9-9543-bb4b0e42c7c0: 'Link Url' # Link Url
     330eac69-3318-422a-861b-d841fff06fef: 'Video Subheadline' # Video Subheadline
     0339d640-3170-4fbe-b05e-bc617f16c7c3: Tags # Tags
+    346f306c-8a09-4175-813b-89d3ac895822: 'Public Schema'
     359c3304-e1b4-4382-8e8d-cd4ca6246277: 'Thank You Message' # Thank You Message
     403c56a1-2a2c-4d43-b989-a2667bedbd22: General # General
     410c8902-a790-4c5f-abc6-814d182c5d7c: Option # Option
@@ -202,6 +199,7 @@ meta:
     6320fc7f-9902-4986-b81d-38127d780d10: 'Content Block' # Content Block
     7624e05d-94c9-46bf-bf38-00dbb0509f1d: 'Featured Award' # Featured Award
     8110e72c-3547-4f09-a48b-5e1237bbd977: 'Gift Cards' # Gift Cards
+    8574d7d4-f14b-46ea-88a8-b77fcfa88927: Column
     8655b922-94ee-4021-b63c-3fc8c4d8453e: 'Linked List' # Linked List
     8901e690-f63a-4540-a2f6-9b4d1f0f50a2: Headshot # Headshot
     8991f73e-fc38-46e6-a4db-49b9f6697e67: Headline # Headline
@@ -296,6 +294,7 @@ meta:
     c4b4429d-4470-45da-8c0d-722f8a28277a: 'Call To Actions' # Call To Actions
     c5bd9aa3-8815-4681-9ffd-b3401b70ccb8: Headline # Headline
     c7affb6c-68cd-45a6-82b8-fc01f1c8f8eb: 'Contact Information' # Contact Information
+    c8a078f3-ae95-49f6-9963-c431f5f5a956: 'Team Row'
     c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
     c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
     c61fd93f-7f29-4221-af77-fa7a42f2a104: 'Main Navigation' # Main Navigation

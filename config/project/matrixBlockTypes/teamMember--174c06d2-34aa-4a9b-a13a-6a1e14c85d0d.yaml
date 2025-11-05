@@ -3,23 +3,48 @@ fieldLayouts:
   585e3cce-ec73-4a8b-9751-fc573a385677:
     tabs:
       -
-        fields:
-          17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: # Name
-            required: true
-            sortOrder: 2
-          8901e690-f63a-4540-a2f6-9b4d1f0f50a2: # Headshot
-            required: true
-            sortOrder: 1
-          36543e5f-0c33-43d5-a9c4-c024fadc72e4: # Job Title
-            required: true
-            sortOrder: 3
-          d094cea2-a9d5-492a-9663-e179d0878780: # Email
-            required: false
-            sortOrder: 4
+        elements:
+          -
+            fieldUid: 8901e690-f63a-4540-a2f6-9b4d1f0f50a2 # Headshot
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 17e2c1dd-aecc-48d0-bdee-ee898abe0a3b # Name
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 36543e5f-0c33-43d5-a9c4-c024fadc72e4 # Job Title
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d094cea2-a9d5-492a-9663-e179d0878780 # Email
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   17e2c1dd-aecc-48d0-bdee-ee898abe0a3b: # Name
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: teamMemberName
@@ -27,15 +52,19 @@ fields:
     name: Name
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   8901e690-f63a-4540-a2f6-9b4d1f0f50a2: # Headshot
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: headshot
@@ -43,23 +72,33 @@ fields:
     name: Headshot
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       singleUploadLocationSubpath: ''
+      source: null
       sources: '*'
-      useSingleFolder: '1'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Assets
   36543e5f-0c33-43d5-a9c4-c024fadc72e4: # Job Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: jobTitle
@@ -67,15 +106,19 @@ fields:
     name: 'Job Title'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   d094cea2-a9d5-492a-9663-e179d0878780: # Email
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: email
@@ -83,11 +126,14 @@ fields:
     name: Email
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

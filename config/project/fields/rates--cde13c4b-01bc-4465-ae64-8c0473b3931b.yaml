@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: f166e127-51d5-4ea5-9f69-0e3973d61913 # Rates
 handle: rates
@@ -7,7 +8,9 @@ searchable: true
 settings:
   contentTable: '{{%matrixcontent_rates}}'
   maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Matrix

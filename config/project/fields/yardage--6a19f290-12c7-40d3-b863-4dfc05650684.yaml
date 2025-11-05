@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
 handle: yardage
@@ -5,6 +6,8 @@ instructions: "color options:\r\nblack. blue, white, gold, red, gray (leave blan
 name: Yardage
 searchable: true
 settings:
+  addRowLabel: 'Add a row'
+  columnType: text
   columns:
     __assoc__:
       -
@@ -12,64 +15,63 @@ settings:
         -
           __assoc__:
             -
-              - handle
-              - label
-            -
               - heading
               - Label
             -
-              - type
-              - singleline
+              - handle
+              - label
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col2
         -
           __assoc__:
             -
-              - handle
-              - distance
-            -
               - heading
               - Distance
             -
-              - type
-              - singleline
+              - handle
+              - distance
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col3
         -
           __assoc__:
             -
-              - handle
-              - color
-            -
               - heading
               - Color
             -
-              - type
-              - singleline
+              - handle
+              - color
             -
               - width
               - ''
+            -
+              - type
+              - singleline
   defaults:
-    __assoc__:
-      -
-        - row1
+    -
+      __assoc__:
         -
-          __assoc__:
-            -
-              - col1
-              - ''
-            -
-              - col2
-              - ''
-            -
-              - col3
-              - ''
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+        -
+          - col3
+          - ''
+  maxRows: null
+  minRows: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Table

@@ -3,17 +3,30 @@ fieldLayouts:
   a5613ebf-c413-4b33-918a-97c15c2bd3ad:
     tabs:
       -
-        fields:
-          73d0f7c4-cc1c-4018-9fdd-a049d964ad1f: # Button Text
-            required: true
-            sortOrder: 1
-          b227f4d1-65be-4007-a1ac-a25781b6e254: # Button URL
-            required: true
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 73d0f7c4-cc1c-4018-9fdd-a049d964ad1f # Button Text
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b227f4d1-65be-4007-a1ac-a25781b6e254 # Button URL
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   73d0f7c4-cc1c-4018-9fdd-a049d964ad1f: # Button Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
@@ -21,15 +34,19 @@ fields:
     name: 'Button Text'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   b227f4d1-65be-4007-a1ac-a25781b6e254: # Button URL
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: buttonUrl
@@ -37,11 +54,14 @@ fields:
     name: 'Button URL'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

@@ -3,26 +3,57 @@ fieldLayouts:
   53fab780-65a6-42f8-bc88-a80b60549608:
     tabs:
       -
-        fields:
-          2cbe1637-1cb0-4d03-a7f0-61e14788e974: # Image
-            required: false
-            sortOrder: 1
-          9f55b922-8eb2-447b-b877-f892b243f70f: # Details
-            required: false
-            sortOrder: 5
-          62f60a54-795c-49ce-bfd2-42a6f6888d92: # Headline
-            required: false
-            sortOrder: 2
-          795d3c54-ebb3-4576-b04b-17046dd1da7a: # Buttons
-            required: false
-            sortOrder: 4
-          d08f7f35-3977-48a8-8fea-d79697d19e1e: # Text
-            required: false
-            sortOrder: 3
+        elements:
+          -
+            fieldUid: 2cbe1637-1cb0-4d03-a7f0-61e14788e974 # Image
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 62f60a54-795c-49ce-bfd2-42a6f6888d92 # Headline
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d08f7f35-3977-48a8-8fea-d79697d19e1e # Text
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 795d3c54-ebb3-4576-b04b-17046dd1da7a # Buttons
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f55b922-8eb2-447b-b877-f892b243f70f # Details
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   2cbe1637-1cb0-4d03-a7f0-61e14788e974: # Image
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: image
@@ -30,45 +61,65 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:0c261a33-5269-4599-9373-5f2b4037a4a1' # General
       singleUploadLocationSubpath: ''
+      source: null
       sources: '*'
-      useSingleFolder: ''
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Assets
   9f55b922-8eb2-447b-b877-f892b243f70f: # Details
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: details
     instructions: ''
     name: Details
-    searchable: 1
+    searchable: true
     settings:
       columns:
         338:
-          width: ''
+          __assoc__:
+            -
+              - width
+              - ''
         339:
-          width: ''
+          __assoc__:
+            -
+              - width
+              - ''
+      contentTable: null
       fieldLayout: table
       maxRows: null
       minRows: null
+      placeholderKey: null
+      propagationKeyFormat: null
       propagationMethod: all
       selectionLabel: 'Add a detail'
       staticField: null
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: verbb\supertable\fields\SuperTableField
   62f60a54-795c-49ce-bfd2-42a6f6888d92: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -76,36 +127,47 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   795d3c54-ebb3-4576-b04b-17046dd1da7a: # Buttons
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: buttons
     instructions: ''
     name: Buttons
-    searchable: 1
+    searchable: true
     settings:
       columns:
         336:
-          width: ''
+          __assoc__:
+            -
+              - width
+              - ''
+      contentTable: null
       fieldLayout: table
       maxRows: null
       minRows: null
+      placeholderKey: null
+      propagationKeyFormat: null
       propagationMethod: all
       selectionLabel: 'Add a button'
       staticField: null
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: verbb\supertable\fields\SuperTableField
   d08f7f35-3977-48a8-8fea-d79697d19e1e: # Text
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: text
     instructions: ''
@@ -114,11 +176,20 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

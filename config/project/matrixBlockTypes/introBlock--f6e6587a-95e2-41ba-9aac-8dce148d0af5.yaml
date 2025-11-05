@@ -3,18 +3,31 @@ fieldLayouts:
   4d627346-d89d-4ae9-9223-ea57605acf36:
     tabs:
       -
-        fields:
-          7bbf65b1-050d-451a-a681-13b0bbe158a1: # Body
-            required: true
-            sortOrder: 2
-          043b0e31-2a28-45c5-853c-2723fe2ce724: # Headline
-            required: true
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 043b0e31-2a28-45c5-853c-2723fe2ce724 # Headline
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7bbf65b1-050d-451a-a681-13b0bbe158a1 # Body
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   7bbf65b1-050d-451a-a681-13b0bbe158a1: # Body
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: ''
@@ -23,14 +36,25 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
   043b0e31-2a28-45c5-853c-2723fe2ce724: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -38,11 +62,14 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

@@ -4,29 +4,68 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: a22ed9d6-243d-484b-add7-97a6dd764551 # Category
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 55488e76-80a0-494a-8adb-4f6cd00535a8 # Body
-            required: true
+            instructions: null
+            label: null
+            required: 1
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 0339d640-3170-4fbe-b05e-bc617f16c7c3 # Tags
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
         elements:
           -
             fieldUid: cc80e5df-c1e8-40d1-9935-2b5a608b491a # Sidebar CTAs
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Sidebar
         sortOrder: 2
 handle: news
@@ -35,3 +74,5 @@ name: News
 section: 19d04551-214f-4e9b-9a5e-ff66d6fe1028 # News
 sortOrder: 1
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

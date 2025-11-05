@@ -3,26 +3,57 @@ fieldLayouts:
   193ac8f1-fc2c-4f11-bd34-1324c91a6daf:
     tabs:
       -
-        fields:
-          010fc3aa-1e18-47e8-a901-a5e2e5b085ba: # Link Text
-            required: false
-            sortOrder: 4
-          44ea5fb0-62ec-4f26-8a0c-e1cbb3a93638: # Headline
-            required: false
-            sortOrder: 1
-          91fccfba-9349-4220-8a0e-5fbb09ac0fcb: # Price
-            required: false
-            sortOrder: 3
-          4681e11e-24e7-4a51-988a-b49c3cf5f2d1: # Body
-            required: false
-            sortOrder: 2
-          f9434084-7efe-46f8-a382-f958cef7bf2a: # Link URL
-            required: false
-            sortOrder: 5
+        elements:
+          -
+            fieldUid: 44ea5fb0-62ec-4f26-8a0c-e1cbb3a93638 # Headline
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4681e11e-24e7-4a51-988a-b49c3cf5f2d1 # Body
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 91fccfba-9349-4220-8a0e-5fbb09ac0fcb # Price
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 010fc3aa-1e18-47e8-a901-a5e2e5b085ba # Link Text
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f9434084-7efe-46f8-a382-f958cef7bf2a # Link URL
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   010fc3aa-1e18-47e8-a901-a5e2e5b085ba: # Link Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
@@ -30,15 +61,19 @@ fields:
     name: 'Link Text'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   44ea5fb0-62ec-4f26-8a0c-e1cbb3a93638: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -46,15 +81,19 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   91fccfba-9349-4220-8a0e-5fbb09ac0fcb: # Price
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: price
@@ -62,16 +101,20 @@ fields:
     name: Price
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   4681e11e-24e7-4a51-988a-b49c3cf5f2d1: # Body
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: ''
@@ -80,14 +123,25 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
   f9434084-7efe-46f8-a382-f958cef7bf2a: # Link URL
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkUrl
@@ -95,11 +149,14 @@ fields:
     name: 'Link URL'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

@@ -1,4 +1,5 @@
-contentColumnType: string
+columnSuffix: null
+contentColumnType: text
 fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
 handle: bannerLink
 instructions: ''
@@ -10,14 +11,27 @@ settings:
   defaultText: ''
   selectLinkText: ''
   types:
-    presseddigital\linkit\models\Entry:
-      customLabel: null
-      customSelectionLabel: 'Select an entry'
-      enabled: 1
-      sources: '*'
-    presseddigital\linkit\models\Url:
-      customLabel: null
-      enabled: 1
+    __assoc__:
+      -
+        - presseddigital\linkit\models\Url
+        -
+          __assoc__:
+            -
+              - enabled
+              - 1
+      -
+        - presseddigital\linkit\models\Entry
+        -
+          __assoc__:
+            0:
+              - enabled
+              - 1
+            2:
+              - sources
+              - '*'
+            3:
+              - customSelectionLabel
+              - 'Select an entry'
 translationKeyFormat: null
 translationMethod: none
 type: presseddigital\linkit\fields\LinkitField

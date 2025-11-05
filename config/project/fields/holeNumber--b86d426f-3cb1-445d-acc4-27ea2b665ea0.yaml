@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: integer(10)
 fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
 handle: holeNumber
@@ -5,9 +6,15 @@ instructions: ''
 name: 'Hole Number'
 searchable: true
 settings:
-  decimals: '0'
-  max: ''
-  min: '0'
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Number

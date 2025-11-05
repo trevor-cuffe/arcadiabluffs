@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: f166e127-51d5-4ea5-9f69-0e3973d61913 # Rates
 handle: ratesHeadline
@@ -5,11 +6,14 @@ instructions: ''
 name: 'Rates Headline'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

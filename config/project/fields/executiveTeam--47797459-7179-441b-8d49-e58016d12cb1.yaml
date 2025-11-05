@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 441642ef-65bb-460b-bf11-9a7b5014942b # Contact
 handle: executiveTeam
@@ -6,6 +7,12 @@ name: 'Executive Team'
 searchable: true
 settings:
   maxBlocks: null
+  maxLevels: null
+  maxTopBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  wasModified: false
 translationKeyFormat: null
-translationMethod: none
-type: Neo
+translationMethod: site
+type: benf\neo\Field

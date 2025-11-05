@@ -1,0 +1,26 @@
+childBlocks: null
+field: 47797459-7179-441b-8d49-e58016d12cb1 # Executive Team
+fieldLayouts:
+  009af992-5c2d-4c2d-9184-33e53fda9249:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b67c258a-ab57-4bce-8a04-dd8aa2b891dd # Executive Team Row
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+group: null
+handle: teamRow
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Team Row'
+sortOrder: 1
+topLevel: true

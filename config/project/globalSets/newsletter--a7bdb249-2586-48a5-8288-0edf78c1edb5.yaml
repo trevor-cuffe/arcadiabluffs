@@ -2,13 +2,25 @@ fieldLayouts:
   ca2f8969-e50d-4ebc-b21c-4217de14362e:
     tabs:
       -
-        fields:
-          a6ec054e-9735-4aa1-811a-f988e4ed82c4: # Subscribe Tagline
+        elements:
+          -
+            fieldUid: acfcfa69-f556-4980-b0b3-b090928d30b3 # Subscribe Headline
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          acfcfa69-f556-4980-b0b3-b090928d30b3: # Subscribe Headline
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a6ec054e-9735-4aa1-811a-f988e4ed82c4 # Subscribe Tagline
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: newsletter

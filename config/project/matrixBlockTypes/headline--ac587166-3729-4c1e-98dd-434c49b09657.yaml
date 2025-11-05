@@ -3,14 +3,21 @@ fieldLayouts:
   8fe67d73-71a0-4966-b57b-3a66f50ce7dd:
     tabs:
       -
-        fields:
-          4c621108-9140-4ef7-b9f1-d1cc39429915: # Headline
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 4c621108-9140-4ef7-b9f1-d1cc39429915 # Headline
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   4c621108-9140-4ef7-b9f1-d1cc39429915: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -18,11 +25,14 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

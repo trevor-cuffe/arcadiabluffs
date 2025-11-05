@@ -3,17 +3,30 @@ fieldLayouts:
   557e157e-1fa6-4523-a117-80dc3d31969c:
     tabs:
       -
-        fields:
-          1e5a632d-5444-4c79-9ee0-5c924f29c0d6: # General Contacts
-            required: false
-            sortOrder: 2
-          b69e2489-a432-4e27-ae4b-af86cd023ac2: # Headline
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: b69e2489-a432-4e27-ae4b-af86cd023ac2 # Headline
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1e5a632d-5444-4c79-9ee0-5c924f29c0d6 # General Contacts
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   1e5a632d-5444-4c79-9ee0-5c924f29c0d6: # General Contacts
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: generalContacts
@@ -21,6 +34,8 @@ fields:
     name: 'General Contacts'
     searchable: true
     settings:
+      addRowLabel: 'Add a row'
+      columnType: text
       columns:
         __assoc__:
           -
@@ -56,21 +71,21 @@ fields:
                   - width
                   - ''
       defaults:
-        __assoc__:
-          -
-            - row1
+        -
+          __assoc__:
             -
-              __assoc__:
-                -
-                  - col1
-                  - ''
-                -
-                  - col2
-                  - ''
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Table
   b69e2489-a432-4e27-ae4b-af86cd023ac2: # Headline
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: headline
@@ -78,11 +93,14 @@ fields:
     name: Headline
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

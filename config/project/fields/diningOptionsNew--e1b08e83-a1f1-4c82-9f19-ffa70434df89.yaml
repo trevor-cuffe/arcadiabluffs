@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: a6c2ddd7-0756-4257-a628-2d1917856bb6 # Dining
 handle: diningOptionsNew
@@ -7,7 +8,9 @@ searchable: true
 settings:
   contentTable: '{{%matrixcontent_diningoptionsnew}}'
   maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Matrix

@@ -35,6 +35,6 @@ settings:
   path: userphotos
 sortOrder: 3
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
+titleTranslationMethod: site
 type: craft\volumes\Local
-url: ''
+url: null

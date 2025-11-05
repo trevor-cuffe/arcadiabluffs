@@ -1,0 +1,26 @@
+childBlocks: null
+field: 0e2a9e40-9910-47e0-b2d7-052c425013b2 # Accommodation Extras
+fieldLayouts:
+  d6f7830d-d889-4bf0-8918-b02cbb7f5414:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0e38621c-2421-4292-ae5b-aa86828ee673 # Linked List
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+group: null
+handle: column
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Column
+sortOrder: 1
+topLevel: true

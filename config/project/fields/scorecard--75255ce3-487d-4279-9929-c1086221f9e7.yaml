@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
 handle: scorecard
@@ -5,6 +6,8 @@ instructions: "color options:\r\nblack. blue, white, gold, red, gray (leave blan
 name: Scorecard
 searchable: true
 settings:
+  addRowLabel: 'Add a row'
+  columnType: text
   columns:
     __assoc__:
       -
@@ -12,444 +15,443 @@ settings:
         -
           __assoc__:
             -
-              - handle
-              - label
-            -
               - heading
               - Label
             -
-              - type
-              - singleline
+              - handle
+              - label
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col2
         -
           __assoc__:
             -
-              - handle
-              - one
-            -
               - heading
               - '1'
             -
-              - type
-              - singleline
+              - handle
+              - one
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col3
         -
           __assoc__:
             -
-              - handle
-              - two
-            -
               - heading
               - '2'
             -
-              - type
-              - singleline
+              - handle
+              - two
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col4
         -
           __assoc__:
             -
-              - handle
-              - three
-            -
               - heading
               - '3'
             -
-              - type
-              - singleline
+              - handle
+              - three
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col5
         -
           __assoc__:
             -
-              - handle
-              - four
-            -
               - heading
               - '4'
             -
-              - type
-              - singleline
+              - handle
+              - four
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col6
         -
           __assoc__:
             -
-              - handle
-              - five
-            -
               - heading
               - '5'
             -
-              - type
-              - singleline
+              - handle
+              - five
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col7
         -
           __assoc__:
             -
-              - handle
-              - six
-            -
               - heading
               - '6'
             -
-              - type
-              - singleline
+              - handle
+              - six
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col8
         -
           __assoc__:
             -
-              - handle
-              - seven
-            -
               - heading
               - '7'
             -
-              - type
-              - singleline
+              - handle
+              - seven
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col9
         -
           __assoc__:
             -
-              - handle
-              - eight
-            -
               - heading
               - '8'
             -
-              - type
-              - singleline
+              - handle
+              - eight
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col10
         -
           __assoc__:
             -
-              - handle
-              - nine
-            -
               - heading
               - '9'
             -
-              - type
-              - singleline
+              - handle
+              - nine
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col11
         -
           __assoc__:
             -
-              - handle
-              - out
-            -
               - heading
               - Out
             -
-              - type
-              - singleline
+              - handle
+              - out
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col12
         -
           __assoc__:
             -
-              - handle
-              - ten
-            -
               - heading
               - '10'
             -
-              - type
-              - singleline
+              - handle
+              - ten
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col13
         -
           __assoc__:
             -
-              - handle
-              - eleven
-            -
               - heading
               - '11'
             -
-              - type
-              - singleline
+              - handle
+              - eleven
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col14
         -
           __assoc__:
             -
-              - handle
-              - twelve
-            -
               - heading
               - '12'
             -
-              - type
-              - singleline
+              - handle
+              - twelve
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col15
         -
           __assoc__:
             -
-              - handle
-              - thirteen
-            -
               - heading
               - '13'
             -
-              - type
-              - singleline
+              - handle
+              - thirteen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col16
         -
           __assoc__:
             -
-              - handle
-              - fourteen
-            -
               - heading
               - '14'
             -
-              - type
-              - singleline
+              - handle
+              - fourteen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col17
         -
           __assoc__:
             -
-              - handle
-              - fifteen
-            -
               - heading
               - '15'
             -
-              - type
-              - singleline
+              - handle
+              - fifteen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col18
         -
           __assoc__:
             -
-              - handle
-              - sixteen
-            -
               - heading
               - '16'
             -
-              - type
-              - singleline
+              - handle
+              - sixteen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col19
         -
           __assoc__:
             -
-              - handle
-              - seventeen
-            -
               - heading
               - '17'
             -
-              - type
-              - singleline
+              - handle
+              - seventeen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col20
         -
           __assoc__:
             -
-              - handle
-              - eighteen
-            -
               - heading
               - '18'
             -
-              - type
-              - singleline
+              - handle
+              - eighteen
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col21
         -
           __assoc__:
             -
-              - handle
-              - in
-            -
               - heading
               - IN
             -
-              - type
-              - singleline
+              - handle
+              - in
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col22
         -
           __assoc__:
             -
-              - handle
-              - total
-            -
               - heading
               - TOT
             -
-              - type
-              - singleline
+              - handle
+              - total
             -
               - width
               - ''
+            -
+              - type
+              - singleline
       -
         - col23
         -
           __assoc__:
             -
-              - handle
-              - color
-            -
               - heading
               - Color
             -
-              - type
-              - singleline
+              - handle
+              - color
             -
               - width
               - ''
+            -
+              - type
+              - singleline
   defaults:
-    __assoc__:
-      -
-        - row1
+    -
+      __assoc__:
         -
-          __assoc__:
-            -
-              - col1
-              - ''
-            -
-              - col2
-              - ''
-            -
-              - col3
-              - ''
-            -
-              - col4
-              - ''
-            -
-              - col5
-              - ''
-            -
-              - col6
-              - ''
-            -
-              - col7
-              - ''
-            -
-              - col8
-              - ''
-            -
-              - col9
-              - ''
-            -
-              - col10
-              - ''
-            -
-              - col11
-              - ''
-            -
-              - col12
-              - ''
-            -
-              - col13
-              - ''
-            -
-              - col14
-              - ''
-            -
-              - col15
-              - ''
-            -
-              - col16
-              - ''
-            -
-              - col17
-              - ''
-            -
-              - col18
-              - ''
-            -
-              - col19
-              - ''
-            -
-              - col20
-              - ''
-            -
-              - col21
-              - ''
-            -
-              - col22
-              - ''
-            -
-              - col23
-              - ''
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+        -
+          - col3
+          - ''
+        -
+          - col4
+          - ''
+        -
+          - col5
+          - ''
+        -
+          - col6
+          - ''
+        -
+          - col7
+          - ''
+        -
+          - col8
+          - ''
+        -
+          - col9
+          - ''
+        -
+          - col10
+          - ''
+        -
+          - col11
+          - ''
+        -
+          - col12
+          - ''
+        -
+          - col13
+          - ''
+        -
+          - col14
+          - ''
+        -
+          - col15
+          - ''
+        -
+          - col16
+          - ''
+        -
+          - col17
+          - ''
+        -
+          - col18
+          - ''
+        -
+          - col19
+          - ''
+        -
+          - col20
+          - ''
+        -
+          - col21
+          - ''
+        -
+          - col22
+          - ''
+        -
+          - col23
+          - ''
+  maxRows: null
+  minRows: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Table

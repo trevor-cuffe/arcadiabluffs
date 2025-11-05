@@ -3,15 +3,22 @@ fieldLayouts:
   dbf7c039-b08e-4daa-b4bb-f60906bcf9bf:
     tabs:
       -
-        fields:
-          a152dece-e53d-4f4f-b5ee-a5761cdefe3b: # Link
-            required: true
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: a152dece-e53d-4f4f-b5ee-a5761cdefe3b # Link
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   a152dece-e53d-4f4f-b5ee-a5761cdefe3b: # Link
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: ctaLink
     instructions: ''
@@ -23,30 +30,67 @@ fields:
       defaultText: ''
       selectLinkText: ''
       types:
-        presseddigital\linkit\models\Asset:
-          customLabel: null
-          customSelectionLabel: 'Select an asset'
-          enabled: 1
-          sources: '*'
-        presseddigital\linkit\models\Category:
-          customLabel: null
-          customSelectionLabel: 'Select a category'
-          enabled: 1
-          sources: '*'
-        presseddigital\linkit\models\Email:
-          customLabel: null
-          enabled: 1
-        presseddigital\linkit\models\Entry:
-          customLabel: null
-          customSelectionLabel: 'Select an entry'
-          enabled: 1
-          sources: '*'
-        presseddigital\linkit\models\Phone:
-          customLabel: null
-          enabled: 1
-        presseddigital\linkit\models\Url:
-          customLabel: null
-          enabled: 1
+        __assoc__:
+          -
+            - presseddigital\linkit\models\Email
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 1
+          -
+            - presseddigital\linkit\models\Phone
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 1
+          -
+            - presseddigital\linkit\models\Url
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 1
+          -
+            - presseddigital\linkit\models\Entry
+            -
+              __assoc__:
+                0:
+                  - enabled
+                  - 1
+                2:
+                  - sources
+                  - '*'
+                3:
+                  - customSelectionLabel
+                  - 'Select an entry'
+          -
+            - presseddigital\linkit\models\Category
+            -
+              __assoc__:
+                0:
+                  - enabled
+                  - 1
+                2:
+                  - sources
+                  - '*'
+                3:
+                  - customSelectionLabel
+                  - 'Select a category'
+          -
+            - presseddigital\linkit\models\Asset
+            -
+              __assoc__:
+                0:
+                  - enabled
+                  - 1
+                2:
+                  - sources
+                  - '*'
+                3:
+                  - customSelectionLabel
+                  - 'Select an asset'
     translationKeyFormat: null
     translationMethod: none
     type: presseddigital\linkit\fields\LinkitField

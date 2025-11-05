@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: c332017f-ad74-46b4-9fd3-2a4099534c82 # Sidebar
 handle: sidebarCtas
@@ -5,11 +6,17 @@ instructions: ''
 name: 'Sidebar CTAs'
 searchable: true
 settings:
+  allowSelfRelations: false
   limit: ''
   localizeRelations: false
   selectionLabel: 'Add a Call to Action'
+  showSiteMenu: true
+  source: null
   sources:
     - 'section:8d55db04-8897-450d-a5f2-625d80a8eab2' # Call To Actions
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Entries

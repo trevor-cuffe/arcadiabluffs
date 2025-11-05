@@ -1,4 +1,5 @@
-contentColumnType: string
+columnSuffix: null
+contentColumnType: text
 fieldGroup: 106e43e9-e710-4ddd-9c6d-ed1df333503c # Hole By Hole
 handle: holeDescription
 instructions: ''
@@ -7,10 +8,20 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: '1'
   columnType: text
-  configFile: ''
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
   purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\redactor\Field

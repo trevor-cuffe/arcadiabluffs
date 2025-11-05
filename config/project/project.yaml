@@ -1,4 +1,4 @@
-dateModified: 1762307004
+dateModified: 1762307651
 email:
   fromEmail: thegolfshop@arcadiabluffs.com
   fromName: 'Arcadia Bluffs'
@@ -27,7 +27,6 @@ meta:
     0b58b535-d844-4f70-b1e8-40af7e74655e: Contact # Contact
     0c9fc74f-f5c7-4b5f-8b80-8ea98aa0999e: Accommodations # Accommodations
     0c261a33-5269-4599-9373-5f2b4037a4a1: General # General
-    0ce3edeb-61cd-41d6-9105-8c1d6c8d3be1: 'Staging Snippet' # Staging Snippet
     0cf694de-6970-4003-8a9d-984c9ba91d3f: 'Course Landing' # Course Landing
     0d74f61b-dc87-456d-8d90-e09e6f4f8efc: 'Intro Block' # Intro Block
     0d624f18-bf3c-49b5-becb-533c2185c9b9: 'Button Text' # Button Text
@@ -182,7 +181,6 @@ meta:
     856cdfa4-1efe-4001-886c-d78fedae1bb6: Announcement # Announcement
     870d5282-0576-4680-aa71-d2d5147444a2: 'Link Text' # Link Text
     894ceebd-0a7f-4a96-a00b-87e7a5a69aa1: Gallery # Gallery
-    904b1ef7-78d0-4c7c-8c3d-2bc9e07a74f6: 'Google Tag Manager' # Google Tag Manager
     947f4266-c25e-42b4-a78e-07321ff4e4d3: 'Tab Text' # Tab Text
     959a38bb-a856-451b-a3db-eff0e9bf621e: 'Course Intro Block' # Course Intro Block
     1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
@@ -269,7 +267,6 @@ meta:
     acea35fc-de86-48eb-b5dc-f5f07375d2cb: Text # Text
     acfcfa69-f556-4980-b0b3-b090928d30b3: 'Subscribe Headline' # Subscribe Headline
     ad6faca2-5d60-4a28-866e-e60da73626d0: Description # Description
-    ad185f5b-815b-4a9e-8e04-99cc8b28b78d: 'Production Snippet' # Production Snippet
     ae4070aa-bea2-4aea-97c5-9e71e2bf31c8: 'Hole Description' # Hole Description
     aeecde4f-2032-46b1-968b-ad04618e7172: Menu # Menu
     afee0233-92f9-42fe-ad36-51b9d31d2a01: 'Call To Action' # Call To Action
@@ -300,7 +297,6 @@ meta:
     c8c999e8-e655-4295-b5e0-892430740cc7: 'Sunset Camera' # Sunset Camera
     c11abc3b-eb4a-4143-8aee-27b44d77675a: 'Private Events' # Private Events
     c73fb067-a5f1-44c7-9db5-2813a46b689d: Description # Description
-    c4013d73-abb2-4daa-bab0-5b4bf9ffb018: 'Development Snippet' # Development Snippet
     c332017f-ad74-46b4-9fd3-2a4099534c82: Sidebar # Sidebar
     ca7b6967-d24c-401a-8e3e-1ac0ca8f2b43: Headline # Headline
     cc80e5df-c1e8-40d1-9935-2b5a608b491a: 'Sidebar CTAs' # Sidebar CTAs
@@ -327,7 +323,6 @@ meta:
     d81677db-f7f5-4393-a4c3-6f56ef537fb6: Link # Link
     dcb31393-3ea4-4a2a-a287-c79dfba31b0a: 'CTA Headline' # CTA Headline
     ddfbbfff-4c50-4552-a93d-78d990a5b58d: Headline # Headline
-    de302066-8d0b-473e-ad2e-d992a4f236b9: 'Google Tag Manager' # Google Tag Manager
     df2fb927-6c87-4678-9950-d3a004411ca8: Courses # Courses
     dffa5382-9565-4238-b6e2-c72b56a76ddf: 'Button Text' # Button Text
     e0c7ac16-2ecd-4551-8951-1928b93f8112: 'Social Links' # Social Links

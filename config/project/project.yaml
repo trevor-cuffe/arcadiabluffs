@@ -1,4 +1,4 @@
-dateModified: 1762465871
+dateModified: 1762466481
 elementSources:
   SproutForms_Entry:
     -
@@ -540,6 +540,10 @@ plugins:
     licenseKey: 43IQIDMG2DI71XIMXP85AW5S
     schemaVersion: 4.0.0
     settings: null
+  redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.5
   seomatic:
     enabled: 1
     licenseKey: HO7TAQJSULJQP5WCCHJATQO3

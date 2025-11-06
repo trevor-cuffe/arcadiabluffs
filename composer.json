@@ -3,6 +3,7 @@
     "craftcms/ckeditor": "3.14.1",
     "craftcms/cms": "^4.0.0",
     "craftcms/feed-me": "^5.14.0",
+    "dolphiq/redirect": "2.0.1",
     "nystudio107/craft-seomatic": "4.1.19",
     "presseddigital/linkit": "4.0.4.1",
     "spacecatninja/imager-x": "4.5.3",

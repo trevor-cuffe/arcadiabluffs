@@ -3,19 +3,16 @@
 {% extends '_layouts/default.twig' %}
 {% set template = 'news' %}
 
-{% set title = 'News' %}
-{% set home = 'false' %}
 {% set id = 'news' %}
 {% set data_page = 'news' %}
 
+
 {# Get Cat Name #}
-{% set catSlug = craft.app.request.getSegment(2) %}
-{% set category = craft.categories.slug(catSlug).one() %}
 {% set title = category.title %}
 
 {# Fetch all of the entries related to this category #}
 {% set resultCount = 5 %}
-{% paginate craft.entries.relatedTo(category).limit(resultCount) as pageInfo, pageEntries  %}
+{% paginate craft.entries.section('news').relatedTo(category).limit(resultCount) as pageInfo, pageEntries  %}
 
 	{% block body %}
 

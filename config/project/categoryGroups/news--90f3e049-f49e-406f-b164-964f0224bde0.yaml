@@ -28,12 +28,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
-            uid: 8b42a22c-a41b-42c9-a31c-fabaeab5ed55
+            uid: 2ad88dee-fc72-4b68-a763-8a6482e459d7
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 77435ef2-06c1-48db-b6a3-e186b58124fd
+        uid: 79b0cf4b-739a-4285-9eaa-da704413b5e6
         userCondition: null
 handle: news
 name: News
@@ -41,7 +41,7 @@ siteSettings:
   076725fd-bc7e-48fa-88ce-2d58cbee2749: # Arcadia Bluffs (en-US)
     hasUrls: true
     template: news/_category
-    uriFormat: '{% if object.level == 1 %}news/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+    uriFormat: 'news/category/{slug}'
 structure:
-  maxLevels: null
+  maxLevels: 1
   uid: ee62ce4c-5796-48b4-9d15-24e069c88bc3

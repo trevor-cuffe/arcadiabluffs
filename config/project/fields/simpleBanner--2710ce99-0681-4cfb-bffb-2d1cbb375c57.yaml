@@ -1,14 +1,14 @@
 columnSuffix: null
 contentColumnType: boolean
 fieldGroup: 0cf694de-6970-4003-8a9d-984c9ba91d3f # Course Landing
-handle: doNotShowVideoBanner
-instructions: 'By default, this template shows the video banner instead of the banner image set above'
-name: 'Do Not Show Video Banner'
+handle: simpleBanner
+instructions: 'The default setting uses a background video. Turn on to swap for a simple image/link banner. '
+name: 'Simple Banner'
 searchable: true
 settings:
   default: false
-  offLabel: null
-  onLabel: null
+  offLabel: Video
+  onLabel: Image
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Lightswitch

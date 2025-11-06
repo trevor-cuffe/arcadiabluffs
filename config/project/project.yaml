@@ -1,4 +1,4 @@
-dateModified: 1762379330
+dateModified: 1762465871
 elementSources:
   SproutForms_Entry:
     -
@@ -172,6 +172,7 @@ meta:
     0ef55052-1ae5-436b-b9cd-64be16fcf0db: 'Accommodation Form Content' # Accommodation Form Content
     0f863fe3-b46b-4804-a61e-1b62c737d2f7: 'Linked List' # Linked List
     0f2543ba-0c6c-4a11-8c70-9cdefad272dc: 'Custom URL' # Custom URL
+    000f4925-b42d-4160-aa55-329a2a36fe83: Video # Video
     0fe4d505-7477-47b4-977c-46a424a2984a: 'Private Events' # Private Events
     1ae0ca48-e9ff-4b0a-aaba-9e8e23627850: Image # Image
     01b17a99-3521-45f0-87a8-6b2cae017f98: 'Link Text' # Link Text
@@ -314,7 +315,7 @@ meta:
     1193d4ea-5437-469f-9ffa-3fab34a8ab93: General # General
     2110e6ce-45ed-474d-981b-5a7181bf639b: 'Linked List' # Linked List
     2132d92c-8d1b-447c-9f8d-15b1e166d5f1: Par # Par
-    2710ce99-0681-4cfb-bffb-2d1cbb375c57: 'Do Not Show Video Banner' # Do Not Show Video Banner
+    2710ce99-0681-4cfb-bffb-2d1cbb375c57: 'Simple Banner' # Simple Banner
     2721deb8-a3d6-483e-898f-d1f6508fe02d: Link # Link
     2827c480-b1d0-47be-b8af-345fd310bdef: General # General
     3046ec83-6114-4d56-9a73-383b7243bd8d: 'Pricing Table' # Pricing Table
@@ -469,6 +470,7 @@ meta:
     f6e6587a-95e2-41ba-9aac-8dce148d0af5: 'Intro Block' # Intro Block
     f6f57ddb-d979-455a-8803-923779a0aece: 'Accommodation Pricing' # Accommodation Pricing
     f9d54a63-f4b4-46a3-9822-b08270fddf91: 'Home Courses' # Home Courses
+    f19fa97c-7a36-4123-bc74-ed3e6b4f2c29: 'Hero Video' # Hero Video
     f32f9a29-42b9-4309-8915-00f75901e293: Header # Header
     f79b6a44-12a4-4b24-9f20-320d05f18cd6: Rates # Rates
     f166e127-51d5-4ea5-9f69-0e3973d61913: Rates # Rates
@@ -510,10 +512,9 @@ plugins:
     schemaVersion: 5.14.0
     settings: null
   field-manager:
-    enabled: 1
-    licenseKey: null
+    edition: standard
+    enabled: true
     schemaVersion: 1.0.0
-    settings: null
   formie:
     edition: standard
     enabled: true

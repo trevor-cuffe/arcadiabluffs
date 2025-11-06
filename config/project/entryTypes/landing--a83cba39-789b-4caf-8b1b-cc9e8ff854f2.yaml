@@ -45,6 +45,69 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Simple Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 540d2e65-6d28-4b64-901a-a22ba40aed3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Simple Banner
+                  uid: 83a3074a-a7c4-43fe-b4d7-27c257e25887
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f19fa97c-7a36-4123-bc74-ed3e6b4f2c29 # Hero Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f471c1b-c2a1-4d05-a65a-e9a1d0749222
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Simple Banner
+                  uid: e54eca18-f3f9-4b58-9a28-24da26288c7d
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: b9701f69-ede3-4a6c-b7b7-baa1856327ec # Banner Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3730639-62b4-4823-bf00-a9f6f529e5fa
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 2710ce99-0681-4cfb-bffb-2d1cbb375c57 # Simple Banner
+                  uid: f0c97ab4-7026-4175-ac35-ac2e9816286b
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
             instructions: null
             label: null
@@ -52,18 +115,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a108b2b8-24b6-4c5c-bc20-958be99137e6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 58d379a7-f464-4baf-8555-e5b71c12d289 # Intro Block
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 37b10e1a-739e-4398-9557-a13cd9c4ebd1
             userCondition: null
             warning: null
             width: 100

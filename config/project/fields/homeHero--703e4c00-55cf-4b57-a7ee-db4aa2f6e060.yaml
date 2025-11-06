@@ -7,7 +7,7 @@ name: 'Home Hero'
 searchable: true
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: null
+  changedFieldIndicator: 978889675
   columns:
     __assoc__:
       -

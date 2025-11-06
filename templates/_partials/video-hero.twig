@@ -1,18 +1,20 @@
+{% set video = video ?? entry.heroVideo.one() ?? null %}
+
 <div class="c-video-hero">
   <div class="c-video-hero__video-wrap">
-    <video autoplay loop muted playsinline poster="/assets/img/hero.jpg" class="c-home-hero__video">
-      <source src="{{ '/assets/videos/' ~ entry.slug ~ '/hero.mp4' }}" type="video/mp4">
-      <source src="{{ '/assets/videos/' ~ entry.slug ~ '/hero.webm' }}" type="video/webm">
-      <source src="{{ '/assets/videos/' ~ entry.slug ~ '/hero.ogv' }}" type="video/ogg">
-      Your browser does not support HTML5 video.
-    </video>
+    {% if video %}
+      <video autoplay loop muted playsinline class="c-home-hero__video">
+        <source src="{{ video.url }}" type="{{ video.getMimeType() }}">
+        Your browser does not support HTML5 video.
+      </video>
+    {% endif %}
   </div>
   <div class="c-video-hero__content">
     {% if headline|length %}
       <div class="c-video-hero__headline">{{ headline }}</div>
     {% endif %}
-    {% if link is defined and link != "" %}
-      <a class="btn btn--outlinedWhite" href="{{ link.url }}" target="{{ link.target }}">{{ link.text }}</a>
+    {% if link is defined and link and link.getUrl() %}
+      <a class="btn btn--outlinedWhite" href="{{ link.getUrl() }}" target="{{ link.target }}">{{ link.getText() }}</a>
     {% endif %}
   </div>
  

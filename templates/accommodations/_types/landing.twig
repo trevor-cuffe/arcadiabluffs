@@ -15,7 +15,16 @@
 
 {% block body %}
 
-	{% include '_partials/video-hero' with { headline: title } %}
+
+	{% if entry.simpleBanner %}
+		{% include '_partials/banner' %}
+	{% else %}
+		{% include '_partials/video-hero' with {
+			video: entry.heroVideo.one(),
+			headline: title,
+			link: entry.bannerLink,
+		} %}
+	{% endif %}
 
 	<main class="main main__{{ template }}" role="main">
 

@@ -5,7 +5,6 @@
 {% set home = 'false' %}
 {% set id = entry.slug %}
 {% set data_page = entry.slug %}
-{% set button = entry.bannerLink %}
 
 {# For links to scorecard holes #}
 {% set segments = craft.app.request.segments %}
@@ -22,10 +21,14 @@
 {% endif %}
 
 {% block body %}
-	{% if entry.doNotShowVideoBanner %}
+	{% if entry.simpleBanner %}
 		{% include '_partials/banner' %}
 	{% else %}
-		{% include '_partials/video-hero' with { headline: title, link: button } %}
+		{% include '_partials/video-hero' with {
+			video: entry.heroVideo.one(),
+			headline: title,
+			link: entry.bannerLink,
+		} %}
 	{% endif %}
 
 	{% include '_partials/subpage-menu' %}

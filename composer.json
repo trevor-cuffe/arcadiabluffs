@@ -9,7 +9,7 @@
     "spacecatninja/imager-x": "4.5.3",
     "spicyweb/craft-neo": "4.4.7",
     "verbb/field-manager": "3.0.9",
-    "verbb/formie": "2.2.5",
+    "verbb/formie": "2.2.6",
     "verbb/super-table": "3.0.16",
     "vlucas/phpdotenv": "^5.4.0"
   },

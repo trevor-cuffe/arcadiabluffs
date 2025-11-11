@@ -104,12 +104,30 @@ gulp fonts
 gulp static
 ```
 
+### Remote Storage
+Run the following command to get imager transforms from remote server
+Test it (staging  -> production)
+rsync -navPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/imager/ ./web/imager
+rsync -navPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/uploads/ ./web/uploads
+rsync -navPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/storage/runtime/imager/ ./storage/runtime/imager
 
-## Migration
+Do it
+rsync -avPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/imager/ ./web/imager
+rsync -avPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/uploads/ ./web/uploads
+rsync -avPhz serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-0-prod/shared/storage/runtime/imager/ ./storage/runtime/imager
+
+going TO remote server:
+
+rsync -navPhz ./web/imager/ serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-1-stage/shared/imager
+rsync -navPhz ./web/uploads/ serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-1-stage/shared/uploads
+rsync -navPhz ./storage/ serverpilot@143.244.174.122:/srv/users/serverpilot/apps/arcadiabluffs-1-stage/shared/storage
+
+
+<!-- ## Migration
 
 1) Need to remove forms from plugins in db, and remove sprout tables
     -delete vzAddress, vzUrl, CpSortCols from plugins table
 
 2) Install plugins
 3) Manually reassign field types
-4) Manually fix "_1}}" content tables (except matrixcontent_diningoptions)
+4) Manually fix "_1}}" content tables (except matrixcontent_diningoptions) -->

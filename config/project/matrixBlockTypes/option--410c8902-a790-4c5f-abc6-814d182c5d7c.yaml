@@ -117,7 +117,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: null
+      changedFieldIndicator: 739884625
       columns:
         __assoc__:
           -
@@ -143,7 +143,7 @@ fields:
       selectionLabel: 'Add a detail'
       staticField: null
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: verbb\supertable\fields\SuperTableField
   62f60a54-795c-49ce-bfd2-42a6f6888d92: # Headline
     columnSuffix: null
@@ -175,7 +175,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: null
+      changedFieldIndicator: 211195145
       columns:
         __assoc__:
           -
@@ -194,7 +194,7 @@ fields:
       selectionLabel: 'Add a button'
       staticField: null
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: verbb\supertable\fields\SuperTableField
   d08f7f35-3977-48a8-8fea-d79697d19e1e: # Text
     columnSuffix: null

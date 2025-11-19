@@ -22,7 +22,7 @@
 				{% for item in option.details %}
 					<div class="c-dining-options__detail">
 						<div class="c-dining-options__detail-label">{{ item.label }}</div>
-						<div class="c-dining-options__detail-value">{{ item.detail }}</div>
+						<div class="c-dining-options__detail-value">{{ item.detail|nl2br }}</div>
 					</div>
 				{% endfor %}
 			</div>

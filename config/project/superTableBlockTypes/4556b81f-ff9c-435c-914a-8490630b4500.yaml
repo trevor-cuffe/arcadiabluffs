@@ -1,4 +1,4 @@
-changedFieldIndicator: null
+changedFieldIndicator: 630469053
 field: 9f55b922-8eb2-447b-b877-f892b243f70f # Details
 fieldLayouts:
   e76d72f5-1258-415d-aa97-b090567571e2:
@@ -67,8 +67,8 @@ fields:
       charLimit: null
       code: false
       columnType: text
-      initialRows: 4
-      multiline: false
+      initialRows: 2
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

@@ -11,12 +11,12 @@
 ### Production [DO]
 
     Domain: arcadiabluffs.com
-    IPv4: 
+    IPv4: 143.244.174.122
 
 ### Staging [DO]
 
     Domain: arcadiabluffs.edencreative.co
-    IPv4: 
+    IPv4: 143.244.174.122
 
 ### Local
 

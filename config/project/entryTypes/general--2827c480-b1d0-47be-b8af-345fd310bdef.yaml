@@ -42,7 +42,36 @@ fieldLayouts:
             uid: e521a328-5536-4697-af4c-701b353eccba
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2132d92c-8d1b-447c-9f8d-15b1e166d5f1 # Par
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 503259ed-9920-40c0-ad6f-ee9e204ed907
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: ef20410f-26b2-4646-9ede-58291bab1f3a # Handicap
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa981fd3-22da-4124-98ff-7da63544bde3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 4e8d05c3-065c-4886-b660-9e882d5e2995
+            userCondition: null
           -
             elementCondition: null
             fieldUid: 0d4713d1-5055-456d-b451-5eacbc986e7d # Banner Image
@@ -69,28 +98,9 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 2132d92c-8d1b-447c-9f8d-15b1e166d5f1 # Par
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 503259ed-9920-40c0-ad6f-ee9e204ed907
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 21491627-e5db-4562-b019-458269f7e8e4
             userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: ef20410f-26b2-4646-9ede-58291bab1f3a # Handicap
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: aa981fd3-22da-4124-98ff-7da63544bde3
-            userCondition: null
-            warning: null
-            width: 100
           -
             elementCondition: null
             fieldUid: ae4070aa-bea2-4aea-97c5-9e71e2bf31c8 # Hole Description
@@ -141,24 +151,6 @@ fieldLayouts:
             width: 100
         name: Content
         uid: f3766b5c-847d-4a6b-8f86-769f65e36ad2
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ff0ab94c-ab3c-4a04-bcb4-3ab2d24e60be
-            userCondition: null
-            warning: null
-            width: 100
-        name: Metadata
-        uid: 551c78df-944a-4843-86bb-b1de1c4d0605
         userCondition: null
 handle: general
 hasTitleField: true

@@ -88,6 +88,24 @@ fieldLayouts:
         name: Sidebar
         uid: d91cb920-e808-40b9-9b58-f54620965035
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2c18936f-5777-4b43-9390-20d3b4f26d51 # Metadata
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cee399c2-d223-484a-b1d1-3ffae54472a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Metadata
+        uid: 5b0365b3-d35e-499f-900d-5c88707e26e1
+        userCondition: null
 handle: news
 hasTitleField: true
 name: News

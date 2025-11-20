@@ -282,3 +282,20 @@
     {% set path = craft.app.request.segments | join("/") %}
     {% if path == segment|replace(baseUrl, "") %}active{% endif %}
 {% endapply %}{% endmacro %}
+
+{#
+    Format Excerpt
+    Return an excerpt with a maximum of 200 characters
+
+    Usage:
+    - Requires an excerpt and contentModules to be on an entry
+    - {{ helpers.formatExcerpt(excerpt, length) }}
+#}
+{% macro formatExcerpt(excerpt, length) %}{% apply spaceless %}
+
+  {% set length = length|length ? length : 225 %}
+  {% set excerptContent = excerpt|replace({'</': ' </'})|striptags|replace({'&nbsp;': ' '}) %}
+
+  {{ excerptContent|length > length ? excerptContent|slice(0, length) ~ ' [...]' : excerptContent }}
+
+{% endapply %}{% endmacro %}

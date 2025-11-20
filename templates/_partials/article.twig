@@ -1,10 +1,12 @@
+{% import '_macros' as macros %}
+
 <header>
     <p class="article__meta">{{ entry.postDate|date("m/d/Y") }}</p>
     <h1 class="article__headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
 </header>
 <div class="article__content">
     {% if template == "news" %}
-        {{ entry.body|length > 250 ? entry.body|striptags|slice(0, 250) ~ '[...]' : entry.body|striptags }}
+        {{ macros.formatExcerpt(entry.body, 250) }}
     {% else %}
         {{ entry.body }}
     {% endif %}

@@ -3,13 +3,13 @@
 @import 'node_modules/sass-mq/mq';
 
 // Screen specific stylesheet
-@import 'normalize';
+@import 'utilities/normalize';
 
-@import 'variables';
-@import 'mixins';
-@import 'utility';
-@import 'type';
-@import 'base';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/utility';
+@import 'utilities/type';
+@import 'utilities/base';
 
 
 /*-------------------------------------------

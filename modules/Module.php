@@ -2,6 +2,10 @@
 namespace modules;
 
 use Craft;
+use craft\events\TemplateEvent;
+use craft\helpers\App;
+use craft\web\View;
+use yii\base\Event;
 
 /**
  * Custom module class.
@@ -40,5 +44,29 @@ class Module extends \yii\base\Module
         parent::init();
 
         // Custom initialization code goes here...
+
+        // Custom admin panel CSS
+        if (Craft::$app->getRequest()->getIsCpRequest()) {
+            Craft::$app->getView()->registerCssFile(
+                '/assets/css/admin.css'
+            );
+
+            // Set the env as a class on the admin panel body
+            Event::on(
+                View::class,
+                View::EVENT_BEFORE_RENDER_TEMPLATE,
+                function(TemplateEvent $e) {
+                    /** @var View $view */
+
+                    $env = App::env('CRAFT_ENVIRONMENT');
+
+                    $bodyClass = $e->variables['bodyClass'] ?? "";
+                    if ($bodyClass) $bodyClass .= " ";
+                    $bodyClass .= "env-$env";
+
+                    $e->variables['bodyClass'] = $bodyClass;
+                }
+            );
+        }
     }
 }
